@@ -37,4 +37,5 @@
 * [1570. Dot Product of Two Sparse Vectors](1570.-dot-product-of-two-sparse-vectors.md)
 * [1650. Lowest Common Ancestor of a Binary Tree III](1650.-lowest-common-ancestor-of-a-binary-tree-iii.md)
 * [1762. Buildings With an Ocean View](1762.-buildings-with-an-ocean-view.md)
+* [68. Text Justification](68.-text-justification.md)
 
