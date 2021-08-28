@@ -43,4 +43,5 @@
 * [843. Guess the Word](843.-guess-the-word.md)
 * [695. Max Area of Island](695.-max-area-of-island.md)
 * [465. Optimal Account Balancing](465.-optimal-account-balancing.md)
+* [315. Count of Smaller Numbers After Self](315.-count-of-smaller-numbers-after-self.md)
 
