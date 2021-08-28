@@ -38,4 +38,9 @@
 * [1650. Lowest Common Ancestor of a Binary Tree III](1650.-lowest-common-ancestor-of-a-binary-tree-iii.md)
 * [1762. Buildings With an Ocean View](1762.-buildings-with-an-ocean-view.md)
 * [68. Text Justification](68.-text-justification.md)
+* [394. Decode String](394.-decode-string.md)
+* [394. Decode String](394.-decode-string-1.md)
+* [843. Guess the Word](843.-guess-the-word.md)
+* [695. Max Area of Island](695.-max-area-of-island.md)
+* [465. Optimal Account Balancing](465.-optimal-account-balancing.md)
 
