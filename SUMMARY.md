@@ -46,4 +46,7 @@
 * [1762. Buildings With an Ocean View](1762.-buildings-with-an-ocean-view.md)
 * [1509. Minimum Difference Between Largest and Smallest Value in Three Moves](1509.-minimum-difference-between-largest-and-smallest-value-in-three-moves.md)
 * [329. Longest Increasing Path in a Matrix](329.-longest-increasing-path-in-a-matrix.md)
+* [359. Logger Rate Limiter](359.-logger-rate-limiter.md)
+* [735. Asteroid Collision](735.-asteroid-collision.md)
+* [1293. Shortest Path in a Grid with Obstacles Elimination](1293.-shortest-path-in-a-grid-with-obstacles-elimination.md)
 
