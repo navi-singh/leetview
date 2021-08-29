@@ -29,8 +29,6 @@ Input: s = ")("
 Output: [""]
 ```
 
-
-
 **Approach 1: Backtracking**
 
 **Intuition**

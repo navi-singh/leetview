@@ -22,8 +22,6 @@ Input: s = "azxxzy"
 Output: "ay"
 ```
 
-
-
 **Approach 2: Stack**
 
 We could trade an extra space for speed. The idea is to use an output stack to keep track of only non duplicate characters. Here is how it works:

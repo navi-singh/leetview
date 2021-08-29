@@ -139,8 +139,7 @@ When we are done building an expression out of all of the digits in our original
 
 > How do we actually check if an expression is a valid one or not if all we have is a string representing the expression and not the integer value for the same?
 
-Well, one way to go about this is to write a custom `eval` function that takes in a string and returns the value of that expression. If you do that \(Python people can use the inbuilt function `eval` for this\), you will get a TLE i.e. time limit exceeded error.  
-
+Well, one way to go about this is to write a custom `eval` function that takes in a string and returns the value of that expression. If you do that \(Python people can use the inbuilt function `eval` for this\), you will get a TLE i.e. time limit exceeded error.
 
 **Can't we keep track of the expression's value on the fly?**
 
@@ -152,8 +151,7 @@ So far so good. Now let us add the `*` operator as well and see how building the
 
 What we mean by building the expression on the fly is that we keep track of the expression's value till now and we simply consider that value as one of the two operands for our operators. As we can see from the two examples above, this would have worked had it just been `+` and `-` operators.
 
-But, this approach is bound to fail because the `*` operator takes precedence over `+` and `-`. The `*` operator would require the _**actual**_ previous operand in our expression rather than the current value of the expression. i.e. In the above example, the `*` operator needed `2` rather than `12` to get us the correct value of `18`.  
-
+But, this approach is bound to fail because the `*` operator takes precedence over `+` and `-`. The `*` operator would require the _**actual**_ previous operand in our expression rather than the current value of the expression. i.e. In the above example, the `*` operator needed `2` rather than `12` to get us the correct value of `18`.
 
 **How to handle this?**
 
