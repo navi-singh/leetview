@@ -49,4 +49,6 @@
 * [359. Logger Rate Limiter](359.-logger-rate-limiter.md)
 * [735. Asteroid Collision](735.-asteroid-collision.md)
 * [1293. Shortest Path in a Grid with Obstacles Elimination](1293.-shortest-path-in-a-grid-with-obstacles-elimination.md)
+* [1277. Count Square Submatrices with All Ones](1277.-count-square-submatrices-with-all-ones.md)
+* [489. Robot Room Cleaner](489.-robot-room-cleaner.md)
 
