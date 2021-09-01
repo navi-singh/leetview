@@ -48,11 +48,11 @@
 * [1277. Count Square Submatrices with All Ones](1277.-count-square-submatrices-with-all-ones.md)
 * [1293. Shortest Path in a Grid with Obstacles Elimination](1293.-shortest-path-in-a-grid-with-obstacles-elimination.md)
 * [1428. Leftmost Column with at Least a One](1428.-leftmost-column-with-at-least-a-one.md)
+* [1499. Max Value of Equation](1499.-max-value-of-equation.md)
 * [1509. Minimum Difference Between Largest and Smallest Value in Three Moves](1509.-minimum-difference-between-largest-and-smallest-value-in-three-moves.md)
 * [1539. Kth Missing Positive Number](1539.-kth-missing-positive-number.md)
 * [1570. Dot Product of Two Sparse Vectors](1570.-dot-product-of-two-sparse-vectors.md)
 * [1610. Maximum Number of Visible Points](1610.-maximum-number-of-visible-points.md)
 * [1650. Lowest Common Ancestor of a Binary Tree III](1650.-lowest-common-ancestor-of-a-binary-tree-iii.md)
 * [1762. Buildings With an Ocean View](1762.-buildings-with-an-ocean-view.md)
-* [1499. Max Value of Equation](1499.-max-value-of-equation.md)
 
