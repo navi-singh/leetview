@@ -44,6 +44,7 @@
 * [989. Add to Array-Form of Integer](989.-add-to-array-form-of-integer.md)
 * [1047. Remove All Adjacent Duplicates In String](untitled-3.md)
 * [1048. Longest String Chain](1048.-longest-string-chain.md)
+* [1146. Snapshot Array](1146.-snapshot-array.md)
 * [1249. Minimum Remove to Make Valid Parentheses](1249.-minimum-remove-to-make-valid-parentheses.md)
 * [1277. Count Square Submatrices with All Ones](1277.-count-square-submatrices-with-all-ones.md)
 * [1293. Shortest Path in a Grid with Obstacles Elimination](1293.-shortest-path-in-a-grid-with-obstacles-elimination.md)
