@@ -57,4 +57,6 @@
 * [1650. Lowest Common Ancestor of a Binary Tree III](1650.-lowest-common-ancestor-of-a-binary-tree-iii.md)
 * [1762. Buildings With an Ocean View](1762.-buildings-with-an-ocean-view.md)
 * [792. Number of Matching Subsequences](792.-number-of-matching-subsequences.md)
+* [1423. Maximum Points You Can Obtain from Cards](1423.-maximum-points-you-can-obtain-from-cards.md)
+* [875. Koko Eating Bananas](875.-koko-eating-bananas.md)
 
