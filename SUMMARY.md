@@ -60,4 +60,5 @@
 * [1423. Maximum Points You Can Obtain from Cards](1423.-maximum-points-you-can-obtain-from-cards.md)
 * [875. Koko Eating Bananas](875.-koko-eating-bananas.md)
 * [715. Range Module](715.-range-module.md)
+* [1834. Single-Threaded CPU](1834.-single-threaded-cpu.md)
 
