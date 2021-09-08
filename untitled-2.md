@@ -32,16 +32,13 @@ Output: false
 Explanation: The first three characters "app" match, and the second string is shorter (in size.) According to lexicographical rules "apple" > "app", because 'l' > '∅', where '∅' is defined as the blank character which is less than any other character (More info).
 ```
 
-
-
 **Overview**
 
 To check if the given `words` are sorted, for each word we need to check if every word on its right is lexicographically larger. Likewise, for each word we could check if every word on its left is lexicographically smaller. That said, we don't need to compare every word to all of the words to its right. Instead, we can just compare each pair of adjacent words. If all pairs of adjacent words are sorted, then we can safely conclude that `words` is sorted. Furthermore, if any pair of adjacent words is not sorted, then we know that `words` is not sorted.
 
 ![Compare adjacent words.](https://leetcode.com/problems/verifying-an-alien-dictionary/Figures/953/953.png)
 
-_Figure 1. Compare adjacent words._  
-
+_Figure 1. Compare adjacent words._
 
 **Approach 1: Compare adjacent words**
 

@@ -12,7 +12,7 @@ The steps of the **insertion sort** algorithm:
 
 The following is a graphical example of the insertion sort algorithm. The partially sorted list \(black\) initially contains only the first element in the list. One element \(red\) is removed from the input data and inserted in-place into the sorted list with each iteration.
 
- ![](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif) **Example 1:** ![](https://assets.leetcode.com/uploads/2021/03/04/sort1linked-list.jpg)
+![](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif) **Example 1:** ![](https://assets.leetcode.com/uploads/2021/03/04/sort1linked-list.jpg)
 
 ```text
 Input: head = [4,2,1,3]
