@@ -64,4 +64,6 @@
 * [1110. Delete Nodes And Return Forest](1110.-delete-nodes-and-return-forest.md)
 * [690. Employee Importance](690.-employee-importance.md)
 * [354. Russian Doll Envelopes](354.-russian-doll-envelopes.md)
+* [1525. Number of Good Ways to Split a String](1525.-number-of-good-ways-to-split-a-string.md)
+* [593. Valid Square](593.-valid-square.md)
 
