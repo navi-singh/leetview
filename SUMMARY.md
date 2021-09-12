@@ -66,4 +66,6 @@
 * [354. Russian Doll Envelopes](354.-russian-doll-envelopes.md)
 * [1525. Number of Good Ways to Split a String](1525.-number-of-good-ways-to-split-a-string.md)
 * [593. Valid Square](593.-valid-square.md)
+* [833. Find And Replace in String](833.-find-and-replace-in-string.md)
+* [1526. Minimum Number of Increments on Subarrays to Form a Target Array](1526.-minimum-number-of-increments-on-subarrays-to-form-a-target-array.md)
 
