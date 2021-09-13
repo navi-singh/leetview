@@ -69,4 +69,5 @@
 * [833. Find And Replace in String](833.-find-and-replace-in-string.md)
 * [1526. Minimum Number of Increments on Subarrays to Form a Target Array](1526.-minimum-number-of-increments-on-subarrays-to-form-a-target-array.md)
 * [418. Sentence Screen Fitting](418.-sentence-screen-fitting.md)
+* [1406. Stone Game III](1406.-stone-game-iii.md)
 
