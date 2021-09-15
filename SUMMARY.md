@@ -72,4 +72,5 @@
 * [1406. Stone Game III](1406.-stone-game-iii.md)
 * [1776. Car Fleet II](1776.-car-fleet-ii.md)
 * [299. Bulls and Cows](299.-bulls-and-cows.md)
+* [919. Complete Binary Tree Inserter](919.-complete-binary-tree-inserter.md)
 
