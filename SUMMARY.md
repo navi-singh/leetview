@@ -71,4 +71,5 @@
 * [418. Sentence Screen Fitting](418.-sentence-screen-fitting.md)
 * [1406. Stone Game III](1406.-stone-game-iii.md)
 * [1776. Car Fleet II](1776.-car-fleet-ii.md)
+* [299. Bulls and Cows](299.-bulls-and-cows.md)
 
