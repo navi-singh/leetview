@@ -76,4 +76,5 @@
 * [732. My Calendar III](732.-my-calendar-iii.md)
 * [837. New 21 Game](837.-new-21-game.md)
 * [900. RLE Iterator](900.-rle-iterator.md)
+* [1937. Maximum Number of Points with Cost](1937.-maximum-number-of-points-with-cost.md)
 
