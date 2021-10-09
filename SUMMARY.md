@@ -81,4 +81,6 @@
 * [900. RLE Iterator](900.-rle-iterator.md)
 * [1937. Maximum Number of Points with Cost](1937.-maximum-number-of-points-with-cost.md)
 * [323. Number of Connected Components in an Undirected GraphMedium](323.-number-of-connected-components-in-an-undirected-graphmedium.md)
+* [348. Design Tic-Tac-Toe](348.-design-tic-tac-toe.md)
+* [Top Amazon questions](top-amazon-questions.md)
 
