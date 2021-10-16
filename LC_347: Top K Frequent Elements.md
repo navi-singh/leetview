@@ -41,6 +41,9 @@ In Python, library heapq provides a method nlargest, which combines the last two
 diff
 
 Implementation
+{% tabs %}
+{% tab title="Java" %}
+```java
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
         // O(1) time
@@ -75,7 +78,7 @@ class Solution {
         return top;
     }
 }
-
+```
 Complexity Analysis
 
     Time complexity : O(Nlog⁡k)\mathcal{O}(N \log k)O(Nlogk) if k<Nk < Nk<N and O(N)\mathcal{O}(N)O(N) in the particular case of N=kN = kN=k. That ensures time complexity to be better than O(Nlog⁡N)\mathcal{O}(N \log N)O(NlogN).
@@ -134,6 +137,8 @@ Current
 1 / 14
 
 Implementation
+
+```java
 class Solution {
     int[] unique;
     Map<Integer, Integer> count;
@@ -218,7 +223,7 @@ class Solution {
         return Arrays.copyOfRange(unique, n - k, n);
     }
 }
-
+```
 Here is a total algorithm implementation.
 
 Complexity Analysis
