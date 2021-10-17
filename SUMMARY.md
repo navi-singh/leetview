@@ -32,7 +32,7 @@
 * [528. Random Pick with Weight](528.-random-pick-with-weight.md)
 * [543. Diameter of Binary Tree](543.-diameter-of-binary-tree.md)
 * [560. Subarray Sum Equals K](560.-subarray-sum-equals-k.md)
-* [636. Exclusive Time of Functions \(Medium\)](636.-exclusive-time-of-functions-medium.md)
+* [636. Exclusive Time of Functions (Medium)](636.-exclusive-time-of-functions-medium.md)
 * [670. Maximum Swap](670.-maximum-swap.md)
 * [680. Valid Palindrome II](680.-valid-palindrome-ii.md)
 * [695. Max Area of Island](695.-max-area-of-island.md)
@@ -85,4 +85,4 @@
 * [Top Amazon questions](top-amazon-questions.md)
 * [Top facebook questions](top-facebook-questions.md)
 * [Top Google questions](top-google-questions.md)
-
+* [0042. Trapping Rain Water](0042.-trapping-rain-water.md)
