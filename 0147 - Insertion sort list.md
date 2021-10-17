@@ -1,4 +1,4 @@
-# 147
+# 147 - Insertion sort list
 
 Insertion sort list
 
@@ -64,4 +64,3 @@ public class LC147_InsertionSortLinkedList {
   }
 }
 ```
-
