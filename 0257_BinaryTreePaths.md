@@ -1,3 +1,22 @@
+# 257. Binary Tree Paths
+Given a binary tree, return all root-to-leaf paths.
+
+For example, given the following binary tree:  
+```
+   1
+ /   \  
+2     3  
+ \  
+  5  
+```
+All root-to-leaf paths are:
+
+> ["1->2->5", "1->3"]
+
+***Time: O(n)  
+Space: O(h)***
+
+```java
 import java.util.List;
 
 public class LC257_BinaryTreePaths {
@@ -37,3 +56,4 @@ public class LC257_BinaryTreePaths {
     return sb.toString();
   }
 }
+```
