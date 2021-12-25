@@ -1,4 +1,4 @@
-Count Univalue Subtrees
+# Count Univalue Subtrees
 
 Given a binary tree, count the number of uni-value subtrees.
 
@@ -7,26 +7,27 @@ A Uni-value subtree means all nodes of the subtree have the same value.
 Example
 Example1
 
-Input:  root = {5,1,5,5,5,#,5}
-Output: 4
+Input:  root = {5,1,5,5,5,#,5}<br/>
+Output: 4<br/>
 Explanation:
+
               5
              / \
             1   5
            / \   \
           5   5   5
-Example2
+Example2<br/>
+Input:  root = {1,3,2,4,5,#,6}<br/>
+Output: 3 <br/>
+Explanation:<br/>
 
-Input:  root = {1,3,2,4,5,#,6}
-Output: 3
-Explanation:
               1
              / \
             3   2
            / \   \
           4   5   6
 
-Time: O(n)
+Time: O(n) <br/>
 Space: O(h)
 ```Java
 
