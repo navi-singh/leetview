@@ -1,3 +1,16 @@
+# 266. Palindrome Permutation
+
+Given a string, determine if a permutation of the string could form a palindrome.
+
+For example
+
+>"code" -> False,  
+ "aab" -> True,  
+ "carerac" -> True.
+
+***Time: O(n)  
+Space: O(n)***
+```java
 public class LC266_PalindromePermutation {
   // boolean canPermutePalindrome(String s) {
   // BitSet bitSet = new BitSet();
@@ -19,3 +32,4 @@ public class LC266_PalindromePermutation {
     return app.size() <= 1;
   }
 }
+```

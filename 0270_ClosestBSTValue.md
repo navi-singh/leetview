@@ -1,10 +1,13 @@
-/**
- * Given a non-empty binary search tree and a target value, find the value in the BST that is
- * closest to the target. Note:
- *
- * <p>Given target value is a floating point. You are guaranteed to have only one unique value in
- * the BST that is closest to the target.
- */
+# 270 Closest BST value
+ Given a non-empty binary search tree and a target value, find the value in the BST that is
+ closest to the target. Note:
+
+ <p>Given target value is a floating point. You are guaranteed to have only one unique value in
+ the BST that is closest to the target.
+ 
+***Time: O(h)  
+Space: O(h)***
+```java
 public class LC270_ClosestBSTValue {
   public int closestValue(TreeNode root, double target) {
     int diff, closest;
@@ -25,3 +28,4 @@ public class LC270_ClosestBSTValue {
     return closest;
   }
 }
+```
