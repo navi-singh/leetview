@@ -51,7 +51,10 @@ class Solution {
 
   private void reverse(int[] nums, int first, int second) {
     while (first < second) swap(nums, first++, second--);
-  }ivate void wp(int[] nums,int temp = nm[firs
+  }
+  private void swap(int[] nums,int first, int second){
+    int temp = nums[first];
+    nums[first] = nums[second];
      nums[second] = temp;
   }
 }
