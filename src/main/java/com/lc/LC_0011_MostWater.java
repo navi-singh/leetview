@@ -22,7 +22,7 @@ package com.lc;
  *
  * <p>Constraints: 2 <= height.length <= 3 * 104 0 <= height[i] <= 3 * 104
  */
-public class LC_0011_MostWater{
+public class LC_0011_MostWater {
   public int maxArea(int[] height) {
     int max = 0;
     int left = 0, right = height.length - 1;

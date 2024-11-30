@@ -16,7 +16,7 @@ import java.util.List;
  *
  * <p>Input: digits = "2" Output: ["a","b","c"]
  */
-public class LC_0017_LetterCombinations{
+public class LC_0017_LetterCombinations {
   public List<String> letterCombinations(String digits) {
     List<String> res = new ArrayList<>();
     if (digits == null || digits.isEmpty()) return res;

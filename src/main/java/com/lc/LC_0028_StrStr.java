@@ -24,7 +24,7 @@ package com.lc;
  *
  * <p>Input: haystack = "", needle = "" Output: 0
  */
-public class LC_0028_StrStr{
+public class LC_0028_StrStr {
   public int strStr(String haystack, String needle) {
     if (needle == haystack) return 0;
     int hayLength = haystack.length();

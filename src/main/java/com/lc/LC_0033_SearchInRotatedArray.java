@@ -1,6 +1,6 @@
 package com.lc;
 
-public class LC_0033_SearchInRotatedArray{
+public class LC_0033_SearchInRotatedArray {
   /**
    * There is an integer array nums sorted in ascending order (with distinct values).
    *

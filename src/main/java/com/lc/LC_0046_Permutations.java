@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
  *
  * <p>Input: nums = [1] Output: [[1]]
  */
-public class LC_0046_Permutations{
+public class LC_0046_Permutations {
   public List<List<Integer>> permute(int[] nums) {
     List<List<Integer>> res = new ArrayList<List<Integer>>();
     perm(nums, 0, nums.length, res);

@@ -1,6 +1,6 @@
 package com.lc;
 
-public class LC_0070_ClimbingStairs{
+public class LC_0070_ClimbingStairs {
   /**
    * Time complexity : O(n) Single loop upto nnn. Space complexity : O(n) steps array of size nnn is
    * used.

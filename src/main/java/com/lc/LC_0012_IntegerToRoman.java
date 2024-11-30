@@ -17,7 +17,7 @@ package com.lc;
  *
  * <p>Input: num = 58 Output: "LVIII" Explanation: L = 50, V = 5, III = 3.
  */
-public class LC_0012_IntegerToRoman{
+public class LC_0012_IntegerToRoman {
   public String intToRoman(int num) {
     StringBuilder res = new StringBuilder();
     int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};

@@ -1,4 +1,6 @@
-package com.lc; /**
+package com.lc;
+
+/**
  * SELECT a.NAME As Employee from Employee As a JOIN Employee AS b where a.ManagerId = b.Id AND
  * a.salary > b.salary;
  */

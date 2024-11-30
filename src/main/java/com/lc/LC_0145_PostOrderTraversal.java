@@ -1,7 +1,8 @@
 package com.lc;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
+
 public class LC_0145_PostOrderTraversal {
   public List<Integer> postorderTraversal(TreeNode root) {
     List<Integer> res = new ArrayList<Integer>();

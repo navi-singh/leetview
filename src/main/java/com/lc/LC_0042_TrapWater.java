@@ -14,7 +14,7 @@ package com.lc;
  *
  * <p>Input: height = [4,2,0,3,2,5] Output: 9
  */
-public class LC_0042_TrapWater{
+public class LC_0042_TrapWater {
   public int trap(int[] height) {
     int left = 0, right = height.length - 1;
     int leftMax = 0, rightMax = 0;

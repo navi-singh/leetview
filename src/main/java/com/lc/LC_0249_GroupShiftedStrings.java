@@ -14,8 +14,7 @@ import java.util.Map;
  *
  * <p>[ ["abc","bcd","xyz"], ["az","ba"], ["acef"], ["a","z"] ]
  */
-
-public class LC_0249_GroupShiftedStrings{
+public class LC_0249_GroupShiftedStrings {
   public List<List<String>> groupStrings(String[] strings) {
     Map<String, List<String>> keyToStrings = new HashMap<>();
 
@@ -37,7 +36,6 @@ public class LC_0249_GroupShiftedStrings{
     return sb.toString();
   }
 }
-
 
 class LC_0249_GroupShiftedStrings2 {
   public List<List<String>> groupStrings(String[] strings) {

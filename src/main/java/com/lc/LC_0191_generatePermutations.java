@@ -3,7 +3,6 @@ package com.lc;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class LC_0191_generatePermutations {
   public static void main(String[] args) {
     System.out.println("Hello World");

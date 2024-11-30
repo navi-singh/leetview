@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="59125f14-ce79-4bbf-9964-c314a91ccfc3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC102_LevelOrderTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC102_LevelOrderTraversal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC143_ReorderList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC143_ReorderList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC71_SimplifyPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC71_SimplifyPath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0001_two_sum.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0001_two_sum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0002_Add_Two_Numbers.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0002_Add_Two_Numbers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0003_lengthOfLongestSubstring.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0003_lengthOfLongestSubstring.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0004_MedianOfSortedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0004_MedianOfSortedArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0005_longestPalindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0005_longestPalindrome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0006_zigzag.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0006_zigzag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0007_reverse_integer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0007_reverse_integer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0008_atoi.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0008_atoi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0009_palindrome_number.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0009_palindrome_number.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0010_regular_expression_match$Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0010_regular_expression_match$Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0010_regular_expression_match.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0010_regular_expression_match.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0011_MostWater.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0011_MostWater.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0012_IntegerToRoman.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0012_IntegerToRoman.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0013_RomanToInteger$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0013_RomanToInteger$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0013_RomanToInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0013_RomanToInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0014_LongestCommonPrefix.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0014_LongestCommonPrefix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0015_three_sum.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0015_three_sum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0016_ThreeSumClosest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0016_ThreeSumClosest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0017_LetterCombinations.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0017_LetterCombinations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0018_FourSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0018_FourSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0019_RemoveNthNodeFromLast.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0019_RemoveNthNodeFromLast.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0020_ValidParentheses$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0020_ValidParentheses$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0020_ValidParentheses.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0020_ValidParentheses.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0021_MergeTwoLists.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0021_MergeTwoLists.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0022_GenerateParentheses.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0022_GenerateParentheses.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0023_MergeKSortedLists.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0023_MergeKSortedLists.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0024_SwapPairsInList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0024_SwapPairsInList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0025_ReverseNodesKGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0025_ReverseNodesKGroup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0026_RemoveDuplicateInSortedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0026_RemoveDuplicateInSortedArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0027_RemoveElementOfArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0027_RemoveElementOfArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0028_StrStr.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0028_StrStr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0029_DivideIntegers.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0029_DivideIntegers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0030_SubstringWithAllWord.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0030_SubstringWithAllWord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0031_NextPermutation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0031_NextPermutation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0032_LongestValidParentheses.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0032_LongestValidParentheses.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0033_SearchInRotatedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0033_SearchInRotatedArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0034_FindFirstLastInSortedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0034_FindFirstLastInSortedArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0035_SearchInsertPosition.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0035_SearchInsertPosition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0038_CountAndSay.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0038_CountAndSay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0039_CombinationSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0039_CombinationSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0040_CombinationSumII.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0040_CombinationSumII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0041_FirstMissingPositive.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0041_FirstMissingPositive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0042_TrapWater.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0042_TrapWater.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0043_MulitplyStrings.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0043_MulitplyStrings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0044_wildcardMatching.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0044_wildcardMatching.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0045_JumpGame2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0045_JumpGame2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0046_Permutations.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0046_Permutations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0047_PermutationsII.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0047_PermutationsII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0048_RoatateImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0048_RoatateImage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0049_GroupAnagrams.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0049_GroupAnagrams.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0050_Pow.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0050_Pow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0053_MaximumSubarray.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0053_MaximumSubarray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0054_SpiralMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0054_SpiralMatrix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0055_JumpGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0055_JumpGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0056_MergeIntervals$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0056_MergeIntervals$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0056_MergeIntervals.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0056_MergeIntervals.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0058_LengthLastWord.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0058_LengthLastWord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0059_SpiralMatrixII.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0059_SpiralMatrixII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0060_PermutationSequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0060_PermutationSequence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0061_RotateList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0061_RotateList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0062_UniquePaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0062_UniquePaths.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0063_UniquePathsWithObstacle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0063_UniquePathsWithObstacle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0064_MinimumPathSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0064_MinimumPathSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0065_ValidNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0065_ValidNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0066_PlusOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0066_PlusOne.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0067_AddBinary.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0067_AddBinary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0068_TextJustification.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0068_TextJustification.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0069_Sqrt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0069_Sqrt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0070_ClimbingStairs.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0070_ClimbingStairs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0072_EditDistance.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0072_EditDistance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0073_SetMatrixZeroes.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0073_SetMatrixZeroes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0074_Search2DMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0074_Search2DMatrix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0075_SortColors.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0075_SortColors.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0076_MinWindowSubString.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0076_MinWindowSubString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0077_Combinations.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0077_Combinations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0078_Subsets.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0078_Subsets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0079_WordSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0079_WordSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0080_RemoveDuplicates.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0080_RemoveDuplicates.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0081_SearchInRotatedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0081_SearchInRotatedArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0082_RemoveDuplicatesSortedList2$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0082_RemoveDuplicatesSortedList2$ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0082_RemoveDuplicatesSortedList2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0082_RemoveDuplicatesSortedList2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0083_RemoveDuplicatesSortedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0083_RemoveDuplicatesSortedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0084_LargestRectangleHistogram.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0084_LargestRectangleHistogram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0085_MaximalRectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0085_MaximalRectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0086_PartitionList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0086_PartitionList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0088_MergeSortedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0088_MergeSortedArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0089_GrayCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0089_GrayCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0090_Subsets2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0090_Subsets2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0091_DecodeWays.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0091_DecodeWays.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0092_ReverseLinkedList2$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0092_ReverseLinkedList2$ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0092_ReverseLinkedList2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0092_ReverseLinkedList2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0094_InorderTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0094_InorderTraversal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0095_UniqueBinaryTrees2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0095_UniqueBinaryTrees2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0096_UniqueBinarySearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0096_UniqueBinarySearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0097_IntrerleavingStrings.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0097_IntrerleavingStrings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0098_ValidateBST$TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0098_ValidateBST$TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0098_ValidateBST.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0098_ValidateBST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0100_SameTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0100_SameTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0101_SymmetricTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0101_SymmetricTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0103_ZigZagTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0103_ZigZagTraversal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0104_MaxDepthBinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0104_MaxDepthBinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0105_ConstructTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0105_ConstructTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0106_ConstructTreePostAndInorder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0106_ConstructTreePostAndInorder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0108_ConvertSortedArrayToBST.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0108_ConvertSortedArrayToBST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0109_ListToBST.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0109_ListToBST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0110_BalancedBST.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0110_BalancedBST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0112_PathSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0112_PathSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0113_PathSum2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0113_PathSum2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0114_FlatterTreeToLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0114_FlatterTreeToLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0115_DistinctSubsequences.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0115_DistinctSubsequences.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0116_PopulateNextPointer$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0116_PopulateNextPointer$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0116_PopulateNextPointer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0116_PopulateNextPointer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0117_PopulateNextPointer2$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0117_PopulateNextPointer2$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0117_PopulateNextPointer2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0117_PopulateNextPointer2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0118_PascalsTriangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0118_PascalsTriangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0119_PascalTriangle2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0119_PascalTriangle2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0120_Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0120_Triangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0121_BestTimStock.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0121_BestTimStock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0122_BestTimeStock2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0122_BestTimeStock2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0123_BestTimeStock3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0123_BestTimeStock3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0124_BTMaximumPathSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0124_BTMaximumPathSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0125_ValidPalindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0125_ValidPalindrome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0128_LongestConsecutiveSequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0128_LongestConsecutiveSequence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0129_RootToLeafSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0129_RootToLeafSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0131_PalindromePartitioning.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0131_PalindromePartitioning.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0132_PalindromePartioning.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0132_PalindromePartioning.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0133_CloneGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0133_CloneGraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0134_GasStation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0134_GasStation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0135_Candles.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0135_Candles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0136_SingleNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0136_SingleNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0137_SingleNumber2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0137_SingleNumber2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0138_CopyListWithRandomPointer$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0138_CopyListWithRandomPointer$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0138_CopyListWithRandomPointer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0138_CopyListWithRandomPointer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0139_WordBreak.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0139_WordBreak.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0140_WordBreak2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0140_WordBreak2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0141_LinkedListCycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0141_LinkedListCycle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0142_ListCycle2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0142_ListCycle2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0144_PreorderTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0144_PreorderTraversal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0145_PostOrderTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0145_PostOrderTraversal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0146_LruCache$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0146_LruCache$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0146_LruCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0146_LruCache.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0147_InsertionSortLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0147_InsertionSortLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0148_SortList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0148_SortList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0149_MaxPointsOnLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0149_MaxPointsOnLine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0150_EvaluatePolish.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0150_EvaluatePolish.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0151_ReverseWords.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0151_ReverseWords.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0152_MaximumProductSubarray.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0152_MaximumProductSubarray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0153_MinimumInRoatatedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0153_MinimumInRoatatedArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0154_MinimumInRotatedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0154_MinimumInRotatedArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0155_MinStack$MinStack$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0155_MinStack$MinStack$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0155_MinStack$MinStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0155_MinStack$MinStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0155_MinStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0155_MinStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0160_IntersectionLists.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0160_IntersectionLists.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0162_FindPeakElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0162_FindPeakElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0164_MaximumGap$Bucket.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0164_MaximumGap$Bucket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0164_MaximumGap.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0164_MaximumGap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0166_FractionToRecurringDecimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0166_FractionToRecurringDecimal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0167_TwoSum2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0167_TwoSum2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0168_ExcelColumnTitle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0168_ExcelColumnTitle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0169_MajorityElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0169_MajorityElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0171_ExcelSheetNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0171_ExcelSheetNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0172_FactorialTrailingZeroes.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0172_FactorialTrailingZeroes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0173_BSTIterator$BSTIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0173_BSTIterator$BSTIterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0173_BSTIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0173_BSTIterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0174_DungeonGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0174_DungeonGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0175_CombineTwoTables.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0175_CombineTwoTables.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0181_SQLEmployeeEarning.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0181_SQLEmployeeEarning.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0187_RepeatedDNASequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0187_RepeatedDNASequence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0188_BestTimeStock4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0188_BestTimeStock4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0189_RotateArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0189_RotateArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0190_Reverse_bits.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0190_Reverse_bits.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0191_NumberOf1Bits.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0191_NumberOf1Bits.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0191_generatePermutations.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0191_generatePermutations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0198_HouseRobber.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0198_HouseRobber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0199_BinaryTreeRightSideView.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0199_BinaryTreeRightSideView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0200_NumberOfIslands.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0200_NumberOfIslands.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0201_BitwiseAndRange.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0201_BitwiseAndRange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0202_HappyNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0202_HappyNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0203_RemoveLinkedListElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0203_RemoveLinkedListElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0204_CountPrimes.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0204_CountPrimes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0205_IsomorphicStrings.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0205_IsomorphicStrings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0206_ReverseLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0206_ReverseLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0207_CourseSchedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0207_CourseSchedule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0208_ImplementTrie$TrieNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0208_ImplementTrie$TrieNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0208_ImplementTrie.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0208_ImplementTrie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0209_MinumumSizeSubarraySum.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0209_MinumumSizeSubarraySum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0210_CourseSchedule2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0210_CourseSchedule2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0214_ShortestPalindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0214_ShortestPalindrome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0215_KthLargestElementInArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0215_KthLargestElementInArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0216_Combination3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0216_Combination3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0217_ContainsDuplicate.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0217_ContainsDuplicate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0218_SkylineProject$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0218_SkylineProject$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0218_SkylineProject$Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0218_SkylineProject$Edge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0218_SkylineProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0218_SkylineProject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0219_ContainsDuplicate2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0219_ContainsDuplicate2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0220_ContainsDuplicate3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0220_ContainsDuplicate3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0221_MaximalSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0221_MaximalSquare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0222_CountCompleteTreeNodes.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0222_CountCompleteTreeNodes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0223_RectangleArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0223_RectangleArea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0225_StackQueues.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0225_StackQueues.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0226_InvertBinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0226_InvertBinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0228_SummaryRanges.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0228_SummaryRanges.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0229_MajorityElement2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0229_MajorityElement2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0230_KthSmallestBST.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0230_KthSmallestBST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0231_PowerOfTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0231_PowerOfTwo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0234_PalindromeLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0234_PalindromeLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0235_LCABST.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0235_LCABST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0236_LCABinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0236_LCABinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0237_DeleteNodeInLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0237_DeleteNodeInLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0238_ProductArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0238_ProductArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0239_SlidingWindowMaximum.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0239_SlidingWindowMaximum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0240_Search2DMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0240_Search2DMatrix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0242_ValidAnagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0242_ValidAnagram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0243_ShortestWordDistance.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0243_ShortestWordDistance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0244_ShortedWordDistance2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0244_ShortedWordDistance2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0245_ShortestDistance3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0245_ShortestDistance3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0249_GroupShiftedStrings.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0249_GroupShiftedStrings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0249_GroupShiftedStrings2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_0249_GroupShiftedStrings2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_TreeTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_TreeTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_TreeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/LC_TreeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/Pair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/lc/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/lc/TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0001_two_sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0001_two_sum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0002_Add_Two_Numbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0002_Add_Two_Numbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0003_lengthOfLongestSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0003_lengthOfLongestSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0004_MedianOfSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0004_MedianOfSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0005_longestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0005_longestPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0006_zigzag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0006_zigzag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0007_reverse_integer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0007_reverse_integer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0008_atoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0008_atoi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0009_palindrome_number.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0009_palindrome_number.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0010_regular_expression_match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0010_regular_expression_match.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0011_MostWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0011_MostWater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0012_IntegerToRoman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0012_IntegerToRoman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0013_RomanToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0013_RomanToInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0014_LongestCommonPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0014_LongestCommonPrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0015_three_sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0015_three_sum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0016_ThreeSumClosest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0016_ThreeSumClosest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0017_LetterCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0017_LetterCombinations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0018_FourSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0018_FourSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0019_RemoveNthNodeFromLast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0019_RemoveNthNodeFromLast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0020_ValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0020_ValidParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0021_MergeTwoLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0021_MergeTwoLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0022_GenerateParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0022_GenerateParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0023_MergeKSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0023_MergeKSortedLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0024_SwapPairsInList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0024_SwapPairsInList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0025_ReverseNodesKGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0025_ReverseNodesKGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0026_RemoveDuplicateInSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0026_RemoveDuplicateInSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0027_RemoveElementOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0027_RemoveElementOfArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0028_StrStr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0028_StrStr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0029_DivideIntegers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0029_DivideIntegers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0030_SubstringWithAllWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0030_SubstringWithAllWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0031_NextPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0031_NextPermutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0032_LongestValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0032_LongestValidParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0033_SearchInRotatedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0033_SearchInRotatedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0034_FindFirstLastInSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0034_FindFirstLastInSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0035_SearchInsertPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0035_SearchInsertPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0038_CountAndSay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0038_CountAndSay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0039_CombinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0039_CombinationSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0040_CombinationSumII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0040_CombinationSumII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0041_FirstMissingPositive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0041_FirstMissingPositive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0042_TrapWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0042_TrapWater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0043_MulitplyStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0043_MulitplyStrings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0044_wildcardMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0044_wildcardMatching.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0045_JumpGame2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0045_JumpGame2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0046_Permutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0046_Permutations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0047_PermutationsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0047_PermutationsII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0048_RoatateImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0048_RoatateImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0049_GroupAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0049_GroupAnagrams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0050_Pow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0050_Pow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0053_MaximumSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0053_MaximumSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0054_SpiralMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0054_SpiralMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0055_JumpGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0055_JumpGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0056_MergeIntervals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0056_MergeIntervals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0058_LengthLastWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0058_LengthLastWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0060_PermutationSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0060_PermutationSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0061_RotateList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0061_RotateList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0062_UniquePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0062_UniquePaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0063_UniquePathsWithObstacle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0063_UniquePathsWithObstacle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0064_MinimumPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0064_MinimumPathSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0065_ValidNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0065_ValidNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0066_PlusOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0066_PlusOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0067_AddBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0067_AddBinary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0068_TextJustification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0068_TextJustification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0069_Sqrt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0069_Sqrt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0070_ClimbingStairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0070_ClimbingStairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0072_EditDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0072_EditDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0073_SetMatrixZeroes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0073_SetMatrixZeroes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0074_Search2DMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0074_Search2DMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0075_SortColors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0075_SortColors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0076_MinWindowSubString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0076_MinWindowSubString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0077_Combinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0077_Combinations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0079_WordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0079_WordSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0080_RemoveDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0080_RemoveDuplicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0081_SearchInRotatedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0081_SearchInRotatedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0082_RemoveDuplicatesSortedList2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0082_RemoveDuplicatesSortedList2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0083_RemoveDuplicatesSortedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0083_RemoveDuplicatesSortedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0084_LargestRectangleHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0084_LargestRectangleHistogram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0085_MaximalRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0085_MaximalRectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0086_PartitionList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0086_PartitionList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0088_MergeSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0088_MergeSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0089_GrayCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0089_GrayCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0092_ReverseLinkedList2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0092_ReverseLinkedList2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0094_InorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0094_InorderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0095_UniqueBinaryTrees2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0095_UniqueBinaryTrees2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0097_IntrerleavingStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0097_IntrerleavingStrings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0098_ValidateBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0098_ValidateBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0100_SameTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0100_SameTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0101_SymmetricTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0101_SymmetricTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0144_PreorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0144_PreorderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0145_PostOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0145_PostOrderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0151_ReverseWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0151_ReverseWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0173_BSTIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0173_BSTIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0181_SQLEmployeeEarning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0181_SQLEmployeeEarning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0191_NumberOf1Bits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0191_NumberOf1Bits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0191_generatePermutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0191_generatePermutations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0244_ShortedWordDistance2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0244_ShortedWordDistance2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_0249_GroupShiftedStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_0249_GroupShiftedStrings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/LC_TreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/LC_TreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lc/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lc/TreeNode.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="leetview" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="leetview" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="leetview" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2paJG2PnYfFKO6X7TrdYRnUem2M" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.leetview [:Main.main()].executor": "Run",
+    "Gradle.leetview [build].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/nmehrok/personal/projects/leetview",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "show.inlinked.gradle.project.popup": "false",
+    "show.unlinked.gradle.project.popup": "false"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="leetview" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="leetview" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <configuration name="leetview [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.leetview [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59125f14-ce79-4bbf-9964-c314a91ccfc3" name="Changes" comment="" />
+      <created>1732998155253</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732998155253</updated>
+      <workItem from="1732998156446" duration="4491000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>

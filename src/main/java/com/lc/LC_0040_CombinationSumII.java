@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-
 /**
  * Given a collection of candidate numbers (candidates) and a target number (target), find all
  * unique combinations in candidates where the candidate numbers sum to target.
@@ -21,7 +20,7 @@ import java.util.List;
  *
  * <p>Input: candidates = [2,5,2,1,2], target = 5 Output: [ [1,2,2], [5] ]
  */
-public class LC_0040_CombinationSumII{
+public class LC_0040_CombinationSumII {
   public List<List<Integer>> combinationSum2(int[] candidates, int target) {
     List<List<Integer>> result = new ArrayList<>();
     List<Integer> temp = new ArrayList<>();

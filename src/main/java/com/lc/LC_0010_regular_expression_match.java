@@ -31,7 +31,7 @@ package com.lc;
  *
  * <p>Input: s = "mississippi", p = "mis*is*p*." Output: false
  */
-public class LC_0010_regular_expression_match{
+public class LC_0010_regular_expression_match {
   /*
    * public boolean isMatch(String s, String p) { if (p.length() == 0) return
    * s.length() == 0;

@@ -11,10 +11,10 @@ package com.lc;
  *
  * <p>Input: head = [1], k = 1 Output: [1]
  *
- * <p>Definition for singly-linked list. public class LC_0025_ReverseNodesKGroup { int val; ListNode next;
- * ListNode(int x) { val = x; } }
+ * <p>Definition for singly-linked list. public class LC_0025_ReverseNodesKGroup { int val; ListNode
+ * next; ListNode(int x) { val = x; } }
  */
-public class LC_0025_ReverseNodesKGroup{
+public class LC_0025_ReverseNodesKGroup {
 
   public ListNode reverseKGroup(ListNode head, int k) {
     if (head == null) return head;

@@ -1,8 +1,7 @@
 package com.lc;
 
-import java.util.List;
 import java.util.ArrayList;
-
+import java.util.List;
 
 public class LC_0144_PreorderTraversal {
   public List<Integer> preorderTraversal(TreeNode root) {

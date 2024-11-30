@@ -3,7 +3,6 @@ package com.lc;
 import java.util.HashMap;
 import java.util.Map;
 
-
 /*
 3. Longest Substring Without Repeating Characters
 Given a string, find the length of the longest substring without repeating characters.
@@ -27,18 +26,18 @@ Explanation: The answer is "wke", with the length of 3.
 Time complexity : O(n)O(n). Index jj will iterate nn times.
 Space complexity (HashMap) : O(min(m, n))O(min(m,n)). Same as the previous approach.
 */
-public class LC_0003_lengthOfLongestSubstring{
-    public int lengthOfLongestSubstring(String s) {
-        int len = s.length();
-        int res = 0;
-        Map<Character, Integer> map = new HashMap<>();
-        for(int start = 0, j = 0; j < len; j++) {
-            if(map.containsKey(s.charAt(j))) {
-                start = Math.max(map.get(s.charAt(j)), start);
-            }
-            res = Math.max(res, j-start + 1);
-            map.put(s.charAt(j), j + 1);
-        }
-        return res;
+public class LC_0003_lengthOfLongestSubstring {
+  public int lengthOfLongestSubstring(String s) {
+    int len = s.length();
+    int res = 0;
+    Map<Character, Integer> map = new HashMap<>();
+    for (int start = 0, j = 0; j < len; j++) {
+      if (map.containsKey(s.charAt(j))) {
+        start = Math.max(map.get(s.charAt(j)), start);
+      }
+      res = Math.max(res, j - start + 1);
+      map.put(s.charAt(j), j + 1);
     }
+    return res;
+  }
 }

@@ -27,25 +27,23 @@ Output: 0
 
 Constraints:   -231 <= x <= 231 - 1
 */
-public class LC_0007_reverse_integer{
-    public static int reverse(int x) {
-        int res = 0, rem = 0;
-        boolean isNegativeNumber = false;
-        if (x < 0) {
-            isNegativeNumber = true;
-            x *= -1;
-        }
-        while (x != 0) {
-            rem = x % 10;
-            x /= 10;
-            if (res > Integer.MAX_VALUE / 10 || res < Integer.MIN_VALUE / 10)
-                return 0;
-            res = res * 10 + rem;
-
-        }
-        if (isNegativeNumber) {
-            res = res * -1;
-        }
-        return res;
+public class LC_0007_reverse_integer {
+  public static int reverse(int x) {
+    int res = 0, rem = 0;
+    boolean isNegativeNumber = false;
+    if (x < 0) {
+      isNegativeNumber = true;
+      x *= -1;
     }
+    while (x != 0) {
+      rem = x % 10;
+      x /= 10;
+      if (res > Integer.MAX_VALUE / 10 || res < Integer.MIN_VALUE / 10) return 0;
+      res = res * 10 + rem;
+    }
+    if (isNegativeNumber) {
+      res = res * -1;
+    }
+    return res;
+  }
 }

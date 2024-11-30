@@ -24,7 +24,7 @@ package com.lc;
  *
  * <p>Input: nums = [1], target = 0 Output: 0
  */
-public class LC_0035_SearchInsertPosition{
+public class LC_0035_SearchInsertPosition {
   public int searchInsert(int[] nums, int target) {
     int left = 0, right = nums.length - 1;
 

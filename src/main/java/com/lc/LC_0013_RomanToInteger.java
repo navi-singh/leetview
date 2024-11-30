@@ -24,7 +24,7 @@ import java.util.Map;
  *
  * <p>Input: s = "MCMXCIV" Output: 1994 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
  */
-public class LC_0013_RomanToInteger{
+public class LC_0013_RomanToInteger {
   public static void main(String[] args) {
     LC_0013_RomanToInteger s = new LC_0013_RomanToInteger();
     System.out.println(s.romanToInt("IXV"));

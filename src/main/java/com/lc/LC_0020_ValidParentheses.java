@@ -4,8 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-
-public class LC_0020_ValidParentheses{
+public class LC_0020_ValidParentheses {
   public boolean isValidUsingMap(String s) {
     Stack<Character> st = new Stack<>();
     Map<Character, Character> mapping =

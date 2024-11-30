@@ -1,39 +1,33 @@
-package com.lc; /**
+package com.lc;
+
+/**
  * Definition for singly-linked list. public class LC_0023_MergeKSortedLists { int val; ListNode
  * next; ListNode(int x) { val = x; } }
  */
-
 import java.util.PriorityQueue;
 import java.util.Queue;
 
+/** Time complexity: O(nlogk) Space complexity: o(k) */
+public class LC_0023_MergeKSortedLists {
+  public ListNode mergeKLists(ListNode[] lists) {
+    ListNode dummy = new ListNode(0);
+    ListNode curr = dummy;
+    Queue<ListNode> pq = new PriorityQueue<>((a, b) -> a.val - b.val); // min-heap
 
-/**
- * Time complexity: O(nlogk)
- * Space complexity: o(k)
- */
-public class LC_0023_MergeKSortedLists{
-    public ListNode mergeKLists(ListNode[] lists) {
-        ListNode dummy = new ListNode(0);
-        ListNode curr = dummy;
-        Queue<ListNode> pq = new PriorityQueue<>((a, b) -> a.val - b.val); // min-heap
+    for (final ListNode list : lists) if (list != null) pq.offer(list);
 
-        for (final ListNode list : lists)
-            if (list != null)
-                pq.offer(list);
-
-        while (!pq.isEmpty()) {
-            ListNode minNode = pq.poll();
-            if (minNode.next != null)
-                pq.offer(minNode.next);
-            curr.next = minNode;
-            curr = curr.next;
-        }
-
-        return dummy.next;
+    while (!pq.isEmpty()) {
+      ListNode minNode = pq.poll();
+      if (minNode.next != null) pq.offer(minNode.next);
+      curr.next = minNode;
+      curr = curr.next;
     }
+
+    return dummy.next;
+  }
 }
 
-//public class LC_0023_MergeKSortedLists{
+// public class LC_0023_MergeKSortedLists{
 //    public ListNode mergeKLists(ListNode[] lists) {
 //        int length = lists.length;
 //        for (int processed = 1; processed < length; processed *= 2) {
@@ -60,4 +54,4 @@ public class LC_0023_MergeKSortedLists{
 //        curr.next = l1 != null ? l1 : l2;
 //        return dummy.next;
 //    }
-//}
+// }

@@ -44,34 +44,33 @@ Constraints:
     0 <= s.length <= 200
     s consists of English letters (lower-case and upper-case), digits, ' ', '+', '-' and '.'.
 */
-public class LC_0008_atoi{
-    public int myAtoi(String str) {
-        if (str == null || str.isEmpty())
-            return 0;
-        boolean isNegative = false;
-        int index = 0, res = 0;
-        while(index < str.length() && str.charAt(index) == ' ') {
-            index++;
-        }
-        if(str.length() == index){
-            return 0;
-        }
-        if (str.charAt(index) == '-') {
-            index++;
-            isNegative = true;
-        } else if (str.charAt(index) == '+')
-            index++;
-        System.out.println(index);
-        while (index < str.length() && str.charAt(index) >= '0' && str.charAt(index) <= '9') {
-            if (res > Integer.MAX_VALUE / 10 || (res == Integer.MAX_VALUE / 10 && str.charAt(index) - '0' > 7)) {
-                return isNegative ? Integer.MIN_VALUE : Integer.MAX_VALUE;
-            }
-            res = res * 10 + str.charAt(index) - '0';
-            index++;
-        }
-        if (index < str.length() && str.charAt(index) <= '0' && str.charAt(index) >= '9') {
-            return 0;
-        }
-        return isNegative ? -res : res;
+public class LC_0008_atoi {
+  public int myAtoi(String str) {
+    if (str == null || str.isEmpty()) return 0;
+    boolean isNegative = false;
+    int index = 0, res = 0;
+    while (index < str.length() && str.charAt(index) == ' ') {
+      index++;
     }
+    if (str.length() == index) {
+      return 0;
+    }
+    if (str.charAt(index) == '-') {
+      index++;
+      isNegative = true;
+    } else if (str.charAt(index) == '+') index++;
+    System.out.println(index);
+    while (index < str.length() && str.charAt(index) >= '0' && str.charAt(index) <= '9') {
+      if (res > Integer.MAX_VALUE / 10
+          || (res == Integer.MAX_VALUE / 10 && str.charAt(index) - '0' > 7)) {
+        return isNegative ? Integer.MIN_VALUE : Integer.MAX_VALUE;
+      }
+      res = res * 10 + str.charAt(index) - '0';
+      index++;
+    }
+    if (index < str.length() && str.charAt(index) <= '0' && str.charAt(index) >= '9') {
+      return 0;
+    }
+    return isNegative ? -res : res;
+  }
 }

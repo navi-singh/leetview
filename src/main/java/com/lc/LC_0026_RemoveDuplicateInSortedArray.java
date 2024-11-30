@@ -7,7 +7,7 @@ package com.lc;
  * being modified to 0, 1, 2, 3, and 4 respectively. It doesn't matter what values are set beyond
  * the returned length.
  */
-public class LC_0026_RemoveDuplicateInSortedArray{
+public class LC_0026_RemoveDuplicateInSortedArray {
   public int removeDuplicates(int[] nums) {
     if (nums.length < 2) return nums.length;
     int newIndex = 0;
