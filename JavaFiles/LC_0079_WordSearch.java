@@ -1,5 +1,5 @@
 
-public class LC79_WordSearch {
+public class LC_0079_WordSearch {
     public boolean exist(char[][] board, String word) {
         if (board.length < 1 || board[0].length < 1) {
             return false;

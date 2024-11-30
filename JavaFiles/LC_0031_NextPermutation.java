@@ -32,7 +32,7 @@
  * 3,1,2,4,-> 3,1,4,2,-> 3,2,1,4,-> 3,2,4,1,-> 3,4,1,2,-> 3,4,2,1,-> 4,1,2,3,->
  * 4,1,3,2,-> 4,2,1,3,-> 4,2,3,1,-> 4,3,1,2,-> 4,3,2,1,->
  */
-class Solution {
+public class LC_0031_NextPermutation{
   public void nextPermutation(int[] nums) {
     if (nums.length <= 1)
       return;

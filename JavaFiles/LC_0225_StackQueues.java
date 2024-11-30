@@ -1,11 +1,11 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class LC225_StackQueues {
+public class LC_0225_StackQueues {
   Queue<Integer> st;
 
   /** Initialize your data structure here. */
-  public LC225_StackQueues() {
+  public LC_0225_StackQueues() {
     st = new LinkedList<Integer>();
   }
 

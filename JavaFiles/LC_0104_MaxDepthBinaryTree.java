@@ -1,4 +1,4 @@
-public class LC104_MaxDepthBinaryTree {
+public class LC_0104_MaxDepthBinaryTree {
   public int maxDepth(TreeNode root) {
     if (root == null) {
       return 0;

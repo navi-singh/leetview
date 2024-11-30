@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class LC149_MaxPointsOnLine {
+public class LC_0149_MaxPointsOnLine {
   public int maxPoints(int[][] points) {
     int max = 0;
     if (points == null || points.length == 0) return max;

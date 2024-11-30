@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class LC174_DungeonGame {
+public class LC_0174_DungeonGame {
   public int calculateMinimumHP(int[][] dungeon) {
     if (dungeon == null || dungeon[0].length == 0) {
       return 0;

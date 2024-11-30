@@ -1,6 +1,6 @@
 import java.util.TreeSet;
 
-public class LC220_ContainsDuplicate3 {
+public class LC_0220_ContainsDuplicate3 {
   public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
     if (nums == null || nums.length < 1 || k < 0 || t < 0) {
       return false;

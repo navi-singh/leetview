@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-class Solution {
+public class LC_0049_GroupAnagrams{
     public List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> res = new ArrayList();
         Map<String, List<String>> idenitfierToList = new HashMap<String, List<String>>();

@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class LC90_Subsets2 {
+public class LC_0090_Subsets2 {
   public List<List<Integer>> subsetsWithDup(int[] nums) {
     Set<List<Integer>> res = new HashSet<List<Integer>>();
     List<Integer> temp = new ArrayList<Integer>();

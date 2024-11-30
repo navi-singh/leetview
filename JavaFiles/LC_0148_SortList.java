@@ -1,6 +1,5 @@
-import LC143_ReorderList.ListNode;
 
-public class LC148_SortList {
+public class LC_0148_SortList {
   public ListNode sortList(ListNode head) {
     if (head == null || head.next == null) {
       return head;

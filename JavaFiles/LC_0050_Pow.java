@@ -1,4 +1,4 @@
-class Solution {
+public class LC_0050_Pow{
     public double myPow(double x, int n) {
         if (n == 0)
             return 1;

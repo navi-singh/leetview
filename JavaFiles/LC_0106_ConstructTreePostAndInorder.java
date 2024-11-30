@@ -1,4 +1,4 @@
-public class LC106_ConstructTreePostAndInorder {
+public class LC_0106_ConstructTreePostAndInorder {
   public TreeNode buildTree(int[] inorder, int[] postorder) {
     int inStart = 0;
     int inEnd = inorder.length - 1;

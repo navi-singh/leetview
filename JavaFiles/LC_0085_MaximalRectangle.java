@@ -19,7 +19,7 @@ Example 3:
 Input: matrix = [["1"]]
 Output: 1
 */
-public class LC85_MaximalRectangle {
+public class LC_0085_MaximalRectangle {
     public int maximalRectangle(char[][] matrix) {
         if (matrix.length < 1 || matrix[0].length < 1) {
             return 0;

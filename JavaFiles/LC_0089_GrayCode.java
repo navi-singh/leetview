@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class LC89_GrayCode {
+public class LC_0089_GrayCode {
     public List<Integer> grayCode(int n) {
         List<Integer> lis = new ArrayList<>();
         lis.add(0);

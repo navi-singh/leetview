@@ -1,4 +1,4 @@
-public class LC137_SingleNumber2 {
+public class LC_0137_SingleNumber2 {
   public int singleNumber(int[] nums) {
     int one = 0, two = 0;
     for (int i = 0; i < nums.length; i++) {

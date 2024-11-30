@@ -1,5 +1,5 @@
 
-public class LC66_PlusOne {
+public class LC_0066_PlusOne {
     public int[] plusOne(int[] digits) {
         int right = digits.length - 1;
         int carry = 1;

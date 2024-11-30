@@ -24,7 +24,7 @@ Example 3:
 Input: n = 3, k = 1
 Output: "123"
 */
-public class LC60_PermutationSequence {
+public class LC_0060_PermutationSequence {
     // Need to find k/n! where n! will be total permutations
     public String getPermutation(int n, int k) {
         ArrayList<Integer> lis = new ArrayList<Integer>();
@@ -43,7 +43,7 @@ public class LC60_PermutationSequence {
         String result = "";
         for (int i = 0; i < n; i++) {
             mod = mod / (n - i);
-            int currIndex = k / mod;
+            int currIndex =(int) Math.round( k / mod);
             k %= mod;
             result += lis.get(currIndex);
             System.out.println(currIndex + ":" + k + "<>" + mod + "::" + result);

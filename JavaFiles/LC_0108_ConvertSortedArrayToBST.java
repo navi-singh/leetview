@@ -1,4 +1,4 @@
-public class LC108_ConvertSortedArrayToBST {
+public class LC_0108_ConvertSortedArrayToBST {
   public TreeNode sortedArrayToBST(int[] nums) {
     if (nums.length == 0) {
       return null;

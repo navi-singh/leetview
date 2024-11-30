@@ -1,5 +1,5 @@
 
-public class LC74_Search2DMatrix {
+public class LC_0074_Search2DMatrix {
     public boolean searchMatrix(int[][] matrix, int target) {
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
             return false;

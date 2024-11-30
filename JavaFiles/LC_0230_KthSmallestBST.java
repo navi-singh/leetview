@@ -1,6 +1,6 @@
 import java.util.LinkedList;
 
-public class LC230_KthSmallestBST {
+public class LC_0230_KthSmallestBST {
   public int kthSmallest(TreeNode root, int k) {
     if (root == null) {
       return -1;

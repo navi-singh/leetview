@@ -17,7 +17,7 @@
  *
  * <p>Input: s = "ac" Output: "a"
  */
-class Solution {
+public class LC_0005_longestPalindrome{
   public String longestPalindrome(String s) {
     if (s == null || s.length() < 1) return "";
     int start = 0, end = 0;

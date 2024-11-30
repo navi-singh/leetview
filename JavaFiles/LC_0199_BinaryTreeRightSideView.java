@@ -1,6 +1,7 @@
+import java.util.ArrayList;
 import java.util.List;
 
-public class LC199_BinaryTreeRightSideView {
+public class LC_0199_BinaryTreeRightSideView {
   public List<Integer> rightSideView(TreeNode root) {
     List<Integer> res = new ArrayList<Integer>();
     // if (root == null) {

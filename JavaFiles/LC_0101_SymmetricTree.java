@@ -1,4 +1,4 @@
-public class LC101_SymmetricTree {
+public class LC_0101_SymmetricTree {
     public boolean isSymmetric(TreeNode root) {
         if (root == null) {
             return true;

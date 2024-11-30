@@ -1,4 +1,4 @@
-class Solution {
+public class LC_0004_MedianOfSortedArray{
   public double findMedianSortedArrays(int[] nums1, int[] nums2) {
     int firstLen = nums1.length;
     int secondLen = nums2.length;

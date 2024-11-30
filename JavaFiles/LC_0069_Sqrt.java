@@ -1,5 +1,5 @@
 
-public class LC69_Sqrt {
+public class LC_0069_Sqrt {
     public int mySqrt(int x) {
         if (x < 1) {
             return 0;

@@ -1,3 +1,9 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+
 /**
  * 22. Generate Parentheses
 Medium
@@ -14,14 +20,14 @@ Output: ["()"]
 
 Constraints:
     1 <= n <= 8
- * 
+ *
  */
 
- class Solution {
+ public class LC_0022_GenerateParentheses{
     public List<String> generateParenthesis(int n) {
-        Set<String> res = new HashSet<String>();
+        Set<String> res = new HashSet<>();
         helper(n, n, "", res);
-        return new ArrayList<String>(res);
+        return new ArrayList<>(res);
     }
 
     private void helper(int left, int right, String str, Set<String> res) {

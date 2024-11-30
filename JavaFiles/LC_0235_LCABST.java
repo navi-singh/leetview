@@ -1,4 +1,4 @@
-public class LC235_LCABST {
+public class LC_0235_LCABST {
   public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
     while (root != null) {
       if (root.val > p.val && root.val > q.val) {

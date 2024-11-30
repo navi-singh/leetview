@@ -1,4 +1,4 @@
-public class LC132_PalindromePartioning {
+public class LC_0132_PalindromePartioning {
   public int minCut(String s) {
     int len = s.length();
     if (len < 2) {

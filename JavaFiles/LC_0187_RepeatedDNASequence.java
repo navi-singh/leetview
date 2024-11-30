@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class LC187_RepeatedDNASequence {
+public class LC_0187_RepeatedDNASequence {
   public List<String> findRepeatedDnaSequences(String s) {
     List<String> result = new ArrayList<>();
     if (s == null || s.isEmpty()) {

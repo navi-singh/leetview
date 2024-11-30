@@ -3,7 +3,7 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-public class LC103_ZigZagTraversal {
+public class LC_0103_ZigZagTraversal {
   public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
     List<List<Integer>> res = new ArrayList<>();
     if (root == null) {

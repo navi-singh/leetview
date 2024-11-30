@@ -1,6 +1,5 @@
-import LC143_ReorderList.ListNode;
 
-public class LC160_IntersectionLists {
+public class LC_0160_IntersectionLists {
   public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
     int len1 = getLen(headA), len2 = getLen(headB);
     ListNode p1 = headA, p2 = headB;

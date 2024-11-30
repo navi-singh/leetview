@@ -1,4 +1,4 @@
-public class LC169_MajorityElement {
+public class LC_0169_MajorityElement {
   public int majorityElement(int[] nums) {
     int count = 0, result = 0;
     for (int i = 0; i < nums.length; i++) {

@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
 
-public class LC218_SkylineProject {
+public class LC_0218_SkylineProject {
   class Edge {
     int x;
     int height;

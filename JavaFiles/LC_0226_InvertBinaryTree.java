@@ -1,4 +1,4 @@
-public class LC226_InvertBinaryTree {
+public class LC_0226_InvertBinaryTree {
   public TreeNode invertTree(TreeNode root) {
     if (root == null) {
       return root;

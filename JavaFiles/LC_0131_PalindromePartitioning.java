@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class LC131_PalindromePartitioning {
+public class LC_0131_PalindromePartitioning {
   /**
    * public List<List<String>> partition(String s) { List<List<String>> res = new
    * ArrayList<List<String>>(); if (s.isEmpty() || s.length() < 1) { return res; } List<String> temp

@@ -1,7 +1,7 @@
-import LC143_ReorderList.ListNode;
 
-public class LC147_InsertionSortLinkedList {
-  public ListNode insertionSortList(ListNode head) {
+
+public class LC_0147_InsertionSortLinkedList {
+  public ListNode LC_0147_InsertionSortLinkedList(ListNode head) {
     ListNode fakeHead = new ListNode(Integer.MIN_VALUE);
     while (head != null) {
       ListNode p = fakeHead;

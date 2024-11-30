@@ -1,4 +1,4 @@
-public class LC67_AddBinary {
+public class LC_0067_AddBinary {
     public String addBinary(String a, String b) {
         StringBuilder sb = new StringBuilder();
         int i = a.length() - 1, j = b.length() - 1;

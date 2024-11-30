@@ -18,7 +18,7 @@
  *
  * <p>Input: nums = [], target = 0 Output: [-1,-1]
  */
-class Solution {
+public class LC_0034_FindFirstLastInSortedArray{
   public int[] searchRange(int[] nums, int target) {
     int[] res = {-1, -1};
     int left = binarySearch(nums, target, true);

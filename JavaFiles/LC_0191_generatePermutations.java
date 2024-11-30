@@ -1,4 +1,8 @@
-public class LC191 {
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class LC_0191_generatePermutations {
   public static void main(String[] args) {
     System.out.println("Hello World");
 
@@ -23,7 +27,7 @@ public class LC191 {
     }
 
     for (int i = 0; i < s.length(); i++) {
-      if (temp.contains(s.charAt(i))) {
+      if (temp.contains(String.valueOf(s.charAt(i)))) {
         continue;
       }
       temp += s.charAt(i); // temp abc

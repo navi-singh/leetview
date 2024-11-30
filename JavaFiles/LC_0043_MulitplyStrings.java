@@ -15,7 +15,7 @@ import java.util.Arrays;
  *
  * <p>Input: num1 = "123", num2 = "456" Output: "56088"
  */
-class Solution {
+public class LC_0043_MulitplyStrings{
   private final char zero = '0';
 
   public String multiply(String num1, String num2) {

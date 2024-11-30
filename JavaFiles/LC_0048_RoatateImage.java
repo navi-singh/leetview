@@ -1,4 +1,4 @@
-class Solution {
+public class LC_0048_RoatateImage{
     public void rotate(int[][] matrix) {
         if (matrix.length < 1 || matrix.length != matrix[0].length) {
             return;

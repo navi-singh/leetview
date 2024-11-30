@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-class Solution {
+public class LC_0018_FourSum{
     public List<List<Integer>> fourSum(int[] nums, int target) {
         Arrays.sort(nums);
         Set<List<Integer>> result = new HashSet<List<Integer>>();

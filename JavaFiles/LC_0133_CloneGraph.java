@@ -25,7 +25,7 @@ class Node {
   }
 }
 
-public class LC133_CloneGraph {
+public class LC_0133_CloneGraph {
   // HashMap<Node, Node> map = new HashMap<>();
 
   // public Node cloneGraphDFS(Node node) {

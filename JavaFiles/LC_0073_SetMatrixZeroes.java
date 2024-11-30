@@ -1,5 +1,5 @@
 
-public class LC73_SetMatrixZeroes {
+public class LC_0073_SetMatrixZeroes {
     public void setZeroes(int[][] matrix) {
         if (matrix.length == 0 || matrix[0].length == 0) {
             return;

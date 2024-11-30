@@ -24,7 +24,7 @@ i=n, count[n] = sum(count[0..k]*count[k+1...n]) 0 <= k < n-1
 
 Use dynamic programming to solve the problem.
 */
-public class LC96_UniqueBinarySearch {
+public class LC_0096_UniqueBinarySearch {
   public int numTrees(int n) {
     int[] count = new int[n + 1];
     count[0] = count[1] = 1;

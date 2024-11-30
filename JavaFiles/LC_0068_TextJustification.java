@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class LC68_TextJustification {
+public class LC_0068_TextJustification {
     public List<String> fullJustify(String[] words, int maxWidth) {
         List<String> res = new ArrayList<String>();
         int runningLength = 0, lastIndex = 0;

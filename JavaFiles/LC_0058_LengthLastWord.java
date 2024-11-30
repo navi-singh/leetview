@@ -24,7 +24,7 @@ Output: 6
 Explanation: The last word is "joyboy" with length 6.
 */
 
-public class LC58_LengthLastWord {
+public class LC_0058_LengthLastWord {
     public int lengthOfLastWord(String s) {
         if(s == null || s.length() < 1){
             return 0;

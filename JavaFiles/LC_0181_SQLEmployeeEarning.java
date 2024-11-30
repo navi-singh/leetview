@@ -28,4 +28,4 @@
  * 197. Rising Temperature Select w1.id as 'Id' from Weather w1 JOIN weather w2 on
  * DateDiff(w1.recordDate, w2.recordDate) = 1 And w1.Temperature > w2.Temperature;
  */
-public class LC181_SQLEmployeeEarning {}
+public class LC_0181_SQLEmployeeEarning {}

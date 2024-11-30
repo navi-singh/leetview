@@ -1,6 +1,4 @@
-import javax.jws.Oneway;
-
-public class LC63_UniquePathsWithObstacle {
+public class LC_0063_UniquePathsWithObstacle {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         if (obstacleGrid.length == 0 || obstacleGrid[0].length == 0)
             return 0;

@@ -1,4 +1,4 @@
-public class LC221_MaximalSquare {
+public class LC_0221_MaximalSquare {
   public int maximalSquare(char[][] matrix) {
     if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
       return 0;

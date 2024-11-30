@@ -1,4 +1,4 @@
-public class LC242_ValidAnagram {
+public class LC_0242_ValidAnagram {
   public boolean isAnagram(String s, String t) {
     if (s == null && t == null) {
       return true;

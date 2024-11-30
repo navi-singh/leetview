@@ -1,6 +1,6 @@
 import java.util.LinkedList;
 
-public class LC239_SlidingWindowMaximum {
+public class LC_0239_SlidingWindowMaximum {
   public int[] maxSlidingWindow(int[] nums, int k) {
     if (nums == null || nums.length < 1 || k < 1) {
       return null;

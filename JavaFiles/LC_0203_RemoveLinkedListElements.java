@@ -1,6 +1,5 @@
-import LC143_ReorderList.ListNode;
 
-public class LC203_RemoveLinkedListElements {
+public class LC_0203_RemoveLinkedListElements {
   public ListNode removeElements(ListNode head, int val) {
     if (head == null) {
       return head;

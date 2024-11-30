@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class LC216_Combination3 {
+public class LC_0216_Combination3 {
   public List<List<Integer>> combinationSum3(int k, int n) {
     List<List<Integer>> result = new ArrayList<List<Integer>>();
     List<Integer> temp = new ArrayList<Integer>();

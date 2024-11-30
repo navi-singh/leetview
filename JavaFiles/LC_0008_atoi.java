@@ -42,7 +42,7 @@ Constraints:
     0 <= s.length <= 200
     s consists of English letters (lower-case and upper-case), digits, ' ', '+', '-' and '.'.
 */
-class Solution {
+public class LC_0008_atoi{
     public int myAtoi(String str) {
         if (str == null || str.isEmpty())
             return 0;

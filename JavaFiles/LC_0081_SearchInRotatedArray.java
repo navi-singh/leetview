@@ -1,5 +1,5 @@
 
-public class LC81_SearchInRotatedArray {
+public class LC_0081_SearchInRotatedArray {
     public boolean search(int[] nums, int target) {
         if (nums == null || nums.length < 1) {
             return false;

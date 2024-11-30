@@ -1,8 +1,8 @@
 /**
- * Definition for singly-linked list. public class ListNode { int val; ListNode
+ * Definition for singly-linked list. public class LC_0061_RotateList { int val; ListNode
  * next; ListNode(int x) { val = x; } }
  */
-public class LC61_RotateList {
+public class LC_0061_RotateList {
     public ListNode rotateRight(ListNode head, int k) {
         if (head == null || head.next == null)
             return head;

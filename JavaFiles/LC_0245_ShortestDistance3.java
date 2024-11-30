@@ -12,7 +12,7 @@
  * <p>Given word1 = “makes”, word2 = “coding”, return 1. Given word1 = "makes", word2 = "makes",
  * return 3.
  */
-public class LC245_ShortestDistance3 {
+public class LC_0245_ShortestDistance3 {
   public int shortestWordDistance(String[] words, String word1, String word2) {
     if (words == null || words.length == 0) return -1;
 

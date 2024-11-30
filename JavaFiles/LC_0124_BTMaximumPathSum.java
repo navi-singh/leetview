@@ -1,4 +1,4 @@
-public class LC124_BTMaximumPathSum {
+public class LC_0124_BTMaximumPathSum {
   public int maxPathSum(TreeNode root) {
     int[] max = new int[1];
     max[0] = Integer.MIN_VALUE;

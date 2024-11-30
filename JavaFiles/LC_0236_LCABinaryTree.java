@@ -1,4 +1,4 @@
-public class LC236_LCABinaryTree {
+public class LC_0236_LCABinaryTree {
   TreeNode res = null;
 
   public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {

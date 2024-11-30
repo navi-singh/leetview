@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
  *
  * <p>Input: nums = [1] Output: [[1]]
  */
-class Solution {
+public class LC_0046_Permutations{
   public List<List<Integer>> permute(int[] nums) {
     List<List<Integer>> res = new ArrayList<List<Integer>>();
     perm(nums, 0, nums.length, res);
@@ -29,9 +29,9 @@ class Solution {
       return;
     } else {
       for (int i = k; i < n; ++i) {
-        Solution.swap(nums, i, k);
+        swap(nums, i, k);
         perm(nums, k + 1, n, res);
-        Solution.swap(nums, i, k);
+        swap(nums, i, k);
       }
     }
   }

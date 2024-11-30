@@ -3,7 +3,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class LC205_IsomorphicStrings {
+public class LC_0205_IsomorphicStrings {
   // public boolean isIsomorphic(String s, String t) {
   // if (s == null || t == null || s.length() != t.length()) {
   // return false;

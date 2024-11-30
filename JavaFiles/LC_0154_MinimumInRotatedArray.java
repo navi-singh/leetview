@@ -1,10 +1,10 @@
-public class LC154_MinimumInRotatedArray {
+public class LC_0154_MinimumInRotatedArray {
   public int findMin(int[] nums) {
     if (nums == null || nums.length == 0) {
       return 0;
     }
 
-    int left = 0, right = nums.size() - 1;
+    int left = 0, right = nums.length - 1;
     while (left < right) {
       int mid = left + (right - left) / 2;
       if (nums[mid] < nums[right]) {
@@ -18,7 +18,7 @@ public class LC154_MinimumInRotatedArray {
     return nums[left];
   }
 
-  public int findMin(int[] nums) {
+  public int findMin2(int[] nums) {
     if (nums == null || nums.length == 0) {
       return 0;
     }

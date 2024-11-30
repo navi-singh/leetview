@@ -1,4 +1,4 @@
-public class LC110_BalancedBST {
+public class LC_0110_BalancedBST {
   public boolean isBalanced(TreeNode root) {
     if (root == null) {
       return true;

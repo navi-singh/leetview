@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class LC84_LargestRectangleHistogram {
+public class LC_0084_LargestRectangleHistogram {
     public int largestRectangleArea(int[] heights) {
         Stack<Integer> st = new Stack<Integer>();
         int left = 0, right = heights.length;

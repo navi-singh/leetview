@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+
 /**
  * This is a follow up of Shortest Word Distance. The only difference is now you are given the list
  * of words and your method will be called repeatedly many times with different parameters. How
@@ -12,11 +16,11 @@
  * <p>Given word1 = “coding”, word2 = “practice”, return 3. Given word1 = "makes", word2 = "coding",
  * return 1.
  */
-public class LC244_ShortedWordDistance2 {
+public class LC_0244_ShortedWordDistance2 {
   HashMap<String, ArrayList<Integer>> map;
 
-  public LC244_ShortedWordDistance2(String[] words) {
-    map = new HashMap<String, ArrayList<Integer>>();
+  public LC_0244_ShortedWordDistance2(String[] words) {
+    map = new HashMap<>();
     for (int i = 0; i < words.length; i++) {
       if (map.containsKey(words[i])) {
         map.get(words[i]).add(i);

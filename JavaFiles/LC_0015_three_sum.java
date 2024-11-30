@@ -1,3 +1,10 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+
 /**
  * 15. 3Sum
 Medium
@@ -20,7 +27,7 @@ Constraints:
     0 <= nums.length <= 3000
     -105 <= nums[i] <= 105
  */
-class Solution {
+public class LC_0015_three_sum{
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         Set<List<Integer>> result = new HashSet<>();

@@ -1,8 +1,8 @@
 import java.util.Stack;
 
-public class LC173_BSTIterator {
+public class LC_0173_BSTIterator {
   /**
-   * Definition for a binary tree node. public class TreeNode { int val; TreeNode left; TreeNode
+   * Definition for a binary tree node. public class LC_0173_BSTIterator { int val; TreeNode left; TreeNode
    * right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left,
    * TreeNode right) { this.val = val; this.left = left; this.right = right; } }
    */

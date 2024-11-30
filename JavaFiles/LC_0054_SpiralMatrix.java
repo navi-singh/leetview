@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class Solution {
+public class LC_0054_SpiralMatrix{
     public List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> res = new ArrayList<Integer>();
         if (matrix == null || matrix.length == 0)

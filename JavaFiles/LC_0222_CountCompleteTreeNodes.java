@@ -1,4 +1,4 @@
-public class LC222_CountCompleteTreeNodes {
+public class LC_0222_CountCompleteTreeNodes {
   public int countNodes(TreeNode root) {
     if (root == null) {
       return 0;

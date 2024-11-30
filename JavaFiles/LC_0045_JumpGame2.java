@@ -17,7 +17,7 @@
  *
  * <p>Input: nums = [2,3,0,1,4] Output: 2
  */
-class Solution {
+public class LC_0045_JumpGame2{
   public int jump(int[] nums) {
     if (nums == null || nums.length == 0) {
       return 0;

@@ -1,5 +1,5 @@
 
-public class LC88_MergeSortedArray {
+public class LC_0088_MergeSortedArray {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int first = m - 1, second = n - 1, i = m + n - 1;
         for (; i >= 0; i--) {

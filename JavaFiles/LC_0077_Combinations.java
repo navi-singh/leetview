@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class LC77_Combinations {
+public class LC_0077_Combinations {
     public List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> res = new ArrayList<List<Integer>>();
         if (n < 1 || n < k) {

@@ -1,6 +1,7 @@
+import java.util.ArrayList;
 import java.util.List;
 
-public class LC204_CountPrimes {
+public class LC_0204_CountPrimes {
   public int countPrimes(int n) {
     if (n < 3) {
       return 0;
@@ -8,7 +9,7 @@ public class LC204_CountPrimes {
     if (n == 3) {
       return 1;
     }
-    List<Integer> primes = new ArrayList<Integer>();
+    List<Integer> primes = new ArrayList<>();
     primes.add(2);
     primes.add(3);
     for (int i = 4; i < n; i++) {

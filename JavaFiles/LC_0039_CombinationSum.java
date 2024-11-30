@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -30,7 +31,7 @@ import java.util.List;
  *
  * <p>Input: candidates = [1], target = 1 Output: [[1]]
  */
-class Solution {
+public class LC_0039_CombinationSum{
   public List<List<Integer>> combinationSum(int[] candidates, int target) {
     List<List<Integer>> result = new ArrayList<>();
     List<Integer> temp = new ArrayList<>();

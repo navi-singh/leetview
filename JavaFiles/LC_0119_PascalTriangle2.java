@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class LC119_PascalTriangle2 {
+public class LC_0119_PascalTriangle2 {
   public List<Integer> getRow(int rowIndex) {
     List<Integer> res = new ArrayList<Integer>();
     if (rowIndex < 0) {

@@ -1,4 +1,4 @@
-public class LC114_FlatterTreeToLinkedList {
+public class LC_0114_FlatterTreeToLinkedList {
   public void flatten(TreeNode root) {
     process(root);
   }

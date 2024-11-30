@@ -1,10 +1,10 @@
 /**
- * class Solution { public String longestCommonPrefix(String[] strs) { if(strs == null ||
+ * public class LC_0014_LongestCommonPrefix{ public String longestCommonPrefix(String[] strs) { if(strs == null ||
  * strs.length <1){ return ""; } int min = 0; for(int i=0;i<strs[0].length(); i++){ for(int
  * j=0;j<strs.length; j++){ if(strs[j].length() <= i || (strs[j].charAt(i) != strs[0].charAt(i))) {
  * return strs[0].substring(0,i); } } } return strs[0]; } }
  */
-class Solution {
+public class LC_0014_LongestCommonPrefix{
 
   public String longestCommonPrefix(String[] strs) {
     if (strs == null || strs.length == 0) return "";

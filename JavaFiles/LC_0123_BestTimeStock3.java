@@ -1,4 +1,4 @@
-public class LC123_BestTimeStock3 {
+public class LC_0123_BestTimeStock3 {
   public int maxProfit(int[] prices) {
     if (prices == null || prices.length < 1) {
       return 0;

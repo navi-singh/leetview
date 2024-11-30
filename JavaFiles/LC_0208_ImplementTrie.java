@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class LC208_ImplementTrie {
+public class LC_0208_ImplementTrie {
   class TrieNode {
     char c;
     HashMap<Character, TrieNode> children = new HashMap<Character, TrieNode>();
@@ -16,7 +16,7 @@ public class LC208_ImplementTrie {
   TrieNode root;
 
   /** Initialize your data structure here. */
-  public LC208_ImplementTrie() {
+  public void TrieNode() {
     root = new TrieNode();
   }
 

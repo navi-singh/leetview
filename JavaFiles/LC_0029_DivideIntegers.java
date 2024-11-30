@@ -1,4 +1,4 @@
-class Solution {
+public class LC_0029_DivideIntegers{
   // Below solution won't work for Integer.MIN_VALUE
   public int divideNotWork(int dividend, int divisor) {
     if (divisor == 0) return Integer.MAX_VALUE;

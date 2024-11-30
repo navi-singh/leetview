@@ -17,7 +17,7 @@ import java.util.Set;
  * <p>Input: n = 19 Output: true Explanation: 12 + 92 = 82 82 + 22 = 68 62 + 82 = 100 12 + 02 + 02 =
  * 1
  */
-public class LC202_HappyNumber {
+public class LC_0202_HappyNumber {
   public boolean isHappy(int n) {
     Set<Integer> dict = new HashSet<>();
     while (!dict.contains(n)) {

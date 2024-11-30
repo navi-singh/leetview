@@ -1,12 +1,12 @@
 import java.util.HashMap;
 
-public class LC146_LruCache {
+public class LC_0146_LruCache {
 
   HashMap<Integer, Node> map = null;
   int cap = 0;
   Node head, tail;
 
-  public LC146_LruCache(int capacity) {
+  public LC_0146_LruCache(int capacity) {
     this.map = new HashMap<Integer, Node>();
     this.cap = capacity;
   }

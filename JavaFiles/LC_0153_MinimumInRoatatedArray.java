@@ -1,4 +1,4 @@
-public class Lc153_MinimumInRoatatedArray {
+public class LC_0153_MinimumInRoatatedArray {
   public int findMin(int[] nums) {
     if (nums == null || nums.length < 1) {
       return -1;
@@ -15,7 +15,7 @@ public class Lc153_MinimumInRoatatedArray {
     return nums[left];
   }
 
-  public int findMin(int[] nums) {
+  public int findMin2(int[] nums) {
     if (nums == null || nums.length == 0) {
       return 0;
     }

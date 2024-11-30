@@ -1,4 +1,4 @@
-public class LC142_ListCycle2 {
+public class LC_0142_ListCycle2 {
   public ListNode detectCycle(ListNode head) {
     ListNode slow = head, fast = head;
     boolean hasCycle = false;

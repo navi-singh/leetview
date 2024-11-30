@@ -1,4 +1,4 @@
-public class LC167_TwoSum2 {
+public class LC_0167_TwoSum2 {
   public int[] twoSum(int[] numbers, int target) {
     if (numbers == null) {
       return null;

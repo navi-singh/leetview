@@ -13,7 +13,7 @@ import java.util.Stack;
  *
  * <p>Input: s = "" Output: 0
  */
-class Solution {
+public class LC_0032_LongestValidParentheses{
   public int longestValidParenthesesWithStack(String s) {
     int maxLength = 0;
     if (s.isEmpty()) return maxLength;

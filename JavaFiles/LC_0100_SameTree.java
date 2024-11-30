@@ -1,5 +1,5 @@
 
-public class LC100_SameTree {
+public class LC_0100_SameTree {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if (p == null && q == null) {
             return true;

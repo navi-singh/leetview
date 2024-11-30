@@ -1,6 +1,5 @@
-import LC82_RemoveDuplicatesSortedList2.ListNode;
 
-public class LC92_ReverseLinkedList2 {
+public class LC_0092_ReverseLinkedList2 {
     public class ListNode {
         int val;
         ListNode next;

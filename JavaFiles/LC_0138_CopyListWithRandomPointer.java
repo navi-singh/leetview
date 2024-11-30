@@ -1,4 +1,4 @@
-public class LC138_CopyListWithRandomPointer {
+public class LC_0138_CopyListWithRandomPointer {
   class Node {
     int val;
     Node next;

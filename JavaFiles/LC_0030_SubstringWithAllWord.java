@@ -1,3 +1,9 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+
 /**
  * You are given a string s and an array of strings words of the same length. Return all starting
  * indices of substring(s) in s that is a concatenation of each word in words exactly once, in any
@@ -19,14 +25,14 @@
  *
  * <p>Input: s = "barfoofoobarthefoobarman", words = ["bar","foo","the"] Output: [6,9,12]
  */
-class Solution {
+public class LC_0030_SubstringWithAllWord{
   public List<Integer> findSubstring(String s, String[] words) {
-    List<Integer> res = new ArrayList<Integer>();
+    List<Integer> res = new ArrayList<>();
     if (s.isEmpty() || words.length < 1) return res;
 
     int wordLen = words[0].length();
     int totalLen = words.length * wordLen;
-    Map<String, Integer> wordLookup = new HashMap<String, Integer>();
+    Map<String, Integer> wordLookup = new HashMap<>();
     if (totalLen > s.length()) return res;
     for (String word : words) {
       wordLookup.put(word, wordLookup.containsKey(word) ? wordLookup.get(word) + 1 : 1);

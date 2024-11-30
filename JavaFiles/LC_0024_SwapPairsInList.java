@@ -1,8 +1,5 @@
-/**
- * Definition for singly-linked list. public class ListNode { int val; ListNode
- * next; ListNode(int x) { val = x; } }
- */
-class Solution {
+
+public class LC_0024_SwapPairsInList{
     public ListNode swapPairs(ListNode head) {
         ListNode dummy = new ListNode();
         dummy.next = head;

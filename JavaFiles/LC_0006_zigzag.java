@@ -36,7 +36,7 @@ Constraints:
 
 */
 
-class Solution {
+public class LC_0006_zigzag{
     public String convert(String s, int numRows) {
         if (numRows == 1)
             return s;

@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class LC113_PathSum2 {
+public class LC_0113_PathSum2 {
   public List<List<Integer>> pathSum(TreeNode root, int sum) {
     List<List<Integer>> res = new ArrayList();
     List<Integer> temp = new ArrayList<Integer>();

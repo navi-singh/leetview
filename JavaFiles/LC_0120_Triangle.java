@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class LC120_Triangle {
+public class LC_0120_Triangle {
   public int minimumTotal(List<List<Integer>> triangle) {
     if (triangle.size() < 1 || triangle.get(0).size() < 1) {
       return 0;

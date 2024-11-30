@@ -1,4 +1,4 @@
-public class LC155_MinStack {
+public class LC_0155_MinStack {
   class MinStack {
     class Node {
       public int val;

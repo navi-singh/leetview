@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
  *
  * <p>Input: nums = [1,2,3] Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
  */
-class Solution {
+public class LC_0047_PermutationsII{
   public List<List<Integer>> permute(int[] nums) {
     List<List<Integer>> res = new ArrayList<List<Integer>>();
     perm(nums, 0, nums.length, res);
@@ -29,9 +29,9 @@ class Solution {
     } else {
       for (int i = k; i < n; ++i) {
         if (needSwap(nums, i, k)) {
-          Solution.swap(nums, i, k);
+          LC_0047_PermutationsII.swap(nums, i, k);
           perm(nums, k + 1, n, res);
-          Solution.swap(nums, i, k);
+          LC_0047_PermutationsII.swap(nums, i, k);
         }
       }
     }

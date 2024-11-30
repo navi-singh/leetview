@@ -13,7 +13,7 @@
  * <p>Input: grid = [ ["1","1","0","0","0"], ["1","1","0","0","0"], ["0","0","1","0","0"],
  * ["0","0","0","1","1"] ] Output: 3
  */
-public class LC200_NumberOfIslands {
+public class LC_0200_NumberOfIslands {
   public int numIslands(char[][] grid) {
     if (grid == null || grid[0].length == 0) {
       return 0;

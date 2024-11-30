@@ -1,8 +1,8 @@
 /**
- * Definition for singly-linked list. public class ListNode { int val; ListNode
+ * Definition for singly-linked list. public class LC_0019_RemoveNthNodeFromLast { int val; ListNode
  * next; ListNode(int x) { val = x; } }
  */
-class Solution {
+public class LC_0019_RemoveNthNodeFromLast{
     public ListNode removeNthFromEnd(ListNode head, int n) {
         if (head == null)
             return head;

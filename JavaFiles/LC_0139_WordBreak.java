@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class LC139_WordBreak {
+public class LC_0139_WordBreak {
   public boolean wordBreak(String s, List<String> wordDict) {
     int len = s.length();
     Set<String> strings = new HashSet<String>();

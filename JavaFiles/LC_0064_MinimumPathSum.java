@@ -1,5 +1,5 @@
 
-public class LC64_MinimumPathSum {
+public class LC_0064_MinimumPathSum {
     public int minPathSum(int[][] grid) {
         if (grid.length == 0 || grid[0].length == 0) {
             return 0;

@@ -1,4 +1,4 @@
-public class LC112_PathSum {
+public class LC_0112_PathSum {
   public boolean hasPathSum(TreeNode root, int sum) {
     return pathExist(root, sum, 0);
   }

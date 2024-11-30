@@ -1,4 +1,4 @@
-public class LC135_Candles {
+public class LC_0135_Candles {
   public int candy(int[] ratings) {
     if (ratings == null || ratings.length == 0) {
       return 0;

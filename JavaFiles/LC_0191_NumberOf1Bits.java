@@ -1,4 +1,4 @@
-public class LC191_NumberOf1Bits {
+public class LC_0191_NumberOf1Bits {
     public int hammingWeight(int n) {
         int count = 0;
         for (int i = 0; i < 32; i++) {
@@ -7,7 +7,7 @@ public class LC191_NumberOf1Bits {
                     count++;
                 }
             }
-            return count;
         }
+        return count;
     }
 }

@@ -1,12 +1,11 @@
-import LC92_ReverseLinkedList2.ListNode;
 import java.util.Stack;
 
-public class LC234_PalindromeLinkedList {
+public class LC_0234_PalindromeLinkedList {
   public boolean isPalindrome(ListNode head) {
     if (head == null || head.next == null) {
       return true;
     }
-    Stack<ListNode> st = new Stack();
+    Stack<ListNode> st = new Stack<>();
     ListNode slow, fast;
     slow = fast = head;
     while (fast != null && fast.next != null) {

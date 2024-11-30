@@ -1,4 +1,4 @@
-class Solution {
+public class LC_0053_MaximumSubarray{
     public int maxSubArray(int[] nums) {
         int max = Integer.MIN_VALUE;
         int tempMax = 0;

@@ -1,4 +1,4 @@
-public class LC98_ValidateBST {
+public class LC_0098_ValidateBST {
     public class TreeNode {
         int val;
         TreeNode left;

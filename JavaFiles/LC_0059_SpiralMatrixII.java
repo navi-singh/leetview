@@ -1,4 +1,4 @@
-public class LC59_SpiralMatrixII {
+public class LC_0059_SpiralMatrixII {
   public void print2DArray(int[][] arr) {
     for (int i = 0; i < arr.length; ++i) {
       for (int j = 0; j < arr[0].length; ++j) {

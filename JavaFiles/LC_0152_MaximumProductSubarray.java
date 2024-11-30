@@ -1,4 +1,4 @@
-public class LC152_MaximumProductSubarray {
+public class LC_0152_MaximumProductSubarray {
   public int maxProduct(int[] nums) {
     if (nums == null || nums.length < 1) {
       return 0;
@@ -14,7 +14,7 @@ public class LC152_MaximumProductSubarray {
     return res;
   }
 
-  public int maxProduct(int[] nums) {
+  public int maxProduct2(int[] nums) {
     if (nums == null || nums.length < 1) {
       return 0;
     }

@@ -20,7 +20,7 @@ Explanation: From the top-left corner, there are a total of 3 ways to reach the 
 3. Down -> Right -> Down
 */
 
-public class LC62_UniquePaths {
+public class LC_0062_UniquePaths {
     public int uniquePaths(int m, int n) {
         int[][] grid = new int[m][n];
         // First index of every row

@@ -25,7 +25,7 @@ Output: 0
 
 Constraints:   -231 <= x <= 231 - 1
 */
-class Solution {
+public class LC_0007_reverse_integer{
     public static int reverse(int x) {
         int res = 0, rem = 0;
         boolean isNegativeNumber = false;

@@ -1,4 +1,4 @@
-public class LC141_LinkedListCycle {
+public class LC_0141_LinkedListCycle {
   public boolean hasCycle(ListNode head) {
     ListNode slow = head, fast = head;
     while (fast != null && fast.next != null) {

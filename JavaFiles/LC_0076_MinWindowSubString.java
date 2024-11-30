@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class LC76_MinWindowSubString {
+public class LC_0076_MinWindowSubString {
 
     public String minWindow(String s, String t) {
         int tLen = t.length(), sLen = s.length();

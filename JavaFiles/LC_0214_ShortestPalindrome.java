@@ -1,4 +1,4 @@
-public class LC214_ShortestPalindrome {
+public class LC_0214_ShortestPalindrome {
   public String shortestPalindrome(String s) {
     int i = 0;
 

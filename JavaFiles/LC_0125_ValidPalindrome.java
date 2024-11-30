@@ -1,4 +1,4 @@
-public class LC125_ValidPalindrome {
+public class LC_0125_ValidPalindrome {
   public boolean isPalindrome(String s) {
     if (s == null || s.isEmpty()) {
       return true;

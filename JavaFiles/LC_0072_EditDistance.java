@@ -1,5 +1,5 @@
 
-public class LC72_EditDistance {
+public class LC_0072_EditDistance {
     public int minDistance(String word1, String word2) {
         int len1 = word1.length();
         int len2 = word2.length();

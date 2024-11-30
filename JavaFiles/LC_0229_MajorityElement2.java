@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class LC229_MajorityElement2 {
+public class LC_0229_MajorityElement2 {
   public List<Integer> majorityElement(int[] nums) {
     List<Integer> res = new ArrayList<Integer>();
 

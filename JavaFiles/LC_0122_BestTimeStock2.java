@@ -1,4 +1,4 @@
-public class LC122_BestTimeStock2 {
+public class LC_0122_BestTimeStock2 {
   public int maxProfit(int[] prices) {
     int profit = 0, diff = 0;
     for (int i = 1; i < prices.length; i++) {

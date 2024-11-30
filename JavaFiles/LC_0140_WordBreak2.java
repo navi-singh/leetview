@@ -1,1 +1,1 @@
-public class LC140_WordBreak2 {}
+public class LC_0140_WordBreak2 {}

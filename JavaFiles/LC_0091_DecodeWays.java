@@ -1,4 +1,4 @@
-public class LC91_DecodeWays {
+public class LC_0091_DecodeWays {
   public int numDecodings(String s) {
     if (s.isEmpty() || s.charAt(0) < '1' || s.charAt(0) > '9') {
       return 0;

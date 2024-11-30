@@ -1,4 +1,4 @@
-public class LC134_GasStation {
+public class LC_0134_GasStation {
   public int canCompleteCircuit(int[] gas, int[] cost) {
     int curr = 0, total = 0, diff = 0;
     int startIndex = 0;

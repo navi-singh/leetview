@@ -1,6 +1,5 @@
-import LC143_ReorderList.ListNode;
 
-public class LC206_ReverseLinkedList {
+public class LC_0206_ReverseLinkedList {
   public ListNode reverseList(ListNode head) {
     if (head == null) {
       return head;

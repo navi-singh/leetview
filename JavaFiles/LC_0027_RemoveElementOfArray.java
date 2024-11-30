@@ -17,7 +17,7 @@
  * and 4. Note that the order of those five elements can be arbitrary. It doesn't matter what values
  * are set beyond the returned length.
  */
-class Solution {
+public class LC_0027_RemoveElementOfArray{
   public int removeElement(int[] nums, int val) {
     int newIndex = 0;
     for (int index = 0; index < nums.length; index++) {

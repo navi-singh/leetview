@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class LC128_LongestConsecutiveSequence {
+public class LC_0128_LongestConsecutiveSequence {
   public int longestConsecutive(int[] nums) {
     Set<Integer> numSet = new HashSet<Integer>();
     int max = 0;

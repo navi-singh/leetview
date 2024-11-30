@@ -26,7 +26,7 @@ Output: false
 Constraints:
     -231 <= x <= 231 - 1
  */
-class Solution {
+public class LC_0009_palindrome_number{
     public boolean isPalindrome(int x) {
         if (x < 0)
             return false;

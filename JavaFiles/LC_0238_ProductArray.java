@@ -1,4 +1,4 @@
-public class LC238_ProductArray {
+public class LC_0238_ProductArray {
   public int[] productExceptSelf(int[] nums) {
     if (nums == null || nums.length < 1) {
       return null;

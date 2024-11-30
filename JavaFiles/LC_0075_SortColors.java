@@ -1,4 +1,4 @@
-public class LC75_SortColors {
+public class LC_0075_SortColors {
     public void sortColors(int[] nums) {
         int left = 0, right = nums.length - 1;
         for (int i = 0; i < nums.length && i <= right; i++) {

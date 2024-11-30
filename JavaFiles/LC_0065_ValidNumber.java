@@ -1,5 +1,5 @@
 
-public class LC65_ValidNumber {
+public class LC_0065_ValidNumber {
     public boolean isNumber(String s) {
         int left = 0, right = s.length();
         while (left < right && s.charAt(left) == ' ') {

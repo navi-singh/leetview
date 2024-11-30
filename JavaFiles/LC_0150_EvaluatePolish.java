@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class LC150_EvaluatePolish {
+public class LC_0150_EvaluatePolish {
   public int evalRPN(String[] tokens) {
     int res = 0;
     Stack<Integer> st = new Stack<Integer>();

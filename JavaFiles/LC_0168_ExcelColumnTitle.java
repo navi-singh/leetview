@@ -1,4 +1,4 @@
-public class LC168_ExcelColumnTitle {
+public class LC_0168_ExcelColumnTitle {
   public String convertToTitle(int n) {
     StringBuilder sb = new StringBuilder();
     while (n > 0) {

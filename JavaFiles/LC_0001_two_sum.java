@@ -13,7 +13,9 @@ return [0, 1].
 Time: O(n)
 Space: O(n)
 */
-class Solution {
+import java.util.Map;
+import java.util.HashMap;
+public class LC_0001_two_sum{
     public int[] twoSum(int[] nums, int target) {
         // for(int index=0; index < nums.length-1; index++) {
         //     for(int otherIndex = index+1; otherIndex < nums.length; otherIndex++) {
@@ -23,7 +25,7 @@ class Solution {
         // }
         // return new int[0];
         Map<Integer, Integer> requiredElements = new HashMap<Integer, Integer>();
-        for(int index=0; index < nums.length; index++) {            
+        for(int index=0; index < nums.length; index++) {
             if(requiredElements.containsKey(nums[index])) {
                 return new int[]{index,requiredElements.get(nums[index])};
             }

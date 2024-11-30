@@ -7,7 +7,7 @@
  * <p>Given word1 = “coding”, word2 = “practice”, return 3. Given word1 = "makes", word2 = "coding",
  * return 1.
  */
-public class LC243_ShortestWordDistance {
+public class LC_0243_ShortestWordDistance {
   public int shortestDistance(String[] words, String word1, String word2) {
     int firstWordIndex = -1, secondWordIndex = -1;
     int min = Integer.MIN_VALUE;

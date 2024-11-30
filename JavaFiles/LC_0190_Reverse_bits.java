@@ -1,4 +1,4 @@
-public class LC190_Reverse_bits {
+public class LC_0190_Reverse_bits {
   public int reverseBits(int n) {
     for (int i = 0; i < 16; i++) {
       n = swapBits(n, i, 32 - i - 1);

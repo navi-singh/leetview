@@ -1,4 +1,4 @@
-public class LC115_DistinctSubsequences {
+public class LC_0115_DistinctSubsequences {
   public int numDistinct(String s, String t) {
     if (s == null || t == null) {
       return 0;

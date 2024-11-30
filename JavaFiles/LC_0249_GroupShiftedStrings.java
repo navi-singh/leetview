@@ -13,7 +13,7 @@ import java.util.Map;
  * <p>[ ["abc","bcd","xyz"], ["az","ba"], ["acef"], ["a","z"] ]
  */
 
-class Solution {
+public class LC_0249_GroupShiftedStrings{
   public List<List<String>> groupStrings(String[] strings) {
     Map<String, List<String>> keyToStrings = new HashMap<>();
 
@@ -37,7 +37,7 @@ class Solution {
 }
 
 
-public class LC249_GroupShiftedStrings {
+class LC_0249_GroupShiftedStrings2 {
   public List<List<String>> groupStrings(String[] strings) {
     List<List<String>> res = new ArrayList<List<String>>();
     Map<String, ArrayList<String>> holder = new HashMap<String, ArrayList<String>>();
@@ -63,5 +63,6 @@ public class LC249_GroupShiftedStrings {
       }
     }
     res.addAll(holder.values());
+    return res;
   }
 }

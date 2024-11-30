@@ -1,4 +1,4 @@
-public class LC189_RotateArray {
+public class LC_0189_RotateArray {
   public void rotate(int[] nums, int k) {
     if (nums == null) {
       return;

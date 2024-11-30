@@ -7,7 +7,7 @@
  *
  * <p>Input: s = "aa", p = "*" Output: true Explanation: '*' matches any sequence.
  */
-class Solution {
+public class LC_0044_wildcardMatching{
   public boolean isMatch(String s, String p) {
     int i = 0, j = 0;
     int iIndex = -1, jIndex = -1;

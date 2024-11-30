@@ -1,4 +1,4 @@
-public class LC117_PopulateNextPointer2 {
+public class LC_0117_PopulateNextPointer2 {
   class Node {
     public int val;
     public Node left;

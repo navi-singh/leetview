@@ -23,7 +23,7 @@ import java.util.Map;
  * total of 2 courses to take. To take course 1 you should have finished course 0, and to take
  * course 0 you should also have finished course 1. So it is impossible.
  */
-public class LC207_CourseSchedule {
+public class LC_0207_CourseSchedule {
   public boolean canFinish(int numCourses, int[][] prerequisites) {
     if (prerequisites == null) {
       return false;

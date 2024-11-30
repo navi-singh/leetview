@@ -1,5 +1,5 @@
 
-public class LC80_RemoveDuplicates {
+public class LC_0080_RemoveDuplicates {
     public int removeDuplicates(int[] nums) {
         if (nums.length < 3) {
             return nums.length;

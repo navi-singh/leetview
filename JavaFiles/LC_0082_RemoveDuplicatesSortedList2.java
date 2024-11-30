@@ -1,5 +1,5 @@
 
-public class LC82_RemoveDuplicatesSortedList2 {
+public class LC_0082_RemoveDuplicatesSortedList2 {
 
     public class ListNode {
         int val;

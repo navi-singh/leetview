@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class LC228_SummaryRanges {
+public class LC_0228_SummaryRanges {
   public List<String> summaryRanges(int[] nums) {
     List<String> res = new ArrayList<String>();
     if (nums == null || nums.length < 1) {

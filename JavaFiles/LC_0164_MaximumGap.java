@@ -1,4 +1,4 @@
-public class LC164_MaximumGap {
+public class LC_0164_MaximumGap {
   class Bucket {
     int min;
     int max;

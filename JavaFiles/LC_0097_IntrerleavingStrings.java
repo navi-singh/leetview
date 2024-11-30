@@ -1,4 +1,4 @@
-public class LC97_IntrerleavingStrings {
+public class LC_0097_IntrerleavingStrings {
     public boolean isInterleave(String s1, String s2, String s3) {
         if (s1.length() + s2.length() != s3.length()) {
             return false;

@@ -13,7 +13,7 @@
  *
  * <p>Input: nums = [7,8,9,11,12] Output: 1
  */
-class Solution {
+public class LC_0041_FirstMissingPositive{
   public int firstMissingPositive(int[] nums) {
     if (nums == null || nums.length == 0) {
       return 1;

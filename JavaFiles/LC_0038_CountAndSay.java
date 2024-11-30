@@ -9,7 +9,7 @@
  * = "11" countAndSay(3) = say "11" = two 1's = "21" countAndSay(4) = say "21" = one 2 + one 1 =
  * "12" + "11" = "1211"
  */
-class Solution {
+public class LC_0038_CountAndSay{
   public String countAndSay(int n) {
 
     String res = "1";

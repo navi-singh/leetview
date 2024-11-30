@@ -1,4 +1,4 @@
-public class LC105_ConstructTree {
+public class LC_0105_ConstructTree {
   public TreeNode buildTree(int[] preorder, int[] inorder) {
     int inStart = 0, inEnd = inorder.length - 1;
     int preStart = 0, preEnd = preorder.length - 1;

@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class LC78_Subsets {
+public class LC_0078_Subsets {
   public List<List<Integer>> subsets(int[] nums) {
     List<List<Integer>> res = new ArrayList<List<Integer>>();
     res.add(new ArrayList<Integer>());

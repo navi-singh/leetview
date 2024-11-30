@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class LC118_PascalsTriangle {
+public class LC_0118_PascalsTriangle {
   public List<List<Integer>> generate(int numRows) {
     List<List<Integer>> res = new ArrayList();
     if (numRows < 1) {

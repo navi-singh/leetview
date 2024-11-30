@@ -7,10 +7,10 @@ The new list should be made by splicing together the nodes of the first two list
 Example 1:
 Input: l1 = [1,2,4], l2 = [1,3,4]
 Output: [1,1,2,3,4,4]
- * Definition for singly-linked list. public class ListNode { int val; ListNode
+ * Definition for singly-linked list. public class LC_0021_MergeTwoLists { int val; ListNode
  * next; ListNode(int x) { val = x; } }
  */
-class Solution {
+public class LC_0021_MergeTwoLists{
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode();
         ListNode curr = dummy;

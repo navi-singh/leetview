@@ -1,4 +1,4 @@
-public class LC198_HouseRobber {
+public class LC_0198_HouseRobber {
   public int rob(int[] nums) {
     if (nums == null || nums.length < 1) {
       return 0;
