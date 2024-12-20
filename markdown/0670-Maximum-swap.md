@@ -106,37 +106,37 @@ Thus, the total space complexity is O(n).
 
 ### More efficient java solution
 ```java
-public class Solution {
+Solution 2: Greedy O(n); O(1)
+
+Intuition
+
+At each digit of the input number in order, if there is a larger digit that occurs later, we know that the best swap must occur with the digit we are currently considering.
+
+Algorithm
+
+We will compute last[d] = i, the index i of the last occurrence of digit d(if it exists).
+
+Afterwards, when scanning the number from left to right, if there is a larger digit in the future, we will swap it with the largest such digit; if there are multiple such digits, we will swap it with the one that occurs the latest.
 
     public int maximumSwap(int num) {
-        String numStr = Integer.toString(num);
-        int n = numStr.length();
-        int[] lastSeen = new int[10]; // Store the last occurrence of each digit
-
-        // Record the last occurrence of each digit
-        for (int i = 0; i < n; ++i) {
-            lastSeen[numStr.charAt(i) - '0'] = i;
+        char[] A = Integer.toString(num).toCharArray();
+        int[] last = new int[10]; 
+        for (int i = 0; i < A.length; i++) {
+            last[A[i] - '0'] = i;
         }
 
-        // Traverse the string to find the first digit that can be swapped with a larger one
-        for (int i = 0; i < n; ++i) {
-            for (int d = 9; d > numStr.charAt(i) - '0'; --d) {
-                if (lastSeen[d] > i) {
-                    //Perform the swap
-                    char[] arr = numStr.toCharArray();
-                    char temp = arr[i];
-                    arr[i] = arr[lastSeen[d]];
-                    arr[lastSeen[d]] = temp;
-                    numStr = new String(arr);
-
-                    return Integer.parseInt(numStr); // Return the new number immediately after the swap
+        for (int i = 0; i < A.length; i++) {
+            for (int d = 9; d > A[i] - '0'; d--) {
+                if (last[d] > i) {
+                    char tmp = A[i];
+                    A[i] = A[last[d]];
+                    A[last[d]] = tmp;
+                    return Integer.valueOf(new String(A));
                 }
             }
         }
-
-        return num; // Return the original number if no swap can maximize it
+        return num;
     }
-}
 ```
 ### Complexity Analysis
 Let n be the number of digits in the input number.
