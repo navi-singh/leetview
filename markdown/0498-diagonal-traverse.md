@@ -22,7 +22,7 @@ Output: [1,2,3,4]
 - Time Complexity: O(N⋅M) since we process each element of the matrix exactly once.
 - Space Complexity: O(1) since we don't make use of any additional data structure. Note that the space occupied by the output array doesn't count towards the space complexity since that is a requirement of the problem itself. Space complexity comprises any additional space that we may have used to get to build the final array. For the previous solution, it was the intermediate arrays. In this solution, we don't have any additional space apart from a couple of variables.
 
-- ```java
+```java
   class Solution {
     public int[] findDiagonalOrder(int[][] matrix) {
         
@@ -58,6 +58,8 @@ Output: [1,2,3,4]
     }
 }
 ```
+
+#### Python solution 
 
 ```python
 class Solution:    
