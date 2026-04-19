@@ -54,5 +54,46 @@ public class LC_0022_GenerateParentheses {
   }
 }
 ```
-
 **Key insight:** The invariant `left > right` is pruned immediately — it means more closing brackets have been placed than opening ones, which can never be fixed. Tracking remaining counts (rather than placed counts) makes the base case a simple equality check.
+
+## Approach 2: More optimized with stringbuilder Backtracking (Recursive)
+### More optimized approach with string builder
+
+
+```java
+import java.util.*;
+
+public class LC_0022_GenerateParentheses {
+    public List<String> generateParenthesis(int n) {
+        List<String> result = new ArrayList<>();
+        backtrack(result, new StringBuilder(), 0, 0, n);
+        return result;
+    }
+
+    private void backtrack(List<String> result, StringBuilder current, int open, int close, int max) {
+        // Base case: If current string length is 2*n, we have a valid combination
+        if (current.length() == max * 2) {
+            result.add(current.toString());
+            return;
+        }
+
+        // Add open parenthesis if we still have available ones
+        if (open < max) {
+            current.append('(');
+            backtrack(result, current, open + 1, close, max);
+            current.deleteCharAt(current.length() - 1); // Backtrack
+        }
+
+        // Add closing parenthesis only if there are unmatched open ones
+        if (close < open) {
+            current.append(')');
+            backtrack(result, current, open, close + 1, max);
+            current.deleteCharAt(current.length() - 1); // Backtrack
+        }
+    }
+}
+```
+#### Complexity
+**Time Complexity**: The number of valid parenthesis combinations is determined by the $n$-th Catalan number, which is $C_n = \frac{1}{n+1}\binom{2n}{n}$. Your approach now directly constructs exactly these sequences without wasting time checking invalid branches or deduplicating.
+**Space Complexity:** By using StringBuilder and avoiding the Set, the space complexity is reduced to $O(n)$ for the recursion stack depth (excluding the space for the output list).
+
