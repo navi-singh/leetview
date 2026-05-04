@@ -6,6 +6,34 @@ A curated list of 150 problems covering the most common patterns seen in technic
 
 ---
 
+## 1D Dynamic Programming
+
+| # | Problem | Difficulty |
+|---|---------|------------|
+| 70 | [Climbing Stairs](../0070-climbing-stairs.md) | Easy |
+| 198 | [House Robber](../0198-house-robber.md) | Medium |
+| 139 | [Word Break](../0139-word-break.md) | Medium |
+| 322 | Coin Change | Medium |
+| 300 | Longest Increasing Subsequence | Medium |
+
+---
+
+## Multidimensional Dynamic Programming
+
+| # | Problem | Difficulty |
+|---|---------|------------|
+| 120 | [Triangle](../0120-triangle.md) | Medium |
+| 64 | [Minimum Path Sum](../0064-minimum-path-sum.md) | Medium |
+| 63 | [Unique Paths II](../0063-unique-paths-ii.md) | Medium |
+| 5 | [Longest Palindromic Substring](../0005-longest-palindromic-substring.md) | Medium |
+| 97 | [Interleaving String](../0097-interleaving-string.md) | Medium |
+| 72 | [Edit Distance](../0072-edit-distance.md) | Medium |
+| 123 | [Best Time to Buy and Sell Stock III](../0123-best-time-to-buy-and-sell-stock-iii.md) | Hard |
+| 188 | [Best Time to Buy and Sell Stock IV](../0188-best-time-to-buy-and-sell-stock-iv.md) | Hard |
+| 221 | [Maximal Square](../0221-maximal-square.md) | Medium |
+
+---
+
 ## Array / String
 
 | # | Problem | Difficulty |
@@ -289,33 +317,6 @@ A curated list of 150 problems covering the most common patterns seen in technic
 
 ---
 
-## 1D Dynamic Programming
-
-| # | Problem | Difficulty |
-|---|---------|------------|
-| 70 | [Climbing Stairs](../0070-climbing-stairs.md) | Easy |
-| 198 | [House Robber](../0198-house-robber.md) | Medium |
-| 139 | [Word Break](../0139-word-break.md) | Medium |
-| 322 | Coin Change | Medium |
-| 300 | Longest Increasing Subsequence | Medium |
-
----
-
-## Multidimensional Dynamic Programming
-
-| # | Problem | Difficulty |
-|---|---------|------------|
-| 120 | [Triangle](../0120-triangle.md) | Medium |
-| 64 | [Minimum Path Sum](../0064-minimum-path-sum.md) | Medium |
-| 63 | [Unique Paths II](../0063-unique-paths-ii.md) | Medium |
-| 5 | [Longest Palindromic Substring](../0005-longest-palindromic-substring.md) | Medium |
-| 97 | [Interleaving String](../0097-interleaving-string.md) | Medium |
-| 72 | [Edit Distance](../0072-edit-distance.md) | Medium |
-| 123 | [Best Time to Buy and Sell Stock III](../0123-best-time-to-buy-and-sell-stock-iii.md) | Hard |
-| 188 | [Best Time to Buy and Sell Stock IV](../0188-best-time-to-buy-and-sell-stock-iv.md) | Hard |
-| 221 | [Maximal Square](../0221-maximal-square.md) | Medium |
-
----
 
 ## Summary
 
