@@ -1,0 +1,38 @@
+# Build artifacts
+bin/
+build/
+out/
+target/
+*.class
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# OS
+Thumbs.db
+
+# Compiled files
+*.pyc
+*.pyo
+__pycache__/
+
+# Logs
+*.log
