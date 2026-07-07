@@ -1,0 +1,767 @@
+TOP INTERVIEW ONE FIFTY. PART THREE OF THREE. AUDIO TRANSCRIPT.
+
+Welcome back. This is the final part. It covers forty three problems across divide and conquer, Kadane's algorithm, binary search, heap, bit manipulation, math, one dimensional dynamic programming, and multidimensional dynamic programming. Same six beats per problem.
+
+Let's begin.
+
+
+Section one of eight. Divide and conquer.
+
+
+Next up. Problem one of forty three. LeetCode one zero eight. Convert Sorted Array to Binary Search Tree. Difficulty easy.
+
+Orientation. Recursive midpoint construction. Interviewers use this to test the divide and conquer pattern.
+
+Description. Given a sorted array, build a height balanced BST.
+
+Deep dive. The middle element is the root. The left half builds the left subtree; the right half builds the right. Recurse with subarray bounds. Picking the middle keeps the tree balanced.
+
+What interviewers probe. The bounds passed to recursion. Many candidates copy subarrays, wasting memory. Pass low and high indices instead.
+
+Logic and solution. Recursive helper taking low and high. If low exceeds high, return null. Compute the middle. Build the root from the middle value. Recurse on the left half and right half. Return the root.
+
+Complexity. Linear in the array size. Linear stack space proportional to height.
+
+Takeaway. Balanced BST construction from a sorted array is divide and conquer at the midpoint; pass index bounds, never copy subarrays.
+
+
+Next up. Problem two of forty three. LeetCode one forty eight. Sort List. Difficulty medium.
+
+Orientation. Merge sort on a linked list. Interviewers use this to test whether you adapt classic algorithms to linked structure.
+
+Description. Given a linked list, sort it in n log n time and ideally constant extra space.
+
+Deep dive. Merge sort. Find the middle with the slow fast pointer trick. Split the list. Recursively sort both halves. Merge. The bottom up iterative variant achieves true constant space.
+
+What interviewers probe. Why merge sort and not quicksort. Merge sort works naturally on linked lists; quicksort needs random access. They also probe the bottom up variant for the constant space follow up.
+
+Logic and solution. Recursive helper on the head. If null or single node, return it. Find the middle with slow and fast pointers; cut the list in two. Recurse on each. Merge using the standard two list merge.
+
+Complexity. n log n time. Linear stack space recursive; constant for bottom up.
+
+Takeaway. Linked list sorting uses merge sort; the slow fast trick splits in half without indexing.
+
+
+Next up. Problem three of forty three. LeetCode four twenty seven. Construct Quad Tree. Difficulty medium.
+
+Orientation. Recursive grid subdivision. Interviewers use this to test whether you can stop recursion when a region is uniform.
+
+Description. Given a grid of zeros and ones, construct a quad tree where each node represents a square subregion. Uniform regions become leaves; mixed regions split into four quadrants.
+
+Deep dive. Recursive helper takes a square region by row and column bounds. If the region is uniform, return a leaf with that value. Otherwise split into four equal subquadrants and recurse, returning an internal node with the four children.
+
+What interviewers probe. The uniformity check. Naively scanning each region is fine for small grids. For large grids, prefix sums make it constant time.
+
+Logic and solution. Recursive helper on the top left corner and the side length. If uniform, return a leaf. Else split into four halves, recurse, return an internal node.
+
+Complexity. Total time depends on subdivision; linear in grid size when uniform regions dominate.
+
+Takeaway. Quad trees are recursive subdivision with a uniformity early exit; the leaf condition is the heart of the savings.
+
+
+Next up. Problem four of forty three. LeetCode twenty three. Merge k Sorted Lists. Difficulty hard.
+
+Orientation. Heap or divide and conquer. Interviewers use this to test whether you reach the right complexity.
+
+Description. Given an array of k sorted linked lists, merge them into a single sorted list.
+
+Deep dive. Two strategies. A min heap of size k, holding one node per list, popping the smallest and pushing its successor. Or divide and conquer, pairing up lists and merging each pair, halving the count each round.
+
+What interviewers probe. Why the work is n log k rather than n times k. Each node passes through log k merge or heap operations.
+
+Logic and solution. Heap version. Build a min heap from the head of each non null list. Use a dummy head and tail. Pop the smallest, append, push its next if non null. Continue until empty.
+
+Complexity. Total nodes times log k. Linear in k extra space for the heap; log k stack frames for divide and conquer.
+
+Takeaway. Merging k sorted streams is a heap of size k; the heap is the cleanest defense in interviews.
+
+
+Section two of eight. Kadane's algorithm.
+
+
+Next up. Problem five of forty three. LeetCode fifty three. Maximum Subarray. Difficulty medium.
+
+Orientation. Kadane's algorithm. Interviewers use this as the prototype linear DP.
+
+Description. Given an array, return the maximum sum of a contiguous subarray.
+
+Deep dive. Walk the array tracking the maximum subarray sum ending at the current index. The new running sum is the larger of the current value alone and the previous running sum plus the current value. Track the global maximum across all positions.
+
+What interviewers probe. Why the choice between extending and starting over is correct. The argument is that if the previous sum is negative, it can only hurt the new sum.
+
+Logic and solution. Initialize current and best to the first element. Walk from index one. Set current to the larger of the value and current plus the value. Update best with the larger of itself and current.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Kadane's is the textbook linear DP; the recurrence is take this or restart, whichever is larger.
+
+
+Next up. Problem six of forty three. LeetCode nine eighteen. Maximum Sum Circular Subarray. Difficulty medium.
+
+Orientation. Kadane's twice with a complementary trick. Interviewers use this to test whether you can flip the question.
+
+Description. Same as maximum subarray but the array is circular: a subarray may wrap around.
+
+Deep dive. Two cases. The maximum lies entirely within the array, which Kadane's handles directly. Or the maximum wraps, in which case the unused middle is the minimum subarray; the answer is total sum minus that minimum. Take the max of both cases. Handle the all negative edge case where the wrap result would be zero, by returning the unwrapped Kadane's result instead.
+
+What interviewers probe. The all negative edge case. Without the special handling, the wrap formula gives an empty subarray sum of zero, which is invalid.
+
+Logic and solution. Run Kadane's for the maximum and the minimum subarray sums. If the max is negative, return it directly. Else return the larger of the max and total minus the min.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Circular extensions of linear array problems often reduce to two non circular subproblems plus a complementary trick.
+
+
+Section three of eight. Binary search.
+
+
+Next up. Problem seven of forty three. LeetCode thirty five. Search Insert Position. Difficulty easy.
+
+Orientation. Binary search lower bound. Interviewers use this as the foundation of all binary search variants.
+
+Description. Given a sorted array and a target, return the index where the target would be inserted to keep the array sorted.
+
+Deep dive. The lower bound: the smallest index where the value is at least the target. Binary search with low and high pointers. If the midpoint value is less than the target, move low right; otherwise move high left until they converge.
+
+What interviewers probe. The exact inclusive or exclusive bounds. Subtle off by one bugs hide in this template.
+
+Logic and solution. Initialize low at zero, high at the array length. While low is less than high, compute mid. If the value at mid is less than the target, set low to mid plus one; else set high to mid. Return low.
+
+Complexity. Logarithmic time. Constant extra space.
+
+Takeaway. The lower bound binary search template is the Swiss Army knife of binary search; memorize the exclusive high pattern and reuse it.
+
+
+Next up. Problem eight of forty three. LeetCode seventy four. Search a Two D Matrix. Difficulty medium.
+
+Orientation. Binary search on a flattened matrix. Interviewers use this to test whether you exploit the row first sorted property.
+
+Description. Given a matrix where each row is sorted and the first element of each row is greater than the last of the previous, search for a target.
+
+Deep dive. The flattened matrix is sorted globally. Binary search the index range from zero to row times column count, converting each midpoint to row and column via division and modulo.
+
+What interviewers probe. The two index conversion. They also probe alternative staircase walks for matrices not satisfying the strict global sortedness.
+
+Logic and solution. Treat the matrix as a flat sorted array. Binary search. Compute mid. Convert to row and column. Compare and narrow.
+
+Complexity. Log of total cells. Constant extra space.
+
+Takeaway. Globally sorted matrices admit single binary search via flat indexing; the conversion is one division and one modulo.
+
+
+Next up. Problem nine of forty three. LeetCode one sixty two. Find Peak Element. Difficulty medium.
+
+Orientation. Binary search on monotonic slopes. Interviewers use this to test whether you can binary search without a sorted array.
+
+Description. Given an array where adjacent elements differ, return any peak index, where the value is greater than both neighbors. Boundaries treat negative infinity outside.
+
+Deep dive. Binary search comparing the midpoint with its right neighbor. If midpoint is less, a peak lies to the right. Else a peak lies at the midpoint or to the left. Narrow accordingly.
+
+What interviewers probe. Why this works without a sorted array. The argument is that the boundaries are negative infinity, so a peak must exist in either half whichever way the slope tilts.
+
+Logic and solution. Initialize low at zero, high at the last index. While low is less than high, compute mid. If the value at mid is less than the value at mid plus one, set low to mid plus one. Else set high to mid. Return low.
+
+Complexity. Logarithmic time. Constant extra space.
+
+Takeaway. Binary search applies whenever you can decide which half contains the answer; sortedness is not required, only a deterministic narrowing rule.
+
+
+Next up. Problem ten of forty three. LeetCode thirty three. Search in Rotated Sorted Array. Difficulty medium.
+
+Orientation. Binary search with an identifying half. Interviewers use this to test whether you adapt the invariant.
+
+Description. Given a rotated sorted array with distinct values and a target, return the target index or minus one.
+
+Deep dive. Any midpoint divides the array into two halves, at least one of which is sorted. Compare the low value with the midpoint to identify the sorted half. If the target lies within that sorted half's range, narrow to it; else narrow to the other.
+
+What interviewers probe. Robustness to boundary cases. They may follow up with the duplicates variant, which forces a fallback shrink.
+
+Logic and solution. Initialize low and high. Loop while low is at most high. Compute mid. If equal to target, return. Compare low and mid to identify the sorted half. Check whether the target lies within that half's range; narrow accordingly.
+
+Complexity. Logarithmic time. Constant extra space.
+
+Takeaway. Rotated sorted array searches identify a sorted half each step and use it to decide direction.
+
+
+Next up. Problem eleven of forty three. LeetCode thirty four. Find First and Last Position of Element in Sorted Array. Difficulty medium.
+
+Orientation. Two lower bound binary searches. Interviewers use this as a precision exercise.
+
+Description. Given a sorted array and a target, return the first and last positions of the target, or minus one minus one if absent.
+
+Deep dive. Two binary searches. The first finds the lower bound of the target. The second finds the lower bound of target plus one, which gives one past the last occurrence.
+
+What interviewers probe. Whether you reuse one binary search template. Many candidates write two slightly different searches and introduce bugs.
+
+Logic and solution. Lower bound helper. Find the lower bound of target, call it left. Find the lower bound of target plus one, call it right. If left equals the array length or the value at left is not the target, return minus one minus one. Else return left and right minus one.
+
+Complexity. Logarithmic time. Constant extra space.
+
+Takeaway. First and last occurrences in sorted arrays come from two lower bound calls; reuse a single helper.
+
+
+Next up. Problem twelve of forty three. LeetCode one fifty three. Find Minimum in Rotated Sorted Array. Difficulty medium.
+
+Orientation. Binary search for the rotation pivot. Interviewers use this as a one liner with an unforgiving invariant.
+
+Description. Given a rotated sorted array of distinct values, return the minimum.
+
+Deep dive. Binary search comparing midpoint to the high value. If midpoint is greater than high, the pivot lies to the right of midpoint, so move low to mid plus one. Otherwise the pivot is at or to the left, so move high to mid.
+
+What interviewers probe. Why comparing to high works while comparing to low does not. The argument is that comparing to high never fails to discriminate, while comparing to low has ambiguity in the unrotated case.
+
+Logic and solution. Initialize low and high. Loop while low is less than high. Compute mid. If the value at mid is greater than the value at high, set low to mid plus one. Else set high to mid. Return the value at low.
+
+Complexity. Logarithmic time. Constant extra space.
+
+Takeaway. Compare to the high pointer when binary searching for a rotation pivot; that comparison does not have the ambiguity of the low side.
+
+
+Next up. Problem thirteen of forty three. LeetCode four. Median of Two Sorted Arrays. Difficulty hard.
+
+Orientation. Binary search on a partition. Interviewers use this to separate candidates who can binary search a value from those who can binary search a partition.
+
+Description. Given two sorted arrays of sizes m and n, return the median of the combined sequence in logarithmic time.
+
+Deep dive. Think of the median as a partition. Split the combined array exactly in the middle. Partition both arrays simultaneously such that the left side has half the total elements. The correctness condition is the four corner check: each array's left max must be at most the other array's right min.
+
+What interviewers probe. Always running the binary search on the smaller array. Edge cases when a partition lands at the start or end of an array, requiring sentinel infinities.
+
+Logic and solution. Binary search on the smaller array's partition index. In each iteration, derive the complementary partition. Compare the four boundary values. Move the partition accordingly. When the four corner condition holds, the median is determined by those boundary values.
+
+Complexity. Logarithmic in the smaller of the two arrays. Constant extra space.
+
+Takeaway. When sub linear time is required over sorted data, binary search a partition rather than a value.
+
+
+Section four of eight. Heap.
+
+
+Next up. Problem fourteen of forty three. LeetCode two fifteen. Kth Largest Element in an Array. Difficulty medium.
+
+Orientation. Min heap of size k or quickselect. Interviewers use this to test choice of approach.
+
+Description. Given an unsorted array and an integer k, return the k th largest element.
+
+Deep dive. Two approaches. A min heap of size k: walk the array, push each element, pop if size exceeds k. The top is the k th largest. Or quickselect: partition around a pivot; recurse into the side that contains the rank.
+
+What interviewers probe. The expected versus worst case. Quickselect is linear on average but quadratic in the worst case unless you randomize the pivot. The heap is n log k worst case.
+
+Logic and solution. Min heap. Walk the array. Push each value. If the heap size exceeds k, pop. Return the top.
+
+Complexity. n log k for the heap. Linear average, quadratic worst for quickselect. Linear extra space.
+
+Takeaway. K th largest is min heap of size k for predictable performance, or randomized quickselect for expected linear time.
+
+
+Next up. Problem fifteen of forty three. LeetCode five zero two. Initial Public Offering. Difficulty hard.
+
+Orientation. Two heaps for affordability and profitability. Interviewers use this to test whether you separate two ordering criteria.
+
+Description. Given a list of projects with capital requirements and profits, plus initial capital and a number of allowed projects, return the maximum capital after picking that many projects greedily.
+
+Deep dive. Sort projects by capital requirement. Maintain a max heap of profits over affordable projects. At each step, push all newly affordable projects into the heap, then pop the most profitable, add its profit to the capital, and continue.
+
+What interviewers probe. Why two heaps or one heap plus sorted list. The split separates the affordability filter from the profit selection.
+
+Logic and solution. Sort by capital. Use a max heap on profits and a pointer over the sorted projects. For each of k iterations, advance the pointer pushing all projects whose capital is at most the current capital. If the heap is empty, break. Pop the top, add to capital.
+
+Complexity. n log n for sorting, k log n for picks. Linear extra space.
+
+Takeaway. When two ordering criteria conflict, split: sort by one, heap by the other.
+
+
+Next up. Problem sixteen of forty three. LeetCode three seventy three. Find K Pairs with Smallest Sums. Difficulty medium.
+
+Orientation. Min heap on the merge frontier. Interviewers use this to test how you handle a two dimensional sorted structure.
+
+Description. Given two sorted arrays and an integer k, return the k pairs with the smallest sums.
+
+Deep dive. Treat the two arrays as a sorted matrix where row i column j holds the sum of array one at i and array two at j. The smallest is at the corner. Use a min heap seeded with the first row's first column or the first column's first row. Pop the smallest pair, push its right or down neighbor, dedup with a visited set.
+
+What interviewers probe. The visited set, which prevents pushing the same pair twice via different neighbors.
+
+Logic and solution. Min heap of pair indices ordered by sum. Push zero zero. Visited set. Loop k times. Pop the top, record the actual pair. Push the right and down neighbors if not visited. Continue.
+
+Complexity. k log k time. k extra space.
+
+Takeaway. Sorted matrix walks are min heap on the frontier with a visited set; the heap orders the candidates and the set prevents duplicates.
+
+
+Next up. Problem seventeen of forty three. LeetCode two ninety five. Find Median from Data Stream. Difficulty hard.
+
+Orientation. Two heaps balanced around the median. Interviewers use this as a stream design problem.
+
+Description. Implement add num to insert and find median to return the running median.
+
+Deep dive. Maintain a max heap of the lower half and a min heap of the upper half. The median is either the top of the larger heap or the average of the two tops. Balance the heaps so their sizes differ by at most one.
+
+What interviewers probe. The rebalance discipline. After every insert, ensure one heap has either equal size or exactly one more element than the other.
+
+Logic and solution. On add, push into the lower max heap. Move its top to the upper min heap to maintain order. If the upper exceeds the lower in size, move the upper's top back. On find median, return the lower's top if larger, else the average of the two tops.
+
+Complexity. Log n per add, constant per find median.
+
+Takeaway. Streaming medians use a max heap and a min heap balanced around the middle; insertion is push then rebalance.
+
+
+Section five of eight. Bit manipulation.
+
+
+Next up. Problem eighteen of forty three. LeetCode sixty seven. Add Binary. Difficulty easy.
+
+Orientation. Binary string addition. Interviewers use this as a pointer arithmetic exercise.
+
+Description. Given two binary strings, return their sum as a binary string.
+
+Deep dive. Walk both strings from the back with two pointers and a carry. At each step, sum the current digits and carry. Append the result modulo two; carry becomes total over two. After the loop, append the carry if non zero. Reverse the output.
+
+What interviewers probe. Whether you handle unequal lengths cleanly with a single loop.
+
+Logic and solution. Two pointers at the ends. Carry at zero. Loop while either pointer is in bounds or carry is non zero. Sum the available digits plus carry. Append digit, update carry. Reverse and return.
+
+Complexity. Linear in the longer length. Linear extra space.
+
+Takeaway. Binary string addition is identical to grade school addition, walked from the back with a carry.
+
+
+Next up. Problem nineteen of forty three. LeetCode one ninety. Reverse Bits. Difficulty easy.
+
+Orientation. Bit by bit reversal. Interviewers use this to test bit manipulation comfort.
+
+Description. Reverse the bits of a thirty two bit unsigned integer.
+
+Deep dive. Loop thirty two times. Each iteration shifts the result left by one and ORs in the lowest bit of the input, then shifts the input right by one.
+
+What interviewers probe. The constant time variant using lookup tables or bit twiddling, where you reverse in eight bit groups by interleaving masked shifts.
+
+Logic and solution. Initialize result to zero. Loop thirty two times. Shift result left by one. Or with input bitwise and one. Shift input right by one. Return result.
+
+Complexity. Constant time, since the size is fixed. Constant extra space.
+
+Takeaway. Bit reversal is a thirty two iteration loop; the bit twiddling variant achieves constant cycles but is overkill for most interviews.
+
+
+Next up. Problem twenty of forty three. LeetCode one ninety one. Number of One Bits. Difficulty easy.
+
+Orientation. Brian Kernighan's bit count. Interviewers use this to test whether you know the trick.
+
+Description. Return the number of one bits in an unsigned integer.
+
+Deep dive. Brian Kernighan's trick: n bitwise and n minus one clears the lowest set bit. Loop, incrementing a counter, until n is zero.
+
+What interviewers probe. Why the trick is faster than the bit by bit scan. The work scales with set bits, not total bits.
+
+Logic and solution. Initialize a count. Loop while n is non zero. Set n to n bitwise and n minus one. Increment count.
+
+Complexity. Linear in the number of set bits. Constant extra space.
+
+Takeaway. Brian Kernighan's trick clears the lowest set bit per iteration; the loop runs only as many times as there are set bits.
+
+
+Next up. Problem twenty one of forty three. LeetCode one thirty six. Single Number. Difficulty easy.
+
+Orientation. XOR cancellation. Interviewers use this for the elegance of the trick.
+
+Description. Given an array where every element appears twice except one, return the unique element.
+
+Deep dive. XOR is associative, commutative, and self canceling. XORing all elements cancels duplicates and leaves the unique value.
+
+What interviewers probe. Why XOR. The three properties together guarantee that any pair of equal values disappears regardless of order.
+
+Logic and solution. Initialize result to zero. XOR every element into result. Return result.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. XOR identifies a single unpaired element in linear time and constant space; pairs annihilate themselves.
+
+
+Next up. Problem twenty two of forty three. LeetCode one thirty seven. Single Number Two. Difficulty medium.
+
+Orientation. Bit counting modulo three. Interviewers use this to test whether you generalize XOR to three appearances.
+
+Description. Given an array where every element appears three times except one, return the unique element.
+
+Deep dive. For each bit position, sum the bit across all elements, take modulo three. The result reconstructs the unique. Equivalent constant space implementation uses two state bits to encode counts modulo three.
+
+What interviewers probe. The constant space variant. The bit counting per position uses linear extra space proportional to the integer width.
+
+Logic and solution. Bit counting version. Initialize a result. For each of thirty two bit positions, count one bits across all numbers, take modulo three, set that bit in the result if the count modulo three is one. Return result.
+
+Complexity. Linear in array size times integer width. Constant extra space if reusing a counter.
+
+Takeaway. XOR generalizes via bit position counting modulo k; use it whenever everything except one element appears k times.
+
+
+Next up. Problem twenty three of forty three. LeetCode two zero one. Bitwise AND of Numbers Range. Difficulty medium.
+
+Orientation. Common prefix detection. Interviewers use this to test bit level reasoning.
+
+Description. Given a range of integers from low to high, return the bitwise AND of all numbers in the range.
+
+Deep dive. The result is the common binary prefix of low and high, with trailing bits cleared. Repeatedly shift both right until they are equal; that shared value, shifted back, is the answer.
+
+What interviewers probe. Why the common prefix is correct. The argument is that any bit that differs between low and high must include a transition where it is zero in some number in the range.
+
+Logic and solution. Track a shift count. While low differs from high, shift both right and increment the count. Return low shifted left by the count.
+
+Complexity. Logarithmic in the range size. Constant extra space.
+
+Takeaway. AND over a contiguous range collapses to the binary common prefix; shift right until equal, shift back.
+
+
+Section six of eight. Math.
+
+
+Next up. Problem twenty four of forty three. LeetCode nine. Palindrome Number. Difficulty easy.
+
+Orientation. Numeric palindrome check. Interviewers use this to test whether you avoid converting to a string.
+
+Description. Return whether an integer reads the same forward and backward, without converting to a string.
+
+Deep dive. Negative numbers are never palindromes. Build the reverse of the second half by repeatedly modulo and divide. Stop when the reversed half is at least the remaining first half. The palindrome holds when the halves match exactly, or the longer first half by one digit, after dropping the middle digit.
+
+What interviewers probe. Whether you can stop at half. Reversing the entire number can overflow.
+
+Logic and solution. If negative or ends in zero with non zero value, return false. Build the reverse by halving. Loop while the reverse is less than the remaining. Compare equal or equal after dropping the middle.
+
+Complexity. Logarithmic in the number. Constant extra space.
+
+Takeaway. Numeric palindrome checks reverse half the digits to avoid overflow; comparison handles odd and even lengths uniformly.
+
+
+Next up. Problem twenty five of forty three. LeetCode sixty six. Plus One. Difficulty easy.
+
+Orientation. Big integer increment. Interviewers use this to test trailing nine handling.
+
+Description. Given a digits array representing a non negative integer, return the digits after adding one.
+
+Deep dive. Walk from the back. If the digit is less than nine, increment and return. Otherwise set to zero and continue. If the loop finishes with all nines, prepend a one.
+
+What interviewers probe. The all nines case. The output must be one digit longer than the input.
+
+Logic and solution. Walk indices from the back. If less than nine, increment and return. Else set to zero. After the loop, return one followed by the array.
+
+Complexity. Linear in the worst case. Linear extra space only on overflow.
+
+Takeaway. Big integer increment carries from the back; the only allocation needed is when every digit is nine.
+
+
+Next up. Problem twenty six of forty three. LeetCode one seventy two. Factorial Trailing Zeroes. Difficulty medium.
+
+Orientation. Counting factors of five. Interviewers use this for the elegant counting trick.
+
+Description. Return the number of trailing zeros in n factorial.
+
+Deep dive. Each trailing zero comes from a factor of ten, which is two times five. Twos abound in factorial; fives are scarce. So count the number of factors of five in numbers from one to n. That is n divided by five plus n divided by twenty five plus n divided by one twenty five and so on.
+
+What interviewers probe. Why fives, not twos. The argument is that there are always more factors of two than five in any factorial.
+
+Logic and solution. Initialize a count. Loop while n is at least five. Divide n by five and add to the count. Return.
+
+Complexity. Logarithmic in n. Constant extra space.
+
+Takeaway. Trailing zeros of n factorial come from factors of five; count them by repeated division.
+
+
+Next up. Problem twenty seven of forty three. LeetCode sixty nine. Square Root of x. Difficulty easy.
+
+Orientation. Integer binary search. Interviewers use this to test binary search on a numeric range.
+
+Description. Return the integer square root of a non negative integer, truncating toward zero.
+
+Deep dive. Binary search on the candidate range from zero to the input. Compare midpoint squared with the target. To avoid overflow, compare midpoint with input divided by midpoint.
+
+What interviewers probe. Overflow on midpoint times midpoint. The division comparison avoids it.
+
+Logic and solution. If x is zero, return zero. Initialize low at one and high at x. While low is at most high, compute mid. Compare mid times mid with x carefully. Adjust bounds. Return high after the loop.
+
+Complexity. Logarithmic time. Constant extra space.
+
+Takeaway. Integer roots are binary search on the candidate range; rewrite midpoint squared as a division to avoid overflow.
+
+
+Next up. Problem twenty eight of forty three. LeetCode fifty. Power of x to n. Difficulty medium.
+
+Orientation. Fast exponentiation. Interviewers use this to test logarithmic time recursion or iteration.
+
+Description. Compute x raised to the power n.
+
+Deep dive. Fast exponentiation halves the exponent: x to the n equals x to the n over two squared, with an extra x for odd n. Recurse or iterate, handling negative exponents by inverting the base.
+
+What interviewers probe. The negative exponent and the iterative variant. They also probe the integer overflow risks.
+
+Logic and solution. If n is negative, set x to one over x and negate n. Iterative version. Initialize result to one. Loop while n is non zero. If n is odd, multiply result by x. Square x. Halve n. Return result.
+
+Complexity. Logarithmic in n. Constant extra space.
+
+Takeaway. Fast exponentiation halves the exponent each step; the iterative form is concise and avoids stack depth.
+
+
+Next up. Problem twenty nine of forty three. LeetCode one forty nine. Max Points on a Line. Difficulty hard.
+
+Orientation. Slope counting from each anchor. Interviewers use this as a geometry application of hash maps.
+
+Description. Given a list of points in the plane, return the maximum number that lie on a single straight line.
+
+Deep dive. For each anchor, hash the slopes to all other points. The maximum count for an anchor is the answer for it. Take the global max. To avoid floating point issues, represent slopes as reduced fraction tuples by dividing by the greatest common divisor.
+
+What interviewers probe. The slope canonicalization. Floating point representation is unreliable; reduced integer fractions are required.
+
+Logic and solution. For each anchor, build a map from slope to count. For each other point, compute delta x and delta y, divide by their greatest common divisor with sign normalization, increment the map. Track the best for this anchor; add one for the anchor itself. Take the global max.
+
+Complexity. Quadratic time. Linear extra space.
+
+Takeaway. Collinearity problems hash slopes; canonicalize via reduced fractions to avoid floating point bugs.
+
+
+Section seven of eight. One dimensional dynamic programming.
+
+
+Next up. Problem thirty of forty three. LeetCode seventy. Climbing Stairs. Difficulty easy.
+
+Orientation. Fibonacci style recurrence. Interviewers use this as the smallest DP introduction.
+
+Description. Given n stairs and the ability to climb one or two at a time, return the number of ways to reach the top.
+
+Deep dive. The recurrence is ways at n equals ways at n minus one plus ways at n minus two. Base cases: ways at zero and ways at one are one. The same as Fibonacci.
+
+What interviewers probe. Whether you use constant space by tracking only the last two values.
+
+Logic and solution. Initialize previous and current to one. Loop n minus one times. Update both: new current is previous plus current; new previous is the old current. Return current.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Fibonacci recurrences need only two rolling values; never allocate a full DP array for them.
+
+
+Next up. Problem thirty one of forty three. LeetCode one ninety eight. House Robber. Difficulty medium.
+
+Orientation. The non adjacent take or skip recurrence. Interviewers use this as the prototype linear DP with two choices.
+
+Description. Given an array of house values, return the maximum sum you can collect, no two adjacent.
+
+Deep dive. The recurrence at position i is the larger of: take i and skip i minus one, namely value at i plus answer at i minus two; or skip i, namely the answer at i minus one. Two rolling variables suffice.
+
+What interviewers probe. The optimization to constant space. The linear array approach is clearer but uses extra memory.
+
+Logic and solution. Initialize previous and current to zero. For each value, the new current is the larger of the current itself and the previous plus the value. Update previous to the old current. Return current.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Take or skip linear DPs collapse to two rolling variables; the recurrence is the larger of include and exclude.
+
+
+Next up. Problem thirty two of forty three. LeetCode one thirty nine. Word Break. Difficulty medium.
+
+Orientation. DP over string prefixes. Interviewers use this to test prefix DP design.
+
+Description. Given a string and a dictionary, return whether the string can be segmented into a sequence of dictionary words.
+
+Deep dive. Boolean array indexed by prefix length. The first entry is true. Each subsequent entry is true if some j strictly less than i has DP at j true and the substring from j to i is in the dictionary.
+
+What interviewers probe. Whether you bound the inner loop by the maximum word length, which speeds up large dictionaries.
+
+Logic and solution. Boolean array of length n plus one, all false except the first. For i from one to n, walk j from zero to i minus one. If DP at j is true and the substring from j to i is in the set, set DP at i to true and break.
+
+Complexity. n squared time. Linear extra space.
+
+Takeaway. Word segmentation is prefix DP plus dictionary lookup; bound the inner loop by max word length for speed.
+
+
+Next up. Problem thirty three of forty three. LeetCode three twenty two. Coin Change. Difficulty medium.
+
+Orientation. Unbounded knapsack DP. Interviewers use this as a fundamentals check.
+
+Description. Given coin denominations and an amount, return the minimum number of coins to make the amount, or minus one if impossible.
+
+Deep dive. DP indexed by amount. Initialize the first to zero, the rest to infinity. For each amount from one upward, for each coin at most that amount, the minimum at the amount is one plus the minimum at the amount minus the coin.
+
+What interviewers probe. Why bottom up DP rather than greedy. Greedy fails for arbitrary denominations.
+
+Logic and solution. Allocate an array of length amount plus one filled with infinity except the first which is zero. For amount from one to target, for each coin at most that amount, update the entry to the smaller of itself and one plus the entry at amount minus coin. Return the last entry, or minus one if infinite.
+
+Complexity. Amount times coin count. Linear extra space.
+
+Takeaway. Coin change is bottom up DP over amounts; greedy is only correct for specific denomination structures.
+
+
+Next up. Problem thirty four of forty three. LeetCode three hundred. Longest Increasing Subsequence. Difficulty medium.
+
+Orientation. Patience sorting for n log n. Interviewers use this to test whether you upgrade from quadratic DP.
+
+Description. Given an array, return the length of the longest strictly increasing subsequence.
+
+Deep dive. Quadratic DP at each position computes the longest increasing subsequence ending there by checking all earlier positions. Patience sorting uses a tails array: for each element, binary search for the lower bound in tails and replace it. The length of tails is the answer, although tails itself is not a valid subsequence.
+
+What interviewers probe. Why patience sorting works. The argument is that tails remains sorted by construction and its length tracks the longest increasing subsequence length.
+
+Logic and solution. Maintain tails. For each value, binary search for the lower bound. If at the end of tails, append. Else replace at that position. Return tails length.
+
+Complexity. n log n time. Linear extra space.
+
+Takeaway. Longest increasing subsequence in n log n uses patience sorting; the tails array is a sorted invariant whose length is the answer.
+
+
+Section eight of eight. Multidimensional dynamic programming.
+
+
+Next up. Problem thirty five of forty three. LeetCode one twenty. Triangle. Difficulty medium.
+
+Orientation. Bottom up DP over rows. Interviewers use this to test whether you collapse to a single row.
+
+Description. Given a triangle of integers, return the minimum sum path from top to bottom, with each step moving to one of the two adjacent indices in the next row.
+
+Deep dive. Walk rows from the bottom up. Each entry becomes itself plus the smaller of the two children below. The top entry is the answer. Reuse the bottom row in place to save space.
+
+What interviewers probe. The bottom up direction. Top down also works but requires more boundary handling for the triangle shape.
+
+Logic and solution. Copy the last row into a working array. For each row from second to last up to the top, for each index in that row, set the working entry to the row value plus the smaller of the working at index and at index plus one. Return the first entry.
+
+Complexity. Quadratic in row count. Linear extra space.
+
+Takeaway. Triangle DPs collapse to a single rolling row when walked from the bottom up.
+
+
+Next up. Problem thirty six of forty three. LeetCode sixty four. Minimum Path Sum. Difficulty medium.
+
+Orientation. Two D grid DP. Interviewers use this as a fundamentals check on grid DP.
+
+Description. Given a grid of non negative numbers, return the minimum sum path from top left to bottom right, moving only right or down.
+
+Deep dive. DP. Each cell is its value plus the smaller of the cell above and the cell to the left, with first row and column treated as cumulative sums.
+
+What interviewers probe. Whether you collapse the DP to one row. They also probe in place updates on the input matrix when allowed.
+
+Logic and solution. Walk row by row, column by column. For each cell, add the smaller of the top and left predecessor. First row sums leftward; first column sums downward. Return the bottom right.
+
+Complexity. Linear in cells. Either constant extra if updating in place, or one row otherwise.
+
+Takeaway. Grid DPs walk in cumulative reading order; in place updates on the input save space.
+
+
+Next up. Problem thirty seven of forty three. LeetCode sixty three. Unique Paths Two. Difficulty medium.
+
+Orientation. Grid DP with obstacles. Interviewers use this to test the obstacle handling.
+
+Description. Given a grid where some cells are obstacles, return the number of unique paths from top left to bottom right moving only right or down.
+
+Deep dive. Same as plain unique paths but obstacle cells contribute zero. Walk row by row. Each cell with no obstacle is the sum of the cell above and the cell to the left.
+
+What interviewers probe. Edge cases of obstacles at the start or end, which make the answer zero.
+
+Logic and solution. If the start cell has an obstacle, return zero. Walk rows. For each cell, if obstacle, set to zero. Else add the top and left predecessor values. Return the last cell.
+
+Complexity. Linear in cells. Linear extra space, reducible to one row.
+
+Takeaway. Obstacle grid DPs zero out blocked cells; the recurrence is otherwise unchanged.
+
+
+Next up. Problem thirty eight of forty three. LeetCode five. Longest Palindromic Substring. Difficulty medium.
+
+Orientation. Center expansion or two D DP. Interviewers use this for palindrome reasoning.
+
+Description. Return the longest palindromic substring of a string.
+
+Deep dive. Center expansion treats each index as both an odd center and an even center, expanding outward as long as characters match. The DP version sets DP at i j to true when characters match and the inner substring is a palindrome.
+
+What interviewers probe. The odd and even uniform handling. Forgetting one cuts results in half.
+
+Logic and solution. Walk indices. For each, expand around as an odd center and as an even center. Track the longest expansion seen.
+
+Complexity. Quadratic time. Constant extra space for center expansion.
+
+Takeaway. Palindrome problems run two expansions per index, odd and even, in lockstep.
+
+
+Next up. Problem thirty nine of forty three. LeetCode ninety seven. Interleaving String. Difficulty medium.
+
+Orientation. Two D DP on string prefixes. Interviewers use this to test whether you derive the recurrence cleanly.
+
+Description. Given strings s one, s two, and s three, return whether s three is an interleaving of the first two preserving order.
+
+Deep dive. DP at i j is true if the first i plus j characters of s three can be formed from the first i of s one and the first j of s two. The recurrence: take from s one if DP at i minus one j is true and s one at i minus one matches s three at i plus j minus one; or take from s two analogously.
+
+What interviewers probe. The base case: DP at zero zero is true. Initialization of the first row and column based on prefix equality.
+
+Logic and solution. If lengths do not add up, return false. Allocate a boolean grid. Initialize. For each i j, apply the recurrence. Return the bottom right.
+
+Complexity. Product of lengths. Same in extra space, reducible to one row.
+
+Takeaway. String interleaving is two D DP on prefixes; the recurrence chooses which source the next character came from.
+
+
+Next up. Problem forty of forty three. LeetCode seventy two. Edit Distance. Difficulty medium.
+
+Orientation. Two D DP on string prefixes for the classic Levenshtein distance.
+
+Description. Given two strings, return the minimum number of insertions, deletions, or substitutions to transform one into the other.
+
+Deep dive. DP at i j is the edit distance between the first i of one and the first j of the other. Recurrence: if last characters match, equals DP at i minus one j minus one. Else one plus the minimum of DP at i minus one j, DP at i j minus one, DP at i minus one j minus one, corresponding to delete, insert, and replace.
+
+What interviewers probe. The base cases. The first row equals j and the first column equals i, since transforming the empty string to a length k string requires k insertions.
+
+Logic and solution. Allocate a grid sized one larger than each input. Initialize first row and column. Fill the table with the recurrence. Return the bottom right.
+
+Complexity. Product of lengths. Same in extra space, reducible to two rows.
+
+Takeaway. Edit distance is two D DP with three transitions: insert, delete, replace; the diagonal handles the match case.
+
+
+Next up. Problem forty one of forty three. LeetCode one twenty three. Best Time to Buy and Sell Stock Three. Difficulty hard.
+
+Orientation. State machine DP with at most two transactions. Interviewers use this to test whether you track multiple states cleanly.
+
+Description. Given daily prices, return the maximum profit with at most two buy sell transactions.
+
+Deep dive. Track four states: after first buy, after first sell, after second buy, after second sell. Walk prices. Update each state based on the previous prices and the previous states.
+
+What interviewers probe. Whether the state transitions form a valid sequence. The first sell must happen before the second buy, which in turn must happen before the second sell.
+
+Logic and solution. Initialize first buy to negative infinity, first sell to zero, second buy to negative infinity, second sell to zero. For each price, update each state: first buy is the larger of itself and negative price; first sell is the larger of itself and first buy plus price; second buy is the larger of itself and first sell minus price; second sell is the larger of itself and second buy plus price. Return second sell.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Bounded transaction stock problems are state machine DP; carry exactly enough state to track each phase.
+
+
+Next up. Problem forty two of forty three. LeetCode one eighty eight. Best Time to Buy and Sell Stock Four. Difficulty hard.
+
+Orientation. State machine DP generalized to k transactions.
+
+Description. Same as the previous problem but with at most k transactions.
+
+Deep dive. If k is at least half the prices length, the problem degenerates to unlimited transactions, which is the simple greedy. Otherwise, generalize the four state machine to two k states or to two arrays of size k tracking after buy and after sell. Walk prices and update each.
+
+What interviewers probe. The degenerate case for large k. Without it, the algorithm wastes memory.
+
+Logic and solution. If k is large enough, sum positive daily deltas. Else allocate buy and sell arrays of size k, both initialized appropriately. For each price, walk j from zero to k minus one; update buy at j and sell at j based on the previous values. Return the last sell.
+
+Complexity. Prices times k for time. Linear in k for space.
+
+Takeaway. K transaction problems generalize the four state machine to two arrays of size k; the unbounded variant is the degenerate edge case.
+
+
+Next up. Problem forty three of forty three. LeetCode two twenty one. Maximal Square. Difficulty medium.
+
+Orientation. Two D DP on grid. Interviewers use this for the recurrence based on three neighbors.
+
+Description. Given a binary matrix, return the area of the largest all ones square.
+
+Deep dive. DP at i j stores the side length of the largest all ones square ending at i j as its bottom right corner. If the cell is one, the value is one plus the minimum of the three neighbors above, to the left, and the diagonal upper left. Track the global maximum and return its square.
+
+What interviewers probe. Why the minimum of three rather than the maximum. The argument is that a square of side k requires all three smaller squares of side k minus one to be present.
+
+Logic and solution. Allocate a DP grid the same size or use the input in place. For each cell, if zero, set to zero. Else if at the top or left edge, set to one. Else set to one plus the minimum of three neighbors. Track the max and return its square.
+
+Complexity. Linear in cells. Linear extra space, reducible to one row.
+
+Takeaway. Maximal square is grid DP with a three neighbor minimum recurrence; the square root of the answer drops out at the end.
+
+
+That concludes part three of three and the full Top Interview one fifty study plan. Patterns to internalize from this final part: divide and conquer for sorted construction and merging, Kadane's for maximum subarrays, binary search on values and partitions, heaps for streaming and selection, bitwise tricks for cancellation and counting, and one and two dimensional DPs over prefixes, suffixes, grids, and state machines. Drive safe.
+
+End of part three.
+
+End of Top Interview one fifty transcript.

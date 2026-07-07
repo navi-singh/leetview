@@ -1,0 +1,650 @@
+GOOGLE TOP INTERVIEW QUESTIONS. AUDIO TRANSCRIPT.
+
+Welcome. This transcript covers thirty five of the most frequently asked Google interview problems, grouped by pattern so each section reinforces a single idea before moving on. Each problem walks through six beats. First, a quick orientation: what category the problem belongs to and why Google likes it. Second, the description. Third, a deep dive into the underlying insight. Fourth, what interviewers actually probe and the common pitfalls. Fifth, the logic and solution in plain prose. Sixth, the complexity. And finally, a one sentence takeaway worth remembering.
+
+Let's begin.
+
+
+Section one of fifteen. Hash map and lookup.
+
+
+Next up. Problem one of thirty five. LeetCode one. Two Sum. Difficulty easy.
+
+Orientation. This is the prototype hash map problem. Google uses it as a warm up to see if you instinctively reach for a hash map to convert a quadratic scan into a linear one.
+
+Description. Given an array of integers and a target integer, return the indices of the two numbers that add up to the target. Each input has exactly one solution. You may not use the same element twice. With array two, seven, eleven, fifteen and target nine, the answer is indices zero and one.
+
+Deep dive. The brute force tries every pair, which is quadratic. The trick is to flip the question. Instead of asking for every pair, fix one number and ask: have I already seen its complement, the target minus the current value? If yes, you are done. That complement check needs to be constant time, which is exactly what a hash map provides.
+
+What interviewers probe. They want to see you recognize the trade. The naive solution works but is quadratic; the better solution buys linear time at the cost of linear space. Be ready to discuss that trade out loud. They may also ask follow ups: what if the array is sorted, where the two pointer approach beats the hash map; what if duplicates exist; what if you need all pairs not just one.
+
+Logic and solution. Walk the array once, maintaining a hash map from value seen so far to its index. For the current element, compute the complement. If the complement is already in the map, return the stored index and the current index. Otherwise, store the current value and continue.
+
+Complexity. Linear time, linear extra space.
+
+Takeaway. When a brute force scans every pair, ask whether a hash map can answer the per element question in constant time.
+
+
+Next up. Problem two of thirty five. LeetCode forty nine. Group Anagrams. Difficulty medium.
+
+Orientation. Same hash map idea, lifted one level. Google uses this to test whether you can design a canonical key that collapses many inputs into the same bucket.
+
+Description. Given an array of strings, group together those that are anagrams of one another. Return a list of groups. The strings eat, tea, tan, ate, nat, bat group as eat tea ate, tan nat, and bat alone.
+
+Deep dive. Two strings are anagrams if and only if they have the same character frequency. So map each string to a canonical representative of its frequency, and group by that key. Two natural keys exist. The first is the sorted string, simple but slower. The second is a tuple of twenty six character counts, faster for fixed alphabets.
+
+What interviewers probe. The pivot here is recognizing that grouping problems are really about finding the right canonical key. Pitfalls include forgetting that the count vector must be encoded as a hashable key, and assuming the alphabet is fixed when the problem might allow Unicode. Be ready to defend the key choice.
+
+Logic and solution. Initialize a hash map from canonical key to list of strings. For each input, build its key by either sorting the characters or encoding the count vector as a string. Append the original to the list under that key. At the end, return all values of the map.
+
+Complexity. With the sorted key, n times length log length time. With the count key, n times length time. Linear extra space in total characters.
+
+Takeaway. Grouping problems reduce to finding the smallest invariant the group members share, then using that as a hash key.
+
+
+Next up. Problem three of thirty five. LeetCode one twenty eight. Longest Consecutive Sequence. Difficulty medium.
+
+Orientation. Hash set as a substitute for sorting. Google asks this to see if you can hit linear time when sorting would feel natural.
+
+Description. Given an unsorted array of integers, return the length of the longest run of consecutive integers present in the array. The required time bound is linear. With one hundred, four, two hundred, one, three, two, the answer is four for the run one two three four.
+
+Deep dive. Sorting solves it in n log n time, but the linear bound rules that out. Use a hash set for membership tests. The crucial trick is to start counting only at sequence starts. A number x is a start if x minus one is not in the set. Walk forward from each start as long as the next integer is present. By starting only at starts, every integer is touched at most twice across all walks, which keeps the total work linear despite the inner loop.
+
+What interviewers probe. The naive trap is to walk forward from every element, which makes the total work quadratic. Interviewers want you to articulate why starting only from sequence starts amortizes to linear. They also test for duplicates, which a set handles for free.
+
+Logic and solution. Insert all numbers into a hash set. For each element, if its predecessor is not in the set, treat it as a start. Walk forward counting consecutive members of the set. Track the maximum run.
+
+Complexity. Linear time on average, linear extra space.
+
+Takeaway. When the bound forbids sorting, a hash set plus a careful amortized walk often delivers the same answer in linear time.
+
+
+Section two of fifteen. Sliding window.
+
+
+Next up. Problem four of thirty five. LeetCode three. Longest Substring Without Repeating Characters. Difficulty medium.
+
+Orientation. The textbook sliding window. Google uses this to verify you can manage two pointers and a state map without bugs.
+
+Description. Given a string, find the length of the longest contiguous substring with no repeated characters. The string a b c a b c b b has answer three. The string p w w k e w has answer three for w k e.
+
+Deep dive. The brute force tries every substring, cubic in the worst case. The right tool is a window with two pointers, left and right. Slide right forward to expand. When a duplicate appears, contract from the left until the duplicate is gone. A faster variant skips inch by inch contraction by storing the last seen index of each character; when a duplicate appears, jump the left pointer directly to one past the prior occurrence.
+
+What interviewers probe. The classic bug is to advance the left pointer to a position behind where it already is, by trusting an outdated last seen index. Always clamp the left pointer to its current value or higher. Interviewers also probe edge cases: empty string, all same characters, all distinct characters.
+
+Logic and solution. Walk a right pointer over the string. Maintain a map from character to its last seen index. For each character, if it appears in the map at or after the current left pointer, jump left to one past the stored index. Update the map and update the running maximum length.
+
+Complexity. Linear time, linear extra space in the size of the alphabet.
+
+Takeaway. Sliding window is the right tool whenever the answer is a contiguous range and validity changes monotonically as you extend or shrink it.
+
+
+Next up. Problem five of thirty five. LeetCode seventy six. Minimum Window Substring. Difficulty hard.
+
+Orientation. Sliding window with multi character constraints. Google uses this to test whether you can manage a small bookkeeping counter cleanly under pressure.
+
+Description. Given two strings, find the shortest contiguous substring of the first that contains every character of the second including duplicates. With first string A D O B E C O D E B A N C and second string A B C, the answer is B A N C.
+
+Deep dive. Maintain a window with left and right pointers. Expand right, decrementing a need count for each character the second string requires. When the window contains all required characters, contract from the left to find the smallest valid window, record it, then keep going. The cleanest validity check uses a single counter called formed: it ticks up when a character's count in the window meets its required count exactly, and ticks down when it falls below. The window is valid when formed equals the number of distinct required characters.
+
+What interviewers probe. The pitfall is overcounting. If you increment formed every time a required character appears, instead of only when its count reaches the required number, you will accept windows that are still missing characters. They also probe handling of repeated characters in the requirement and case sensitivity.
+
+Logic and solution. Build a need map from the second string. Track required as the number of distinct keys. Walk a right pointer. For each character, if it is needed, update its have count and increment formed when have meets need exactly. While formed equals required, update the best window if smaller, then shrink from the left, decrementing formed when a have count falls below its need.
+
+Complexity. Linear time in the sum of the two string lengths, with extra space proportional to the alphabet.
+
+Takeaway. A single integer counter for satisfied characters is worth more than a vague feeling that the window is valid; pick a precise validity invariant and maintain it.
+
+
+Next up. Problem six of thirty five. LeetCode two thirty nine. Sliding Window Maximum. Difficulty hard.
+
+Orientation. Sliding window with a monotonic deque. Google asks this to see if you know the structure that gives constant amortized time per window.
+
+Description. Given an array and a window size k, return the maximum element of every window of size k as the window slides left to right.
+
+Deep dive. The naive approach scans inside each window, which is the product of array length and window size. The right tool is a monotonic decreasing deque of indices. The deque holds candidates for the current and future windows in decreasing order of value. The front is always the current window's maximum. When the right edge advances, evict from the back any indices whose values are less than or equal to the new element, since they can never be the maximum while the new element is alive. When the front falls outside the window, pop it.
+
+What interviewers probe. Off by one errors on the eviction condition, especially whether to use less than or less than or equal. Forgetting to pop the stale front when the window slides is another classic bug. Interviewers also like to ask why the amortized work is linear despite the inner while loop.
+
+Logic and solution. Iterate the array. For each index, evict from the back while the back's value is no greater than the current value. Push the current index to the back. If the front index has fallen out of the window, pop it. Once the index reaches the first full window, record the value at the front of the deque as the answer for that window.
+
+Complexity. Linear time. Each index is pushed and popped at most once. Space is proportional to the window size.
+
+Takeaway. A monotonic deque is the canonical structure when you need running extrema over a moving window in constant amortized time.
+
+
+Section three of fifteen. Two pointers and elevation.
+
+
+Next up. Problem seven of thirty five. LeetCode forty two. Trapping Rain Water. Difficulty hard.
+
+Orientation. The classic two pointer problem. Google asks this to test the leap from a precomputed maxima approach to the constant space two pointer formulation.
+
+Description. Given an array of bar heights with each bar of unit width, compute how much water is trapped after rain. Water at any index fills up to the lower of the highest bar to its left and the highest bar to its right, minus the bar's own height. The array zero one zero two one zero one three two one two one traps six units.
+
+Deep dive. The simple optimization precomputes left maximum and right maximum arrays in two passes, then sums water in a third. That is linear time and linear extra space. The two pointer technique cuts the extra space to constant. Maintain pointers at both ends and running maxima. Whichever side has the smaller current bar is the bounding side, because the water level there cannot exceed that smaller maximum. Process from that side, update its running max, accumulate water, advance the pointer.
+
+What interviewers probe. They probe the why behind the two pointer move. Many candidates implement it correctly without understanding why advancing the smaller side is safe. The argument is that the trapped water at the smaller side is determined entirely by the smaller running max; the other side, being taller, cannot reduce it.
+
+Logic and solution. Initialize two pointers at the ends, two running maxima at zero, and a total at zero. While the pointers have not crossed, compare the bars at both pointers. On the smaller side, either update its running max if the current bar exceeds it, or add the difference to the total. Advance that pointer. Repeat.
+
+Complexity. Linear time, constant extra space.
+
+Takeaway. Two pointers can replace precomputed arrays when the answer at each position depends only on a running extremum from one side.
+
+
+Section four of fifteen. Binary search.
+
+
+Next up. Problem eight of thirty five. LeetCode four. Median of Two Sorted Arrays. Difficulty hard.
+
+Orientation. The hardest mainstream binary search problem. Google asks this to separate candidates who can binary search a value from those who can binary search a partition.
+
+Description. Given two sorted arrays of sizes m and n, return the median of the combined sorted sequence in logarithmic time.
+
+Deep dive. Merging in linear time is too slow. The logarithmic bound demands a binary search. The clever framing is to think of the median as a partition. Split the combined sequence exactly in the middle so that everything on the left is at most everything on the right. The median lies at that boundary. Partition both arrays simultaneously such that the total left side has half the elements. The correctness condition is the four corner check: the largest element on the left of the first array must be at most the smallest on the right of the second, and symmetrically.
+
+What interviewers probe. Always running the binary search on the smaller array, to keep work logarithmic in the smaller size. Edge cases when a partition lands at the very start or end of an array; use sentinel negative and positive infinity values. Off by one errors when computing the complementary partition. Handling odd versus even total length.
+
+Logic and solution. Set lo and hi on the smaller array's partition index. In each iteration, derive the complementary partition for the larger array. Check the four corner condition. If the first array's left max is too large, move the partition left. Too small, move it right. When the condition holds, the median is the maximum of the two left max values for odd total length, or the average of that maximum and the minimum of the two right min values for even total length.
+
+Complexity. Logarithmic in the smaller of the two array sizes. Constant extra space.
+
+Takeaway. When a problem demands sublinear time over sorted data, look past binary searching for a value and consider binary searching for a partition.
+
+
+Next up. Problem nine of thirty five. LeetCode thirty three. Search in Rotated Sorted Array. Difficulty medium.
+
+Orientation. Modified binary search. Google asks this to see whether you can adapt the binary search invariant when the array is no longer monotonic.
+
+Description. Given an array originally sorted in ascending order with distinct values, then rotated by an unknown pivot, plus a target, return the index of the target or minus one. Required time is logarithmic.
+
+Deep dive. A rotated sorted array splits at any midpoint into two halves, and at least one of them is fully sorted. Identify which half is sorted, then check whether the target lies inside that sorted half. If yes, narrow to it. If no, narrow to the other half.
+
+What interviewers probe. They probe the half decision logic. Comparing the value at the low pointer with the value at the midpoint tells you which half is sorted, but the boundary case where they are equal can mislead in arrays with duplicates, which is why this problem specifies distinct values. Interviewers may follow up with the duplicates variant, problem eighty one, which forces a fallback linear shrink.
+
+Logic and solution. Maintain low and high pointers. While they have not crossed, compute the midpoint. If the midpoint matches the target, return it. Otherwise compare the low and midpoint values to identify the sorted half. If the target lies within that sorted half's range, narrow to it. Otherwise narrow to the other half. If the loop ends without finding, return minus one.
+
+Complexity. Logarithmic time, constant extra space.
+
+Takeaway. A rotated sorted array still admits binary search; the invariant just shifts from the whole array being sorted to one half being sorted at every step.
+
+
+Next up. Problem ten of thirty five. LeetCode four ten. Split Array Largest Sum. Difficulty hard.
+
+Orientation. Binary search on the answer space. Google asks this because the trick is unintuitive: instead of searching the input, search the output.
+
+Description. Given an array of non negative integers and an integer k, split the array into k non empty contiguous subarrays such that the maximum subarray sum is minimized. Return that minimized maximum.
+
+Deep dive. The space of possible answers is bounded between the largest single element and the total sum. The function is monotonic: if a maximum sum cap of x is feasible with at most k subarrays, then so is any larger cap. That monotonicity is the signature for binary searching the answer. For a candidate cap, run a greedy feasibility check: walk the array accumulating into a current subarray; when adding the next element would exceed the cap, start a new subarray. Count the subarrays used.
+
+What interviewers probe. They want you to prove the monotonicity out loud. They also probe the feasibility check: does the greedy give a tight count, what if a single element exceeds the cap, and is the binary search inclusive or exclusive on the bounds.
+
+Logic and solution. Set the low bound to the array's maximum element and the high bound to the total sum. Binary search. For each candidate cap, run the greedy feasibility check. If it uses at most k subarrays, the cap is feasible; pull the high bound down. Otherwise push the low bound up.
+
+Complexity. Linear in the array size for each feasibility check, with logarithmic many candidate caps over the sum range. Constant extra space.
+
+Takeaway. When you can frame a problem as a yes or no question with monotonic answers, binary search the answer rather than the input.
+
+
+Section five of fifteen. Stack and monotonic stack.
+
+
+Next up. Problem eleven of thirty five. LeetCode one fifty. Evaluate Reverse Polish Notation. Difficulty medium.
+
+Orientation. The textbook stack problem. Google asks this as a fundamentals check on parsing and operator semantics.
+
+Description. Given an array of tokens in postfix notation with operators plus, minus, multiply, and divide, evaluate the expression. Division between integers truncates toward zero. The expression is always valid.
+
+Deep dive. Postfix removes the need for parentheses by placing operators after their operands. Scan tokens left to right. Each operator's arguments are the two most recently produced operands, which is exactly a last in first out access pattern, the textbook signature of a stack.
+
+What interviewers probe. Operand order is the trap. When you pop two values, the first popped is the right operand, the second popped is the left. This matters for minus and divide because they are not commutative. Truncation toward zero for negative results is another easy bug, since some languages floor instead.
+
+Logic and solution. Walk the tokens. If the token is a number, push it on the stack. If it is an operator, pop the top as the right operand, pop again as the left, apply the operator, and push the result back. After the scan, the single remaining stack value is the answer.
+
+Complexity. Linear in the number of tokens. Linear extra space for the stack in the worst case.
+
+Takeaway. Postfix notation and stacks are made for each other; recognize the pairing and the evaluation falls out for free.
+
+
+Next up. Problem twelve of thirty five. LeetCode eighty four. Largest Rectangle in Histogram. Difficulty hard.
+
+Orientation. The canonical monotonic stack problem. Google asks this because the technique generalizes to a whole family of next greater and next smaller problems.
+
+Description. Given an array of bar heights with each bar of unit width, find the area of the largest rectangle in the histogram. Heights two, one, five, six, two, three has area ten, formed by the bars of heights five and six over a width of two.
+
+Deep dive. For each bar, the largest rectangle that uses this bar as its shortest member extends left until it hits a strictly shorter bar and right until it hits another strictly shorter bar. If you find both boundaries for every bar in linear time, the answer is the maximum of height times width across all bars. A monotonic increasing stack of indices does exactly this. Push when the current bar is taller than the top. When shorter, pop bars one by one and treat each popped bar as the shortest of a rectangle whose right boundary is the current index and whose left boundary is exposed by the new top after popping.
+
+What interviewers probe. The width formula after a pop is a classic source of bugs. With the stack empty after the pop, the width spans from index zero to the current index; with the stack non empty, it spans between the new top and the current index, exclusive on both sides. Adding a sentinel zero height at the end of the array to flush the stack is a clean trick interviewers like to see.
+
+Logic and solution. Append a zero height sentinel. Walk the extended array. For each index, while the stack is not empty and the bar at the top of the stack is taller than the current bar, pop the top and compute its rectangle area using the current index as the right boundary and the new top of stack as the left boundary. Track the maximum area. Push the current index.
+
+Complexity. Linear time. Each index is pushed and popped at most once. Linear extra space for the stack.
+
+Takeaway. When the answer at each index depends on the next strictly smaller or larger value, a monotonic stack delivers it in linear total time.
+
+
+Section six of fifteen. Linked list.
+
+
+Next up. Problem thirteen of thirty five. LeetCode two. Add Two Numbers. Difficulty medium.
+
+Orientation. Linked list arithmetic. Google asks this as a careful pointer manipulation exercise.
+
+Description. Two non empty linked lists represent non negative integers, with digits in reverse order so the head is the least significant digit. Add the numbers and return the sum as a linked list, also in reverse order.
+
+Deep dive. Reverse order storage is what makes this clean. The least significant digits align at the head, exactly how you add by hand starting from the rightmost column. Walk both lists in parallel, summing digit by digit, carrying when the sum reaches ten.
+
+What interviewers probe. Three edge cases. Unequal lengths require treating past the end nodes as zeros. A leftover carry at the end requires appending a final node with value one. The dummy head pattern, where you build behind a placeholder and return its next, sidesteps a class of off by one bugs and interviewers like seeing it.
+
+Logic and solution. Use a dummy head and a tail pointer. Maintain a carry. While either list has nodes or the carry is nonzero, take each list's value or zero, sum with carry, append a node with the digit, update carry, and advance any list that still has nodes.
+
+Complexity. Linear in the longer list's length for both time and space.
+
+Takeaway. The dummy head pattern is the linked list equivalent of always remembering to wear a seatbelt; it saves you from a whole class of edge cases.
+
+
+Next up. Problem fourteen of thirty five. LeetCode twenty three. Merge k Sorted Lists. Difficulty hard.
+
+Orientation. Linked list plus heap, or linked list plus divide and conquer. Google asks this because both solutions reveal different structural instincts.
+
+Description. Given an array of k linked lists, each sorted in ascending order, merge them into a single sorted list and return its head.
+
+Deep dive. Two efficient strategies. The first is a min heap of size k, holding one node from each list at a time. Pop the smallest, append to output, push the popped node's next if it exists. The second is divide and conquer: pair the lists and merge each pair using the standard two list merge, halving the count each round, until one list remains. Both yield the same complexity.
+
+What interviewers probe. Why the work is n log k rather than n k. The heap argument is straightforward: every node insertion and extraction costs log k, and there are n of each. The divide and conquer argument is similar: each node participates in log k rounds of merging. Be ready to sketch this.
+
+Logic and solution. For the heap approach, build a min heap from the head of each non null list, ordered by value. Use a dummy head and tail. Pop the smallest, append it to the tail, and push its next if not null. For divide and conquer, write merge two lists once. Iteratively pair lists and merge them until one remains, or recursively split the array in half and merge the halves.
+
+Complexity. Linear in total nodes times logarithm of k. Heap approach uses linear in k extra space; divide and conquer uses log k stack frames.
+
+Takeaway. When you need to merge k sorted streams, a heap of size k is the cleanest mental model and the easiest to defend in an interview.
+
+
+Section seven of fifteen. String parsing and palindromes.
+
+
+Next up. Problem fifteen of thirty five. LeetCode five. Longest Palindromic Substring. Difficulty medium.
+
+Orientation. Center expansion. Google asks this to see whether you treat odd and even length palindromes uniformly without bugs.
+
+Description. Given a string, return the longest substring that reads the same forwards and backwards. The string b a b a d has answer b a b or a b a, both length three.
+
+Deep dive. Brute force checks every substring for the palindrome property, which is cubic. The cleanest practical solution expands around centers. Every palindrome has a center, either a single character for odd length or a gap between two characters for even length. There are about twice the string length centers. From each, expand outward as long as the characters match. The optimal solution, Manacher's algorithm, runs in linear time using a clever mirror trick, but center expansion is usually sufficient and easier to explain.
+
+What interviewers probe. The odd versus even length pitfall. Many candidates write only the odd expansion and forget the even one, or vice versa. Treat both uniformly by running two expansions per center index. They also probe the off by one in extracting the final substring from the start index and length.
+
+Logic and solution. Walk an index over the string. For each index, expand around it as an odd center. Then expand around the gap between it and the next index as an even center. Track the start and length of the longest palindrome found across all expansions.
+
+Complexity. Quadratic time in the worst case. Constant extra space beyond the result.
+
+Takeaway. Whenever a palindrome problem appears, model it around centers and run odd and even expansions in lockstep.
+
+
+Next up. Problem sixteen of thirty five. LeetCode thirteen. Roman to Integer. Difficulty easy.
+
+Orientation. Mini parser. Google asks this to test whether you can spot the trick that collapses the apparent special cases into a single rule.
+
+Description. Convert a Roman numeral string to an integer. The symbols are I one, V five, X ten, L fifty, C one hundred, D five hundred, and M one thousand. Subtractive pairs are I before V or X, X before L or C, and C before D or M.
+
+Deep dive. The cleanest formulation is a two character lookahead. Walk left to right and look at each symbol against the next. If the current value is less than the next, subtract it. Otherwise, add it. The last symbol is always added.
+
+What interviewers probe. They want to see you avoid an explicit list of six special cases. The lookahead rule subsumes all of them. They may also ask you to validate input, and the typical expectation is that input is well formed.
+
+Logic and solution. Build a fixed map from each symbol to its value. Initialize a total. Walk the string. For each position, if there is a next symbol and the current value is less than the next, subtract; otherwise add.
+
+Complexity. Linear in the string length. Constant extra space.
+
+Takeaway. Special cases often collapse into a single rule when you frame the problem from the right angle.
+
+
+Next up. Problem seventeen of thirty five. LeetCode sixty eight. Text Justification. Difficulty hard.
+
+Orientation. Pure simulation. Google asks this to see whether you can carry out a multi phase algorithm with attention to detail and avoid off by one errors.
+
+Description. Given an array of words and a max width, format the text so every line is exactly max width characters and is fully left and right justified, except the last line which is left justified only. Within a multi word line, distribute extra spaces between gaps as evenly as possible, with leftmost gaps getting any extras.
+
+Deep dive. Two distinct phases. First, group words into lines using a greedy fit: a new word fits if its length plus the existing words plus a minimum one space between them stays within max width. Second, format each line. For full lines with multiple words, total spaces equals max width minus the sum of word lengths, and you distribute them by integer division across the gaps with a remainder for the leftmost. For a single word line, pad on the right. For the last line, join with single spaces and pad on the right.
+
+What interviewers probe. The space distribution formula trips many candidates. Base spacing per gap equals total spaces divided by the number of gaps, and the number of leftmost gaps that get one extra space equals total spaces modulo the number of gaps. They also probe the single word line and the last line as special cases.
+
+Logic and solution. Walk the words, packing them into the current line until the next word would not fit. Format the completed line and start a new one. After the loop, format the remaining words as the left justified last line. Inside the formatter, branch on full versus last line and on single versus multi word lines.
+
+Complexity. Linear in total characters for both time and space.
+
+Takeaway. Simulation problems reward checklists. Enumerate the cases in advance, write a formatter per case, and the bugs disappear.
+
+
+Section eight of fifteen. Dynamic programming on strings.
+
+
+Next up. Problem eighteen of thirty five. LeetCode ten. Regular Expression Matching. Difficulty hard.
+
+Orientation. Two dimensional dynamic programming. Google asks this to test whether you can derive a recurrence on a non trivial state space.
+
+Description. Implement regex matching with support for dot and star. Dot matches any single character. Star matches zero or more of the preceding element. The match must cover the entire input.
+
+Deep dive. The complication is that star can match zero, one, or many copies, so a greedy walk fails. Define a boolean table indexed by string prefix length and pattern prefix length. The transitions split on whether the last pattern character is a star. If it is not, the entry depends on the previous diagonal entry plus a single character match. If it is, the entry is true when the star matches zero copies, dropping the last two pattern characters, or when the star extends an existing match by consuming one more character of the string.
+
+What interviewers probe. Initializing the first row of the table correctly. The empty string can match patterns like a star, b star, c star where every character is followed by a star. Forgetting that initialization causes wrong answers on simple inputs. They also probe the why behind each transition, especially the star extends case.
+
+Logic and solution. Allocate a boolean grid sized one larger than each input length. Set the empty matches empty cell to true. Initialize the first row by allowing star to match zero characters. Fill the table left to right, top to bottom, applying the two transition rules. The answer is the bottom right cell.
+
+Complexity. Quadratic in the product of string and pattern lengths for both time and space, reducible to linear in the pattern length with rolling rows.
+
+Takeaway. When a pattern element can match a variable number of characters, dynamic programming over prefixes is the systematic approach; the recurrence falls out of asking what each position can do.
+
+
+Next up. Problem nineteen of thirty five. LeetCode forty four. Wildcard Matching. Difficulty hard.
+
+Orientation. A close cousin of problem ten, with a simpler star and an elegant greedy alternative. Google asks this to see whether you recognize the relaxation and exploit it.
+
+Description. Implement wildcard matching where question mark matches any single character and star matches any sequence including the empty one. The match must cover the entire input.
+
+Deep dive. Star here is more powerful than in regex matching because it is not tied to a preceding element; it just means any run of any characters. Two solutions. The dynamic programming version is similar to problem ten with simpler transitions. The greedy two pointer version walks both strings, advancing on matches and question marks, recording the most recent star and its matched position on stars, and backtracking the input pointer one character forward whenever a mismatch occurs after a star was seen.
+
+What interviewers probe. They want you to choose between dynamic programming and the greedy and defend the choice. The greedy uses constant extra space, which is preferred when memory matters. Pitfalls in the greedy include forgetting to skip trailing stars at the end and handling the no star available case to fail correctly.
+
+Logic and solution. Walk pointers over both strings, tracking the most recent star position and the last input position it was matched against. On a match or question mark, advance both. On a star, record its position and the current input position, advance only the pattern. On a mismatch, if a star was seen, restore the pattern pointer to one past the recorded star, advance the recorded input position, and resume; otherwise fail. After the loop, return true only if all remaining pattern characters are stars.
+
+Complexity. Quadratic worst case time, often closer to linear in practice. Constant extra space.
+
+Takeaway. When a problem looks like dynamic programming, check whether a structural simplification opens the door to a greedy with much less overhead.
+
+
+Section nine of fifteen. Trees and recursion.
+
+
+Next up. Problem twenty of thirty five. LeetCode three sixty six. Find Leaves of Binary Tree. Difficulty medium.
+
+Orientation. Tree recursion with a clever reframing. Google asks this to see if you can replace simulation with computed structure.
+
+Description. Given the root of a binary tree, repeatedly collect all leaves and remove them, returning a list of lists where each inner list is one round of leaves until the tree is empty.
+
+Deep dive. The naive approach simulates the rounds, traversing the whole tree once per round. The reframing that turns this into a single pass is realizing that the round in which a node is collected equals its height in the original tree. A leaf has height zero. A node's height is one plus the maximum height of its children. Group nodes by height and you have the answer.
+
+What interviewers probe. They probe whether you derive the height insight unaided, or stay stuck in simulation. They also probe whether your traversal is post order, since heights depend on children being computed first.
+
+Logic and solution. Run a post order depth first traversal. At each node, compute the height as one plus the max of the children's heights, defaulting to zero for a leaf. Append the node's value into the bucket at the height index. Grow the outer list when a new height appears. Return the height upward so the parent can compute its own.
+
+Complexity. Linear in the number of nodes for time. Linear extra space for the output and the recursion stack.
+
+Takeaway. When a problem describes an iterative process, ask whether each iteration's output is a function of an underlying structural property like height or depth; computing that property is often dramatically cheaper than simulating.
+
+
+Next up. Problem twenty one of thirty five. LeetCode two ninety seven. Serialize and Deserialize Binary Tree. Difficulty hard.
+
+Orientation. Tree encoding and decoding. Google asks this because it tests both your serialization design taste and your recursive decoding skill.
+
+Description. Design an algorithm to serialize a binary tree to a string and to reconstruct the original tree from that string. The encoding can be any format, but it must round trip exactly.
+
+Deep dive. A pre order traversal that explicitly emits a sentinel for null pointers is the cleanest approach. Walk root, then left, then right, writing each node's value and writing a marker for nulls. To deserialize, tokenize the string and consume tokens recursively, building root, left subtree, right subtree.
+
+What interviewers probe. Why pre order plus null markers is unambiguous, while pre order alone is not. The argument is that each recursive call knows when it is finished because it sees a sentinel and returns null, otherwise it consumes a value and recursively builds both children. They may also ask about alternative encodings like level order, which works but needs more bookkeeping.
+
+Logic and solution. Serialize with a recursive helper. If the node is null, append a sentinel and a separator. Else append the value and a separator, then recurse left, then recurse right. Deserialize by splitting into a queue of tokens. The recursive helper pops the next token; if sentinel, return null; otherwise create a node with that value and recursively build its left then right subtrees.
+
+Complexity. Linear in node count for both serialize and deserialize. Linear extra space for the string and recursion stack.
+
+Takeaway. Pre order traversal with explicit null markers is the simplest format that uniquely determines a binary tree; remember it as your default.
+
+
+Section ten of fifteen. Graph search.
+
+
+Next up. Problem twenty two of thirty five. LeetCode two hundred. Number of Islands. Difficulty medium.
+
+Orientation. Connected components in a grid. Google asks this as a fundamentals check on grid traversal.
+
+Description. Given a grid of zeros and ones representing water and land, count the number of maximal groups of horizontally or vertically connected land cells.
+
+Deep dive. Walk every cell. Whenever you encounter unvisited land, increment the count and run a depth first or breadth first search that floods all connected land cells, marking them visited so they are not counted again.
+
+What interviewers probe. In place marking versus a separate visited matrix. Overwriting visited land with water is a clean in place trick that saves space and signals practical taste. They also probe whether you handle stack depth, since a deeply connected grid can blow a recursive stack.
+
+Logic and solution. Walk all cells. For each unvisited land cell, increment the island count and run a DFS that recursively floods all four directional land neighbors, sinking each by setting it to water before recursing.
+
+Complexity. Linear in the grid size for time. Worst case linear extra space for the recursion stack.
+
+Takeaway. Connected component counting in a grid is one outer scan plus one flood fill; recognize the pattern and most island variants follow the same shape.
+
+
+Next up. Problem twenty three of thirty five. LeetCode one twenty seven. Word Ladder. Difficulty hard.
+
+Orientation. Breadth first search on an implicit graph. Google asks this because the speedup from generic patterns is the key insight.
+
+Description. Given a begin word, an end word, and a word list, return the length of the shortest transformation sequence where each step changes exactly one letter and every intermediate word is in the list. The length includes both endpoints. Return zero if impossible.
+
+Deep dive. Model the words as nodes in an unweighted graph with edges between words that differ by exactly one letter. Shortest path in an unweighted graph is breadth first search. Naively comparing every pair of words is quadratic in word count times word length. The speedup uses generic patterns: for each word, replace each character with a wildcard to produce length many patterns, and group words by pattern. Words sharing a pattern are exactly one letter apart.
+
+What interviewers probe. The pattern map is the make or break observation. They also probe bidirectional breadth first search as an optimization: searching from both ends and meeting in the middle reduces the explored frontier exponentially.
+
+Logic and solution. Build a pattern map from each pattern to the list of words matching it. Run breadth first search from the begin word with distance one. For each dequeued word, generate its patterns, look up neighbors, mark them visited, and enqueue with distance plus one. If you reach the end word, return that distance.
+
+Complexity. Word count times the square of word length for both time and space.
+
+Takeaway. When the graph is implicit and edges are expensive to enumerate, define an equivalence relation through canonical patterns and use it to bucket adjacencies.
+
+
+Next up. Problem twenty four of thirty five. LeetCode two zero seven. Course Schedule. Difficulty medium.
+
+Orientation. Cycle detection in a directed graph. Google asks this as a topological sort fundamentals check.
+
+Description. Given a number of courses and prerequisite pairs where the second must precede the first, return whether it is possible to finish all courses.
+
+Deep dive. The question reduces to: does the prerequisite graph contain a cycle. Two standard approaches. Kahn's algorithm uses breadth first search over indegrees: enqueue all indegree zero nodes, peel them off, and decrement their successors' indegrees. If the total processed equals the number of courses, no cycle. Alternatively, depth first search with three colors detects cycles by encountering a gray node on the current stack.
+
+What interviewers probe. Kahn's versus depth first search and when to choose each. Kahn's also produces a valid topological order as a byproduct, useful for the followup problem two zero eight where the order itself is the answer. They probe whether you correctly orient edges from prerequisite to dependent.
+
+Logic and solution. Build an adjacency list and indegree array. Push all zero indegree nodes onto a queue. While the queue is non empty, pop a node, increment a counter, and decrement each successor's indegree, pushing any that drop to zero. Return whether the counter equals the number of courses.
+
+Complexity. Linear in vertices plus edges for both time and space.
+
+Takeaway. Cycle detection in a directed graph is a topological sort question; pick Kahn's when you also need the order, depth first search when you only need the verdict.
+
+
+Next up. Problem twenty five of thirty five. LeetCode three twenty nine. Longest Increasing Path in a Matrix. Difficulty hard.
+
+Orientation. Depth first search with memoization on a directed acyclic graph. Google asks this to test whether you recognize that strict monotonicity creates a DAG.
+
+Description. Given a matrix of integers, return the length of the longest strictly increasing path. Movement is to the four orthogonal neighbors. Cells cannot be revisited.
+
+Deep dive. Because the path must be strictly increasing, the implicit graph over cells with edges to strictly larger neighbors has no cycles; it is a DAG. On a DAG, the longest path from a source is solvable by depth first search with memoization. The answer at each cell is one plus the maximum answer among neighbors with strictly larger values.
+
+What interviewers probe. Why no visited set is needed. The strict monotonicity guarantees no cycles, so memoization alone suffices. Many candidates add an unnecessary visited matrix and complicate the recursion.
+
+Logic and solution. Allocate a memo grid the same shape as the matrix. Define a recursive function that returns the longest strictly increasing path starting at a given cell. Read from memo if present. Otherwise, start at one and add the recursive max over the four neighbors with strictly greater values. Iterate over every cell and take the global max.
+
+Complexity. Linear in the grid size for both time and space, since each cell is computed once.
+
+Takeaway. Strict monotonicity in graph problems eliminates cycles for free; depth first search plus memoization is then enough, no visited bookkeeping needed.
+
+
+Section eleven of fifteen. Trie.
+
+
+Next up. Problem twenty six of thirty five. LeetCode two zero eight. Implement Trie, Prefix Tree. Difficulty medium.
+
+Orientation. The data structure itself. Google asks this as a building block for harder problems and to test whether you can implement a tree node with children clearly.
+
+Description. Implement a trie with insert, search, and starts with operations. Insert adds a word. Search returns whether a full word is present. Starts with returns whether any inserted word begins with the given prefix.
+
+Deep dive. A trie is a tree where each edge is labeled with a character and each path from the root spells a prefix. A node carries a small map or array of children plus a boolean flag indicating whether a word ends at that node. Walking k steps from the root costs linear in k and answers all prefix questions for length k.
+
+What interviewers probe. The distinction between search and starts with is the only subtle point. Search must additionally verify the end of word flag at the terminal node, while starts with only requires that the walk completed. They also probe the children representation: array of twenty six for lowercase or hash map for arbitrary alphabets.
+
+Logic and solution. Define a node with a children array or map and an end flag. To insert, walk character by character creating missing children, then mark the end flag at the terminal node. To search, walk character by character; if any child is missing return false; at the end return the terminal node's end flag. To starts with, walk the same way but at the end return true regardless of the flag.
+
+Complexity. All operations are linear in the operand length. Space is linear in the total characters of all inserted words in the worst case.
+
+Takeaway. A trie is the right data structure whenever a problem repeatedly asks prefix questions; implementing it correctly once unlocks a whole class of search problems.
+
+
+Next up. Problem twenty seven of thirty five. LeetCode two twelve. Word Search II. Difficulty hard.
+
+Orientation. Trie backed grid search. Google asks this to test whether you can combine two data structures, the trie and depth first search, to prune the search space.
+
+Description. Given a grid of characters and a list of words, return all words that can be constructed by following adjacent cells horizontally or vertically. Cells cannot be reused within a single word.
+
+Deep dive. Running word search independently for each word is wasteful. Build a trie from the word list and run a depth first search from each grid cell, walking the board and the trie in lockstep. If the current trie node has the current letter as a child, descend; otherwise prune the entire branch. When you reach a trie node marked as end of word, record the word and unmark it to prevent duplicates.
+
+What interviewers probe. The trie pruning is the key insight. They also probe trie leaf deletion as an optimization: once a word is found, prune its leaf and any orphan branches above it, which gradually shrinks the search.
+
+Logic and solution. Build the trie. From each cell, start a depth first search passing the trie root. In the search, if the cell is out of bounds or visited or its character is not a child of the current trie node, return. Move to the matching child. If that child marks a word, record it and clear the marker. Mark the cell as visited, recurse on the four neighbors, then unmark.
+
+Complexity. The grid size times four times three to the power of one less than the maximum word length in the worst case. Linear extra space in total characters of the word list for the trie.
+
+Takeaway. When you need to match many patterns against the same input, build a trie of the patterns and let the input drive the trie traversal; pruning is automatic.
+
+
+Section twelve of fifteen. Heap, sweep line, and Fenwick tree.
+
+
+Next up. Problem twenty eight of thirty five. LeetCode two eighteen. The Skyline Problem. Difficulty hard.
+
+Orientation. Sweep line with a max heap. Google asks this because it is the canonical event driven simulation problem.
+
+Description. Given a list of buildings as left edge, right edge, and height triples, return the skyline as a list of key points where the height changes, in left to right order.
+
+Deep dive. Process events in left to right order. At a left edge, add the building's height to the active set. At a right edge, remove it. After each event group at the same x, the current skyline height is the maximum of active heights. If that maximum changed, emit a key point. The active set is a max heap; lazy deletion handles removals by popping entries whose end has passed.
+
+What interviewers probe. Tie breaking at coincident events. When multiple buildings start or end at the same x, you must process all of them before deciding the height to emit, otherwise you will emit phantom transitions. The conventional sort: starts ascend by x then descend by height; ends ascend by x then ascend by height.
+
+Logic and solution. Build an event list. Sort. Maintain a max heap of height end pairs and a previous height. For each event, push if it is a start. Lazily pop heap entries whose end is at or before the current x. The current height is the heap top or zero if empty. If it differs from previous, emit the key point and update previous.
+
+Complexity. n log n time and linear extra space.
+
+Takeaway. Sweep line with a heap is the right hammer for any problem that asks for the running extremum of overlapping intervals in time order.
+
+
+Next up. Problem twenty nine of thirty five. LeetCode three fifteen. Count of Smaller Numbers After Self. Difficulty hard.
+
+Orientation. Fenwick tree or merge sort with inversion counting. Google asks this because it forces a non obvious data structure choice.
+
+Description. Given an integer array, for each element return the number of elements to its right that are strictly smaller.
+
+Deep dive. Brute force is quadratic. Two efficient approaches. Merge sort with inversion counting: when merging two sorted halves, every time you take an element from the right half it means that element is smaller than all remaining elements in the left half. Alternatively, walk right to left and use a Fenwick tree, also called a binary indexed tree, indexed by the rank of each value. Query the prefix sum up to rank minus one to get the count of previously seen smaller values.
+
+What interviewers probe. Coordinate compression. The Fenwick tree should be indexed by rank, not raw value, to keep memory bounded by the number of distinct values. They also probe why the Fenwick tree gives the right semantics: it supports prefix sum queries and point updates both in logarithmic time, which is exactly what counting smaller elements requires.
+
+Logic and solution. Sort and deduplicate the values to assign each value a rank. Walk the array right to left. For each element, query the Fenwick tree for the prefix sum up to rank minus one as the answer for this index. Then update the tree by adding one at the element's rank.
+
+Complexity. n log n time and linear extra space.
+
+Takeaway. Fenwick trees are cheap and powerful for problems that interleave point updates with prefix sum queries; coordinate compression is what makes them practical.
+
+
+Section thirteen of fifteen. Intervals and ordered maps.
+
+
+Next up. Problem thirty of thirty five. LeetCode fifty six. Merge Intervals. Difficulty medium.
+
+Orientation. Sort plus single pass merge. Google asks this as a fundamentals check on interval reasoning.
+
+Description. Given an array of intervals, merge all overlapping intervals and return non overlapping intervals covering the same union.
+
+Deep dive. Sort the intervals by start. After sorting, two intervals overlap if and only if one's start is at most the previous merged interval's end. A single linear pass over the sorted list either extends the last merged interval's end or pushes a new interval.
+
+What interviewers probe. Whether intervals that touch but do not overlap, like one to two and two to three, should merge. The convention varies. Clarify it. They also probe sort stability and handling of duplicate intervals, both usually trivial.
+
+Logic and solution. Sort by start. Initialize the output with the first interval. For each subsequent interval, if its start is at most the end of the last output interval, extend that end to the maximum of the two ends. Otherwise append the new interval.
+
+Complexity. n log n time for the sort, linear extra space for the output.
+
+Takeaway. Most interval problems start by sorting on a single endpoint; once sorted, the greedy sweep is usually one if statement.
+
+
+Next up. Problem thirty one of thirty five. LeetCode seven fifteen. Range Module. Difficulty hard.
+
+Orientation. Ordered map of disjoint intervals. Google asks this to test whether you can manipulate intervals efficiently with a balanced search tree.
+
+Description. Design a data structure with three operations on half open intervals: add range, query range, remove range. Add merges with overlapping or touching ranges. Query returns whether the entire range is fully tracked. Remove untracks the range, splitting any interval it partially overlaps.
+
+Deep dive. Maintain a sorted set of disjoint half open intervals keyed by start in a balanced binary search tree, like a TreeMap in Java. On add, find all overlapping or touching intervals, merge them into a single span, and replace them. On remove, find overlapping intervals and clip them, splitting any partial overlap into the parts outside the removed range. On query, find the floor entry and check whether its end covers the queried right.
+
+What interviewers probe. The merge and split logic is where most candidates trip. Be deliberate about the boundary conditions: half open versus closed intervals matter for adjacency. They also probe amortized cost; coalescing keeps the number of stored intervals small over time.
+
+Logic and solution. Use a TreeMap from interval start to end. Add range walks the floor entry and forward entries that overlap or touch, removing them and extending the bounds, then inserts the merged interval. Query range walks the floor entry and checks the end. Remove range walks the floor entry, splits off fragments outside the removed range, and removes any fully contained intervals.
+
+Complexity. Each operation is logarithmic plus linear in the number of intervals touched. Space is linear in the number of disjoint intervals.
+
+Takeaway. When you need to maintain a dynamic set of intervals with efficient queries, an ordered map keyed by start plus disciplined merge and split logic is hard to beat.
+
+
+Next up. Problem thirty two of thirty five. LeetCode seven thirty two. My Calendar Three. Difficulty hard.
+
+Orientation. Sweep line with deltas in an ordered map. Google asks this to see if you reach for the delta encoding instead of brute counting overlaps.
+
+Description. Implement a calendar where each book operation reserves a half open interval and returns the maximum number of overlapping bookings at any time across all bookings made so far.
+
+Deep dive. The classic delta encoding: at the start of each booking add one, at the end subtract one. The maximum prefix sum over the sorted keys gives the maximum overlap. Because bookings arrive online, an ordered map keyed by time is the natural structure. After each booking, walk the map summing deltas to find the running max.
+
+What interviewers probe. They probe alternatives. A segment tree over coordinate compressed timestamps gives logarithmic updates and queries instead of linear. Worth mentioning even if you implement the simpler ordered map version.
+
+Logic and solution. Maintain an ordered map from time to delta. On book, increment the start delta and decrement the end delta. Then iterate the map in key order, accumulating a running sum and tracking the maximum. Return the maximum.
+
+Complexity. Linear per book call in the simple version, logarithmic per call with a segment tree. Linear extra space.
+
+Takeaway. Counting overlaps is almost always a sweep over plus one minus one deltas; the running prefix sum gives the answer for free.
+
+
+Section fourteen of fifteen. Cache and rate limiter design.
+
+
+Next up. Problem thirty three of thirty five. LeetCode one forty six. LRU Cache. Difficulty medium.
+
+Orientation. Hash map plus doubly linked list. Google asks this constantly as a design fundamentals check.
+
+Description. Design an LRU cache with constructor, get, and put operations, all in average constant time. Get returns the value if the key exists and counts as a use. Put inserts or updates and evicts the least recently used entry when capacity is exceeded.
+
+Deep dive. Two requirements drive the design. Constant time access by key forces a hash map. Constant time tracking of recency order forces a doubly linked list, so you can unlink and relink any node in constant time. A singly linked list does not support constant time middle removal. The hash map stores key to node reference so any access can find the node and reposition it.
+
+What interviewers probe. Sentinel nodes. A head and tail sentinel eliminate null checks at the boundaries and reduce edge cases. They also probe whether get counts as a use, the answer is yes, and whether updating an existing key counts as a use, the answer is also yes.
+
+Logic and solution. Maintain a doubly linked list with head and tail sentinels. Treat the position next to head as least recently used and the position before tail as most recently used. Maintain a map from key to node. On get, if missing return minus one, otherwise unlink the node and reinsert before tail. On put, if the key exists, update its value and move to most recently used. Otherwise insert at most recently used and add to the map. If size exceeds capacity, remove the node next to head and drop its key.
+
+Complexity. Constant time per operation. Linear extra space in the capacity.
+
+Takeaway. Any design problem that wants constant time random access plus constant time ordered repositioning combines a hash map with a doubly linked list; this is the canonical pairing.
+
+
+Next up. Problem thirty four of thirty five. LeetCode three fifty nine. Logger Rate Limiter. Difficulty easy.
+
+Orientation. Hash map design with optional memory bounding. Google asks this as a quick design exercise that opens into a discussion of memory growth.
+
+Description. Design a logger that decides whether to print each message based on a ten second cooldown. Should print message returns true if the message has not been printed in the last ten seconds.
+
+Deep dive. The simple design is a hash map from message to last printed timestamp. On each call, look up the message; if missing or the gap is at least ten, update and return true. The catch is unbounded growth in the number of distinct messages. A more disciplined design uses a queue of recent messages plus a hash set, evicting expired entries from the queue's front before each decision.
+
+What interviewers probe. The growth concern. A naive map only solution passes the basic problem but is criticized in design conversations. They want you to surface the trade and offer the bounded variant.
+
+Logic and solution. For the map approach, on each call retrieve the last timestamp for the message and decide based on the gap. For the bounded approach, drain the front of the queue of any entry whose timestamp plus ten is at most the current time, and remove from the set as you drain. Then check membership; if absent, add to both structures.
+
+Complexity. Amortized constant time per call. Space is bounded by either the number of distinct messages ever seen, or the number of messages within the rate limit window.
+
+Takeaway. Design problems are partly about correctness and partly about graceful behavior under load; surface the memory question yourself before the interviewer asks.
+
+
+Section fifteen of fifteen. Specialty and interactive.
+
+
+Next up. Problem thirty five of thirty five. LeetCode eight forty three. Guess the Word. Difficulty hard.
+
+Orientation. Interactive search with limited queries. Google asks this to see whether you can reason about information gain.
+
+Description. There is a hidden secret word from a list of equal length words. You can call a guess function with a candidate; it returns the number of positions matching the secret. You have ten guesses to identify the secret.
+
+Deep dive. The expected information from a random guess is uneven across the candidate set. The standard heuristic is to pick the candidate that minimizes the worst case remaining set size after the response. After each guess, filter the candidates to only those whose match count with the guess equals the response, since the secret must agree with that observation.
+
+What interviewers probe. The filtering invariant. They want you to articulate that the secret must satisfy every observed match count, so candidates that violate any past observation are eliminated. They also probe heuristics for picking the next guess. A simple choice is the candidate with the most overlap with other candidates; a stronger choice is the min max over partition sizes.
+
+Logic and solution. Maintain a list of remaining candidates. Loop up to ten times. Pick the next guess by a heuristic. Call the guess function. If the response equals the word length, return. Otherwise, filter the candidate list to only words whose match count with the guess equals the response. Repeat.
+
+Complexity. Each round filters in linear time times word length. With at most ten rounds, total time is constant rounds times the word list size times word length. Linear extra space.
+
+Takeaway. Interactive problems reward thinking about information; the best guess is the one that most reliably shrinks the remaining hypothesis space.
+
+
+That concludes the Google top thirty five. The patterns to internalize are: hash map for lookup, sliding window for contiguous validity, two pointers for converging extrema, binary search for monotonic answers, monotonic stacks for next greater or smaller, dynamic programming over prefixes for variable matchers, breadth first search for unweighted shortest paths, tries for prefix queries, sweep line for overlapping intervals, ordered maps for dynamic interval sets, and the hash map plus doubly linked list pairing for constant time recency. Drive safe.
+
+End of transcript.

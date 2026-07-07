@@ -1,0 +1,898 @@
+TOP INTERVIEW ONE FIFTY. PART TWO OF THREE. AUDIO TRANSCRIPT.
+
+Welcome back. Part two covers fifty one problems across linked lists, binary trees in general, binary tree breadth first search, binary search trees, graphs, tries, and backtracking. Same six beats per problem: orientation, description, deep dive, what interviewers probe, logic and solution, complexity, and a one sentence takeaway.
+
+Let's begin.
+
+
+Section one of seven. Linked list.
+
+
+Next up. Problem one of fifty one. LeetCode one forty one. Linked List Cycle. Difficulty easy.
+
+Orientation. Floyd's tortoise and hare. Interviewers use this as a fundamentals check on cycle detection.
+
+Description. Given the head of a linked list, return whether it contains a cycle.
+
+Deep dive. Use two pointers. The slow advances one node per step, the fast advances two. If a cycle exists, the fast will eventually lap the slow and they will meet. If the fast hits null, no cycle.
+
+What interviewers probe. The follow up to find the cycle's starting node, which uses Floyd's second phase: reset one pointer to the head and advance both one step at a time; they meet at the cycle entrance.
+
+Logic and solution. Initialize slow and fast at the head. Loop while fast and its next are not null. Advance slow one and fast two. Return true if they meet. Return false if fast falls off.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Floyd's tortoise and hare detects cycles in linked lists in constant space; the second phase finds the entrance.
+
+
+Next up. Problem two of fifty one. LeetCode two. Add Two Numbers. Difficulty medium.
+
+Orientation. Linked list arithmetic. Interviewers use this as a careful pointer manipulation exercise.
+
+Description. Two non empty linked lists represent non negative integers with digits in reverse order. Return their sum as a linked list, also reverse order.
+
+Deep dive. Reverse order means the heads align at the least significant digit, mirroring how you add by hand. Walk both lists in parallel, summing digits with a carry. Handle unequal lengths by treating missing nodes as zeros, and a trailing carry by appending a final one.
+
+What interviewers probe. The dummy head pattern. Using a placeholder node simplifies the build and removes an entire class of edge cases.
+
+Logic and solution. Use a dummy head, a tail pointer, and a carry. Loop while either list has nodes or carry is non zero. Sum the available values plus carry. Append a node with the digit; update carry to total divided by ten.
+
+Complexity. Linear in the longer list's length for both time and space.
+
+Takeaway. The dummy head pattern saves you from null checks at the boundary; reach for it on every linked list build.
+
+
+Next up. Problem three of fifty one. LeetCode twenty one. Merge Two Sorted Lists. Difficulty easy.
+
+Orientation. The two list merge. Interviewers use this as a fundamentals check; it also feeds into harder merge problems.
+
+Description. Given two sorted linked lists, merge them into a single sorted list and return its head.
+
+Deep dive. Walk both lists in parallel. At each step, splice the smaller head onto the output and advance that list. When one list is exhausted, splice the rest of the other.
+
+What interviewers probe. Whether you splice existing nodes rather than allocating new ones, which is the efficient and idiomatic answer.
+
+Logic and solution. Use a dummy head and tail. Loop while both lists are non null. Append the smaller head; advance both tail and the source list. After the loop, append whichever list still has nodes.
+
+Complexity. Linear in the sum of lengths. Constant extra space.
+
+Takeaway. The two list merge is the kernel of larger merge problems; master it once and reuse it.
+
+
+Next up. Problem four of fifty one. LeetCode one thirty eight. Copy List with Random Pointer. Difficulty medium.
+
+Orientation. Hash map for original to clone, or interleaving trick for constant space. Interviewers use this to test pointer manipulation discipline.
+
+Description. Given a linked list where each node has a next pointer and a random pointer to anywhere in the list, return a deep copy.
+
+Deep dive. The hash map approach: first pass creates clones and stores a map from original to clone. Second pass wires next and random by looking up each pointer in the map. The interleaving trick threads each clone immediately after its original in the same list; the random pointer of a clone is the next of its original's random; finally, unweave the two lists.
+
+What interviewers probe. The interleaving trick as the constant space follow up. Many candidates know the hash map version but freeze on the interleaving alternative.
+
+Logic and solution. Hash map. First pass: walk the list, create a clone for each node, store original to clone in a map. Second pass: walk the list. Set clone's next to the map entry of original's next. Set clone's random to the map entry of original's random. Return the clone of the head.
+
+Complexity. Linear time. Linear extra space for the hash map; constant for the interleaving variant.
+
+Takeaway. Cloning a graph like structure is one map from original to clone followed by a pointer rewiring pass; the interleaving trick eliminates the map entirely.
+
+
+Next up. Problem five of fifty one. LeetCode ninety two. Reverse Linked List Two. Difficulty medium.
+
+Orientation. In place reversal of a sublist. Interviewers use this as a careful pointer choreography exercise.
+
+Description. Given a linked list and positions left and right, reverse the nodes from position left to right in place.
+
+Deep dive. Use a dummy head. Walk to the node before position left, call it the pre pointer. Then iteratively splice nodes one at a time: each iteration moves the node after the current head of the sublist to the front of the sublist by adjusting three pointers.
+
+What interviewers probe. The off by one in finding pre. Skipping left minus one nodes from the dummy is the right move.
+
+Logic and solution. Use a dummy head pointing to the head. Walk pre to the node before position left. Then for the count right minus left iterations, take the node after the current first node of the sublist, splice it to the front of the sublist by adjusting next pointers.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Sublist reversal is splice and reinsert; with a dummy head and a pre pointer, the pointer dance becomes mechanical.
+
+
+Next up. Problem six of fifty one. LeetCode twenty five. Reverse Nodes in k Group. Difficulty hard.
+
+Orientation. Repeated sublist reversal. Interviewers use this to test whether you compose simpler operations.
+
+Description. Reverse the nodes of a linked list k at a time. If fewer than k remain at the end, leave them as is.
+
+Deep dive. Two phases per group. First, count k nodes ahead to verify a full group exists. If so, reverse those k nodes in place. Then connect the prior tail to the new head and continue from the new tail.
+
+What interviewers probe. Whether you correctly stop reversing the partial trailing group. They also probe the iterative versus recursive implementation; iterative is more space efficient.
+
+Logic and solution. Use a dummy head and a group prev pointer. Loop. Walk a check pointer k steps ahead from group prev's next; if any null, break. Reverse the next k nodes. Update group prev to the new tail of the just reversed group.
+
+Complexity. Linear time. Constant extra space iterative; linear stack recursive.
+
+Takeaway. Repeated sublist reversal is a loop around the basic reversal primitive; verify each group exists before reversing.
+
+
+Next up. Problem seven of fifty one. LeetCode nineteen. Remove Nth Node From End of List. Difficulty medium.
+
+Orientation. Two pointer with a fixed gap. Interviewers use this to test whether you avoid the two pass approach.
+
+Description. Given the head of a linked list and an integer n, remove the n th node from the end.
+
+Deep dive. Use two pointers. Advance the fast pointer n steps. Then walk both together until the fast hits the end. The slow now points to the node before the one to remove. Splice it out.
+
+What interviewers probe. The dummy head, which simplifies removing the head itself when n equals the list length.
+
+Logic and solution. Use a dummy head pointing to the head. Initialize slow and fast at the dummy. Advance fast n steps. Walk both until fast's next is null. Splice slow's next out.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Two pointer with a fixed gap removes from the end in one pass; the dummy head removes the special case for the first node.
+
+
+Next up. Problem eight of fifty one. LeetCode eighty two. Remove Duplicates from Sorted List Two. Difficulty medium.
+
+Orientation. Single pass with a duplicate detection lookahead. Interviewers use this to test pointer discipline.
+
+Description. Given a sorted linked list, remove all nodes that have duplicate values, leaving only distinct values. Return the resulting list.
+
+Deep dive. Use a dummy head. Maintain a pre pointer and a current pointer. If current's value equals current's next's value, walk current forward through all duplicates and then skip the entire run by setting pre's next to current's next. Otherwise advance pre.
+
+What interviewers probe. The two pointer dance. The classic bug is advancing pre even when a duplicate run is in progress, leaving the first duplicate behind.
+
+Logic and solution. Use a dummy head. Initialize pre at the dummy, current at the head. Loop while current is non null. If current's next is non null and they share a value, walk current forward through duplicates; then set pre's next to current's next. Otherwise, advance pre to current. Advance current.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. When you must skip duplicate runs entirely, hold a pre pointer outside the run and rewire only after the run ends.
+
+
+Next up. Problem nine of fifty one. LeetCode sixty one. Rotate List. Difficulty medium.
+
+Orientation. List rotation by reconnection. Interviewers use this to test the modulo on rotation count.
+
+Description. Given a linked list and an integer k, rotate the list to the right by k positions.
+
+Deep dive. Find the length, take k modulo length to handle redundant rotations. Connect the tail to the head to form a cycle. Walk to the new tail, which is length minus k modulo length minus one steps from the head. Break the cycle there; the new head is the next node.
+
+What interviewers probe. The modulo. Without it, the algorithm wastes time or produces wrong results when k exceeds length.
+
+Logic and solution. Compute length and find the tail. Take k modulo length; if zero, return the head. Connect tail to head. Walk length minus k minus one steps. Break the cycle and return the next as the new head.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. List rotation reduces to: find length, modulo k, connect into a cycle, walk to the new tail, and break.
+
+
+Next up. Problem ten of fifty one. LeetCode eighty six. Partition List. Difficulty medium.
+
+Orientation. Two list builder. Interviewers use this to test whether you build cleanly with two output lists.
+
+Description. Given a linked list and a value x, reorder it so all nodes less than x come before all nodes at least x. Within each partition, preserve original order.
+
+Deep dive. Build two output lists, one for less than x and one for the rest, by walking the input once. Splice the existing nodes into either list. At the end, connect the less list's tail to the rest list's head and return the less list's dummy next.
+
+What interviewers probe. Whether you preserve order. The two list approach preserves it for free, while in place swapping does not.
+
+Logic and solution. Use two dummy heads and two tails. Walk the input. For each node, append to the less list if its value is less than x, otherwise to the greater list. Set the greater tail's next to null to avoid cycles. Connect less tail to greater head's next. Return less dummy's next.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Stable partitions of linked lists are cleanest with two output lists built in one pass; null terminate to avoid cycles.
+
+
+Next up. Problem eleven of fifty one. LeetCode one forty six. LRU Cache. Difficulty medium.
+
+Orientation. Hash map plus doubly linked list. Interviewers use this constantly as a design fundamentals check.
+
+Description. Design an LRU cache with constructor, get, and put, all in average constant time.
+
+Deep dive. Constant time access by key forces a hash map. Constant time tracking of recency forces a doubly linked list, where any node can be unlinked and reinserted in constant time. The map stores key to node references.
+
+What interviewers probe. Sentinel head and tail nodes, which eliminate boundary null checks. They also probe that get counts as a use, and so does put on an existing key.
+
+Logic and solution. Doubly linked list with head and tail sentinels. Position next to head is least recently used; before tail is most. Map from key to node. On get, if missing return minus one, otherwise unlink and reinsert before tail. On put, if existing, update and reinsert. Otherwise insert before tail and add to the map. Evict from after head if size exceeds capacity.
+
+Complexity. Constant time per operation. Linear extra space in the capacity.
+
+Takeaway. Constant time random access plus constant time ordered repositioning is the canonical pairing of hash map and doubly linked list.
+
+
+Section two of seven. Binary tree, general.
+
+
+Next up. Problem twelve of fifty one. LeetCode one zero four. Maximum Depth of Binary Tree. Difficulty easy.
+
+Orientation. Tree recursion fundamentals. Interviewers use this to test whether you reach for recursion naturally.
+
+Description. Given the root of a binary tree, return its maximum depth, the number of nodes on the longest root to leaf path.
+
+Deep dive. The depth of a tree is one plus the maximum depth of its children. The empty tree has depth zero. That recurrence is the entire algorithm.
+
+What interviewers probe. Whether you handle the null case as the base case. They also probe the iterative breadth first search alternative, which also gives the answer level by level.
+
+Logic and solution. Recursive helper. If the node is null, return zero. Otherwise return one plus the maximum of the recursive depths of left and right.
+
+Complexity. Linear in nodes for time. Linear stack space, proportional to tree height.
+
+Takeaway. Tree depth is the canonical recursive aggregate; the recurrence is one plus the max of children.
+
+
+Next up. Problem thirteen of fifty one. LeetCode one hundred. Same Tree. Difficulty easy.
+
+Orientation. Parallel tree recursion. Interviewers use this as a structural equality check.
+
+Description. Given two binary trees, return whether they are structurally identical with equal values at every position.
+
+Deep dive. Walk both trees in parallel. If both are null, equal. If one is null, not equal. If values differ, not equal. Otherwise recurse on both children pairs.
+
+What interviewers probe. Whether you handle both null bases correctly. The combination of base cases enforces structural matching.
+
+Logic and solution. Recursive helper taking two nodes. If both null, return true. If exactly one null, return false. If values differ, return false. Else recurse on left pair and right pair, both must be true.
+
+Complexity. Linear in the smaller tree size for time. Linear stack space.
+
+Takeaway. Structural tree equality is parallel recursion with three base cases: both null, one null, value mismatch.
+
+
+Next up. Problem fourteen of fifty one. LeetCode two twenty six. Invert Binary Tree. Difficulty easy.
+
+Orientation. Tree mutation by recursion. Interviewers use this as a one liner test.
+
+Description. Given a binary tree, swap left and right children at every node.
+
+Deep dive. Recurse: invert the left subtree, invert the right subtree, then swap the two pointers at the current node. Or swap first and recurse, the order does not matter.
+
+What interviewers probe. The simplicity. They want a clean three line recursion.
+
+Logic and solution. Recursive helper. If null, return null. Recurse on left and right. Swap the two child pointers. Return the node.
+
+Complexity. Linear in nodes. Linear stack space.
+
+Takeaway. Tree mutations that affect every node are usually a three line recursion; the recurrence carries the structure.
+
+
+Next up. Problem fifteen of fifty one. LeetCode one zero one. Symmetric Tree. Difficulty easy.
+
+Orientation. Mirror recursion. Interviewers use this to test whether you can pair nodes against each other rather than against themselves.
+
+Description. Given a binary tree, return whether it is a mirror of itself around its center.
+
+Deep dive. Define a helper that takes two nodes and checks whether they are mirror images. Both null is mirror. One null is not. Values must match. Then recurse: left's left against right's right, and left's right against right's left.
+
+What interviewers probe. The cross recursion pairing. Many candidates incorrectly recurse left's left against right's left.
+
+Logic and solution. Recursive helper on two nodes. Apply the four cases. Cross recurse.
+
+Complexity. Linear in nodes. Linear stack space.
+
+Takeaway. Symmetry checks are mirror recursion: cross pair the children when descending.
+
+
+Next up. Problem sixteen of fifty one. LeetCode one zero five. Construct Binary Tree from Preorder and Inorder Traversal. Difficulty medium.
+
+Orientation. Tree reconstruction from traversals. Interviewers use this to test whether you can split inorder by a preorder root.
+
+Description. Given preorder and inorder traversals of a binary tree with unique values, reconstruct the tree.
+
+Deep dive. Preorder's first element is always the root. Find that root in inorder; everything to its left is the left subtree's inorder, everything to its right is the right subtree's. The preorder splits accordingly. Recurse on the two pairs.
+
+What interviewers probe. Whether you build a hash map from inorder value to index for constant time root lookup. Without it, the algorithm becomes quadratic.
+
+Logic and solution. Build the map. Recursive helper carries pre order index by reference, plus inorder bounds. Pop the next preorder value as the root. Look up its inorder index. Recurse on the left bounds, then on the right bounds. Return the root.
+
+Complexity. Linear time with the map. Linear extra space.
+
+Takeaway. Tree reconstruction from preorder and inorder splits inorder at the preorder root; precompute a value to index map for linear time.
+
+
+Next up. Problem seventeen of fifty one. LeetCode one zero six. Construct Binary Tree from Inorder and Postorder Traversal. Difficulty medium.
+
+Orientation. Same as the previous problem with postorder taking the role of preorder, walked from the back.
+
+Description. Given inorder and postorder traversals with unique values, reconstruct the tree.
+
+Deep dive. Postorder's last element is the root. Find it in inorder; left of it is the left subtree, right is the right. Walk postorder right to left to peel off roots.
+
+What interviewers probe. The order of recursion: build the right subtree before the left, since postorder ends with right subtree then left subtree elements when walked from the back.
+
+Logic and solution. Build inorder index map. Recursive helper walks postorder from the back. Pop the next root. Look up its inorder index. Recurse right first, then left.
+
+Complexity. Linear time. Linear extra space.
+
+Takeaway. Inorder plus postorder mirrors inorder plus preorder; recurse right before left when walking postorder backward.
+
+
+Next up. Problem eighteen of fifty one. LeetCode one seventeen. Populating Next Right Pointers in Each Node Two. Difficulty medium.
+
+Orientation. Level linked list traversal with constant space. Interviewers use this to test whether you can build the next level using the current level's next pointers.
+
+Description. Given a binary tree where each node has a next pointer, populate each node's next to point to its right neighbor at the same level. Use constant extra space if possible.
+
+Deep dive. Walk level by level. For each level, use the already populated next pointers to traverse left to right. Build the next level's chain by linking children with a dummy head.
+
+What interviewers probe. The constant space requirement. Breadth first search with a queue is a valid simpler answer but uses linear extra space.
+
+Logic and solution. Maintain a current pointer at the leftmost of the current level, starting at the root. Use a dummy head for the next level. Walk current using next pointers. For each node, append non null children to the next level chain, advancing a tail pointer. After the level, set current to the dummy's next and reset the dummy.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Level by level traversal with constant space uses the current level's next pointers as the queue, building the next chain from a dummy head.
+
+
+Next up. Problem nineteen of fifty one. LeetCode one fourteen. Flatten Binary Tree to Linked List. Difficulty medium.
+
+Orientation. Tree to linked list in place. Interviewers use this to test whether you can rewire children using preorder structure.
+
+Description. Given a binary tree, flatten it in place into a right pointing linked list following preorder.
+
+Deep dive. The reverse preorder approach: traverse right, left, root, maintaining a previous pointer. At each node, set its right to previous and its left to null, then update previous to the current node. The Morris like alternative walks each node, finding the rightmost of its left subtree and threading that to the node's right child.
+
+What interviewers probe. The Morris like alternative for constant space. The reverse preorder approach uses recursion stack, the threading approach is iterative.
+
+Logic and solution. Iterative threading. Walk a current pointer from the root. If current has a left child, find the rightmost node of the left subtree. Set that rightmost's right to current's right. Move left to right and clear left. Advance current to its right.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. In place tree linearization uses threading: hook the rightmost of the left subtree to the right child, then move left to right.
+
+
+Next up. Problem twenty of fifty one. LeetCode one twelve. Path Sum. Difficulty easy.
+
+Orientation. Root to leaf recursion. Interviewers use this to test whether you handle the leaf condition correctly.
+
+Description. Given a binary tree and a target sum, return whether any root to leaf path sums to the target.
+
+Deep dive. Recurse. Subtract the current value from the target. If a leaf and the target is now zero, true. Otherwise recurse left or right with the reduced target.
+
+What interviewers probe. The leaf check, both children null. Many candidates incorrectly accept any null endpoint.
+
+Logic and solution. Recursive helper. If null, return false. Subtract value from target. If a leaf and target is zero, return true. Recurse on non null children.
+
+Complexity. Linear in nodes. Linear stack space.
+
+Takeaway. Root to leaf problems require a strict leaf check; null is not the same as a leaf.
+
+
+Next up. Problem twenty one of fifty one. LeetCode one twenty nine. Sum Root to Leaf Numbers. Difficulty medium.
+
+Orientation. Path accumulation. Interviewers use this to test path encoding.
+
+Description. Each root to leaf path encodes a number by concatenating digits. Return the sum of all such numbers.
+
+Deep dive. Carry an accumulator down the recursion. At each node, set the new accumulator to ten times the old plus the current value. At a leaf, return the accumulator. Otherwise, return the sum of the recursive results from non null children.
+
+What interviewers probe. The leaf check and the sum aggregation.
+
+Logic and solution. Recursive helper carrying an accumulator. If null, return zero. Update the accumulator. If a leaf, return the accumulator. Else return the sum of recursive results on both children.
+
+Complexity. Linear in nodes. Linear stack space.
+
+Takeaway. Path accumulators thread state down a tree recursion, returning aggregates at the leaves.
+
+
+Next up. Problem twenty two of fifty one. LeetCode one twenty four. Binary Tree Maximum Path Sum. Difficulty hard.
+
+Orientation. Recursion with two return values: a global maximum and a contribution upward. Interviewers use this to test whether you separate the two roles.
+
+Description. Given a binary tree, return the maximum sum of any path. A path is a sequence of nodes connected by edges; it can start and end anywhere.
+
+Deep dive. Each node's recursion returns the maximum gain you can pass to the parent, namely the node's value plus the larger of its two child gains, clamped at zero. Separately, while computing, update a global maximum with the value plus both child gains, since a path can bend at this node.
+
+What interviewers probe. The separation between what you return and what you update globally. The return captures contributions you can pass up; the global captures bend points.
+
+Logic and solution. Initialize a global maximum to negative infinity. Recursive helper. If null, return zero. Recurse on children, clamping each at zero. Update the global with the value plus both. Return the value plus the larger of the two.
+
+Complexity. Linear in nodes. Linear stack space.
+
+Takeaway. Tree path problems often need recursion that returns one quantity for the parent's use and updates another globally for the answer; separate them clearly.
+
+
+Next up. Problem twenty three of fifty one. LeetCode one seventy three. Binary Search Tree Iterator. Difficulty medium.
+
+Orientation. Lazy inorder with a stack. Interviewers use this to test whether you can implement an iterator with constant amortized cost.
+
+Description. Implement an iterator over a binary search tree that returns values in ascending order. Constructor, has next, and next must run efficiently.
+
+Deep dive. Maintain a stack and a helper that pushes a node and then walks all the way left, pushing each node. The constructor calls this helper on the root. Next pops the top, calls the helper on the popped node's right, returns the popped value. Has next returns whether the stack is non empty.
+
+What interviewers probe. The amortized cost. Each node is pushed and popped at most once across all calls, so amortized cost per next is constant despite occasional log h work.
+
+Logic and solution. Stack of nodes. Helper push left walks left from a node, pushing each. Constructor calls the helper on the root. Next pops, calls the helper on the popped right, returns the popped value. Has next returns stack non empty.
+
+Complexity. Constant amortized time per next. Stack space proportional to tree height.
+
+Takeaway. Lazy iterators over trees use a stack that always contains the spine of the next descent; constant amortized despite occasional log h pushes.
+
+
+Next up. Problem twenty four of fifty one. LeetCode two twenty two. Count Complete Tree Nodes. Difficulty easy.
+
+Orientation. Logarithmic squared traversal. Interviewers use this because the linear solution misses the structural property.
+
+Description. Given a complete binary tree, count its nodes faster than linear time.
+
+Deep dive. A complete tree has at most one incomplete level, the last. At each node, compute the left height and the right height. If equal, the subtree is a perfect tree of that height with two to that power minus one nodes. Otherwise, recurse on both children and return one plus the sum.
+
+What interviewers probe. Why the algorithm is log squared. At each level of recursion, computing heights costs log n; the recursion descends log n levels.
+
+Logic and solution. Recursive helper. If null, return zero. Compute left and right heights by walking left only and right only. If equal, return two to that power minus one. Else recurse on left and right and return one plus the sum.
+
+Complexity. Log squared time. Log space for the stack.
+
+Takeaway. Complete trees admit log squared counting by exploiting that all but one subtree is perfect; the height comparison detects the complete branches.
+
+
+Next up. Problem twenty five of fifty one. LeetCode two thirty six. Lowest Common Ancestor of a Binary Tree. Difficulty medium.
+
+Orientation. Recursive ancestor reduction. Interviewers use this for the elegance of the solution.
+
+Description. Given a binary tree and two nodes p and q, return their lowest common ancestor.
+
+Deep dive. Recurse. If the node is null or matches p or q, return it. Recurse on both children. If both children return non null, the current node is the LCA. Otherwise return whichever child returned non null.
+
+What interviewers probe. Why the recursion is correct. The argument is that the recursion bubbles up the deepest node where p and q live in different subtrees.
+
+Logic and solution. Recursive helper. Base cases for null and for matching p or q. Recurse on both children. If both non null returned, return the current node. Otherwise return whichever child returned non null.
+
+Complexity. Linear in nodes. Linear stack space.
+
+Takeaway. The lowest common ancestor falls out of three line recursion; the matching base case plus dual non null check captures the bend.
+
+
+Section three of seven. Binary tree breadth first search.
+
+
+Next up. Problem twenty six of fifty one. LeetCode six thirty seven. Average of Levels in Binary Tree. Difficulty easy.
+
+Orientation. Standard BFS by levels. Interviewers use this to test BFS fundamentals.
+
+Description. Given a binary tree, return the average value at each level.
+
+Deep dive. Standard level order BFS: pop the size of the queue at each level, sum and count, push children, average.
+
+What interviewers probe. Whether you compute the level size before popping, otherwise the loop runs into the next level.
+
+Logic and solution. Queue with the root. Loop while non empty. Snapshot the size. Sum that many pops, push their children. Append sum over size to the result.
+
+Complexity. Linear in nodes. Linear extra space for the queue.
+
+Takeaway. Level order BFS templates: snapshot size, drain that many, push children; reuse this loop on every level problem.
+
+
+Next up. Problem twenty seven of fifty one. LeetCode one zero two. Binary Tree Level Order Traversal. Difficulty medium.
+
+Orientation. The same level by level BFS template.
+
+Description. Return a list of lists, one per level, with the values at that level.
+
+Deep dive. Same template as the previous problem but collect values into a level list.
+
+What interviewers probe. The size snapshot. Without it, you cannot delineate levels.
+
+Logic and solution. Queue with the root. Loop. Snapshot the size. Build the level list as you pop and push children. Append the level list to the result.
+
+Complexity. Linear in nodes. Linear extra space.
+
+Takeaway. The size snapshot pattern is the universal level delineator in level order BFS.
+
+
+Next up. Problem twenty eight of fifty one. LeetCode one zero three. Binary Tree Zigzag Level Order Traversal. Difficulty medium.
+
+Orientation. Level order BFS with alternating direction. Interviewers use this to test whether you flip without rebuilding.
+
+Description. Same as level order, but alternate left to right and right to left at each level.
+
+Deep dive. Same BFS template. Maintain a direction flag. On reversed levels, prepend rather than append, or build normally and reverse.
+
+What interviewers probe. Efficiency. Building with a deque and alternating prepend versus append avoids the reversal cost.
+
+Logic and solution. Queue with the root. Loop with a direction toggle. Snapshot the size. Use a deque for the level. Append on forward levels, prepend on reverse. Push children. Append the level. Toggle direction.
+
+Complexity. Linear in nodes. Linear extra space.
+
+Takeaway. Zigzag traversal extends level order with a direction flag; a deque eliminates the reversal cost.
+
+
+Next up. Problem twenty nine of fifty one. LeetCode one ninety nine. Binary Tree Right Side View. Difficulty medium.
+
+Orientation. Level order BFS retaining only the rightmost. Interviewers use this to test variation on the standard template.
+
+Description. Return the values visible from the right side of a binary tree.
+
+Deep dive. Standard level BFS. The last node popped at each level is the rightmost; record it.
+
+What interviewers probe. The DFS alternative: a preorder where you visit right before left and only record the first node seen at each depth.
+
+Logic and solution. BFS. Snapshot size. Drain and push children. Record the last value popped this level.
+
+Complexity. Linear in nodes. Linear extra space.
+
+Takeaway. Right side view is level BFS; the rightmost equals the last drained at each level.
+
+
+Section four of seven. Binary search tree.
+
+
+Next up. Problem thirty of fifty one. LeetCode five thirty. Minimum Absolute Difference in BST. Difficulty easy.
+
+Orientation. Inorder traversal of a BST. Interviewers use this to test whether you exploit the sorted inorder property.
+
+Description. Given a BST, return the minimum absolute difference between any two values.
+
+Deep dive. Inorder traversal of a BST yields values in sorted order. The minimum difference must come from adjacent pairs in that order. Walk inorder maintaining the previous value and the running minimum.
+
+What interviewers probe. Whether you exploit inorder. Without it, you might compute pairwise differences across all nodes, which is quadratic.
+
+Logic and solution. Inorder traversal, recursive or iterative. Maintain previous value and best. At each visit, if previous is set, update best with the difference. Update previous.
+
+Complexity. Linear in nodes. Linear stack space.
+
+Takeaway. BST problems involving sorted properties default to inorder traversal; differences and ranks fall out for free.
+
+
+Next up. Problem thirty one of fifty one. LeetCode two thirty. Kth Smallest Element in a BST. Difficulty medium.
+
+Orientation. Inorder with a counter or stack. Interviewers use this to test whether you stop early.
+
+Description. Given a BST and an integer k, return the k th smallest value.
+
+Deep dive. Inorder traversal yields values in ascending order. Stop after visiting k nodes. The iterative stack version supports early termination cleanly.
+
+What interviewers probe. The follow up about frequent inserts and deletes with frequent k th queries. The expected answer augments each node with subtree size for log time queries.
+
+Logic and solution. Iterative inorder using a stack. Push left spine. Loop: pop, decrement k, if zero return the popped value; push the popped's right and its left spine.
+
+Complexity. Linear in the worst case; height plus k for early termination. Linear stack space.
+
+Takeaway. K th smallest in a BST is iterative inorder with a counter; for repeated queries, augment nodes with subtree sizes.
+
+
+Next up. Problem thirty two of fifty one. LeetCode ninety eight. Validate Binary Search Tree. Difficulty medium.
+
+Orientation. Recursive bounds check. Interviewers use this to test whether you carry bounds rather than just compare with children.
+
+Description. Given a binary tree, return whether it satisfies the BST invariant.
+
+Deep dive. The naive check that each node's value lies between its children's values is wrong; the BST invariant is global. The right approach is to recurse with a low and high bound, tightened as you descend. Equivalently, an inorder traversal must produce strictly increasing values.
+
+What interviewers probe. Why the local child comparison fails. They will offer counterexamples like a tree with a deep left descendant that violates the global invariant despite local correctness.
+
+Logic and solution. Recursive helper carrying low and high. If the node is null, return true. If the node's value is not strictly between low and high, return false. Recurse left with the high bound updated to the value, and right with the low bound updated.
+
+Complexity. Linear in nodes. Linear stack space.
+
+Takeaway. BST validation needs propagated bounds, not just local comparisons; or equivalently, a strict inorder check.
+
+
+Section five of seven. Graph, general.
+
+
+Next up. Problem thirty three of fifty one. LeetCode two hundred. Number of Islands. Difficulty medium.
+
+Orientation. Flood fill on a grid. Interviewers use this for connected components fundamentals.
+
+Description. Given a grid of zero and one cells, count the number of maximal connected groups of ones.
+
+Deep dive. Walk every cell. On unvisited land, increment the count and run DFS or BFS that floods all connected land cells, marking them visited.
+
+What interviewers probe. In place sinking versus a separate visited matrix. Sinking is the cleaner answer.
+
+Logic and solution. Walk cells. On a one, increment count, run DFS that recursively sinks all four orthogonal land neighbors.
+
+Complexity. Linear in cells. Stack space proportional to the largest component.
+
+Takeaway. Grid connected components are one outer scan plus one flood fill; in place sinking saves space.
+
+
+Next up. Problem thirty four of fifty one. LeetCode one thirty. Surrounded Regions. Difficulty medium.
+
+Orientation. Reverse flood fill from the borders. Interviewers use this to test whether you flip the question.
+
+Description. Given a board of X and O cells, capture any O region not connected to the border, by flipping it to X.
+
+Deep dive. Direct flood from interior O regions is hard because you do not know in advance which are surrounded. Flip the question: flood from the border O cells, marking them safe. Then walk the board: any unsafe O becomes X, and safe markers become O.
+
+What interviewers probe. The reverse framing. Many candidates struggle to flip the question.
+
+Logic and solution. Walk the four borders. From each border O, run DFS marking connected O cells with a sentinel. Walk all cells. Convert unmarked O to X. Convert sentinel back to O.
+
+Complexity. Linear in cells. Stack space proportional to component size.
+
+Takeaway. When direct flood fill is hard because the safe set is unknown, invert: flood from the safe seeds and convert the rest.
+
+
+Next up. Problem thirty five of fifty one. LeetCode one thirty three. Clone Graph. Difficulty medium.
+
+Orientation. DFS or BFS with an original to clone map. Interviewers use this as a structural copy exercise.
+
+Description. Given a node in a connected undirected graph, return a deep copy of the entire graph.
+
+Deep dive. Maintain a map from original to clone. DFS or BFS. For each original visited, create the clone if absent; for each neighbor, recurse or enqueue, then attach the neighbor's clone to the current clone's neighbor list.
+
+What interviewers probe. Why the map prevents infinite recursion. Without it, cycles would loop forever.
+
+Logic and solution. Map from original to clone. DFS helper. If original is in the map, return its clone. Else create the clone, add to the map, recurse on each neighbor, add each result to the clone's neighbors. Return the clone.
+
+Complexity. Linear in nodes plus edges. Linear extra space.
+
+Takeaway. Graph cloning is one map plus a DFS or BFS; the map handles cycles and avoids duplicate clones.
+
+
+Next up. Problem thirty six of fifty one. LeetCode three ninety nine. Evaluate Division. Difficulty medium.
+
+Orientation. Weighted union find or DFS over a graph of ratios. Interviewers use this to test whether you model the problem as a graph.
+
+Description. Given equations like a divided by b equals two and queries like a divided by c, return query results, or minus one if not derivable.
+
+Deep dive. Build a directed weighted graph. Each equation a divided by b equals k yields edges a to b with weight k and b to a with weight one over k. Each query is a path search where the answer is the product of weights along the path.
+
+What interviewers probe. The weighted union find alternative, which preserves the same idea more compactly. Both work; the graph DFS is more intuitive.
+
+Logic and solution. Build the graph. For each query, run DFS from the source, multiplying weights along edges. Return the accumulated product when you reach the target, or minus one if unreachable.
+
+Complexity. Linear per query in the size of the connected component. Linear extra space for the graph.
+
+Takeaway. Division equation problems are weighted graph traversal; ratios chain by multiplication along the path.
+
+
+Next up. Problem thirty seven of fifty one. LeetCode two zero seven. Course Schedule. Difficulty medium.
+
+Orientation. Cycle detection in a directed graph. Interviewers use this for topological sort fundamentals.
+
+Description. Given courses and prerequisites, return whether all courses can be completed.
+
+Deep dive. Two approaches. Kahn's algorithm uses BFS over indegrees: enqueue zero indegree nodes, peel them off, decrement successors. Alternatively, DFS with three colors detects cycles when a gray node is encountered.
+
+What interviewers probe. Edge orientation: from prerequisite to dependent. They also probe whether you can also produce the order, which is yes for Kahn's.
+
+Logic and solution. Kahn's. Build adjacency list and indegree array. Push zero indegree nodes. Counter starts at zero. Pop, increment counter, decrement successors, push any that drop to zero. Return counter equals course count.
+
+Complexity. Linear in vertices plus edges. Linear extra space.
+
+Takeaway. Directed graph cycle detection is topological sort; pick Kahn's when you also need the order.
+
+
+Next up. Problem thirty eight of fifty one. LeetCode two ten. Course Schedule Two. Difficulty medium.
+
+Orientation. The exact problem above, but return the order itself. Interviewers use this to confirm Kahn's by product.
+
+Description. Same as course schedule but return any valid order, or empty if impossible.
+
+Deep dive. Same Kahn's algorithm; record the popped nodes in order.
+
+What interviewers probe. Whether you handle the empty list correctly when a cycle exists.
+
+Logic and solution. Same as course schedule, but append each popped node to a result list. If the result list size equals course count, return it; else return empty.
+
+Complexity. Linear in vertices plus edges. Linear extra space.
+
+Takeaway. Topological sort orders fall out of Kahn's algorithm by recording the pop order.
+
+
+Section six of seven. Graph BFS.
+
+
+Next up. Problem thirty nine of fifty one. LeetCode nine zero nine. Snakes and Ladders. Difficulty medium.
+
+Orientation. BFS on an implicit graph. Interviewers use this to test whether you can derive the graph from a board.
+
+Description. Given a Boustrophedon numbered board with snakes and ladders, return the minimum dice rolls to reach the last square.
+
+Deep dive. Treat each square as a node. From each square, edges go to up to six successor squares; if a successor has a teleport, the edge goes to its destination instead. BFS gives the shortest number of rolls.
+
+What interviewers probe. The board to coordinates conversion, which alternates direction by row. Off by one bugs are common here.
+
+Logic and solution. Convert board to flat target array indexed by square number. BFS from one. Pop the front. For each of the next six squares, take its target if any, else itself. If unvisited, enqueue with distance plus one. Return the distance to the last square.
+
+Complexity. Linear in board size. Linear extra space.
+
+Takeaway. Implicit graphs from board geometry yield to BFS once you flatten the indexing; convert once and forget.
+
+
+Next up. Problem forty of fifty one. LeetCode four thirty three. Minimum Genetic Mutation. Difficulty medium.
+
+Orientation. BFS on a string mutation graph. Interviewers use this as a smaller relative of word ladder.
+
+Description. Given a start gene, an end gene, and a bank of valid genes, return the minimum number of single character changes to transform start to end going only through bank entries.
+
+Deep dive. Same template as word ladder. Each gene is a node; edges connect genes differing in exactly one of the four bases. BFS from the start.
+
+What interviewers probe. The neighbor enumeration. With a small alphabet, generating neighbors by trying every base at every position is faster than the pattern map for small input.
+
+Logic and solution. BFS from start. For each dequeued gene, generate all neighbors by changing each character to A, C, G, or T. If a neighbor is in the bank and unvisited, enqueue with distance plus one. Return on hitting end.
+
+Complexity. Bank size times gene length times alphabet size. Linear extra space.
+
+Takeaway. String mutation problems are unweighted graph BFS; with a small alphabet, brute force the neighbors.
+
+
+Next up. Problem forty one of fifty one. LeetCode one twenty seven. Word Ladder. Difficulty hard.
+
+Orientation. BFS on an implicit word graph. Interviewers use this because the pattern map speedup is the key insight.
+
+Description. Given a begin word, an end word, and a word list, return the length of the shortest transformation sequence by single letter changes through list words.
+
+Deep dive. Build a pattern map from each pattern, with one position wildcarded, to the list of matching words. Words sharing a pattern differ in exactly one position. BFS from begin word.
+
+What interviewers probe. Bidirectional BFS as a further optimization, expanding from both ends and meeting in the middle.
+
+Logic and solution. Build the pattern map. BFS from begin word with distance one. For each dequeued, generate its patterns, look up neighbors, mark visited and enqueue with distance plus one. Return on hitting end.
+
+Complexity. Word count times length squared. Linear extra space.
+
+Takeaway. Implicit graphs from canonical patterns reduce neighbor enumeration to a hash lookup; BFS handles the rest.
+
+
+Section seven of seven. Trie and backtracking.
+
+
+Next up. Problem forty two of fifty one. LeetCode two zero eight. Implement Trie, Prefix Tree. Difficulty medium.
+
+Orientation. The trie data structure itself. Interviewers use this as a building block.
+
+Description. Implement a trie supporting insert, search, and starts with.
+
+Deep dive. A node has children indexed by character and an end of word flag. Walking the tree from root spells prefixes.
+
+What interviewers probe. The distinction between search and starts with. Search verifies the end flag at the terminal; starts with does not.
+
+Logic and solution. Node with children array or map and end flag. Insert walks character by character, creating missing children, marking the end. Search walks; missing returns false; at the end return the flag. Starts with walks and returns true if it reaches the end.
+
+Complexity. Each operation is linear in the operand length. Linear total characters in extra space.
+
+Takeaway. Tries are the right structure for prefix queries; correct implementation unlocks a class of search problems.
+
+
+Next up. Problem forty three of fifty one. LeetCode two eleven. Design Add and Search Words Data Structure. Difficulty medium.
+
+Orientation. Trie plus dot wildcard search. Interviewers use this to test recursive trie traversal.
+
+Description. Implement a structure supporting add word and search word, where search supports a dot character matching any letter.
+
+Deep dive. Add is standard trie insert. Search recurses character by character. On a regular character, descend into the matching child. On a dot, branch into all children.
+
+What interviewers probe. The recursion budget. Worst case search is exponential when the word is all dots; mention it explicitly.
+
+Logic and solution. Trie. Add inserts. Search recursive helper takes a node and an index. If at the end of the word, return the end flag. If the character is a dot, recurse into every child. Else recurse into the matching child if it exists.
+
+Complexity. Add is linear in word length. Search is linear in length for normal chars, branching factor times length when dots dominate.
+
+Takeaway. Tries plus recursive branching handle dot wildcards; the cost grows with the number of dots.
+
+
+Next up. Problem forty four of fifty one. LeetCode two twelve. Word Search Two. Difficulty hard.
+
+Orientation. Trie backed grid search. Interviewers use this to test the combination of two structures.
+
+Description. Given a grid of characters and a word list, return all words findable by walking adjacent cells without reuse.
+
+Deep dive. Build a trie from the word list. From each cell, run DFS walking the trie and the grid in lockstep. Prune when the current letter is not a child of the current trie node.
+
+What interviewers probe. The end of word handling and trie leaf pruning, where you remove fully matched leaves to shrink the search.
+
+Logic and solution. Build trie. DFS from each cell. If the cell is invalid or its character is not a trie child, return. Descend in the trie. If the trie node marks a word, record it and clear the marker. Mark the cell, recurse on neighbors, unmark.
+
+Complexity. Grid size times four times three to one less than max word length. Linear in word list characters extra space.
+
+Takeaway. Trie plus DFS pruning is the canonical structure for matching many patterns against one grid input.
+
+
+Next up. Problem forty five of fifty one. LeetCode seventeen. Letter Combinations of a Phone Number. Difficulty medium.
+
+Orientation. Backtracking enumeration. Interviewers use this as a backtracking introduction.
+
+Description. Given digits two through nine, return all letter combinations they could represent, using the phone keypad mapping.
+
+Deep dive. Recursive enumeration. At each level, branch over the letters for the current digit, append, recurse, and pop. Iterative builders also work but recursion is more natural.
+
+What interviewers probe. Empty input handling. Many candidates return a list with an empty string instead of an empty list.
+
+Logic and solution. If digits is empty, return empty list. Map each digit to its letters. Recursive helper carrying an index and a buffer. If the index equals the length, add the buffer to the result. Else for each letter of the current digit, append, recurse, pop.
+
+Complexity. Three or four to the power of digit count. Same in extra space.
+
+Takeaway. Backtracking enumeration is recursion plus append plus pop; the structure is the same across most enumeration problems.
+
+
+Next up. Problem forty six of fifty one. LeetCode seventy seven. Combinations. Difficulty medium.
+
+Orientation. Backtracking with a start index. Interviewers use this to test whether you avoid duplicate combinations.
+
+Description. Given n and k, return all combinations of k numbers chosen from one to n.
+
+Deep dive. Backtracking with a start index. At each level, choose a number from start to n, append, recurse with start equal to the chosen plus one, pop.
+
+What interviewers probe. Pruning. If the remaining elements cannot fill the buffer, stop early. Speeds it up considerably for tight n and k.
+
+Logic and solution. Recursive helper carrying a start and a buffer. If the buffer size equals k, add a copy. Else loop the start from the current to n minus the remaining slots plus one. Append, recurse with start plus one, pop.
+
+Complexity. n choose k for time, plus the cost of materializing each. Linear extra space for the buffer plus stack.
+
+Takeaway. Combinations enumerate via backtracking with a start index; the start index is what eliminates duplicate orderings.
+
+
+Next up. Problem forty seven of fifty one. LeetCode forty six. Permutations. Difficulty medium.
+
+Orientation. Backtracking with a used set. Interviewers use this as another backtracking template.
+
+Description. Given an array of distinct integers, return all permutations.
+
+Deep dive. Backtracking. At each level, try each unused element, append, mark used, recurse, unmark, pop.
+
+What interviewers probe. Why a used set is needed. Without it, you reuse elements; with it, you avoid that.
+
+Logic and solution. Recursive helper with a used boolean array and a buffer. If buffer length equals input length, add a copy. Else for each index, if unused, append the value, mark, recurse, unmark, pop.
+
+Complexity. n factorial. Linear extra space.
+
+Takeaway. Permutations enumerate via backtracking with a used set; combinations use a start index instead.
+
+
+Next up. Problem forty eight of fifty one. LeetCode thirty nine. Combination Sum. Difficulty medium.
+
+Orientation. Backtracking with reuse. Interviewers use this to test whether you handle reusable elements correctly.
+
+Description. Given distinct candidates and a target, return all unique combinations where the candidates sum to the target. Each candidate may be reused.
+
+Deep dive. Backtracking with a start index. At each level, choose a candidate from start onward, subtract from target, recurse with the same start to allow reuse, then backtrack.
+
+What interviewers probe. The same start index for reuse; advancing to the next index would forbid reuse, which is the no reuse variant.
+
+Logic and solution. Recursive helper carrying start, remaining target, and buffer. If remaining is zero, add a copy. If remaining is negative, return. Else loop from start. Append, recurse with the same start and reduced remaining, pop.
+
+Complexity. Exponential in worst case. Linear stack and buffer space.
+
+Takeaway. Same start index recurses allow element reuse; advancing forbids it.
+
+
+Next up. Problem forty nine of fifty one. LeetCode fifty two. N Queens Two. Difficulty hard.
+
+Orientation. Backtracking on a constraint set. Interviewers use this to test conflict tracking.
+
+Description. Return the number of distinct solutions to the n queens puzzle.
+
+Deep dive. Place queens row by row. Track three constraint sets: occupied columns, occupied positive diagonals via row plus column, and occupied negative diagonals via row minus column. At each row, try every column not conflicting with any set; place, recurse, remove.
+
+What interviewers probe. The diagonal encodings. The two diagonal families have constant sums and constant differences respectively, the standard chessboard trick.
+
+Logic and solution. Recursive helper at row r. If r equals n, increment a counter. Else for each column, if no conflict, mark all three sets, recurse on r plus one, unmark.
+
+Complexity. Bounded by n factorial worst case but pruning reduces it dramatically. Linear extra space.
+
+Takeaway. Constraint based backtracking uses one set per constraint family; pruning makes it tractable.
+
+
+Next up. Problem fifty of fifty one. LeetCode twenty two. Generate Parentheses. Difficulty medium.
+
+Orientation. Backtracking with two counters. Interviewers use this for combinatorial enumeration.
+
+Description. Given n pairs of parentheses, return all combinations of well formed strings of length two n.
+
+Deep dive. Backtracking carrying remaining opens and remaining closes. Append an open if opens remain. Append a close only if closes outnumber opens, that is, more closes remain than opens.
+
+What interviewers probe. The validity invariant: at any prefix, the number of opens placed must be at least the number of closes placed.
+
+Logic and solution. Recursive helper with opens, closes, and buffer. If both are zero, add a copy. If opens remain, append open, recurse, pop. If closes outnumber opens, append close, recurse, pop.
+
+Complexity. The Catalan number. Linear stack.
+
+Takeaway. Validity preserving enumeration uses counters that enforce the invariant at every step; unsound branches are never explored.
+
+
+Next up. Problem fifty one of fifty one. LeetCode seventy nine. Word Search. Difficulty medium.
+
+Orientation. Backtracking on a grid. Interviewers use this to test directional DFS with reuse prevention.
+
+Description. Given a grid of characters and a word, return whether the word can be formed by adjacent cells without reuse.
+
+Deep dive. From each cell, DFS comparing characters along the word. Mark visited cells in place to prevent reuse, then unmark on backtrack.
+
+What interviewers probe. The mark and unmark discipline. Forgetting to unmark prevents alternate paths.
+
+Logic and solution. For each starting cell, run DFS with a current word index. If out of bounds or character mismatch or marked, return false. If at the last index, return true. Mark, recurse on the four neighbors with index plus one, unmark, return whether any neighbor succeeded.
+
+Complexity. Grid size times four to the word length. Stack space proportional to the word length.
+
+Takeaway. Backtracking on grids uses in place marking and disciplined unmarking; the same template handles many variants.
+
+
+That concludes part two of three. Patterns to internalize: dummy heads for safe linked list builds, parallel recursion for tree comparisons, recursion that returns one value and updates another for tree path problems, level order BFS with size snapshots, Kahn's algorithm for topological sorts, BFS with pattern maps for word transformation, tries for prefix queries, and backtracking with start indices, used sets, and constraint sets for enumeration. Drive safe.
+
+End of part two.

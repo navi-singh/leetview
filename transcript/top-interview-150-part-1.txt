@@ -1,0 +1,983 @@
+TOP INTERVIEW ONE FIFTY. PART ONE OF THREE. AUDIO TRANSCRIPT.
+
+Welcome. This is part one of three covering the LeetCode Top Interview one fifty study plan. Part one covers fifty six problems across seven topics: arrays and strings, two pointers, sliding window, matrix, hash map, intervals, and stack. Each problem walks through six beats. Orientation: what the problem teaches and why interviewers like it. Description. Deep dive into the underlying insight. What interviewers probe. Logic and solution. Complexity. And a one sentence takeaway.
+
+Let's begin.
+
+
+Section one of seven. Arrays and strings.
+
+
+Next up. Problem one of fifty six. LeetCode eighty eight. Merge Sorted Array. Difficulty easy.
+
+Orientation. The classic two pointer merge, with a twist that forces you to write from the back. Interviewers use it to see whether you spot the in place trick.
+
+Description. Given two sorted arrays, the first sized large enough to hold both, merge the second into the first so the result is sorted. The first array has its real elements at the front and zeros padding the back.
+
+Deep dive. The naive merge from the front overwrites elements you have not yet read. The fix is to merge from the back, comparing the largest unmerged elements of each array and placing the larger one at the current write position from the right. There is no overwriting because the right side of the first array is exactly the empty pad space.
+
+What interviewers probe. The leftover case. If the second array still has elements after the first is exhausted, you must copy them. The reverse case is automatic because elements of the first array are already in place.
+
+Logic and solution. Maintain three pointers: one at the last real element of the first array, one at the last element of the second, and a write pointer at the very end. Walk all three backward. At each step, compare the two read pointers and write the larger to the write position, advancing whichever was used.
+
+Complexity. Linear in the combined size for time. Constant extra space.
+
+Takeaway. When in place merging seems to require shifting, write from the back; the empty space at the end is your scratch pad.
+
+
+Next up. Problem two of fifty six. LeetCode twenty seven. Remove Element. Difficulty easy.
+
+Orientation. The slow fast pointer template. Interviewers use it as a fundamentals check on in place array compaction.
+
+Description. Given an array and a value, remove all occurrences of that value in place and return the new length. The order of the kept elements does not matter, and elements past the new length are ignored.
+
+Deep dive. Use two pointers, slow and fast. Fast scans every position. Slow points to the next write position. When fast points to a keeper, copy it to slow and advance slow. When fast points to a deletion, just advance fast.
+
+What interviewers probe. Whether you can write this without any extra array. They also probe edge cases of empty input or all elements being the target.
+
+Logic and solution. Initialize slow to zero. Walk fast over the array. Whenever the value at fast is not the target, copy it to position slow and increment slow. Return slow at the end.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. The slow fast pointer pattern is the universal tool for in place filtering of arrays.
+
+
+Next up. Problem three of fifty six. LeetCode twenty six. Remove Duplicates from Sorted Array. Difficulty easy.
+
+Orientation. Slow fast on a sorted array. Interviewers use it to see whether you exploit the sortedness instead of using a set.
+
+Description. Given a sorted array, remove duplicates in place so each unique value appears once, and return the new length.
+
+Deep dive. Because the array is sorted, duplicates are adjacent. Maintain slow at one. Walk fast from one. Compare the value at fast with the value at fast minus one or, equivalently, with the value at slow minus one. If different, write to slow and advance slow.
+
+What interviewers probe. Whether you use a hash set, which would be a wasted opportunity given the sortedness. They want the linear in place solution.
+
+Logic and solution. If the array is empty, return zero. Initialize slow to one. Walk fast from one. If the value at fast differs from the value at fast minus one, copy it to slow and increment slow. Return slow.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Sorted inputs almost always admit a single pass linear solution; reach for a set only when sortedness fails you.
+
+
+Next up. Problem four of fifty six. LeetCode eighty. Remove Duplicates from Sorted Array Two. Difficulty medium.
+
+Orientation. The same template generalized to allow at most two of each value. Interviewers test whether you parameterize the slow fast pattern.
+
+Description. Given a sorted array, remove duplicates in place so each value appears at most twice, and return the new length.
+
+Deep dive. The same slow fast pattern, but the comparison is to the value at slow minus two rather than slow minus one. If they differ, you have not yet placed two copies, so write and advance slow.
+
+What interviewers probe. The generalization to at most k copies. Replace the constant two with k in the comparison and the solution stays the same.
+
+Logic and solution. If the array has at most two elements, return its length. Initialize slow to two. Walk fast from two. If the value at fast differs from the value at slow minus two, copy and increment slow.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Whenever a problem says at most k of each value, generalize the slow fast pattern by comparing against slow minus k.
+
+
+Next up. Problem five of fifty six. LeetCode one sixty nine. Majority Element. Difficulty easy.
+
+Orientation. The Boyer Moore voting algorithm. Interviewers use this because the trick is unintuitive but elegant.
+
+Description. Given an array where one element appears more than half the time, return that element.
+
+Deep dive. The voting idea: imagine each occurrence of the majority casting a plus one and every other element casting a minus one. The total is positive, so a single candidate plus a count survives. Walk the array; when count is zero, adopt the current element as the candidate; otherwise, increment count if it matches and decrement otherwise.
+
+What interviewers probe. The why. Many candidates implement Boyer Moore from memory but cannot defend it. The argument is that pairing a majority element with a non majority element nets to zero, and the majority's surplus guarantees it remains the candidate at the end.
+
+Logic and solution. Initialize candidate to anything and count to zero. Walk the array. If count is zero, set candidate to the current value. Increment count if the current value equals candidate, decrement otherwise. Return candidate.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Boyer Moore voting solves majority element problems in linear time with constant space; the pairing argument is the heart of it.
+
+
+Next up. Problem six of fifty six. LeetCode one eighty nine. Rotate Array. Difficulty medium.
+
+Orientation. The three reversal trick. Interviewers love it because the trick replaces extra space with cleverness.
+
+Description. Given an array and an integer k, rotate the array to the right by k positions, in place if possible.
+
+Deep dive. The naive solution copies into a new array. The in place trick uses three reversals. Reverse the entire array. Then reverse the first k elements. Then reverse the rest. The composition produces the rotation.
+
+What interviewers probe. The modulo on k. If k exceeds array length, take k modulo length first; otherwise the reversals do the wrong thing. They also probe the edge case of k equal to zero.
+
+Logic and solution. Take k modulo the length. Reverse the whole array in place. Reverse the first k elements. Reverse the remaining elements.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Three reversals rotate an array in place; the trick generalizes to any cyclic shift problem.
+
+
+Next up. Problem seven of fifty six. LeetCode one twenty one. Best Time to Buy and Sell Stock. Difficulty easy.
+
+Orientation. The single pass minimum tracker. Interviewers use it as the prototype of a stateful linear scan.
+
+Description. Given an array of daily prices, return the maximum profit from buying once and selling later.
+
+Deep dive. Walk the prices left to right while tracking the minimum price seen so far. At each day, the best profit if you sell today is the current price minus that running minimum. Track the maximum across all days.
+
+What interviewers probe. Whether you handle the no profit case by returning zero rather than a negative number, since you are not forced to transact.
+
+Logic and solution. Initialize the minimum price to infinity and the best profit to zero. Walk the prices. Update the minimum to the smaller of itself and the current price. Update the best profit to the larger of itself and the current price minus the minimum.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Many stock problems boil down to tracking a single running minimum or maximum during a one pass scan.
+
+
+Next up. Problem eight of fifty six. LeetCode one twenty two. Best Time to Buy and Sell Stock Two. Difficulty medium.
+
+Orientation. The greedy upward step. Interviewers use it because the trick is so simple it surprises people.
+
+Description. Given daily prices, return the maximum profit if you can buy and sell as many times as you want, with at most one share at a time.
+
+Deep dive. Any monotonic upward run can be decomposed into adjacent gains. Summing every positive day over day delta yields the maximum profit, regardless of how many actual transactions that implies.
+
+What interviewers probe. Why the greedy works. The argument is that holding through an upward run is equivalent to buying at the bottom and selling at the top, so summing daily gains captures the same profit.
+
+Logic and solution. Initialize total profit to zero. Walk pairs of consecutive prices. If today is greater than yesterday, add the difference to the total.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. When unlimited transactions are allowed, sum all positive daily gains; the greedy is optimal.
+
+
+Next up. Problem nine of fifty six. LeetCode fifty five. Jump Game. Difficulty medium.
+
+Orientation. The greedy reachability scan. Interviewers use it to test whether you avoid dynamic programming when greedy suffices.
+
+Description. Given an array where each value is the maximum jump length from that index, determine whether you can reach the last index starting from index zero.
+
+Deep dive. Walk left to right tracking the farthest reachable index. At each position, if the current index exceeds the farthest reachable, you cannot get here, return false. Otherwise update the farthest reachable to the larger of itself and the current index plus its jump value. If you finish the loop, you reach the end.
+
+What interviewers probe. Whether you reach for dynamic programming, which is unnecessary here. The greedy is linear and constant space; the DP is also linear but uses extra space.
+
+Logic and solution. Initialize the farthest to zero. Walk indices. If the current index exceeds the farthest, return false. Update farthest with the larger of itself and the current index plus its value. Return true at the end.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Reachability problems on arrays often dissolve into a single linear sweep tracking the farthest seen index.
+
+
+Next up. Problem ten of fifty six. LeetCode forty five. Jump Game Two. Difficulty medium.
+
+Orientation. Greedy with implicit BFS layers. Interviewers use this to test whether you see the layered structure of jumps.
+
+Description. Same array as before, but now return the minimum number of jumps to reach the last index. Assume it is reachable.
+
+Deep dive. Treat each jump as a BFS level. The current jump's reachable range ends at some index; the next jump's range ends at the maximum of index plus value across all positions in the current range. Each time you cross the current end, increment the jump count and adopt the next end.
+
+What interviewers probe. The implicit BFS framing. They want you to articulate that this is shortest path on an unweighted graph where each node connects to all reachable indices.
+
+Logic and solution. Initialize jumps to zero, current end to zero, farthest to zero. Walk indices up to length minus two. Update farthest with the larger of itself and the current index plus value. If the current index reaches the current end, increment jumps and set the current end to farthest.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. The minimum jumps problem is BFS in disguise, collapsed into a linear scan by tracking the boundary between layers.
+
+
+Next up. Problem eleven of fifty six. LeetCode two seventy four. H Index. Difficulty medium.
+
+Orientation. Counting sort applied to a small numeric range. Interviewers use it because the optimal solution avoids the obvious sort.
+
+Description. Given an array of citation counts, return the h index, the largest h such that the researcher has h papers each cited at least h times.
+
+Deep dive. Sorting and scanning gives a clean n log n solution. The linear time solution caps citation counts at the array length, since any value beyond that contributes the same as length itself, and uses a counting array. After counting, walk from the highest bucket down accumulating papers until the running total reaches the bucket's index.
+
+What interviewers probe. Why capping citations at length is safe. The h index cannot exceed the number of papers, so values beyond that bucket are equivalent to length itself.
+
+Logic and solution. Allocate a count array of size length plus one. For each citation, increment the count at min of the citation and length. Walk buckets from length down to zero, accumulating a running total. Return the first bucket whose index is at most the running total.
+
+Complexity. Linear time. Linear extra space in the array length.
+
+Takeaway. When values can be capped at the array length, counting sort gives a linear time solution that beats sorting.
+
+
+Next up. Problem twelve of fifty six. LeetCode three eighty. Insert Delete Get Random in Constant Time. Difficulty medium.
+
+Orientation. Hash map plus dynamic array. Interviewers use this as a design problem to test whether you combine two structures.
+
+Description. Design a data structure supporting insert, delete, and get random, all in average constant time. Get random returns a uniformly random element.
+
+Deep dive. The challenge is constant time random access plus constant time insert and delete. A list supports random access but not constant delete. A hash set supports constant insert and delete but no indexed random. The combination is a dynamic array for the values plus a hash map from value to index. To delete, swap the target with the last element of the array, pop the last, update the map.
+
+What interviewers probe. The swap and pop trick for delete. Many candidates try to delete by index, which is linear. They also probe whether get random is uniform; with a contiguous dynamic array, picking a random index is uniform.
+
+Logic and solution. Maintain a list and a map from value to its index. Insert appends to the list and stores the index in the map. Delete looks up the index, swaps with the last list element, updates the map for the swapped value, pops the list, and removes the deleted key. Get random picks a random index in the list.
+
+Complexity. Constant average time per operation. Linear extra space.
+
+Takeaway. Combining a hash map with a dynamic array gives both constant time membership and constant time random indexing.
+
+
+Next up. Problem thirteen of fifty six. LeetCode two thirty eight. Product of Array Except Self. Difficulty medium.
+
+Orientation. Prefix and suffix scans. Interviewers use this to test whether you avoid the temptation to use division.
+
+Description. Given an array, return an array where each position holds the product of all elements except the one at that position. No division allowed.
+
+Deep dive. Two passes. First pass left to right computes prefix products into the output: position i holds the product of all elements before i. Second pass right to left maintains a running suffix product, multiplying it into the output at each position and then updating it.
+
+What interviewers probe. Whether you achieve constant extra space, not counting the output. The two pass technique reuses the output array as the prefix scratch space.
+
+Logic and solution. Initialize the output of the same length, with the first entry equal to one. Walk left to right: each output entry is the previous output times the previous input. Initialize a running suffix to one. Walk right to left: multiply the output entry by the suffix, then multiply the suffix by the current input.
+
+Complexity. Linear time. Constant extra space beyond the output.
+
+Takeaway. Prefix and suffix scans replace division in product problems and generalize to many cumulative computation tasks.
+
+
+Next up. Problem fourteen of fifty six. LeetCode one thirty four. Gas Station. Difficulty medium.
+
+Orientation. Greedy on cumulative deficit. Interviewers use this because the linear time solution is non obvious.
+
+Description. Given two arrays, gas at each station and cost to travel to the next, return the index of the unique starting station that lets you complete the circuit, or minus one if impossible.
+
+Deep dive. If the total gas is less than the total cost, no answer exists. Otherwise, an answer exists, and the trick is finding it in one pass. Walk the stations, tracking a running tank. If the tank ever goes negative, the start cannot be in the segment up to here, so reset the candidate start to the next station and zero the tank.
+
+What interviewers probe. The proof of correctness. The argument is that if starting at index s causes the tank to go negative at index j, then no station between s and j can be a valid start either, so jump straight past j.
+
+Logic and solution. Track total tank, current tank, and start index. Walk all stations. Add gas minus cost to both totals. If the current tank goes negative, set start to the next index and reset the current tank to zero. If the total tank is non negative at the end, return start; otherwise return minus one.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. When a negative running balance falsifies a candidate, jump past the entire failed segment; never restart from the next index.
+
+
+Next up. Problem fifteen of fifty six. LeetCode one thirty five. Candy. Difficulty hard.
+
+Orientation. Two pass left and right scan. Interviewers use this to test whether you decompose a global constraint into two directional ones.
+
+Description. Given an array of children's ratings, give each child at least one candy and ensure any child with a higher rating than a neighbor gets more candy. Return the minimum total candies.
+
+Deep dive. The constraint splits into two: each child must beat its left neighbor if rated higher, and each must beat its right neighbor if rated higher. Run a left to right pass enforcing the left constraint and a right to left pass enforcing the right, taking the maximum of the two assignments.
+
+What interviewers probe. Why the maximum of the two passes is correct. The argument is that each pass guarantees one direction; the maximum satisfies both simultaneously without violating the other.
+
+Logic and solution. Allocate a candy array, all ones. Left to right, if rating at i is greater than rating at i minus one, set candy at i to candy at i minus one plus one. Right to left, if rating at i is greater than rating at i plus one, set candy at i to the maximum of itself and candy at i plus one plus one. Sum the candy array.
+
+Complexity. Linear time. Linear extra space.
+
+Takeaway. When a constraint involves both neighbors, two directional passes plus a maximum often resolve it cleanly.
+
+
+Next up. Problem sixteen of fifty six. LeetCode forty two. Trapping Rain Water. Difficulty hard.
+
+Orientation. The two pointer water trapping problem. Interviewers use this as the canonical bridge from precomputed maxima to constant space.
+
+Description. Given an array of bar heights, compute total trapped rain water. Water at any index fills to the lower of the highest bar to its left and right, minus the bar's height.
+
+Deep dive. The simple solution precomputes left and right max arrays in two passes. The two pointer optimization tracks running maxima from both ends; the smaller side bounds the trapped water there, so process from that side and advance.
+
+What interviewers probe. Why advancing the smaller side is safe. The trapped water at the smaller side is bounded by the smaller running max regardless of the other side, since the other side, being taller, cannot reduce the bound.
+
+Logic and solution. Initialize two pointers at the ends, left and right max at zero, total at zero. While the pointers have not crossed, on the smaller side, either update its running max or add the difference to the total. Advance that pointer.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. When per index answers depend on running extrema from both sides, two pointers can replace precomputed arrays.
+
+
+Next up. Problem seventeen of fifty six. LeetCode thirteen. Roman to Integer. Difficulty easy.
+
+Orientation. The lookahead parser. Interviewers use this to test whether you collapse special cases into a single rule.
+
+Description. Convert a Roman numeral string to an integer. Subtractive pairs include I before V or X, X before L or C, and C before D or M.
+
+Deep dive. Walk left to right with a one character lookahead. If the current symbol's value is less than the next, subtract it; otherwise add. The last symbol is always added.
+
+What interviewers probe. Whether you avoid an explicit list of six special cases. The lookahead rule subsumes them all.
+
+Logic and solution. Build a fixed map from each symbol to its value. Walk the string. For each position, if there is a next symbol and the current value is less than the next, subtract; otherwise add.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Special cases often collapse into a single comparison when you frame the problem from the right angle.
+
+
+Next up. Problem eighteen of fifty six. LeetCode twelve. Integer to Roman. Difficulty medium.
+
+Orientation. Greedy with a value table. Interviewers use this to test whether you build the right ordered list of building blocks.
+
+Description. Convert an integer between one and three thousand nine hundred ninety nine to its Roman numeral representation.
+
+Deep dive. List the value symbol pairs in descending order, including the subtractive forms like nine hundred for CM, four hundred for CD, ninety for XC, forty for XL, nine for IX, and four for IV. Greedily subtract the largest fitting value, appending its symbol, and repeat.
+
+What interviewers probe. Whether you include the subtractive forms in the table. Without them, you would emit invalid forms like IIII instead of IV.
+
+Logic and solution. Build a list of thirteen value symbol pairs in descending order. Walk the list. For each, while the integer is at least the value, append the symbol and subtract.
+
+Complexity. Constant time, since the integer is bounded. Constant extra space.
+
+Takeaway. Greedy conversion to a structured representation works when you predefine the right ordered table of building blocks, including any composite ones.
+
+
+Next up. Problem nineteen of fifty six. LeetCode fifty eight. Length of Last Word. Difficulty easy.
+
+Orientation. Reverse scan. Interviewers use this to test attention to whitespace edge cases.
+
+Description. Given a string with words separated by spaces, return the length of the last word. There may be trailing spaces.
+
+Deep dive. Scan from the end. Skip trailing spaces first. Then count characters until you hit another space or the start of the string.
+
+What interviewers probe. Whether you handle trailing spaces. The naive split on space approach handles them too but at the cost of a full pass and extra space.
+
+Logic and solution. Set a pointer at the last index. Skip backward while the character is a space. Then count backward while the character is not a space.
+
+Complexity. Linear time in the trailing portion. Constant extra space.
+
+Takeaway. Reverse scans are often the simplest solution for last token style problems.
+
+
+Next up. Problem twenty of fifty six. LeetCode fourteen. Longest Common Prefix. Difficulty easy.
+
+Orientation. Vertical scan or horizontal reduction. Interviewers use this to see whether you pick the simpler of two approaches.
+
+Description. Given an array of strings, return their longest common prefix. Return empty if none.
+
+Deep dive. Two clean approaches. Vertical scan: for each character index, check that all strings have the same character at that position; the first mismatch is the answer. Horizontal reduction: take the prefix of the first two, then reduce against the rest.
+
+What interviewers probe. Edge cases of empty array and single string. They also probe early termination when any string is exhausted.
+
+Logic and solution. Vertical scan. For each index from zero to the length of the first string, get the character. For each other string, if the index is past its length or its character differs, return the prefix up to this index. Return the first string itself if all match.
+
+Complexity. Total characters across all strings for time. Constant extra space.
+
+Takeaway. The vertical scan is the cleanest longest common prefix solution and generalizes to many character by character comparison problems.
+
+
+Next up. Problem twenty one of fifty six. LeetCode one fifty one. Reverse Words in a String. Difficulty medium.
+
+Orientation. String tokenize and reverse. Interviewers use this to test handling of multiple spaces.
+
+Description. Given a string, reverse the order of words, with single spaces between them and no leading or trailing spaces. Words are runs of non space characters.
+
+Deep dive. The high level solution is to split on whitespace, filter empties, reverse the list, and join with single spaces. A more space efficient solution reverses the entire string, then reverses each word in place, then compacts the spaces.
+
+What interviewers probe. The follow up: do it in place with a character array. The reverse twice trick is what they want.
+
+Logic and solution. Trim leading and trailing whitespace. Split on any run of whitespace. Reverse the resulting list. Join with single spaces.
+
+Complexity. Linear time. Linear extra space.
+
+Takeaway. The reverse twice trick is a recurring tool for in place string reversals at the word level.
+
+
+Next up. Problem twenty two of fifty six. LeetCode six. Zigzag Conversion. Difficulty medium.
+
+Orientation. Pure simulation. Interviewers use this to test careful index manipulation.
+
+Description. Given a string and a number of rows, write the string in a zigzag pattern across the rows and read it back row by row.
+
+Deep dive. The cleanest solution allocates a list of row buffers. Walk the input one character at a time, placing it into the current row, and bouncing the direction when you hit the top or bottom row. Concatenate the row buffers at the end.
+
+What interviewers probe. The single row case as a special case, where the answer is just the input. They also probe the index formula direct solution, which is more elegant but error prone.
+
+Logic and solution. If rows is one, return the input. Allocate one string buffer per row. Track the current row and a direction sign starting at plus one. Walk the input. Append the character to the current row. If the current row is at the top or bottom, flip the direction. Move the current row by direction. Concatenate all rows.
+
+Complexity. Linear time. Linear extra space.
+
+Takeaway. When a problem reduces to walking input through a pattern, simulate with row or column buffers and avoid clever index math.
+
+
+Next up. Problem twenty three of fifty six. LeetCode twenty eight. Find the Index of the First Occurrence in a String. Difficulty easy.
+
+Orientation. Substring search. Interviewers use this to gauge whether you can mention KMP, even if you implement the naive scan.
+
+Description. Given a haystack and a needle, return the index of the first occurrence of needle in haystack, or minus one if not found.
+
+Deep dive. The naive scan tries every alignment and compares character by character, quadratic worst case. KMP, the Knuth Morris Pratt algorithm, precomputes a failure function from the needle that lets the haystack pointer never backtrack, achieving linear time.
+
+What interviewers probe. Whether you can name and sketch KMP. The naive scan suffices for small inputs, but KMP is the expected answer for sophistication.
+
+Logic and solution. Naive: walk every starting index in the haystack. At each, compare characters with the needle until mismatch or full match. Return the index on full match. Return minus one after the loop.
+
+Complexity. Naive is haystack times needle worst case. KMP is linear in their sum.
+
+Takeaway. Substring search is solvable naively, but knowing that KMP exists and runs in linear time is the difference between an easy and a sophisticated answer.
+
+
+Next up. Problem twenty four of fifty six. LeetCode sixty eight. Text Justification. Difficulty hard.
+
+Orientation. Multi phase simulation. Interviewers use this to see whether you can carry out a checklist of cases without bugs.
+
+Description. Given words and a max width, format text so each line is exactly max width characters and is fully justified, except the last line which is left justified.
+
+Deep dive. Two phases. Group words greedily into lines. Format each line with even space distribution: total spaces equals max width minus sum of word lengths, distributed by integer division across the gaps with the remainder going to the leftmost gaps. Single word lines and the last line pad on the right.
+
+What interviewers probe. The space distribution formula and the special cases for single word lines and the last line. They also probe how you check whether a word fits given the implicit single space between words.
+
+Logic and solution. Walk the words. Pack each into the current line if its length plus existing words plus the minimum one space stays within max width. Otherwise format the current line and start fresh. After the loop, format the final line as left justified. Inside the formatter, branch on full versus last and on single versus multi word.
+
+Complexity. Linear in total characters for time and space.
+
+Takeaway. Simulation problems reward checklists; enumerate cases up front and write a formatter per case.
+
+
+Section two of seven. Two pointers.
+
+
+Next up. Problem twenty five of fifty six. LeetCode one twenty five. Valid Palindrome. Difficulty easy.
+
+Orientation. Two pointer comparison with filtering. Interviewers use this as a fundamentals check.
+
+Description. Given a string, return whether it is a palindrome considering only alphanumeric characters and ignoring case.
+
+Deep dive. Two pointers from each end. Skip non alphanumeric characters. Compare lowercased characters. Return false on mismatch, true if the pointers cross.
+
+What interviewers probe. Whether you allocate a cleaned string first, which uses extra space, or filter inline. The inline two pointer is preferred.
+
+Logic and solution. Initialize left at zero and right at length minus one. While left is less than right, advance left while it is non alphanumeric, retreat right while it is non alphanumeric. Compare lowercased characters; if different, return false. Advance both. Return true at the end.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Two pointer palindrome checks should filter inline, never preallocate a cleaned copy.
+
+
+Next up. Problem twenty six of fifty six. LeetCode three ninety two. Is Subsequence. Difficulty easy.
+
+Orientation. The greedy two pointer match. Interviewers use this to set up a follow up about many queries against the same string.
+
+Description. Given two strings, return whether the first is a subsequence of the second, meaning its characters appear in order in the second.
+
+Deep dive. Two pointers, one per string. Walk both. When characters match, advance both; otherwise advance only the second pointer. If the first pointer reaches the end, the answer is true.
+
+What interviewers probe. The follow up of many subsequence queries against a fixed second string. The optimization is to precompute, for each position and character, the next occurrence, allowing each query to run in length of the first string time.
+
+Logic and solution. Initialize i and j to zero. While both pointers are in range, if the characters match, advance both; otherwise advance only j. Return true if i reaches the first string's length.
+
+Complexity. Linear in the second string's length. Constant extra space.
+
+Takeaway. Subsequence checks are a single linear two pointer walk; precompute next occurrence tables only when many queries share the same haystack.
+
+
+Next up. Problem twenty seven of fifty six. LeetCode one sixty seven. Two Sum on Sorted Input. Difficulty medium.
+
+Orientation. The two pointer sum. Interviewers use this to test recognition of sorted input as a hint for two pointers over a hash map.
+
+Description. Given a sorted array and a target, return the one indexed positions of the two numbers that sum to the target.
+
+Deep dive. Two pointers at the ends. If the sum exceeds the target, advance the right pointer left to decrease. If less, advance the left pointer right to increase. If equal, return.
+
+What interviewers probe. Why the two pointer move is safe. The argument is that the leftmost element paired with anything past the right pointer is too small, and the rightmost paired with anything before the left is too large; so eliminating one boundary at a time is correct.
+
+Logic and solution. Initialize left at zero and right at the last index. While they have not crossed, compute the sum. If equal, return both plus one. If greater, decrement right. Otherwise increment left.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Sorted input with a sum constraint is the canonical signature for two pointers from both ends.
+
+
+Next up. Problem twenty eight of fifty six. LeetCode eleven. Container With Most Water. Difficulty medium.
+
+Orientation. Two pointer optimization. Interviewers use this because the move rule is non obvious until proven.
+
+Description. Given an array of heights, choose two indices to form a container; the area is the smaller height times the index distance. Return the maximum area.
+
+Deep dive. Two pointers at the ends. The current area is bounded by the shorter side. Advancing the taller side cannot increase the area, since the bound is still the same shorter side and the width shrinks. Advancing the shorter side might increase the area, since the new bound could be larger.
+
+What interviewers probe. The proof that advancing the shorter side is the only useful move. They also probe the equal heights case, where either side is fine.
+
+Logic and solution. Initialize left at zero and right at the last index, max area at zero. While they have not crossed, compute area as the smaller of the two heights times the width. Update max area. Advance whichever side has the smaller height.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. When the answer is bounded by the smaller of two sides, advance the smaller side; the other can never improve the bound until the smaller does.
+
+
+Next up. Problem twenty nine of fifty six. LeetCode fifteen. Three Sum. Difficulty medium.
+
+Orientation. Sort plus two pointer over fixed pivot. Interviewers use this as the prototype for k sum problems.
+
+Description. Given an array, return all unique triplets that sum to zero.
+
+Deep dive. Sort the array. For each index i, run a two pointer search on the remaining suffix for two values summing to negative the value at i. Skip duplicates at all three positions to avoid repeated triplets.
+
+What interviewers probe. The deduplication. Naive solutions return duplicate triplets when the input has repeated values. Skipping duplicates at i and at the inner left and right pointers fixes it.
+
+Logic and solution. Sort. For each i from zero to length minus three, skip if it duplicates the previous. Initialize left and right at i plus one and the last index. While left is less than right, compute the sum. If zero, record the triplet, then skip duplicates on both sides and advance both. If less than zero, advance left; if greater, retreat right.
+
+Complexity. Quadratic time. Constant extra space beyond the output.
+
+Takeaway. Sort plus two pointer over a fixed pivot generalizes to four sum and beyond; the deduplication discipline is what makes it correct.
+
+
+Section three of seven. Sliding window.
+
+
+Next up. Problem thirty of fifty six. LeetCode two zero nine. Minimum Size Subarray Sum. Difficulty medium.
+
+Orientation. Sliding window with a sum invariant. Interviewers use this as the cleanest variable size window introduction.
+
+Description. Given a target and an array of positive integers, return the minimal length of a contiguous subarray whose sum is at least the target. Return zero if none.
+
+Deep dive. Maintain left and right pointers. Walk right, adding to a running sum. Whenever the sum meets the target, record the window size and shrink from the left, subtracting as you go, until the sum drops below the target.
+
+What interviewers probe. Why this is linear. Each pointer advances at most n times, so the total work is bounded.
+
+Logic and solution. Initialize left at zero, sum at zero, best at infinity. Walk right. Add the value to sum. While sum is at least the target, update best with the window size and subtract the left value, advancing left. Return best, or zero if it never updated.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Variable size windows shrink eagerly whenever the invariant is satisfied, recording the best as you go.
+
+
+Next up. Problem thirty one of fifty six. LeetCode three. Longest Substring Without Repeating Characters. Difficulty medium.
+
+Orientation. Sliding window with last seen index map. Interviewers use this as the textbook character window problem.
+
+Description. Given a string, return the length of the longest substring with no repeated characters.
+
+Deep dive. Two pointers, left and right. Maintain a map from character to last seen index. When the right pointer hits a character whose last index is at or after left, jump left to one past that index.
+
+What interviewers probe. The clamp on the left pointer move. Always set left to the maximum of itself and one past the prior index, never blindly to the prior index plus one, which can move backward.
+
+Logic and solution. Initialize left at zero, max length at zero, an empty map. Walk right. If the character is in the map at index at or after left, set left to that index plus one. Update the map. Update max length with the window size.
+
+Complexity. Linear time. Linear extra space in the alphabet.
+
+Takeaway. Character window problems with a uniqueness invariant are cleanest when you use a last seen index map and clamp the left pointer.
+
+
+Next up. Problem thirty two of fifty six. LeetCode thirty. Substring with Concatenation of All Words. Difficulty hard.
+
+Orientation. Multiple sliding windows over fixed length tokens. Interviewers use this to test whether you reduce a string problem to a token problem.
+
+Description. Given a string and a list of equal length words, return all starting indices of substrings that are a concatenation of every word exactly once.
+
+Deep dive. Each word has length L and there are k words. A valid substring has length k times L. Slide a window of that length character by character; for each, parse the substring into k chunks and check that the multiset of chunks matches the multiset of words. The optimization is to run L parallel sliding windows, one per starting offset modulo L, where each window slides by L instead of one.
+
+What interviewers probe. The token level sliding window. The naive recheck per starting position is wasteful; the L offset windows reuse work like a normal sliding window.
+
+Logic and solution. Build a frequency map of the words. For each offset from zero to L minus one, run a sliding window of token chunks. Maintain a have map. At each step, add the next chunk; if it overflows or is not in the wordlist, shrink from the left until valid. When the window has k chunks and matches, record the starting index.
+
+Complexity. String length times word length for time. Linear extra space in the words.
+
+Takeaway. When a string problem decomposes into fixed length tokens, run sliding windows at the token level for the right complexity.
+
+
+Next up. Problem thirty three of fifty six. LeetCode seventy six. Minimum Window Substring. Difficulty hard.
+
+Orientation. Sliding window with a satisfied counter. Interviewers use this because the formed counter pattern is widely reusable.
+
+Description. Given strings s and t, return the shortest substring of s containing every character of t including duplicates.
+
+Deep dive. Maintain a need map and a have map. Use a counter formed that ticks up when a character's have count meets its need exactly. The window is valid when formed equals the number of distinct keys in need. Expand right, then shrink from the left as long as valid, recording the best.
+
+What interviewers probe. The formed counter's invariant. Many candidates increment too eagerly, accepting partially complete windows. The exact match condition is what enforces correctness.
+
+Logic and solution. Build need from t. Set required to its size. Walk right over s. For each character, if needed, update have and increment formed when have meets need exactly. While formed equals required, update the best window if smaller, then shrink from the left and decrement formed when have falls below need.
+
+Complexity. Linear time in the sum of lengths. Linear extra space in the alphabet.
+
+Takeaway. The formed counter pattern generalizes to any sliding window with multi character constraints.
+
+
+Section four of seven. Matrix.
+
+
+Next up. Problem thirty four of fifty six. LeetCode thirty six. Valid Sudoku. Difficulty medium.
+
+Orientation. Three sets of constraint sets. Interviewers use this to test whether you can model multiple overlapping constraints cleanly.
+
+Description. Given a nine by nine partially filled board, return whether it is valid: each row, column, and three by three box has no repeated digits.
+
+Deep dive. Walk every cell. For each filled value, verify it has not appeared in its row, its column, or its three by three box. Use one set per row, one per column, one per box, indexed by row, column, or box index.
+
+What interviewers probe. The box index formula: row divided by three times three plus column divided by three. They also probe whether you check completeness, which the problem does not require.
+
+Logic and solution. Allocate nine sets each for rows, columns, and boxes. Walk every cell. If the cell is filled, compute the box index, then check membership in all three sets and add. Return false on any duplicate. Return true at the end.
+
+Complexity. Constant time, since the board is fixed size. Constant extra space.
+
+Takeaway. Multiple overlapping constraints over a fixed grid are cleanest with one set per constraint class, indexed by position.
+
+
+Next up. Problem thirty five of fifty six. LeetCode fifty four. Spiral Matrix. Difficulty medium.
+
+Orientation. Layer simulation. Interviewers use this as a careful indexing exercise.
+
+Description. Given a matrix, return its elements in spiral order starting from the top left.
+
+Deep dive. Maintain four boundaries: top, bottom, left, right. Walk the top row left to right, then increment top. Walk the right column top to bottom, then decrement right. Walk the bottom row right to left if top is still at most bottom, then decrement bottom. Walk the left column bottom to top if left is still at most right, then increment left. Repeat until boundaries cross.
+
+What interviewers probe. The two guards on the bottom row and left column walks. Without them, single row or column matrices double count.
+
+Logic and solution. Initialize the four boundaries. Loop while top is at most bottom and left is at most right. Walk the top row, increment top. Walk the right column, decrement right. If top is still at most bottom, walk the bottom row in reverse, decrement bottom. If left is still at most right, walk the left column in reverse, increment left.
+
+Complexity. Linear in the matrix size. Linear extra space for the output.
+
+Takeaway. Spiral problems decompose into layer walks bounded by four shrinking pointers; the extra guards prevent double counting in degenerate shapes.
+
+
+Next up. Problem thirty six of fifty six. LeetCode forty eight. Rotate Image. Difficulty medium.
+
+Orientation. The transpose plus reverse trick. Interviewers use this because the in place rotation is a classic shortcut.
+
+Description. Rotate a square matrix ninety degrees clockwise in place.
+
+Deep dive. The transpose flips rows and columns. Reversing each row after a transpose is equivalent to a clockwise rotation. For a counterclockwise rotation, transpose and reverse each column instead.
+
+What interviewers probe. Why the composition is correct. The transpose maps cell row, column to column, row. Reversing each row maps column to n minus one minus column, giving the rotation map.
+
+Logic and solution. Transpose: for each row i, for each column j greater than i, swap cells at i j and j i. Then reverse each row.
+
+Complexity. Quadratic time in side length. Constant extra space.
+
+Takeaway. Square matrix rotations decompose into transpose plus row or column reversal; pick the order based on direction.
+
+
+Next up. Problem thirty seven of fifty six. LeetCode seventy three. Set Matrix Zeroes. Difficulty medium.
+
+Orientation. In place encoding using the first row and column. Interviewers use this to test whether you can avoid the obvious extra space.
+
+Description. Given a matrix, if any cell is zero, set its entire row and column to zero. Do it in place.
+
+Deep dive. The naive solution uses row and column flag arrays, linear extra space. The in place trick uses the first row and column themselves as the flag storage. Track separately whether the first row or column originally contained a zero, then walk the rest using the first row and column as flags.
+
+What interviewers probe. Why the order matters. You must apply the zeros to the rest before clearing the first row and column themselves, otherwise you destroy the flags.
+
+Logic and solution. Determine whether the first row and column originally contain zeros, store as booleans. Walk all other cells; if a cell is zero, set its first row and first column flag to zero. Walk all other cells again; if its row flag or column flag is zero, set it to zero. Finally, clear the first row and column based on the saved booleans.
+
+Complexity. Quadratic time in the matrix size. Constant extra space.
+
+Takeaway. The first row and column can serve as flag storage, trading clarity for constant extra space; remember to save the boundary row and column flags separately.
+
+
+Next up. Problem thirty eight of fifty six. LeetCode two eighty nine. Game of Life. Difficulty medium.
+
+Orientation. In place state encoding. Interviewers use this to test whether you can simulate without a second matrix.
+
+Description. Given a grid of zero and one cells, apply one step of Conway's Game of Life: live cells die unless they have two or three live neighbors; dead cells become alive with exactly three live neighbors.
+
+Deep dive. The naive solution uses a second matrix. The in place trick encodes the next state into the unused bits of each cell. For example, use bit one to store the next state while bit zero holds the current. After computing all next states, shift right to drop the old state.
+
+What interviewers probe. The neighbor count, which must look at the current state, that is, bit zero, not the partially updated cells.
+
+Logic and solution. Walk every cell. Count live neighbors using bit zero. Apply the rules to determine the next state. Set bit one of the cell to that next state. After the full pass, walk every cell and shift right by one.
+
+Complexity. Quadratic time in the matrix size. Constant extra space.
+
+Takeaway. When a problem requires simulating one step of a cellular automaton in place, encode the next state in unused bits and compute neighbors from the original bit.
+
+
+Section five of seven. Hash map.
+
+
+Next up. Problem thirty nine of fifty six. LeetCode three eighty three. Ransom Note. Difficulty easy.
+
+Orientation. Frequency counting. Interviewers use this as a fundamentals check on multiset containment.
+
+Description. Given two strings, return whether the first can be constructed from the characters of the second, with each character of the second used at most once.
+
+Deep dive. Build a frequency map of the second string. Walk the first; for each character, decrement the count in the map. If any count goes negative, return false.
+
+What interviewers probe. Whether you handle the alphabet efficiently. For lowercase letters, an array of twenty six is preferred over a hash map.
+
+Logic and solution. Build a count array for the second string. Walk the first. Decrement the count for each character; if it goes negative, return false. Return true at the end.
+
+Complexity. Linear in the sum of lengths. Constant extra space in the alphabet.
+
+Takeaway. Multiset containment problems are one frequency map subtract another; pick an array over a hash map when the alphabet is fixed.
+
+
+Next up. Problem forty of fifty six. LeetCode two zero five. Isomorphic Strings. Difficulty easy.
+
+Orientation. Two way mapping. Interviewers use this to test recognition that one direction is not enough.
+
+Description. Given two strings, return whether they are isomorphic: there is a bijection between their characters preserving order.
+
+Deep dive. A single direction map from first to second is insufficient because it allows two characters of the first to map to the same character of the second. Maintain two maps, first to second and second to first, and verify both directions on every character.
+
+What interviewers probe. The two way check. The classic bug is using one map and missing the collision case.
+
+Logic and solution. Allocate two maps. Walk the strings together. For each pair, if the forward map already has the first character but maps to a different second, return false. Symmetrically for the backward map. Otherwise insert.
+
+Complexity. Linear time. Linear extra space in the alphabet.
+
+Takeaway. When a problem demands a bijection, maintain both directions of the map and verify both on every step.
+
+
+Next up. Problem forty one of fifty six. LeetCode two ninety. Word Pattern. Difficulty easy.
+
+Orientation. Bijection between pattern characters and words. Same shape as isomorphic strings.
+
+Description. Given a pattern of characters and a string of space separated words, return whether they follow the same bijection: each pattern character maps to a unique word and vice versa.
+
+Deep dive. Split the string into words. Verify it has the same length as the pattern. Walk pairs. Maintain two maps, character to word and word to character, and verify both directions.
+
+What interviewers probe. The length mismatch check, which is a fast reject. They also probe handling of the bijection, identical to isomorphic strings.
+
+Logic and solution. Split. Reject on length mismatch. Walk pairs. Verify both maps; insert if absent.
+
+Complexity. Linear in pattern length. Linear extra space.
+
+Takeaway. Pattern matching problems often reduce to bijection checks; the two map technique applies wherever a one to one correspondence is required.
+
+
+Next up. Problem forty two of fifty six. LeetCode two forty two. Valid Anagram. Difficulty easy.
+
+Orientation. Frequency comparison. Interviewers use this as a one liner check.
+
+Description. Given two strings, return whether one is an anagram of the other.
+
+Deep dive. Build frequency arrays for both strings and compare. Or, faster, walk both in parallel: increment for the first, decrement for the second, then verify all counts are zero.
+
+What interviewers probe. The Unicode follow up. With non lowercase input, switch from a fixed array to a hash map.
+
+Logic and solution. Reject on length mismatch. Allocate one count array. Walk both strings: increment for the first character, decrement for the second. Return true if all counts are zero.
+
+Complexity. Linear time. Constant extra space.
+
+Takeaway. Anagram checks are a one count array sweep; reject on length first to avoid wasted work.
+
+
+Next up. Problem forty three of fifty six. LeetCode forty nine. Group Anagrams. Difficulty medium.
+
+Orientation. Canonical key grouping. Interviewers use this to test whether you can design a hash key.
+
+Description. Given an array of strings, group together those that are anagrams of each other.
+
+Deep dive. Map each string to a canonical key that captures its character frequency. Two natural keys: the sorted string, simple but slower, or a tuple of twenty six counts encoded as a string, faster.
+
+What interviewers probe. The key choice trade off between sortedness and counting. They also probe how the count vector becomes hashable.
+
+Logic and solution. Initialize an empty map from key to list of strings. For each input, build the key by sorting or by encoding the count vector. Append the original to the list under that key. Return all values.
+
+Complexity. Sorted key takes string count times length log length. Count key takes string count times length.
+
+Takeaway. Grouping problems reduce to designing the smallest invariant that defines the group, then hashing on that invariant.
+
+
+Next up. Problem forty four of fifty six. LeetCode one. Two Sum. Difficulty easy.
+
+Orientation. The prototype hash map problem. Interviewers use it as a warm up.
+
+Description. Given an array of integers and a target, return the indices of the two values summing to the target.
+
+Deep dive. Walk once with a map from value to index. For the current element, look up the complement; if present, return; otherwise insert.
+
+What interviewers probe. The trade between linear time with linear space and quadratic time with constant space. Also the sorted variant, where two pointers beat the hash map.
+
+Logic and solution. Initialize an empty map. Walk the array. Compute the complement. If in the map, return the stored index and current index. Else insert.
+
+Complexity. Linear time and space.
+
+Takeaway. When a brute force scans every pair, ask whether a hash map can answer the per element question in constant time.
+
+
+Next up. Problem forty five of fifty six. LeetCode two zero two. Happy Number. Difficulty easy.
+
+Orientation. Cycle detection on a sequence. Interviewers use this to test whether you reach for Floyd's algorithm or a hash set.
+
+Description. A happy number eventually reaches one when repeatedly replaced by the sum of squares of its digits. Return whether a number is happy.
+
+Deep dive. The sequence either reaches one or enters a cycle. Detect with a hash set of visited numbers, returning false if you revisit. The constant space alternative uses Floyd's tortoise and hare.
+
+What interviewers probe. Whether you mention Floyd's. Both are correct; Floyd's is the more sophisticated answer.
+
+Logic and solution. Hash set version. Initialize an empty set. Loop while the number is not one. If in the set, return false. Insert. Compute the sum of squares of digits and continue. Return true if the loop exits with one.
+
+Complexity. Logarithmic in the number for time per iteration, with bounded total iterations. Set version uses linear extra space; Floyd's is constant.
+
+Takeaway. Sequence problems with possible cycles reduce to either a visited set or Floyd's tortoise and hare.
+
+
+Next up. Problem forty six of fifty six. LeetCode two nineteen. Contains Duplicate Two. Difficulty easy.
+
+Orientation. Sliding window with a hash set. Interviewers use this as a quick window plus map check.
+
+Description. Given an array and a value k, return whether two distinct indices i and j exist with the same value and i j distance at most k.
+
+Deep dive. Maintain a sliding window of the last k plus one elements as a hash set. Walk the array. If the new element is in the set, return true. Add it; if the set size exceeds k, evict the element that fell out of the window.
+
+What interviewers probe. The window eviction. The classic bug is using a frequency map and forgetting to decrement as the window slides.
+
+Logic and solution. Initialize an empty set. Walk the array. If the value is in the set, return true. Add. If the set size exceeds k, remove the value at index i minus k.
+
+Complexity. Linear time. Linear extra space in k.
+
+Takeaway. Distance bounded duplicate checks are a sliding window of size k plus one with a hash set.
+
+
+Next up. Problem forty seven of fifty six. LeetCode one twenty eight. Longest Consecutive Sequence. Difficulty medium.
+
+Orientation. Hash set as a sort substitute. Interviewers use this to see whether you achieve linear time when sorting feels natural.
+
+Description. Given an unsorted array, return the length of the longest consecutive integer sequence in linear time.
+
+Deep dive. Insert into a hash set. For each element, only walk forward if its predecessor is not in the set, marking it as a sequence start. The total work is bounded because every element is visited at most twice.
+
+What interviewers probe. Why starting only from sequence starts is what keeps the work linear. Walking from every element would be quadratic.
+
+Logic and solution. Insert all into a set. For each value, if its predecessor is not in the set, walk forward counting consecutive members. Track the maximum.
+
+Complexity. Linear time on average. Linear extra space.
+
+Takeaway. Hash sets plus a sequence start filter give linear time consecutive run problems where sorting would suggest n log n.
+
+
+Section six of seven. Intervals.
+
+
+Next up. Problem forty eight of fifty six. LeetCode two twenty eight. Summary Ranges. Difficulty easy.
+
+Orientation. Single pass run encoding. Interviewers use this as a fundamentals exercise.
+
+Description. Given a sorted array of distinct integers, return the smallest sorted list of ranges covering all the numbers, formatted as a to b strings or a single value when the range is one.
+
+Deep dive. Walk the array tracking the start of the current run. When the next value is not exactly one more than the current, close the run and start a new one.
+
+What interviewers probe. Edge cases of empty input and single element input.
+
+Logic and solution. If empty, return empty. Initialize a result list and a start at the first element. Walk pairs. If the next is not one more than the current, append the run from start to current and reset start to the next. After the loop, append the final run.
+
+Complexity. Linear time. Linear extra space for the output.
+
+Takeaway. Run encoding on sorted distinct integers is a single linear sweep with a start pointer.
+
+
+Next up. Problem forty nine of fifty six. LeetCode fifty six. Merge Intervals. Difficulty medium.
+
+Orientation. Sort plus single pass merge. Interviewers use this as the prototype interval problem.
+
+Description. Given an array of intervals, merge all overlapping intervals.
+
+Deep dive. Sort by start. Walk the sorted list. If the current interval overlaps the last in the output, extend the last's end. Otherwise append.
+
+What interviewers probe. Whether touching intervals merge; clarify the convention.
+
+Logic and solution. Sort by start. Initialize the output with the first interval. For each subsequent interval, if its start is at most the last end, extend the last end to the larger of the two ends. Otherwise append.
+
+Complexity. n log n time. Linear extra space.
+
+Takeaway. Most interval problems begin with sorting on start; once sorted, the sweep is one if statement.
+
+
+Next up. Problem fifty of fifty six. LeetCode fifty seven. Insert Interval. Difficulty medium.
+
+Orientation. Three phase walk. Interviewers use this to test whether you avoid sorting when the input is already sorted.
+
+Description. Given a sorted list of non overlapping intervals and a new interval, insert it and merge overlaps. Return the resulting list.
+
+Deep dive. Three phases. Append all intervals strictly before the new one. Merge overlapping intervals into a single span. Append all intervals strictly after.
+
+What interviewers probe. Whether you sort, which is unnecessary. The input is already sorted, so a single linear pass suffices.
+
+Logic and solution. Walk the input. Append intervals ending before the new starts. Then merge while intervals start at or before the new ends, extending the new bounds. Append the merged new interval. Then append the rest.
+
+Complexity. Linear time. Linear extra space.
+
+Takeaway. When the input is already sorted, sort again is wasted work; a three phase walk handles inserts in linear time.
+
+
+Next up. Problem fifty one of fifty six. LeetCode four fifty two. Minimum Number of Arrows to Burst Balloons. Difficulty medium.
+
+Orientation. Greedy interval covering. Interviewers use this to test whether you sort by end rather than start.
+
+Description. Given balloons as horizontal interval pairs, return the minimum number of vertical arrows needed to burst them all.
+
+Deep dive. Sort by end coordinate. Walk balloons. Track the current arrow position at the end of the first balloon. For each subsequent balloon, if its start is at most the arrow position, it is covered; otherwise fire a new arrow at this balloon's end.
+
+What interviewers probe. Why sorting by end is correct. The argument is that firing at the end of the earliest ending balloon dominates any later arrow position; you cover at least as much.
+
+Logic and solution. Sort by end. Initialize arrows to one and the position to the first balloon's end. Walk the rest. If the start exceeds the position, increment arrows and update the position to this balloon's end.
+
+Complexity. n log n time. Constant extra space beyond input.
+
+Takeaway. Greedy interval covering sorts by end, not start; the earliest ending boundary is the cheapest place to commit a resource.
+
+
+Section seven of seven. Stack.
+
+
+Next up. Problem fifty two of fifty six. LeetCode twenty. Valid Parentheses. Difficulty easy.
+
+Orientation. The classic stack problem. Interviewers use this as a basic check.
+
+Description. Given a string of brackets, return whether all are properly nested.
+
+Deep dive. Walk the string. Push opens onto a stack. On a close, the stack top must be the matching open; otherwise invalid. At the end, the stack must be empty.
+
+What interviewers probe. Edge cases of an empty string, which is valid, and an unmatched close on an empty stack.
+
+Logic and solution. Maintain a stack. Walk each character. If open, push. If close, if the stack is empty or the top does not match, return false; otherwise pop. Return whether the stack is empty.
+
+Complexity. Linear time. Linear extra space.
+
+Takeaway. Properly nested structures are the textbook signature for a stack; the parity check at the end is essential.
+
+
+Next up. Problem fifty three of fifty six. LeetCode seventy one. Simplify Path. Difficulty medium.
+
+Orientation. Token level stack. Interviewers use this for parsing under filesystem rules.
+
+Description. Given a Unix style absolute path, return its canonical form: no double slashes, no dot or dot dot segments.
+
+Deep dive. Split the path on slashes into tokens. Walk tokens. Skip empty tokens and single dots. On a double dot, pop the stack if non empty. On a real name, push. Join with single slashes prefixed.
+
+What interviewers probe. Edge cases: leading and trailing slashes, consecutive slashes, root path.
+
+Logic and solution. Split. Use a stack. For each token, skip empties and single dots. On double dot, pop if non empty. On real, push. Join with slashes; prepend a single slash.
+
+Complexity. Linear time. Linear extra space.
+
+Takeaway. Path canonicalization is a stack of name tokens with three rules: skip empties and dots, pop on dot dot, push otherwise.
+
+
+Next up. Problem fifty four of fifty six. LeetCode one fifty five. Min Stack. Difficulty medium.
+
+Orientation. Stack augmentation. Interviewers use this to test whether you maintain auxiliary state for constant time queries.
+
+Description. Design a stack supporting push, pop, top, and get min, all in constant time.
+
+Deep dive. Maintain a parallel min stack: each entry holds the minimum at that depth. On push, append the smaller of the new value and the current top of the min stack. On pop, pop both. Top and get min read the corresponding tops.
+
+What interviewers probe. Why the min stack matches the main stack one to one, rather than being smaller; this avoids the bookkeeping of having to remember which elements caused the previous minimum.
+
+Logic and solution. Two stacks. Push appends to both. Pop pops from both. Top reads main's top. Get min reads min stack's top.
+
+Complexity. Constant time per operation. Linear extra space.
+
+Takeaway. Constant time aggregate queries on a stack come from a parallel auxiliary stack tracking the aggregate at each depth.
+
+
+Next up. Problem fifty five of fifty six. LeetCode one fifty. Evaluate Reverse Polish Notation. Difficulty medium.
+
+Orientation. Postfix expression evaluation. Interviewers use this as a fundamentals check.
+
+Description. Given tokens in postfix notation, evaluate the expression. Operators are plus, minus, multiply, divide. Division truncates toward zero.
+
+Deep dive. Walk tokens. Push numbers. On an operator, pop the right then left operand, apply, push. The single remaining stack value is the answer.
+
+What interviewers probe. Operand order on subtraction and division. The first popped is the right operand.
+
+Logic and solution. Maintain a stack. Walk tokens. Numbers push. Operators pop right then left, compute, push.
+
+Complexity. Linear time. Linear extra space.
+
+Takeaway. Postfix and stack are made for each other; recognize the pairing and the evaluation is automatic.
+
+
+Next up. Problem fifty six of fifty six. LeetCode two twenty four. Basic Calculator. Difficulty hard.
+
+Orientation. Stack based expression parser with parentheses. Interviewers use this to test whether you can parse without operator precedence.
+
+Description. Implement a calculator supporting plus, minus, parentheses, and non negative integers, with no multiplication or division.
+
+Deep dive. Walk left to right. Maintain a running result, a current sign, and a stack. On a digit, build the number. On plus or minus, apply the previous number with the current sign and update the sign. On open paren, push the running result and the sign onto the stack and reset. On close paren, finalize the inner result, then pop the saved sign and result, and combine.
+
+What interviewers probe. The sign handling at the start and after open parens, where leading minus signs apply.
+
+Logic and solution. Maintain a result, a current number, a current sign initialized to plus one, and a stack. Walk the string. On a digit, accumulate into the current number. On plus or minus, add sign times number to result, update sign, reset number. On open paren, push result then sign, reset both. On close paren, finalize the inner with the pending number, then pop the saved sign and result and combine.
+
+Complexity. Linear time. Linear extra space.
+
+Takeaway. Stack based parsers handle parentheses by pushing the prefix state and resuming on close; without precedence, a single sign multiplier suffices.
+
+
+That concludes part one of three. Patterns to internalize so far: slow fast pointers for in place array filtering, two pointers from both ends for sorted sums, sliding windows with a satisfied counter, layer based matrix simulation, hash map for canonical keys and bijections, sort by end for greedy interval covering, and stacks for nested structure parsing. Drive safe.
+
+End of part one.
