@@ -1,34 +1,33 @@
-# [791. Custom Sort String](https://leetcode.com/problems/custom-sort-string/description/?envType=company&envId=facebook&favoriteSlug=facebook-thirty-days)
+# 791. Custom Sort String
 
-You are given two strings `order` and `s`. All the characters of `order` are **unique**  and were sorted in some custom order previously.
+You are given two strings `order` and `s`. All the characters of `order` are **unique** and were sorted in some custom order previously.
 
 Permute the characters of `s` so that they match the order that `order` was sorted. More specifically, if a character `x` occurs before a character `y` in `order`, then `x` should occur before `y` in the permuted string.
 
 Return any permutation of `s` that satisfies this property.
 
-**Example 1:** 
+**Example 1:**
 
-<div class="example-block" style="border-color: var(--border-tertiary); border-left-width: 2px; color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1rem; margin-top: 1rem; overflow: visible; padding-left: 1rem;">
-Input:   order = "cba", s = "abcd" 
+Input: order = "cba", s = "abcd"
 
-Output:   "cbad" 
+Output: "cbad"
 
-Explanation:  `"a"`, `"b"`, `"c"` appear in order, so the order of `"a"`, `"b"`, `"c"` should be `"c"`, `"b"`, and `"a"`.
+Explanation: `"a"`, `"b"`, `"c"` appear in order, so the order of `"a"`, `"b"`, `"c"` should be `"c"`, `"b"`, and `"a"`.
 
 Since `"d"` does not appear in `order`, it can be at any position in the returned string. `"dcba"`, `"cdba"`, `"cbda"` are also valid outputs.
 
-**Example 2:** 
+**Example 2:**
 
-<div class="example-block" style="border-color: var(--border-tertiary); border-left-width: 2px; color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1rem; margin-top: 1rem; overflow: visible; padding-left: 1rem;">
-Input:   order = "bcafg", s = "abcd" 
+Input: order = "bcafg", s = "abcd"
 
-Output:   "bcad" 
+Output: "bcad"
 
-Explanation:  The characters `"b"`, `"c"`, and `"a"` from `order` dictate the order for the characters in `s`. The character `"d"` in `s` does not appear in `order`, so its position is flexible.
+Explanation: The characters `"b"`, `"c"`, and `"a"` from `order` dictate the order for the characters in `s`. The character `"d"` in `s` does not appear in `order`, so its position is flexible.
 
 Following the order of appearance in `order`, `"b"`, `"c"`, and `"a"` from `s` should be arranged as `"b"`, `"c"`, `"a"`. `"d"` can be placed at any position since it's not in order. The output `"bcad"` correctly follows this rule. Other arrangements like `"dbca"` or `"bcda"` would also be valid, as long as `"b"`, `"c"`, `"a"` maintain their order.
 
-### First solution
+#### First solution
+
 ```java
 class Solution {
     public String customSortString(String order, String s) {
@@ -59,14 +58,15 @@ class Solution(object):
         result.sort(key=lambda c: order.index(c) if c in order else float('inf'))
         return ''.join(result)
 ```
-#### Complexity Analysis
+
+**Complexity Analysis**
+
 Here, we define N as the length of string s, and K as the length of string order.
 
-- Time Complexity: O(NlogN)
-Sorting an array of length N requires O(NlogN) time, and the indices of order have to be retrieved for each distinct letter, which results in an O(NlogN+K) complexity. K is at most 26, the number of unique English letters, so we can simplify the time complexity to O(NlogN).
+* Time Complexity: O(NlogN) Sorting an array of length N requires O(NlogN) time, and the indices of order have to be retrieved for each distinct letter, which results in an O(NlogN+K) complexity. K is at most 26, the number of unique English letters, so we can simplify the time complexity to O(NlogN).
+* Space Complexity: O(N) or O(log⁡N)
 
-- Space Complexity: O(N) or O(log⁡N)
-### Optimized solution
+#### Optimized solution
 
 ```java
 class Solution {
@@ -108,7 +108,8 @@ class Solution {
     }
 }
 ```
-``` python
+
+```python
 class Solution:
     def customSortString(self, order: str, s: str) -> str:
         # Create a frequency table
@@ -133,12 +134,13 @@ class Solution:
         return ''.join(result)
 
 ```
-#### Complexity Analysis
-- Time Complexity: O(N)
+
+**Complexity Analysis**
+
+* Time Complexity: O(N)
 
 It takes O(N) time to populate the frequency table, and all other hashmap operations performed take O(1) time in the average case. Building the result string also takes O(N) time because each letter from s is appended to the result in the custom order, making the overall time complexity O(N).
 
-- Space Complexity: O(N)
+* Space Complexity: O(N)
 
 A hash map and a result string are created, which results in an additional space complexity of O(N).
-

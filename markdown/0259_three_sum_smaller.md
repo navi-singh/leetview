@@ -1,22 +1,22 @@
 # Three Sum Smaller
 
-Given an array of n integers nums and a target, find the number of index triplets i, j, k with 0 <= i < j < k < n that satisfy the condition nums[i] + nums[j] + nums[k] < target.
+Given an array of n integers nums and a target, find the number of index triplets i, j, k with 0 <= i < j < k < n that satisfy the condition nums\[i] + nums\[j] + nums\[k] < target.
 
->For example, given nums = [-2, 0, 1, 3], and target = 2.
+> For example, given nums = \[-2, 0, 1, 3], and target = 2.
 
 Return 2. Because there are two triplets which sums are less than 2:
 
->[-2, 0, 1] [-2, 0, 3]  
+> \[-2, 0, 1] \[-2, 0, 3]
 
-***Follow up: Could you solve it in O(n2) runtime?***
+_**Follow up: Could you solve it in O(n2) runtime?**_
 
 why sort array is ok?
 
-because sort array won't change the fact that a good triplet still stands
-Fix first number, then use two pointers, notice that when you find a i(fixed),j,k triplet, which means all combine between k-j is valid triplet.
+because sort array won't change the fact that a good triplet still stands Fix first number, then use two pointers, notice that when you find a i(fixed),j,k triplet, which means all combine between k-j is valid triplet.
 
-***Time: O(n^2)  
-Space: O(1)***
+_**Time: O(n^2)**_\
+&#xNAN;_**Space: O(1)**_
+
 ```java
 class Solution {
  public:

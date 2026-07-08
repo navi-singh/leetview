@@ -1,17 +1,18 @@
-# [987. Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/description/?envType=company&envId=facebook&favoriteSlug=facebook-thirty-days)
+# 0987-vertical-order-traversal-binary-tree
 
-Given the `root` of a binary tree, calculate the **vertical order traversal**  of the binary tree.
+## [987. Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/description/?envType=company\&envId=facebook\&favoriteSlug=facebook-thirty-days)
+
+Given the `root` of a binary tree, calculate the **vertical order traversal** of the binary tree.
 
 For each node at position `(row, col)`, its left and right children will be at positions `(row + 1, col - 1)` and `(row + 1, col + 1)` respectively. The root of the tree is at `(0, 0)`.
 
-The **vertical order traversal**  of a binary tree is a list of top-to-bottom orderings for each column index starting from the leftmost column and ending on the rightmost column. There may be multiple nodes in the same row and same column. In such a case, sort these nodes by their values.
+The **vertical order traversal** of a binary tree is a list of top-to-bottom orderings for each column index starting from the leftmost column and ending on the rightmost column. There may be multiple nodes in the same row and same column. In such a case, sort these nodes by their values.
 
-Return the **vertical order traversal**  of the binary tree.
+Return the **vertical order traversal** of the binary tree.
 
-**Example 1:** 
-<img alt="" src="https://assets.leetcode.com/uploads/2021/01/29/vtree1.jpg" style="width: 431px; height: 304px;">
+**Example 1:** ![](https://assets.leetcode.com/uploads/2021/01/29/vtree1.jpg)
 
-```
+````
 Input: root = [3,9,20,null,null,15,7]
 Output: [[9],[3,15],[20],[7]]
 Explanation:
@@ -19,9 +20,9 @@ Column -1: Only node 9 is in this column.
 Column 0: Nodes 3 and 15 are in this column in that order from top to bottom.
 Column 1: Only node 20 is in this column.
 Column 2: Only node 7 is in this column.```
-```
-**Example 2:** 
-<img alt="" src="https://assets.leetcode.com/uploads/2021/01/29/vtree2.jpg" style="width: 512px; height: 304px;">
+````
+
+**Example 2:** ![](https://assets.leetcode.com/uploads/2021/01/29/vtree2.jpg)
 
 ```
 Input: root = [1,2,3,4,5,6,7]
@@ -36,8 +37,7 @@ Column 1: Only node 3 is in this column.
 Column 2: Only node 7 is in this column.
 ```
 
-**Example 3:** 
-<img alt="" src="https://assets.leetcode.com/uploads/2021/01/29/vtree3.jpg" style="width: 512px; height: 304px;">
+**Example 3:** ![](https://assets.leetcode.com/uploads/2021/01/29/vtree3.jpg)
 
 ```
 Input: root = [1,2,3,4,6,5,7]
@@ -47,8 +47,9 @@ This case is the exact same as example 2, but with nodes 5 and 6 swapped.
 Note that the solution remains the same since 5 and 6 are in the same location and should be ordered by their values.
 ```
 
-# Solution
-### BFS solution
+## Solution
+
+#### BFS solution
 
 ```python
 
@@ -153,9 +154,6 @@ class Solution {
 }
 ```
 
-### Complexity Analysis
+#### Complexity Analysis
 
-<img width="747" alt="Screenshot 2024-12-31 at 5 12 36 PM" src="https://github.com/user-attachments/assets/87b20a02-2720-4c55-8e9e-711ae7c44cf8" />
-
-
-
+![Screenshot 2024-12-31 at 5 12 36 PM](https://github.com/user-attachments/assets/87b20a02-2720-4c55-8e9e-711ae7c44cf8)

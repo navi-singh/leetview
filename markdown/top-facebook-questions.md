@@ -1,390 +1,383 @@
 # Top facebook questions
 
-[56. Merge Intervals](/problems/merge-intervals)43.0%Medium[42. Trapping Rain Water](/problems/trapping-rain-water)53.9%Hard[560. Subarray Sum Equals K](/problems/subarray-sum-equals-k)43.7%Medium[1249. Minimum Remove to Make Valid Parentheses](/problems/minimum-remove-to-make-valid-parentheses)64.9%Medium[31. Next Permutation](/problems/next-permutation)34.6%Medium[215. Kth Largest Element in an Array](/problems/kth-largest-element-in-an-array)61.1%Medium[973. K Closest Points to Origin](/problems/k-closest-points-to-origin)65.5%Medium[680. Valid Palindrome II](/problems/valid-palindrome-ii)37.8%Easy[238. Product of Array Except Self](/problems/product-of-array-except-self)62.5%Medium[139. Word Break](/problems/word-break)43.1%Medium[528. Random Pick with Weight](/problems/random-pick-with-weight)45.5%Medium[227. Basic Calculator II](/problems/basic-calculator-ii)39.8%Medium[124. Binary Tree Maximum Path Sum](/problems/binary-tree-maximum-path-sum)36.6%Hard[236. Lowest Common Ancestor of a Binary Tree](/problems/lowest-common-ancestor-of-a-binary-tree)52.4%Medium[269. Alien Dictionary](/problems/alien-dictionary)34.3%Hard[347. Top K Frequent Elements](/problems/top-k-frequent-elements)63.6%Medium[953. Verifying an Alien Dictionary](/problems/verifying-an-alien-dictionary)52.1%Easy[415. Add Strings](/problems/add-strings)50.6%Easy[140. Word Break II](/problems/word-break-ii)38.8%Hard[721. Accounts Merge](/problems/accounts-merge)53.9%Medium[987. Vertical Order Traversal of a Binary Tree](/problems/vertical-order-traversal-of-a-binary-tree)39.6%Hard[71. Simplify Path](/problems/simplify-path)36.1%Medium[301. Remove Invalid Parentheses](/problems/remove-invalid-parentheses)45.8%Hard[1570. Dot Product of Two Sparse Vectors](/problems/dot-product-of-two-sparse-vectors)90.9%Medium[827. Making A Large Island](/problems/making-a-large-island)44.2%Hard[199. Binary Tree Right Side View](/problems/binary-tree-right-side-view)58.0%Medium[543. Diameter of Binary Tree](/problems/diameter-of-binary-tree)51.6%Easy[67. Add Binary](/problems/add-binary)48.7%Easy[1762. Buildings With an Ocean View](/problems/buildings-with-an-ocean-view)81.1%Medium[1650. Lowest Common Ancestor of a Binary Tree III](/problems/lowest-common-ancestor-of-a-binary-tree-iii)77.2%Medium[1047. Remove All Adjacent Duplicates In String](/problems/remove-all-adjacent-duplicates-in-string)71.2%Easy[636. Exclusive Time of Functions](/problems/exclusive-time-of-functions)57.5%Medium[426. Convert Binary Search Tree to Sorted Doubly Linked List](/problems/convert-binary-search-tree-to-sorted-doubly-linked-list)63.1%Medium[173. Binary Search Tree Iterator](/problems/binary-search-tree-iterator)62.9%Medium[938. Range Sum of BST](/problems/range-sum-of-bst)83.9%Easy[523. Continuous Subarray Sum](/problems/continuous-subarray-sum)25.9%Medium[314. Binary Tree Vertical Order Traversal](/problems/binary-tree-vertical-order-traversal)48.8%Medium[29. Divide Two Integers](/problems/divide-two-integers)17.0%Medium[65. Valid Number](/problems/valid-number)17.1%Hard[1428. Leftmost Column with at Least a One](/problems/leftmost-column-with-at-least-a-one)51.3%Medium[921. Minimum Add to Make Parentheses Valid](/problems/minimum-add-to-make-parentheses-valid)76.7%Medium[1382. Balance a Binary Search Tree](/problems/balance-a-binary-search-tree)78.4%Medium[670. Maximum Swap](/problems/maximum-swap)46.2%Medium[249. Group Shifted Strings](/problems/group-shifted-strings)60.4%Medium[1263. Minimum Moves to Move a Box to Their Target Location](/problems/minimum-moves-to-move-a-box-to-their-target-location)47.5%Hard[708. Insert into a Sorted Circular Linked List](/problems/insert-into-a-sorted-circular-linked-list)33.3%Medium[398. Random Pick Index](/problems/random-pick-index)61.0%Medium[317. Shortest Distance from All Buildings](/problems/shortest-distance-from-all-buildings)43.8%Hard[766. Toeplitz Matrix](/problems/toeplitz-matrix)66.5%Easy[408. Valid Word Abbreviation](/problems/valid-word-abbreviation)32.2%Easy
+[56. Merge Intervals](https://github.com/navi-singh/leetview/blob/main/problems/merge-intervals/README.md)43.0%Medium[42. Trapping Rain Water](https://github.com/navi-singh/leetview/blob/main/problems/trapping-rain-water/README.md)53.9%Hard[560. Subarray Sum Equals K](https://github.com/navi-singh/leetview/blob/main/problems/subarray-sum-equals-k/README.md)43.7%Medium[1249. Minimum Remove to Make Valid Parentheses](https://github.com/navi-singh/leetview/blob/main/problems/minimum-remove-to-make-valid-parentheses/README.md)64.9%Medium[31. Next Permutation](https://github.com/navi-singh/leetview/blob/main/problems/next-permutation/README.md)34.6%Medium[215. Kth Largest Element in an Array](https://github.com/navi-singh/leetview/blob/main/problems/kth-largest-element-in-an-array/README.md)61.1%Medium[973. K Closest Points to Origin](https://github.com/navi-singh/leetview/blob/main/problems/k-closest-points-to-origin/README.md)65.5%Medium[680. Valid Palindrome II](https://github.com/navi-singh/leetview/blob/main/problems/valid-palindrome-ii/README.md)37.8%Easy[238. Product of Array Except Self](https://github.com/navi-singh/leetview/blob/main/problems/product-of-array-except-self/README.md)62.5%Medium[139. Word Break](https://github.com/navi-singh/leetview/blob/main/problems/word-break/README.md)43.1%Medium[528. Random Pick with Weight](https://github.com/navi-singh/leetview/blob/main/problems/random-pick-with-weight/README.md)45.5%Medium[227. Basic Calculator II](https://github.com/navi-singh/leetview/blob/main/problems/basic-calculator-ii/README.md)39.8%Medium[124. Binary Tree Maximum Path Sum](https://github.com/navi-singh/leetview/blob/main/problems/binary-tree-maximum-path-sum/README.md)36.6%Hard[236. Lowest Common Ancestor of a Binary Tree](https://github.com/navi-singh/leetview/blob/main/problems/lowest-common-ancestor-of-a-binary-tree/README.md)52.4%Medium[269. Alien Dictionary](https://github.com/navi-singh/leetview/blob/main/problems/alien-dictionary/README.md)34.3%Hard[347. Top K Frequent Elements](https://github.com/navi-singh/leetview/blob/main/problems/top-k-frequent-elements/README.md)63.6%Medium[953. Verifying an Alien Dictionary](https://github.com/navi-singh/leetview/blob/main/problems/verifying-an-alien-dictionary/README.md)52.1%Easy[415. Add Strings](https://github.com/navi-singh/leetview/blob/main/problems/add-strings/README.md)50.6%Easy[140. Word Break II](https://github.com/navi-singh/leetview/blob/main/problems/word-break-ii/README.md)38.8%Hard[721. Accounts Merge](https://github.com/navi-singh/leetview/blob/main/problems/accounts-merge/README.md)53.9%Medium[987. Vertical Order Traversal of a Binary Tree](https://github.com/navi-singh/leetview/blob/main/problems/vertical-order-traversal-of-a-binary-tree/README.md)39.6%Hard[71. Simplify Path](https://github.com/navi-singh/leetview/blob/main/problems/simplify-path/README.md)36.1%Medium[301. Remove Invalid Parentheses](https://github.com/navi-singh/leetview/blob/main/problems/remove-invalid-parentheses/README.md)45.8%Hard[1570. Dot Product of Two Sparse Vectors](https://github.com/navi-singh/leetview/blob/main/problems/dot-product-of-two-sparse-vectors/README.md)90.9%Medium[827. Making A Large Island](https://github.com/navi-singh/leetview/blob/main/problems/making-a-large-island/README.md)44.2%Hard[199. Binary Tree Right Side View](https://github.com/navi-singh/leetview/blob/main/problems/binary-tree-right-side-view/README.md)58.0%Medium[543. Diameter of Binary Tree](https://github.com/navi-singh/leetview/blob/main/problems/diameter-of-binary-tree/README.md)51.6%Easy[67. Add Binary](https://github.com/navi-singh/leetview/blob/main/problems/add-binary/README.md)48.7%Easy[1762. Buildings With an Ocean View](https://github.com/navi-singh/leetview/blob/main/problems/buildings-with-an-ocean-view/README.md)81.1%Medium[1650. Lowest Common Ancestor of a Binary Tree III](https://github.com/navi-singh/leetview/blob/main/problems/lowest-common-ancestor-of-a-binary-tree-iii/README.md)77.2%Medium[1047. Remove All Adjacent Duplicates In String](https://github.com/navi-singh/leetview/blob/main/problems/remove-all-adjacent-duplicates-in-string/README.md)71.2%Easy[636. Exclusive Time of Functions](https://github.com/navi-singh/leetview/blob/main/problems/exclusive-time-of-functions/README.md)57.5%Medium[426. Convert Binary Search Tree to Sorted Doubly Linked List](https://github.com/navi-singh/leetview/blob/main/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/README.md)63.1%Medium[173. Binary Search Tree Iterator](https://github.com/navi-singh/leetview/blob/main/problems/binary-search-tree-iterator/README.md)62.9%Medium[938. Range Sum of BST](https://github.com/navi-singh/leetview/blob/main/problems/range-sum-of-bst/README.md)83.9%Easy[523. Continuous Subarray Sum](https://github.com/navi-singh/leetview/blob/main/problems/continuous-subarray-sum/README.md)25.9%Medium[314. Binary Tree Vertical Order Traversal](https://github.com/navi-singh/leetview/blob/main/problems/binary-tree-vertical-order-traversal/README.md)48.8%Medium[29. Divide Two Integers](https://github.com/navi-singh/leetview/blob/main/problems/divide-two-integers/README.md)17.0%Medium[65. Valid Number](https://github.com/navi-singh/leetview/blob/main/problems/valid-number/README.md)17.1%Hard[1428. Leftmost Column with at Least a One](https://github.com/navi-singh/leetview/blob/main/problems/leftmost-column-with-at-least-a-one/README.md)51.3%Medium[921. Minimum Add to Make Parentheses Valid](https://github.com/navi-singh/leetview/blob/main/problems/minimum-add-to-make-parentheses-valid/README.md)76.7%Medium[1382. Balance a Binary Search Tree](https://github.com/navi-singh/leetview/blob/main/problems/balance-a-binary-search-tree/README.md)78.4%Medium[670. Maximum Swap](https://github.com/navi-singh/leetview/blob/main/problems/maximum-swap/README.md)46.2%Medium[249. Group Shifted Strings](https://github.com/navi-singh/leetview/blob/main/problems/group-shifted-strings/README.md)60.4%Medium[1263. Minimum Moves to Move a Box to Their Target Location](https://github.com/navi-singh/leetview/blob/main/problems/minimum-moves-to-move-a-box-to-their-target-location/README.md)47.5%Hard[708. Insert into a Sorted Circular Linked List](https://github.com/navi-singh/leetview/blob/main/problems/insert-into-a-sorted-circular-linked-list/README.md)33.3%Medium[398. Random Pick Index](https://github.com/navi-singh/leetview/blob/main/problems/random-pick-index/README.md)61.0%Medium[317. Shortest Distance from All Buildings](https://github.com/navi-singh/leetview/blob/main/problems/shortest-distance-from-all-buildings/README.md)43.8%Hard[766. Toeplitz Matrix](https://github.com/navi-singh/leetview/blob/main/problems/toeplitz-matrix/README.md)66.5%Easy[408. Valid Word Abbreviation](https://github.com/navi-singh/leetview/blob/main/problems/valid-word-abbreviation/README.md)32.2%Easy
 
-
-
-
-
-|  | \# | Title | Acceptance | Difficulty | Frequency |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-|  | 1249 | [Minimum Remove to Make Valid Parentheses](/problems/minimum-remove-to-make-valid-parentheses) | 64.9% | Medium |  |
-|  | 680 | [Valid Palindrome II](/problems/valid-palindrome-ii) | 37.8% | Easy |  |
-|  | 1762 | [Buildings With an Ocean View](/problems/buildings-with-an-ocean-view) | 81.1% | Medium |  |
-|  | 953 | [Verifying an Alien Dictionary](/problems/verifying-an-alien-dictionary) | 52.1% | Easy |  |
-|  | 1570 | [Dot Product of Two Sparse Vectors](/problems/dot-product-of-two-sparse-vectors) | 90.9% | Medium |  |
-|  | 973 | [K Closest Points to Origin](/problems/k-closest-points-to-origin) | 65.5% | Medium |  |
-|  | 426 | [Convert Binary Search Tree to Sorted Doubly Linked List](/problems/convert-binary-search-tree-to-sorted-doubly-linked-list) | 63.1% | Medium |  |
-|  | 1650 | [Lowest Common Ancestor of a Binary Tree III](/problems/lowest-common-ancestor-of-a-binary-tree-iii) | 77.2% | Medium |  |
-|  | 938 | [Range Sum of BST](/problems/range-sum-of-bst) | 83.9% | Easy |  |
-|  | 560 | [Subarray Sum Equals K](/problems/subarray-sum-equals-k) | 43.7% | Medium |  |
-|  | 827 | [Making A Large Island](/problems/making-a-large-island) | 44.2% | Hard |  |
-|  | 415 | [Add Strings](/problems/add-strings) | 50.6% | Easy |  |
-|  | 921 | [Minimum Add to Make Parentheses Valid](/problems/minimum-add-to-make-parentheses-valid) | 76.7% | Medium |  |
-|  | 1428 | [Leftmost Column with at Least a One](/problems/leftmost-column-with-at-least-a-one) | 51.3% | Medium |  |
-|  | 215 | [Kth Largest Element in an Array](/problems/kth-largest-element-in-an-array) | 61.1% | Medium |  |
-|  | 301 | [Remove Invalid Parentheses](/problems/remove-invalid-parentheses) | 45.8% | Hard |  |
-|  | 236 | [Lowest Common Ancestor of a Binary Tree](/problems/lowest-common-ancestor-of-a-binary-tree) | 52.4% | Medium |  |
-|  | 528 | [Random Pick with Weight](/problems/random-pick-with-weight) | 45.5% | Medium |  |
-|  | 314 | [Binary Tree Vertical Order Traversal](/problems/binary-tree-vertical-order-traversal) | 48.8% | Medium |  |
-|  | 199 | [Binary Tree Right Side View](/problems/binary-tree-right-side-view) | 58.0% | Medium |  |
-|  | 721 | [Accounts Merge](/problems/accounts-merge) | 53.9% | Medium |  |
-|  | 249 | [Group Shifted Strings](/problems/group-shifted-strings) | 60.4% | Medium |  |
-|  | 227 | [Basic Calculator II](/problems/basic-calculator-ii) | 39.8% | Medium |  |
-|  | 636 | [Exclusive Time of Functions](/problems/exclusive-time-of-functions) | 57.5% | Medium |  |
-|  | 543 | [Diameter of Binary Tree](/problems/diameter-of-binary-tree) | 51.6% | Easy |  |
-|  | 523 | [Continuous Subarray Sum](/problems/continuous-subarray-sum) | 25.9% | Medium |  |
-|  | 670 | [Maximum Swap](/problems/maximum-swap) | 46.2% | Medium |  |
-|  | 1047 | [Remove All Adjacent Duplicates In String](/problems/remove-all-adjacent-duplicates-in-string) | 71.2% | Easy |  |
-|  | 238 | [Product of Array Except Self](/problems/product-of-array-except-self) | 62.5% | Medium |  |
-|  | 140 | [Word Break II](/problems/word-break-ii) | 38.8% | Hard |  |
-|  | 1263 | [Minimum Moves to Move a Box to Their Target Location](/problems/minimum-moves-to-move-a-box-to-their-target-location) | 47.5% | Hard |  |
-|  | 31 | [Next Permutation](/problems/next-permutation) | 34.6% | Medium |  |
-|  | 71 | [Simplify Path](/problems/simplify-path) | 36.1% | Medium |  |
-|  | 65 | [Valid Number](/problems/valid-number) | 17.1% | Hard |  |
-|  | 398 | [Random Pick Index](/problems/random-pick-index) | 61.0% | Medium |  |
-|  | 67 | [Add Binary](/problems/add-binary) | 48.7% | Easy |  |
-|  | 56 | [Merge Intervals](/problems/merge-intervals) | 43.0% | Medium |  |
-|  | 766 | [Toeplitz Matrix](/problems/toeplitz-matrix) | 66.5% | Easy |  |
-|  | 173 | [Binary Search Tree Iterator](/problems/binary-search-tree-iterator) | 62.9% | Medium |  |
-|  | 708 | [Insert into a Sorted Circular Linked List](/problems/insert-into-a-sorted-circular-linked-list) | 33.3% | Medium |  |
-|  | 42 | [Trapping Rain Water](/problems/trapping-rain-water) | 53.9% | Hard |  |
-|  | 269 | [Alien Dictionary](/problems/alien-dictionary) | 34.3% | Hard |  |
-|  | 139 | [Word Break](/problems/word-break) | 43.1% | Medium |  |
-|  | 124 | [Binary Tree Maximum Path Sum](/problems/binary-tree-maximum-path-sum) | 36.6% | Hard |  |
-|  | 317 | [Shortest Distance from All Buildings](/problems/shortest-distance-from-all-buildings) | 43.8% | Hard |  |
-|  | 408 | [Valid Word Abbreviation](/problems/valid-word-abbreviation) | 32.2% | Easy |  |
-|  | 987 | [Vertical Order Traversal of a Binary Tree](/problems/vertical-order-traversal-of-a-binary-tree) | 39.6% | Hard |  |
-|  | 1382 | [Balance a Binary Search Tree](/problems/balance-a-binary-search-tree) | 78.4% | Medium |  |
-|  | 347 | [Top K Frequent Elements](/problems/top-k-frequent-elements) | 63.6% | Medium |  |
-|  | 29 | [Divide Two Integers](/problems/divide-two-integers) | 17.0% | Medium |  |
-|  | 146 | [LRU Cache](/problems/lru-cache) | 38.1% | Medium |  |
-|  | 270 | [Closest Binary Search Tree Value](/problems/closest-binary-search-tree-value) | 52.1% | Easy |  |
-|  | 1344 | [Angle Between Hands of a Clock](/problems/angle-between-hands-of-a-clock) | 62.0% | Medium |  |
-|  | 129 | [Sum Root to Leaf Numbers](/problems/sum-root-to-leaf-numbers) | 53.5% | Medium |  |
-|  | 791 | [Custom Sort String](/problems/custom-sort-string) | 67.2% | Medium |  |
-|  | 536 | [Construct Binary Tree from String](/problems/construct-binary-tree-from-string) | 54.1% | Medium |  |
-|  | 1757 | [Recyclable and Low Fat Products](/problems/recyclable-and-low-fat-products) | 95.7% | Easy |  |
-|  | 162 | [Find Peak Element](/problems/find-peak-element) | 44.9% | Medium |  |
-|  | 125 | [Valid Palindrome](/problems/valid-palindrome) | 39.7% | Easy |  |
-|  | 304 | [Range Sum Query 2D - Immutable](/problems/range-sum-query-2d-immutable) | 45.1% | Medium |  |
-|  | 50 | [Pow\(x, n\)](/problems/powx-n) | 31.5% | Medium |  |
-|  | 498 | [Diagonal Traverse](/problems/diagonal-traverse) | 52.9% | Medium |  |
-|  | 863 | [All Nodes Distance K in Binary Tree](/problems/all-nodes-distance-k-in-binary-tree) | 59.5% | Medium |  |
-|  | 1011 | [Capacity To Ship Packages Within D Days](/problems/capacity-to-ship-packages-within-d-days) | 61.5% | Medium |  |
-|  | 1004 | [Max Consecutive Ones III](/problems/max-consecutive-ones-iii) | 61.5% | Medium |  |
-|  | 605 | [Can Place Flowers](/problems/can-place-flowers) | 31.7% | Easy |  |
-|  | 273 | [Integer to English Words](/problems/integer-to-english-words) | 29.0% | Hard |  |
-|  | 1522 | [Diameter of N-Ary Tree](/problems/diameter-of-n-ary-tree) | 71.1% | Medium |  |
-|  | 88 | [Merge Sorted Array](/problems/merge-sorted-array) | 42.0% | Easy |  |
-|  | 380 | [Insert Delete GetRandom O\(1\)](/problems/insert-delete-getrandom-o1) | 50.1% | Medium |  |
-|  | 1868 | [Product of Two Run-Length Encoded Arrays](/problems/product-of-two-run-length-encoded-arrays) | 57.2% | Medium |  |
-|  | 1891 | [Cutting Ribbons](/problems/cutting-ribbons) | 50.3% | Medium |  |
-|  | 983 | [Minimum Cost For Tickets](/problems/minimum-cost-for-tickets) | 63.3% | Medium |  |
-|  | 133 | [Clone Graph](/problems/clone-graph) | 42.9% | Medium |  |
-|  | 986 | [Interval List Intersections](/problems/interval-list-intersections) | 69.5% | Medium |  |
-|  | 76 | [Minimum Window Substring](/problems/minimum-window-substring) | 37.7% | Hard |  |
-|  | 23 | [Merge k Sorted Lists](/problems/merge-k-sorted-lists) | 44.8% | Hard |  |
-|  | 977 | [Squares of a Sorted Array](/problems/squares-of-a-sorted-array) | 71.5% | Easy |  |
-|  | 1216 | [Valid Palindrome III](/problems/valid-palindrome-iii) | 51.0% | Hard |  |
-|  | 935 | [Knight Dialer](/problems/knight-dialer) | 48.0% | Medium |  |
-|  | 1209 | [Remove All Adjacent Duplicates in String II](/problems/remove-all-adjacent-duplicates-in-string-ii) | 56.3% | Medium |  |
-|  | 658 | [Find K Closest Elements](/problems/find-k-closest-elements) | 43.6% | Medium |  |
-|  | 339 | [Nested List Weight Sum](/problems/nested-list-weight-sum) | 78.2% | Medium |  |
-|  | 1539 | [Kth Missing Positive Number](/problems/kth-missing-positive-number) | 54.8% | Easy |  |
-|  | 621 | [Task Scheduler](/problems/task-scheduler) | 53.5% | Medium |  |
-|  | 138 | [Copy List with Random Pointer](/problems/copy-list-with-random-pointer) | 44.2% | Medium |  |
-|  | 282 | [Expression Add Operators](/problems/expression-add-operators) | 38.6% | Hard |  |
-|  | 266 | [Palindrome Permutation](/problems/palindrome-permutation) | 63.9% | Easy |  |
-|  | 158 | [Read N Characters Given Read4 II - Call multiple times](/problems/read-n-characters-given-read4-ii-call-multiple-times) | 39.4% | Hard |  |
-|  | 346 | [Moving Average from Data Stream](/problems/moving-average-from-data-stream) | 74.8% | Easy |  |
-|  | 34 | [Find First and Last Position of Element in Sorted Array](/problems/find-first-and-last-position-of-element-in-sorted-array) | 38.8% | Medium |  |
-|  | 163 | [Missing Ranges](/problems/missing-ranges) | 29.5% | Easy |  |
-|  | 515 | [Find Largest Value in Each Tree Row](/problems/find-largest-value-in-each-tree-row) | 63.5% | Medium |  |
-|  | 319 | [Bulb Switcher](/problems/bulb-switcher) | 46.3% | Medium |  |
-|  | 16 | [3Sum Closest](/problems/3sum-closest) | 46.8% | Medium |  |
-|  | 393 | [UTF-8 Validation](/problems/utf-8-validation) | 38.8% | Medium |  |
-|  | 695 | [Max Area of Island](/problems/max-area-of-island) | 67.8% | Medium |  |
-|  | 691 | [Stickers to Spell Word](/problems/stickers-to-spell-word) | 46.4% | Hard |  |
-|  | 211 | [Design Add and Search Words Data Structure](/problems/design-add-and-search-words-data-structure) | 42.3% | Medium |  |
-|  | 548 | [Split Array with Equal Sum](/problems/split-array-with-equal-sum) | 49.4% | Hard |  |
-|  | 8 | [String to Integer \(atoi\)](/problems/string-to-integer-atoi) | 16.0% | Medium |  |
-|  | 724 | [Find Pivot Index](/problems/find-pivot-index) | 48.9% | Easy |  |
-|  | 126 | [Word Ladder II](/problems/word-ladder-ii) | 25.7% | Hard |  |
-|  | 127 | [Word Ladder](/problems/word-ladder) | 33.6% | Hard |  |
-|  | 1161 | [Maximum Level Sum of a Binary Tree](/problems/maximum-level-sum-of-a-binary-tree) | 67.1% | Medium |  |
-|  | 19 | [Remove Nth Node From End of List](/problems/remove-nth-node-from-end-of-list) | 37.0% | Medium |  |
-|  | 1091 | [Shortest Path in Binary Matrix](/problems/shortest-path-in-binary-matrix) | 41.2% | Medium |  |
-|  | 39 | [Combination Sum](/problems/combination-sum) | 62.2% | Medium |  |
-|  | 767 | [Reorganize String](/problems/reorganize-string) | 51.1% | Medium |  |
-|  | 78 | [Subsets](/problems/subsets) | 68.2% | Medium |  |
-|  | 715 | [Range Module](/problems/range-module) | 42.4% | Hard |  |
-|  | 824 | [Goat Latin](/problems/goat-latin) | 67.3% | Easy |  |
-|  | 932 | [Beautiful Array](/problems/beautiful-array) | 63.6% | Medium |  |
-|  | 616 | [Add Bold Tag in String](/problems/add-bold-tag-in-string) | 46.0% | Medium |  |
-|  | 865 | [Smallest Subtree with all the Deepest Nodes](/problems/smallest-subtree-with-all-the-deepest-nodes) | 66.4% | Medium |  |
-|  | 43 | [Multiply Strings](/problems/multiply-strings) | 36.1% | Medium |  |
-|  | 443 | [String Compression](/problems/string-compression) | 46.0% | Medium |  |
-|  | 297 | [Serialize and Deserialize Binary Tree](/problems/serialize-and-deserialize-binary-tree) | 51.9% | Hard |  |
-|  | 1559 | [Detect Cycles in 2D Grid](/problems/detect-cycles-in-2d-grid) | 46.4% | Medium |  |
-|  | 681 | [Next Closest Time](/problems/next-closest-time) | 46.2% | Medium |  |
-|  | 934 | [Shortest Bridge](/problems/shortest-bridge) | 51.5% | Medium |  |
-|  | 597 | [Friend Requests I: Overall Acceptance Rate](/problems/friend-requests-i-overall-acceptance-rate) | 42.5% | Easy |  |
-|  | 1424 | [Diagonal Traverse II](/problems/diagonal-traverse-ii) | 48.0% | Medium |  |
-|  | 114 | [Flatten Binary Tree to Linked List](/problems/flatten-binary-tree-to-linked-list) | 55.4% | Medium |  |
-|  | 253 | [Meeting Rooms II](/problems/meeting-rooms-ii) | 48.3% | Medium |  |
-|  | 896 | [Monotonic Array](/problems/monotonic-array) | 58.0% | Easy |  |
-|  | 477 | [Total Hamming Distance](/problems/total-hamming-distance) | 51.4% | Medium |  |
-|  | 1944 | [Number of Visible People in a Queue](/problems/number-of-visible-people-in-a-queue) | 63.7% | Hard |  |
-|  | 1197 | [Minimum Knight Moves](/problems/minimum-knight-moves) | 38.9% | Medium |  |
-|  | 348 | [Design Tic-Tac-Toe](/problems/design-tic-tac-toe) | 56.7% | Medium |  |
-|  | 637 | [Average of Levels in Binary Tree](/problems/average-of-levels-in-binary-tree) | 67.3% | Easy |  |
-|  | 1060 | [Missing Element in Sorted Array](/problems/missing-element-in-sorted-array) | 55.4% | Medium |  |
-|  | 157 | [Read N Characters Given Read4](/problems/read-n-characters-given-read4) | 39.2% | Easy |  |
-|  | 329 | [Longest Increasing Path in a Matrix](/problems/longest-increasing-path-in-a-matrix) | 48.1% | Hard |  |
-|  | 778 | [Swim in Rising Water](/problems/swim-in-rising-water) | 57.9% | Hard |  |
-|  | 1123 | [Lowest Common Ancestor of Deepest Leaves](/problems/lowest-common-ancestor-of-deepest-leaves) | 68.9% | Medium |  |
-|  | 785 | [Is Graph Bipartite?](/problems/is-graph-bipartite) | 49.5% | Medium |  |
-|  | 503 | [Next Greater Element II](/problems/next-greater-element-ii) | 60.4% | Medium |  |
-|  | 378 | [Kth Smallest Element in a Sorted Matrix](/problems/kth-smallest-element-in-a-sorted-matrix) | 58.4% | Medium |  |
-|  | 234 | [Palindrome Linked List](/problems/palindrome-linked-list) | 44.3% | Easy |  |
-|  | 510 | [Inorder Successor in BST II](/problems/inorder-successor-in-bst-ii) | 61.3% | Medium |  |
-|  | 341 | [Flatten Nested List Iterator](/problems/flatten-nested-list-iterator) | 57.3% | Medium |  |
-|  | 694 | [Number of Distinct Islands](/problems/number-of-distinct-islands) | 58.9% | Medium |  |
-|  | 340 | [Longest Substring with At Most K Distinct Characters](/problems/longest-substring-with-at-most-k-distinct-characters) | 46.6% | Medium |  |
-|  | 581 | [Shortest Unsorted Continuous Subarray](/problems/shortest-unsorted-continuous-subarray) | 33.5% | Medium |  |
-|  | 286 | [Walls and Gates](/problems/walls-and-gates) | 57.6% | Medium |  |
-|  | 794 | [Valid Tic-Tac-Toe State](/problems/valid-tic-tac-toe-state) | 34.8% | Medium |  |
-|  | 1699 | [Number of Calls Between Two Persons](/problems/number-of-calls-between-two-persons) | 86.3% | Medium |  |
-|  | 647 | [Palindromic Substrings](/problems/palindromic-substrings) | 63.5% | Medium |  |
-|  | 732 | [My Calendar III](/problems/my-calendar-iii) | 65.1% | Hard |  |
-|  | 298 | [Binary Tree Longest Consecutive Sequence](/problems/binary-tree-longest-consecutive-sequence) | 49.5% | Medium |  |
-|  | 387 | [First Unique Character in a String](/problems/first-unique-character-in-a-string) | 55.4% | Easy |  |
-|  | 1361 | [Validate Binary Tree Nodes](/problems/validate-binary-tree-nodes) | 42.1% | Medium |  |
-|  | 113 | [Path Sum II](/problems/path-sum-ii) | 52.1% | Medium |  |
-|  | 1614 | [Maximum Nesting Depth of the Parentheses](/problems/maximum-nesting-depth-of-the-parentheses) | 82.8% | Easy |  |
-|  | 815 | [Bus Routes](/problems/bus-routes) | 44.4% | Hard |  |
-|  | 1027 | [Longest Arithmetic Subsequence](/problems/longest-arithmetic-subsequence) | 48.8% | Medium |  |
-|  | 239 | [Sliding Window Maximum](/problems/sliding-window-maximum) | 45.7% | Hard |  |
-|  | 1305 | [All Elements in Two Binary Search Trees](/problems/all-elements-in-two-binary-search-trees) | 78.4% | Medium |  |
-|  | 489 | [Robot Room Cleaner](/problems/robot-room-cleaner) | 74.4% | Hard |  |
-|  | 739 | [Daily Temperatures](/problems/daily-temperatures) | 65.9% | Medium |  |
-|  | 1541 | [Minimum Insertions to Balance a Parentheses String](/problems/minimum-insertions-to-balance-a-parentheses-string) | 46.7% | Medium |  |
-|  | 296 | [Best Meeting Point](/problems/best-meeting-point) | 59.0% | Hard |  |
-|  | 1884 | [Egg Drop With 2 Eggs and N Floors](/problems/egg-drop-with-2-eggs-and-n-floors) | 69.8% | Medium |  |
-|  | 1554 | [Strings Differ by One Character](/problems/strings-differ-by-one-character) | 64.4% | Medium |  |
-|  | 556 | [Next Greater Element III](/problems/next-greater-element-iii) | 33.4% | Medium |  |
-|  | 1269 | [Number of Ways to Stay in the Same Place After Some Steps](/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps) | 43.4% | Hard |  |
-|  | 463 | [Island Perimeter](/problems/island-perimeter) | 68.2% | Easy |  |
-|  | 116 | [Populating Next Right Pointers in Each Node](/problems/populating-next-right-pointers-in-each-node) | 52.6% | Medium |  |
-|  | 844 | [Backspace String Compare](/problems/backspace-string-compare) | 47.4% | Easy |  |
-|  | 1213 | [Intersection of Three Sorted Arrays](/problems/intersection-of-three-sorted-arrays) | 79.8% | Easy |  |
-|  | 241 | [Different Ways to Add Parentheses](/problems/different-ways-to-add-parentheses) | 59.5% | Medium |  |
-|  | 759 | [Employee Free Time](/problems/employee-free-time) | 70.0% | Hard |  |
-|  | 22 | [Generate Parentheses](/problems/generate-parentheses) | 68.1% | Medium |  |
-|  | 661 | [Image Smoother](/problems/image-smoother) | 53.1% | Easy |  |
-|  | 1110 | [Delete Nodes And Return Forest](/problems/delete-nodes-and-return-forest) | 68.6% | Medium |  |
-|  | 1074 | [Number of Submatrices That Sum to Target](/problems/number-of-submatrices-that-sum-to-target) | 65.8% | Hard |  |
-|  | 4 | [Median of Two Sorted Arrays](/problems/median-of-two-sorted-arrays) | 32.8% | Hard |  |
-|  | 200 | [Number of Islands](/problems/number-of-islands) | 51.7% | Medium |  |
-|  | 545 | [Boundary of Binary Tree](/problems/boundary-of-binary-tree) | 41.8% | Medium |  |
-|  | 1547 | [Minimum Cost to Cut a Stick](/problems/minimum-cost-to-cut-a-stick) | 54.2% | Hard |  |
-|  | 1102 | [Path With Maximum Minimum Value](/problems/path-with-maximum-minimum-value) | 51.5% | Medium |  |
-|  | 278 | [First Bad Version](/problems/first-bad-version) | 39.6% | Easy |  |
-|  | 494 | [Target Sum](/problems/target-sum) | 45.2% | Medium |  |
-|  | 224 | [Basic Calculator](/problems/basic-calculator) | 39.4% | Hard |  |
-|  | 117 | [Populating Next Right Pointers in Each Node II](/problems/populating-next-right-pointers-in-each-node-ii) | 44.2% | Medium |  |
-|  | 10 | [Regular Expression Matching](/problems/regular-expression-matching) | 27.9% | Hard |  |
-|  | 1034 | [Coloring A Border](/problems/coloring-a-border) | 46.8% | Medium |  |
-|  | 529 | [Minesweeper](/problems/minesweeper) | 63.2% | Medium |  |
-|  | 1233 | [Remove Sub-Folders from the Filesystem](/problems/remove-sub-folders-from-the-filesystem) | 64.2% | Medium |  |
-|  | 716 | [Max Stack](/problems/max-stack) | 44.1% | Easy |  |
-|  | 676 | [Implement Magic Dictionary](/problems/implement-magic-dictionary) | 56.1% | Medium |  |
-|  | 825 | [Friends Of Appropriate Ages](/problems/friends-of-appropriate-ages) | 44.9% | Medium |  |
-|  | 419 | [Battleships in a Board](/problems/battleships-in-a-board) | 72.3% | Medium |  |
-|  | 62 | [Unique Paths](/problems/unique-paths) | 57.9% | Medium |  |
-|  | 210 | [Course Schedule II](/problems/course-schedule-ii) | 44.6% | Medium |  |
-|  | 416 | [Partition Equal Subset Sum](/problems/partition-equal-subset-sum) | 45.6% | Medium |  |
-|  | 400 | [Nth Digit](/problems/nth-digit) | 32.9% | Medium |  |
-|  | 325 | [Maximum Size Subarray Sum Equals k](/problems/maximum-size-subarray-sum-equals-k) | 48.4% | Medium |  |
-|  | 283 | [Move Zeroes](/problems/move-zeroes) | 59.4% | Easy |  |
-|  | 388 | [Longest Absolute File Path](/problems/longest-absolute-file-path) | 44.5% | Medium |  |
-|  | 303 | [Range Sum Query - Immutable](/problems/range-sum-query-immutable) | 52.7% | Easy |  |
-|  | 1644 | [Lowest Common Ancestor of a Binary Tree II](/problems/lowest-common-ancestor-of-a-binary-tree-ii) | 57.5% | Medium |  |
-|  | 1326 | [Minimum Number of Taps to Open to Water a Garden](/problems/minimum-number-of-taps-to-open-to-water-a-garden) | 47.9% | Hard |  |
-|  | 958 | [Check Completeness of a Binary Tree](/problems/check-completeness-of-a-binary-tree) | 52.8% | Medium |  |
-|  | 1460 | [Make Two Arrays Equal by Reversing Sub-arrays](/problems/make-two-arrays-equal-by-reversing-sub-arrays) | 72.5% | Easy |  |
-|  | 160 | [Intersection of Two Linked Lists](/problems/intersection-of-two-linked-lists) | 47.2% | Easy |  |
-|  | 641 | [Design Circular Deque](/problems/design-circular-deque) | 56.8% | Medium |  |
-|  | 1168 | [Optimize Water Distribution in a Village](/problems/optimize-water-distribution-in-a-village) | 62.6% | Hard |  |
-|  | 295 | [Find Median from Data Stream](/problems/find-median-from-data-stream) | 49.4% | Hard |  |
-|  | 939 | [Minimum Area Rectangle](/problems/minimum-area-rectangle) | 52.9% | Medium |  |
-|  | 41 | [First Missing Positive](/problems/first-missing-positive) | 35.1% | Hard |  |
-|  | 1322 | [Ads Performance](/problems/ads-performance) | 58.8% | Easy |  |
-|  | 153 | [Find Minimum in Rotated Sorted Array](/problems/find-minimum-in-rotated-sorted-array) | 47.3% | Medium |  |
-|  | 525 | [Contiguous Array](/problems/contiguous-array) | 44.4% | Medium |  |
-|  | 15 | [3Sum](/problems/3sum) | 29.5% | Medium |  |
-|  | 68 | [Text Justification](/problems/text-justification) | 32.5% | Hard |  |
-|  | 311 | [Sparse Matrix Multiplication](/problems/sparse-matrix-multiplication) | 64.9% | Medium |  |
-|  | 788 | [Rotated Digits](/problems/rotated-digits) | 57.4% | Medium |  |
-|  | 437 | [Path Sum III](/problems/path-sum-iii) | 49.0% | Medium |  |
-|  | 1373 | [Maximum Sum BST in Binary Tree](/problems/maximum-sum-bst-in-binary-tree) | 37.8% | Hard |  |
-|  | 102 | [Binary Tree Level Order Traversal](/problems/binary-tree-level-order-traversal) | 59.0% | Medium |  |
-|  | 678 | [Valid Parenthesis String](/problems/valid-parenthesis-string) | 32.4% | Medium |  |
-|  | 14 | [Longest Common Prefix](/problems/longest-common-prefix) | 37.9% | Easy |  |
-|  | 367 | [Valid Perfect Square](/problems/valid-perfect-square) | 42.6% | Easy |  |
-|  | 989 | [Add to Array-Form of Integer](/problems/add-to-array-form-of-integer) | 45.1% | Easy |  |
-|  | 1511 | [Customer Order Frequency](/problems/customer-order-frequency) | 74.2% | Easy |  |
-|  | 328 | [Odd Even Linked List](/problems/odd-even-linked-list) | 58.2% | Medium |  |
-|  | 51 | [N-Queens](/problems/n-queens) | 54.3% | Hard |  |
-|  | 44 | [Wildcard Matching](/problems/wildcard-matching) | 26.1% | Hard |  |
-|  | 271 | [Encode and Decode Strings](/problems/encode-and-decode-strings) | 35.2% | Medium |  |
-|  | 332 | [Reconstruct Itinerary](/problems/reconstruct-itinerary) | 39.3% | Medium |  |
-|  | 310 | [Minimum Height Trees](/problems/minimum-height-trees) | 35.9% | Medium |  |
-|  | 112 | [Path Sum](/problems/path-sum) | 43.9% | Easy |  |
-|  | 20 | [Valid Parentheses](/problems/valid-parentheses) | 40.4% | Easy |  |
-|  | 207 | [Course Schedule](/problems/course-schedule) | 44.6% | Medium |  |
-|  | 622 | [Design Circular Queue](/problems/design-circular-queue) | 48.1% | Medium |  |
-|  | 532 | [K-diff Pairs in an Array](/problems/k-diff-pairs-in-an-array) | 36.8% | Medium |  |
-|  | 919 | [Complete Binary Tree Inserter](/problems/complete-binary-tree-inserter) | 61.7% | Medium |  |
-|  | 1 | [Two Sum](/problems/two-sum) | 47.7% | Easy |  |
-|  | 98 | [Validate Binary Search Tree](/problems/validate-binary-search-tree) | 29.6% | Medium |  |
-|  | 3 | [Longest Substring Without Repeating Characters](/problems/longest-substring-without-repeating-characters) | 32.3% | Medium |  |
-|  | 772 | [Basic Calculator III](/problems/basic-calculator-iii) | 46.0% | Hard |  |
-|  | 674 | [Longest Continuous Increasing Subsequence](/problems/longest-continuous-increasing-subsequence) | 47.3% | Easy |  |
-|  | 496 | [Next Greater Element I](/problems/next-greater-element-i) | 67.5% | Easy |  |
-|  | 1026 | [Maximum Difference Between Node and Ancestor](/problems/maximum-difference-between-node-and-ancestor) | 70.6% | Medium |  |
-|  | 121 | [Best Time to Buy and Sell Stock](/problems/best-time-to-buy-and-sell-stock) | 52.8% | Easy |  |
-|  | 257 | [Binary Tree Paths](/problems/binary-tree-paths) | 56.3% | Easy |  |
-|  | 316 | [Remove Duplicate Letters](/problems/remove-duplicate-letters) | 40.4% | Medium |  |
-|  | 884 | [Uncommon Words from Two Sentences](/problems/uncommon-words-from-two-sentences) | 64.9% | Easy |  |
-|  | 480 | [Sliding Window Median](/problems/sliding-window-median) | 40.1% | Hard |  |
-|  | 26 | [Remove Duplicates from Sorted Array](/problems/remove-duplicates-from-sorted-array) | 47.7% | Easy |  |
-|  | 895 | [Maximum Frequency Stack](/problems/maximum-frequency-stack) | 64.1% | Hard |  |
-|  | 109 | [Convert Sorted List to Binary Search Tree](/problems/convert-sorted-list-to-binary-search-tree) | 53.7% | Medium |  |
-|  | 417 | [Pacific Atlantic Water Flow](/problems/pacific-atlantic-water-flow) | 46.2% | Medium |  |
-|  | 875 | [Koko Eating Bananas](/problems/koko-eating-bananas) | 54.0% | Medium |  |
-|  | 49 | [Group Anagrams](/problems/group-anagrams) | 62.1% | Medium |  |
-|  | 1329 | [Sort the Matrix Diagonally](/problems/sort-the-matrix-diagonally) | 81.5% | Medium |  |
-|  | 246 | [Strobogrammatic Number](/problems/strobogrammatic-number) | 47.1% | Easy |  |
-|  | 540 | [Single Element in a Sorted Array](/problems/single-element-in-a-sorted-array) | 58.0% | Medium |  |
-|  | 128 | [Longest Consecutive Sequence](/problems/longest-consecutive-sequence) | 47.9% | Medium |  |
-|  | 946 | [Validate Stack Sequences](/problems/validate-stack-sequences) | 64.8% | Medium |  |
-|  | 1094 | [Car Pooling](/problems/car-pooling) | 59.5% | Medium |  |
-|  | 538 | [Convert BST to Greater Tree](/problems/convert-bst-to-greater-tree) | 61.5% | Medium |  |
-|  | 490 | [The Maze](/problems/the-maze) | 53.9% | Medium |  |
-|  | 33 | [Search in Rotated Sorted Array](/problems/search-in-rotated-sorted-array) | 36.9% | Medium |  |
-|  | 1099 | [Two Sum Less Than K](/problems/two-sum-less-than-k) | 60.6% | Easy |  |
-|  | 468 | [Validate IP Address](/problems/validate-ip-address) | 25.7% | Medium |  |
-|  | 2 | [Add Two Numbers](/problems/add-two-numbers) | 37.0% | Medium |  |
-|  | 371 | [Sum of Two Integers](/problems/sum-of-two-integers) | 50.7% | Medium |  |
-|  | 151 | [Reverse Words in a String](/problems/reverse-words-in-a-string) | 25.9% | Medium |  |
-|  | 161 | [One Edit Distance](/problems/one-edit-distance) | 33.6% | Medium |  |
-|  | 25 | [Reverse Nodes in k-Group](/problems/reverse-nodes-in-k-group) | 48.4% | Hard |  |
-|  | 1038 | [Binary Search Tree to Greater Sum Tree](/problems/binary-search-tree-to-greater-sum-tree) | 83.8% | Medium |  |
-|  | 752 | [Open the Lock](/problems/open-the-lock) | 54.9% | Medium |  |
-|  | 1160 | [Find Words That Can Be Formed by Characters](/problems/find-words-that-can-be-formed-by-characters) | 67.8% | Easy |  |
-|  | 218 | [The Skyline Problem](/problems/the-skyline-problem) | 37.7% | Hard |  |
-|  | 1985 | [Find the Kth Largest Integer in the Array](/problems/find-the-kth-largest-integer-in-the-array) | 43.4% | Medium |  |
-|  | 424 | [Longest Repeating Character Replacement](/problems/longest-repeating-character-replacement) | 49.7% | Medium |  |
-|  | 1636 | [Sort Array by Increasing Frequency](/problems/sort-array-by-increasing-frequency) | 67.8% | Easy |  |
-|  | 17 | [Letter Combinations of a Phone Number](/problems/letter-combinations-of-a-phone-number) | 51.7% | Medium |  |
-|  | 814 | [Binary Tree Pruning](/problems/binary-tree-pruning) | 71.2% | Medium |  |
-|  | 449 | [Serialize and Deserialize BST](/problems/serialize-and-deserialize-bst) | 55.3% | Medium |  |
-|  | 79 | [Word Search](/problems/word-search) | 38.8% | Medium |  |
-|  | 209 | [Minimum Size Subarray Sum](/problems/minimum-size-subarray-sum) | 41.3% | Medium |  |
-|  | 692 | [Top K Frequent Words](/problems/top-k-frequent-words) | 53.8% | Medium |  |
-|  | 81 | [Search in Rotated Sorted Array II](/problems/search-in-rotated-sorted-array-ii) | 34.1% | Medium |  |
-|  | 1748 | [Sum of Unique Elements](/problems/sum-of-unique-elements) | 75.0% | Easy |  |
-|  | 729 | [My Calendar I](/problems/my-calendar-i) | 54.6% | Medium |  |
-|  | 897 | [Increasing Order Search Tree](/problems/increasing-order-search-tree) | 75.5% | Easy |  |
-|  | 518 | [Coin Change 2](/problems/coin-change-2) | 54.8% | Medium |  |
-|  | 460 | [LFU Cache](/problems/lfu-cache) | 38.2% | Hard |  |
-|  | 268 | [Missing Number](/problems/missing-number) | 57.4% | Easy |  |
-|  | 152 | [Maximum Product Subarray](/problems/maximum-product-subarray) | 33.6% | Medium |  |
-|  | 48 | [Rotate Image](/problems/rotate-image) | 63.7% | Medium |  |
-|  | 73 | [Set Matrix Zeroes](/problems/set-matrix-zeroes) | 46.6% | Medium |  |
-|  | 852 | [Peak Index in a Mountain Array](/problems/peak-index-in-a-mountain-array) | 71.4% | Easy |  |
-|  | 103 | [Binary Tree Zigzag Level Order Traversal](/problems/binary-tree-zigzag-level-order-traversal) | 51.9% | Medium |  |
-|  | 1353 | [Maximum Number of Events That Can Be Attended](/problems/maximum-number-of-events-that-can-be-attended) | 31.7% | Medium |  |
-|  | 277 | [Find the Celebrity](/problems/find-the-celebrity) | 45.3% | Medium |  |
-|  | 155 | [Min Stack](/problems/min-stack) | 48.2% | Easy |  |
-|  | 84 | [Largest Rectangle in Histogram](/problems/largest-rectangle-in-histogram) | 38.9% | Hard |  |
-|  | 399 | [Evaluate Division](/problems/evaluate-division) | 55.8% | Medium |  |
-|  | 32 | [Longest Valid Parentheses](/problems/longest-valid-parentheses) | 30.6% | Hard |  |
-|  | 93 | [Restore IP Addresses](/problems/restore-ip-addresses) | 39.7% | Medium |  |
-|  | 219 | [Contains Duplicate II](/problems/contains-duplicate-ii) | 40.0% | Easy |  |
-|  | 394 | [Decode String](/problems/decode-string) | 54.5% | Medium |  |
-|  | 203 | [Remove Linked List Elements](/problems/remove-linked-list-elements) | 41.0% | Easy |  |
-|  | 240 | [Search a 2D Matrix II](/problems/search-a-2d-matrix-ii) | 46.7% | Medium |  |
-|  | 189 | [Rotate Array](/problems/rotate-array) | 37.1% | Medium |  |
-|  | 714 | [Best Time to Buy and Sell Stock with Transaction Fee](/problems/best-time-to-buy-and-sell-stock-with-transaction-fee) | 59.7% | Medium |  |
-|  | 154 | [Find Minimum in Rotated Sorted Array II](/problems/find-minimum-in-rotated-sorted-array-ii) | 42.4% | Hard |  |
-|  | 287 | [Find the Duplicate Number](/problems/find-the-duplicate-number) | 58.2% | Medium |  |
-|  | 445 | [Add Two Numbers II](/problems/add-two-numbers-ii) | 57.6% | Medium |  |
-|  | 110 | [Balanced Binary Tree](/problems/balanced-binary-tree) | 45.7% | Easy |  |
-|  | 230 | [Kth Smallest Element in a BST](/problems/kth-smallest-element-in-a-bst) | 64.9% | Medium |  |
-|  | 334 | [Increasing Triplet Subsequence](/problems/increasing-triplet-subsequence) | 41.0% | Medium |  |
-|  | 451 | [Sort Characters By Frequency](/problems/sort-characters-by-frequency) | 65.9% | Medium |  |
-|  | 359 | [Logger Rate Limiter](/problems/logger-rate-limiter) | 73.8% | Easy |  |
-|  | 11 | [Container With Most Water](/problems/container-with-most-water) | 53.2% | Medium |  |
-|  | 46 | [Permutations](/problems/permutations) | 69.6% | Medium |  |
-|  | 191 | [Number of 1 Bits](/problems/number-of-1-bits) | 56.7% | Easy |  |
-|  | 131 | [Palindrome Partitioning](/problems/palindrome-partitioning) | 55.5% | Medium |  |
-|  | 108 | [Convert Sorted Array to Binary Search Tree](/problems/convert-sorted-array-to-binary-search-tree) | 63.9% | Easy |  |
-|  | 91 | [Decode Ways](/problems/decode-ways) | 28.7% | Medium |  |
-|  | 323 | [Number of Connected Components in an Undirected Graph](/problems/number-of-connected-components-in-an-undirected-graph) | 59.6% | Medium |  |
-|  | 787 | [Cheapest Flights Within K Stops](/problems/cheapest-flights-within-k-stops) | 36.9% | Medium |  |
-|  | 101 | [Symmetric Tree](/problems/symmetric-tree) | 50.0% | Easy |  |
-|  | 66 | [Plus One](/problems/plus-one) | 42.0% | Easy |  |
-|  | 617 | [Merge Two Binary Trees](/problems/merge-two-binary-trees) | 76.7% | Easy |  |
-|  | 148 | [Sort List](/problems/sort-list) | 48.8% | Medium |  |
-|  | 763 | [Partition Labels](/problems/partition-labels) | 78.4% | Medium |  |
-|  | 435 | [Non-overlapping Intervals](/problems/non-overlapping-intervals) | 46.1% | Medium |  |
-|  | 24 | [Swap Nodes in Pairs](/problems/swap-nodes-in-pairs) | 55.7% | Medium |  |
-|  | 735 | [Asteroid Collision](/problems/asteroid-collision) | 44.0% | Medium |  |
-|  | 92 | [Reverse Linked List II](/problems/reverse-linked-list-ii) | 42.4% | Medium |  |
-|  | 300 | [Longest Increasing Subsequence](/problems/longest-increasing-subsequence) | 47.1% | Medium |  |
-|  | 13 | [Roman to Integer](/problems/roman-to-integer) | 57.7% | Easy |  |
-|  | 38 | [Count and Say](/problems/count-and-say) | 47.4% | Medium |  |
-|  | 90 | [Subsets II](/problems/subsets-ii) | 51.3% | Medium |  |
-|  | 36 | [Valid Sudoku](/problems/valid-sudoku) | 53.1% | Medium |  |
-|  | 905 | [Sort Array By Parity](/problems/sort-array-by-parity) | 74.9% | Easy |  |
-|  | 57 | [Insert Interval](/problems/insert-interval) | 36.5% | Medium |  |
-|  | 63 | [Unique Paths II](/problems/unique-paths-ii) | 36.5% | Medium |  |
-|  | 181 | [Employees Earning More Than Their Managers](/problems/employees-earning-more-than-their-managers) | 63.9% | Easy |  |
-|  | 190 | [Reverse Bits](/problems/reverse-bits) | 45.3% | Easy |  |
-|  | 226 | [Invert Binary Tree](/problems/invert-binary-tree) | 69.3% | Easy |  |
-|  | 40 | [Combination Sum II](/problems/combination-sum-ii) | 51.5% | Medium |  |
-|  | 438 | [Find All Anagrams in a String](/problems/find-all-anagrams-in-a-string) | 46.4% | Medium |  |
-|  | 572 | [Subtree of Another Tree](/problems/subtree-of-another-tree) | 44.8% | Easy |  |
-|  | 5 | [Longest Palindromic Substring](/problems/longest-palindromic-substring) | 31.3% | Medium |  |
-|  | 448 | [Find All Numbers Disappeared in an Array](/problems/find-all-numbers-disappeared-in-an-array) | 57.3% | Easy |  |
-|  | 6 | [ZigZag Conversion](/problems/zigzag-conversion) | 39.8% | Medium |  |
-|  | 53 | [Maximum Subarray](/problems/maximum-subarray) | 48.8% | Easy |  |
-|  | 349 | [Intersection of Two Arrays](/problems/intersection-of-two-arrays) | 67.2% | Easy |  |
-|  | 994 | [Rotting Oranges](/problems/rotting-oranges) | 50.4% | Medium |  |
-|  | 442 | [Find All Duplicates in an Array](/problems/find-all-duplicates-in-an-array) | 71.2% | Medium |  |
-|  | 21 | [Merge Two Sorted Lists](/problems/merge-two-sorted-lists) | 58.0% | Easy |  |
-|  | 235 | [Lowest Common Ancestor of a Binary Search Tree](/problems/lowest-common-ancestor-of-a-binary-search-tree) | 54.7% | Easy |  |
-|  | 136 | [Single Number](/problems/single-number) | 67.7% | Easy |  |
-|  | 7 | [Reverse Integer](/problems/reverse-integer) | 26.1% | Medium |  |
-|  | 567 | [Permutation in String](/problems/permutation-in-string) | 44.5% | Medium |  |
-|  | 698 | [Partition to K Equal Sum Subsets](/problems/partition-to-k-equal-sum-subsets) | 45.7% | Medium |  |
-|  | 509 | [Fibonacci Number](/problems/fibonacci-number) | 67.8% | Easy |  |
-|  | 1275 | [Find Winner on a Tic Tac Toe Game](/problems/find-winner-on-a-tic-tac-toe-game) | 55.7% | Easy |  |
-|  | 1328 | [Break a Palindrome](/problems/break-a-palindrome) | 52.1% | Medium |  |
-|  | 75 | [Sort Colors](/problems/sort-colors) | 52.1% | Medium |  |
-|  | 169 | [Majority Element](/problems/majority-element) | 61.3% | Easy |  |
-|  | 74 | [Search a 2D Matrix](/problems/search-a-2d-matrix) | 40.4% | Medium |  |
-|  | 35 | [Search Insert Position](/problems/search-insert-position) | 42.6% | Easy |  |
-|  | 54 | [Spiral Matrix](/problems/spiral-matrix) | 39.1% | Medium |  |
-|  | 104 | [Maximum Depth of Binary Tree](/problems/maximum-depth-of-binary-tree) | 69.9% | Easy |  |
-|  | 55 | [Jump Game](/problems/jump-game) | 36.6% | Medium |  |
-|  | 9 | [Palindrome Number](/problems/palindrome-number) | 51.5% | Easy |  |
-|  | 350 | [Intersection of Two Arrays II](/problems/intersection-of-two-arrays-ii) | 53.7% | Easy |  |
-|  | 206 | [Reverse Linked List](/problems/reverse-linked-list) | 68.0% | Easy |  |
-|  | 70 | [Climbing Stairs](/problems/climbing-stairs) | 49.9% | Easy |  |
-
-
-
+|   | #    | Title                                                                                                                                                                                      | Acceptance | Difficulty | Frequency |
+| - | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ---------- | --------- |
+|   | 1249 | [Minimum Remove to Make Valid Parentheses](https://github.com/navi-singh/leetview/blob/main/problems/minimum-remove-to-make-valid-parentheses/README.md)                                   | 64.9%      | Medium     |           |
+|   | 680  | [Valid Palindrome II](https://github.com/navi-singh/leetview/blob/main/problems/valid-palindrome-ii/README.md)                                                                             | 37.8%      | Easy       |           |
+|   | 1762 | [Buildings With an Ocean View](https://github.com/navi-singh/leetview/blob/main/problems/buildings-with-an-ocean-view/README.md)                                                           | 81.1%      | Medium     |           |
+|   | 953  | [Verifying an Alien Dictionary](https://github.com/navi-singh/leetview/blob/main/problems/verifying-an-alien-dictionary/README.md)                                                         | 52.1%      | Easy       |           |
+|   | 1570 | [Dot Product of Two Sparse Vectors](https://github.com/navi-singh/leetview/blob/main/problems/dot-product-of-two-sparse-vectors/README.md)                                                 | 90.9%      | Medium     |           |
+|   | 973  | [K Closest Points to Origin](https://github.com/navi-singh/leetview/blob/main/problems/k-closest-points-to-origin/README.md)                                                               | 65.5%      | Medium     |           |
+|   | 426  | [Convert Binary Search Tree to Sorted Doubly Linked List](https://github.com/navi-singh/leetview/blob/main/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/README.md)     | 63.1%      | Medium     |           |
+|   | 1650 | [Lowest Common Ancestor of a Binary Tree III](https://github.com/navi-singh/leetview/blob/main/problems/lowest-common-ancestor-of-a-binary-tree-iii/README.md)                             | 77.2%      | Medium     |           |
+|   | 938  | [Range Sum of BST](https://github.com/navi-singh/leetview/blob/main/problems/range-sum-of-bst/README.md)                                                                                   | 83.9%      | Easy       |           |
+|   | 560  | [Subarray Sum Equals K](https://github.com/navi-singh/leetview/blob/main/problems/subarray-sum-equals-k/README.md)                                                                         | 43.7%      | Medium     |           |
+|   | 827  | [Making A Large Island](https://github.com/navi-singh/leetview/blob/main/problems/making-a-large-island/README.md)                                                                         | 44.2%      | Hard       |           |
+|   | 415  | [Add Strings](https://github.com/navi-singh/leetview/blob/main/problems/add-strings/README.md)                                                                                             | 50.6%      | Easy       |           |
+|   | 921  | [Minimum Add to Make Parentheses Valid](https://github.com/navi-singh/leetview/blob/main/problems/minimum-add-to-make-parentheses-valid/README.md)                                         | 76.7%      | Medium     |           |
+|   | 1428 | [Leftmost Column with at Least a One](https://github.com/navi-singh/leetview/blob/main/problems/leftmost-column-with-at-least-a-one/README.md)                                             | 51.3%      | Medium     |           |
+|   | 215  | [Kth Largest Element in an Array](https://github.com/navi-singh/leetview/blob/main/problems/kth-largest-element-in-an-array/README.md)                                                     | 61.1%      | Medium     |           |
+|   | 301  | [Remove Invalid Parentheses](https://github.com/navi-singh/leetview/blob/main/problems/remove-invalid-parentheses/README.md)                                                               | 45.8%      | Hard       |           |
+|   | 236  | [Lowest Common Ancestor of a Binary Tree](https://github.com/navi-singh/leetview/blob/main/problems/lowest-common-ancestor-of-a-binary-tree/README.md)                                     | 52.4%      | Medium     |           |
+|   | 528  | [Random Pick with Weight](https://github.com/navi-singh/leetview/blob/main/problems/random-pick-with-weight/README.md)                                                                     | 45.5%      | Medium     |           |
+|   | 314  | [Binary Tree Vertical Order Traversal](https://github.com/navi-singh/leetview/blob/main/problems/binary-tree-vertical-order-traversal/README.md)                                           | 48.8%      | Medium     |           |
+|   | 199  | [Binary Tree Right Side View](https://github.com/navi-singh/leetview/blob/main/problems/binary-tree-right-side-view/README.md)                                                             | 58.0%      | Medium     |           |
+|   | 721  | [Accounts Merge](https://github.com/navi-singh/leetview/blob/main/problems/accounts-merge/README.md)                                                                                       | 53.9%      | Medium     |           |
+|   | 249  | [Group Shifted Strings](https://github.com/navi-singh/leetview/blob/main/problems/group-shifted-strings/README.md)                                                                         | 60.4%      | Medium     |           |
+|   | 227  | [Basic Calculator II](https://github.com/navi-singh/leetview/blob/main/problems/basic-calculator-ii/README.md)                                                                             | 39.8%      | Medium     |           |
+|   | 636  | [Exclusive Time of Functions](https://github.com/navi-singh/leetview/blob/main/problems/exclusive-time-of-functions/README.md)                                                             | 57.5%      | Medium     |           |
+|   | 543  | [Diameter of Binary Tree](https://github.com/navi-singh/leetview/blob/main/problems/diameter-of-binary-tree/README.md)                                                                     | 51.6%      | Easy       |           |
+|   | 523  | [Continuous Subarray Sum](https://github.com/navi-singh/leetview/blob/main/problems/continuous-subarray-sum/README.md)                                                                     | 25.9%      | Medium     |           |
+|   | 670  | [Maximum Swap](https://github.com/navi-singh/leetview/blob/main/problems/maximum-swap/README.md)                                                                                           | 46.2%      | Medium     |           |
+|   | 1047 | [Remove All Adjacent Duplicates In String](https://github.com/navi-singh/leetview/blob/main/problems/remove-all-adjacent-duplicates-in-string/README.md)                                   | 71.2%      | Easy       |           |
+|   | 238  | [Product of Array Except Self](https://github.com/navi-singh/leetview/blob/main/problems/product-of-array-except-self/README.md)                                                           | 62.5%      | Medium     |           |
+|   | 140  | [Word Break II](https://github.com/navi-singh/leetview/blob/main/problems/word-break-ii/README.md)                                                                                         | 38.8%      | Hard       |           |
+|   | 1263 | [Minimum Moves to Move a Box to Their Target Location](https://github.com/navi-singh/leetview/blob/main/problems/minimum-moves-to-move-a-box-to-their-target-location/README.md)           | 47.5%      | Hard       |           |
+|   | 31   | [Next Permutation](https://github.com/navi-singh/leetview/blob/main/problems/next-permutation/README.md)                                                                                   | 34.6%      | Medium     |           |
+|   | 71   | [Simplify Path](https://github.com/navi-singh/leetview/blob/main/problems/simplify-path/README.md)                                                                                         | 36.1%      | Medium     |           |
+|   | 65   | [Valid Number](https://github.com/navi-singh/leetview/blob/main/problems/valid-number/README.md)                                                                                           | 17.1%      | Hard       |           |
+|   | 398  | [Random Pick Index](https://github.com/navi-singh/leetview/blob/main/problems/random-pick-index/README.md)                                                                                 | 61.0%      | Medium     |           |
+|   | 67   | [Add Binary](https://github.com/navi-singh/leetview/blob/main/problems/add-binary/README.md)                                                                                               | 48.7%      | Easy       |           |
+|   | 56   | [Merge Intervals](https://github.com/navi-singh/leetview/blob/main/problems/merge-intervals/README.md)                                                                                     | 43.0%      | Medium     |           |
+|   | 766  | [Toeplitz Matrix](https://github.com/navi-singh/leetview/blob/main/problems/toeplitz-matrix/README.md)                                                                                     | 66.5%      | Easy       |           |
+|   | 173  | [Binary Search Tree Iterator](https://github.com/navi-singh/leetview/blob/main/problems/binary-search-tree-iterator/README.md)                                                             | 62.9%      | Medium     |           |
+|   | 708  | [Insert into a Sorted Circular Linked List](https://github.com/navi-singh/leetview/blob/main/problems/insert-into-a-sorted-circular-linked-list/README.md)                                 | 33.3%      | Medium     |           |
+|   | 42   | [Trapping Rain Water](https://github.com/navi-singh/leetview/blob/main/problems/trapping-rain-water/README.md)                                                                             | 53.9%      | Hard       |           |
+|   | 269  | [Alien Dictionary](https://github.com/navi-singh/leetview/blob/main/problems/alien-dictionary/README.md)                                                                                   | 34.3%      | Hard       |           |
+|   | 139  | [Word Break](https://github.com/navi-singh/leetview/blob/main/problems/word-break/README.md)                                                                                               | 43.1%      | Medium     |           |
+|   | 124  | [Binary Tree Maximum Path Sum](https://github.com/navi-singh/leetview/blob/main/problems/binary-tree-maximum-path-sum/README.md)                                                           | 36.6%      | Hard       |           |
+|   | 317  | [Shortest Distance from All Buildings](https://github.com/navi-singh/leetview/blob/main/problems/shortest-distance-from-all-buildings/README.md)                                           | 43.8%      | Hard       |           |
+|   | 408  | [Valid Word Abbreviation](https://github.com/navi-singh/leetview/blob/main/problems/valid-word-abbreviation/README.md)                                                                     | 32.2%      | Easy       |           |
+|   | 987  | [Vertical Order Traversal of a Binary Tree](https://github.com/navi-singh/leetview/blob/main/problems/vertical-order-traversal-of-a-binary-tree/README.md)                                 | 39.6%      | Hard       |           |
+|   | 1382 | [Balance a Binary Search Tree](https://github.com/navi-singh/leetview/blob/main/problems/balance-a-binary-search-tree/README.md)                                                           | 78.4%      | Medium     |           |
+|   | 347  | [Top K Frequent Elements](https://github.com/navi-singh/leetview/blob/main/problems/top-k-frequent-elements/README.md)                                                                     | 63.6%      | Medium     |           |
+|   | 29   | [Divide Two Integers](https://github.com/navi-singh/leetview/blob/main/problems/divide-two-integers/README.md)                                                                             | 17.0%      | Medium     |           |
+|   | 146  | [LRU Cache](https://github.com/navi-singh/leetview/blob/main/problems/lru-cache/README.md)                                                                                                 | 38.1%      | Medium     |           |
+|   | 270  | [Closest Binary Search Tree Value](https://github.com/navi-singh/leetview/blob/main/problems/closest-binary-search-tree-value/README.md)                                                   | 52.1%      | Easy       |           |
+|   | 1344 | [Angle Between Hands of a Clock](https://github.com/navi-singh/leetview/blob/main/problems/angle-between-hands-of-a-clock/README.md)                                                       | 62.0%      | Medium     |           |
+|   | 129  | [Sum Root to Leaf Numbers](https://github.com/navi-singh/leetview/blob/main/problems/sum-root-to-leaf-numbers/README.md)                                                                   | 53.5%      | Medium     |           |
+|   | 791  | [Custom Sort String](https://github.com/navi-singh/leetview/blob/main/problems/custom-sort-string/README.md)                                                                               | 67.2%      | Medium     |           |
+|   | 536  | [Construct Binary Tree from String](https://github.com/navi-singh/leetview/blob/main/problems/construct-binary-tree-from-string/README.md)                                                 | 54.1%      | Medium     |           |
+|   | 1757 | [Recyclable and Low Fat Products](https://github.com/navi-singh/leetview/blob/main/problems/recyclable-and-low-fat-products/README.md)                                                     | 95.7%      | Easy       |           |
+|   | 162  | [Find Peak Element](https://github.com/navi-singh/leetview/blob/main/problems/find-peak-element/README.md)                                                                                 | 44.9%      | Medium     |           |
+|   | 125  | [Valid Palindrome](https://github.com/navi-singh/leetview/blob/main/problems/valid-palindrome/README.md)                                                                                   | 39.7%      | Easy       |           |
+|   | 304  | [Range Sum Query 2D - Immutable](https://github.com/navi-singh/leetview/blob/main/problems/range-sum-query-2d-immutable/README.md)                                                         | 45.1%      | Medium     |           |
+|   | 50   | [Pow(x, n)](https://github.com/navi-singh/leetview/blob/main/problems/powx-n/README.md)                                                                                                    | 31.5%      | Medium     |           |
+|   | 498  | [Diagonal Traverse](https://github.com/navi-singh/leetview/blob/main/problems/diagonal-traverse/README.md)                                                                                 | 52.9%      | Medium     |           |
+|   | 863  | [All Nodes Distance K in Binary Tree](https://github.com/navi-singh/leetview/blob/main/problems/all-nodes-distance-k-in-binary-tree/README.md)                                             | 59.5%      | Medium     |           |
+|   | 1011 | [Capacity To Ship Packages Within D Days](https://github.com/navi-singh/leetview/blob/main/problems/capacity-to-ship-packages-within-d-days/README.md)                                     | 61.5%      | Medium     |           |
+|   | 1004 | [Max Consecutive Ones III](https://github.com/navi-singh/leetview/blob/main/problems/max-consecutive-ones-iii/README.md)                                                                   | 61.5%      | Medium     |           |
+|   | 605  | [Can Place Flowers](https://github.com/navi-singh/leetview/blob/main/problems/can-place-flowers/README.md)                                                                                 | 31.7%      | Easy       |           |
+|   | 273  | [Integer to English Words](https://github.com/navi-singh/leetview/blob/main/problems/integer-to-english-words/README.md)                                                                   | 29.0%      | Hard       |           |
+|   | 1522 | [Diameter of N-Ary Tree](https://github.com/navi-singh/leetview/blob/main/problems/diameter-of-n-ary-tree/README.md)                                                                       | 71.1%      | Medium     |           |
+|   | 88   | [Merge Sorted Array](https://github.com/navi-singh/leetview/blob/main/problems/merge-sorted-array/README.md)                                                                               | 42.0%      | Easy       |           |
+|   | 380  | [Insert Delete GetRandom O(1)](https://github.com/navi-singh/leetview/blob/main/problems/insert-delete-getrandom-o1/README.md)                                                             | 50.1%      | Medium     |           |
+|   | 1868 | [Product of Two Run-Length Encoded Arrays](https://github.com/navi-singh/leetview/blob/main/problems/product-of-two-run-length-encoded-arrays/README.md)                                   | 57.2%      | Medium     |           |
+|   | 1891 | [Cutting Ribbons](https://github.com/navi-singh/leetview/blob/main/problems/cutting-ribbons/README.md)                                                                                     | 50.3%      | Medium     |           |
+|   | 983  | [Minimum Cost For Tickets](https://github.com/navi-singh/leetview/blob/main/problems/minimum-cost-for-tickets/README.md)                                                                   | 63.3%      | Medium     |           |
+|   | 133  | [Clone Graph](https://github.com/navi-singh/leetview/blob/main/problems/clone-graph/README.md)                                                                                             | 42.9%      | Medium     |           |
+|   | 986  | [Interval List Intersections](https://github.com/navi-singh/leetview/blob/main/problems/interval-list-intersections/README.md)                                                             | 69.5%      | Medium     |           |
+|   | 76   | [Minimum Window Substring](https://github.com/navi-singh/leetview/blob/main/problems/minimum-window-substring/README.md)                                                                   | 37.7%      | Hard       |           |
+|   | 23   | [Merge k Sorted Lists](https://github.com/navi-singh/leetview/blob/main/problems/merge-k-sorted-lists/README.md)                                                                           | 44.8%      | Hard       |           |
+|   | 977  | [Squares of a Sorted Array](https://github.com/navi-singh/leetview/blob/main/problems/squares-of-a-sorted-array/README.md)                                                                 | 71.5%      | Easy       |           |
+|   | 1216 | [Valid Palindrome III](https://github.com/navi-singh/leetview/blob/main/problems/valid-palindrome-iii/README.md)                                                                           | 51.0%      | Hard       |           |
+|   | 935  | [Knight Dialer](https://github.com/navi-singh/leetview/blob/main/problems/knight-dialer/README.md)                                                                                         | 48.0%      | Medium     |           |
+|   | 1209 | [Remove All Adjacent Duplicates in String II](https://github.com/navi-singh/leetview/blob/main/problems/remove-all-adjacent-duplicates-in-string-ii/README.md)                             | 56.3%      | Medium     |           |
+|   | 658  | [Find K Closest Elements](https://github.com/navi-singh/leetview/blob/main/problems/find-k-closest-elements/README.md)                                                                     | 43.6%      | Medium     |           |
+|   | 339  | [Nested List Weight Sum](https://github.com/navi-singh/leetview/blob/main/problems/nested-list-weight-sum/README.md)                                                                       | 78.2%      | Medium     |           |
+|   | 1539 | [Kth Missing Positive Number](https://github.com/navi-singh/leetview/blob/main/problems/kth-missing-positive-number/README.md)                                                             | 54.8%      | Easy       |           |
+|   | 621  | [Task Scheduler](https://github.com/navi-singh/leetview/blob/main/problems/task-scheduler/README.md)                                                                                       | 53.5%      | Medium     |           |
+|   | 138  | [Copy List with Random Pointer](https://github.com/navi-singh/leetview/blob/main/problems/copy-list-with-random-pointer/README.md)                                                         | 44.2%      | Medium     |           |
+|   | 282  | [Expression Add Operators](https://github.com/navi-singh/leetview/blob/main/problems/expression-add-operators/README.md)                                                                   | 38.6%      | Hard       |           |
+|   | 266  | [Palindrome Permutation](https://github.com/navi-singh/leetview/blob/main/problems/palindrome-permutation/README.md)                                                                       | 63.9%      | Easy       |           |
+|   | 158  | [Read N Characters Given Read4 II - Call multiple times](https://github.com/navi-singh/leetview/blob/main/problems/read-n-characters-given-read4-ii-call-multiple-times/README.md)         | 39.4%      | Hard       |           |
+|   | 346  | [Moving Average from Data Stream](https://github.com/navi-singh/leetview/blob/main/problems/moving-average-from-data-stream/README.md)                                                     | 74.8%      | Easy       |           |
+|   | 34   | [Find First and Last Position of Element in Sorted Array](https://github.com/navi-singh/leetview/blob/main/problems/find-first-and-last-position-of-element-in-sorted-array/README.md)     | 38.8%      | Medium     |           |
+|   | 163  | [Missing Ranges](https://github.com/navi-singh/leetview/blob/main/problems/missing-ranges/README.md)                                                                                       | 29.5%      | Easy       |           |
+|   | 515  | [Find Largest Value in Each Tree Row](https://github.com/navi-singh/leetview/blob/main/problems/find-largest-value-in-each-tree-row/README.md)                                             | 63.5%      | Medium     |           |
+|   | 319  | [Bulb Switcher](https://github.com/navi-singh/leetview/blob/main/problems/bulb-switcher/README.md)                                                                                         | 46.3%      | Medium     |           |
+|   | 16   | [3Sum Closest](https://github.com/navi-singh/leetview/blob/main/problems/3sum-closest/README.md)                                                                                           | 46.8%      | Medium     |           |
+|   | 393  | [UTF-8 Validation](https://github.com/navi-singh/leetview/blob/main/problems/utf-8-validation/README.md)                                                                                   | 38.8%      | Medium     |           |
+|   | 695  | [Max Area of Island](https://github.com/navi-singh/leetview/blob/main/problems/max-area-of-island/README.md)                                                                               | 67.8%      | Medium     |           |
+|   | 691  | [Stickers to Spell Word](https://github.com/navi-singh/leetview/blob/main/problems/stickers-to-spell-word/README.md)                                                                       | 46.4%      | Hard       |           |
+|   | 211  | [Design Add and Search Words Data Structure](https://github.com/navi-singh/leetview/blob/main/problems/design-add-and-search-words-data-structure/README.md)                               | 42.3%      | Medium     |           |
+|   | 548  | [Split Array with Equal Sum](https://github.com/navi-singh/leetview/blob/main/problems/split-array-with-equal-sum/README.md)                                                               | 49.4%      | Hard       |           |
+|   | 8    | [String to Integer (atoi)](https://github.com/navi-singh/leetview/blob/main/problems/string-to-integer-atoi/README.md)                                                                     | 16.0%      | Medium     |           |
+|   | 724  | [Find Pivot Index](https://github.com/navi-singh/leetview/blob/main/problems/find-pivot-index/README.md)                                                                                   | 48.9%      | Easy       |           |
+|   | 126  | [Word Ladder II](https://github.com/navi-singh/leetview/blob/main/problems/word-ladder-ii/README.md)                                                                                       | 25.7%      | Hard       |           |
+|   | 127  | [Word Ladder](https://github.com/navi-singh/leetview/blob/main/problems/word-ladder/README.md)                                                                                             | 33.6%      | Hard       |           |
+|   | 1161 | [Maximum Level Sum of a Binary Tree](https://github.com/navi-singh/leetview/blob/main/problems/maximum-level-sum-of-a-binary-tree/README.md)                                               | 67.1%      | Medium     |           |
+|   | 19   | [Remove Nth Node From End of List](https://github.com/navi-singh/leetview/blob/main/problems/remove-nth-node-from-end-of-list/README.md)                                                   | 37.0%      | Medium     |           |
+|   | 1091 | [Shortest Path in Binary Matrix](https://github.com/navi-singh/leetview/blob/main/problems/shortest-path-in-binary-matrix/README.md)                                                       | 41.2%      | Medium     |           |
+|   | 39   | [Combination Sum](https://github.com/navi-singh/leetview/blob/main/problems/combination-sum/README.md)                                                                                     | 62.2%      | Medium     |           |
+|   | 767  | [Reorganize String](https://github.com/navi-singh/leetview/blob/main/problems/reorganize-string/README.md)                                                                                 | 51.1%      | Medium     |           |
+|   | 78   | [Subsets](https://github.com/navi-singh/leetview/blob/main/problems/subsets/README.md)                                                                                                     | 68.2%      | Medium     |           |
+|   | 715  | [Range Module](https://github.com/navi-singh/leetview/blob/main/problems/range-module/README.md)                                                                                           | 42.4%      | Hard       |           |
+|   | 824  | [Goat Latin](https://github.com/navi-singh/leetview/blob/main/problems/goat-latin/README.md)                                                                                               | 67.3%      | Easy       |           |
+|   | 932  | [Beautiful Array](https://github.com/navi-singh/leetview/blob/main/problems/beautiful-array/README.md)                                                                                     | 63.6%      | Medium     |           |
+|   | 616  | [Add Bold Tag in String](https://github.com/navi-singh/leetview/blob/main/problems/add-bold-tag-in-string/README.md)                                                                       | 46.0%      | Medium     |           |
+|   | 865  | [Smallest Subtree with all the Deepest Nodes](https://github.com/navi-singh/leetview/blob/main/problems/smallest-subtree-with-all-the-deepest-nodes/README.md)                             | 66.4%      | Medium     |           |
+|   | 43   | [Multiply Strings](https://github.com/navi-singh/leetview/blob/main/problems/multiply-strings/README.md)                                                                                   | 36.1%      | Medium     |           |
+|   | 443  | [String Compression](https://github.com/navi-singh/leetview/blob/main/problems/string-compression/README.md)                                                                               | 46.0%      | Medium     |           |
+|   | 297  | [Serialize and Deserialize Binary Tree](https://github.com/navi-singh/leetview/blob/main/problems/serialize-and-deserialize-binary-tree/README.md)                                         | 51.9%      | Hard       |           |
+|   | 1559 | [Detect Cycles in 2D Grid](https://github.com/navi-singh/leetview/blob/main/problems/detect-cycles-in-2d-grid/README.md)                                                                   | 46.4%      | Medium     |           |
+|   | 681  | [Next Closest Time](https://github.com/navi-singh/leetview/blob/main/problems/next-closest-time/README.md)                                                                                 | 46.2%      | Medium     |           |
+|   | 934  | [Shortest Bridge](https://github.com/navi-singh/leetview/blob/main/problems/shortest-bridge/README.md)                                                                                     | 51.5%      | Medium     |           |
+|   | 597  | [Friend Requests I: Overall Acceptance Rate](https://github.com/navi-singh/leetview/blob/main/problems/friend-requests-i-overall-acceptance-rate/README.md)                                | 42.5%      | Easy       |           |
+|   | 1424 | [Diagonal Traverse II](https://github.com/navi-singh/leetview/blob/main/problems/diagonal-traverse-ii/README.md)                                                                           | 48.0%      | Medium     |           |
+|   | 114  | [Flatten Binary Tree to Linked List](https://github.com/navi-singh/leetview/blob/main/problems/flatten-binary-tree-to-linked-list/README.md)                                               | 55.4%      | Medium     |           |
+|   | 253  | [Meeting Rooms II](https://github.com/navi-singh/leetview/blob/main/problems/meeting-rooms-ii/README.md)                                                                                   | 48.3%      | Medium     |           |
+|   | 896  | [Monotonic Array](https://github.com/navi-singh/leetview/blob/main/problems/monotonic-array/README.md)                                                                                     | 58.0%      | Easy       |           |
+|   | 477  | [Total Hamming Distance](https://github.com/navi-singh/leetview/blob/main/problems/total-hamming-distance/README.md)                                                                       | 51.4%      | Medium     |           |
+|   | 1944 | [Number of Visible People in a Queue](https://github.com/navi-singh/leetview/blob/main/problems/number-of-visible-people-in-a-queue/README.md)                                             | 63.7%      | Hard       |           |
+|   | 1197 | [Minimum Knight Moves](https://github.com/navi-singh/leetview/blob/main/problems/minimum-knight-moves/README.md)                                                                           | 38.9%      | Medium     |           |
+|   | 348  | [Design Tic-Tac-Toe](https://github.com/navi-singh/leetview/blob/main/problems/design-tic-tac-toe/README.md)                                                                               | 56.7%      | Medium     |           |
+|   | 637  | [Average of Levels in Binary Tree](https://github.com/navi-singh/leetview/blob/main/problems/average-of-levels-in-binary-tree/README.md)                                                   | 67.3%      | Easy       |           |
+|   | 1060 | [Missing Element in Sorted Array](https://github.com/navi-singh/leetview/blob/main/problems/missing-element-in-sorted-array/README.md)                                                     | 55.4%      | Medium     |           |
+|   | 157  | [Read N Characters Given Read4](https://github.com/navi-singh/leetview/blob/main/problems/read-n-characters-given-read4/README.md)                                                         | 39.2%      | Easy       |           |
+|   | 329  | [Longest Increasing Path in a Matrix](https://github.com/navi-singh/leetview/blob/main/problems/longest-increasing-path-in-a-matrix/README.md)                                             | 48.1%      | Hard       |           |
+|   | 778  | [Swim in Rising Water](https://github.com/navi-singh/leetview/blob/main/problems/swim-in-rising-water/README.md)                                                                           | 57.9%      | Hard       |           |
+|   | 1123 | [Lowest Common Ancestor of Deepest Leaves](https://github.com/navi-singh/leetview/blob/main/problems/lowest-common-ancestor-of-deepest-leaves/README.md)                                   | 68.9%      | Medium     |           |
+|   | 785  | [Is Graph Bipartite?](https://github.com/navi-singh/leetview/blob/main/problems/is-graph-bipartite/README.md)                                                                              | 49.5%      | Medium     |           |
+|   | 503  | [Next Greater Element II](https://github.com/navi-singh/leetview/blob/main/problems/next-greater-element-ii/README.md)                                                                     | 60.4%      | Medium     |           |
+|   | 378  | [Kth Smallest Element in a Sorted Matrix](https://github.com/navi-singh/leetview/blob/main/problems/kth-smallest-element-in-a-sorted-matrix/README.md)                                     | 58.4%      | Medium     |           |
+|   | 234  | [Palindrome Linked List](https://github.com/navi-singh/leetview/blob/main/problems/palindrome-linked-list/README.md)                                                                       | 44.3%      | Easy       |           |
+|   | 510  | [Inorder Successor in BST II](https://github.com/navi-singh/leetview/blob/main/problems/inorder-successor-in-bst-ii/README.md)                                                             | 61.3%      | Medium     |           |
+|   | 341  | [Flatten Nested List Iterator](https://github.com/navi-singh/leetview/blob/main/problems/flatten-nested-list-iterator/README.md)                                                           | 57.3%      | Medium     |           |
+|   | 694  | [Number of Distinct Islands](https://github.com/navi-singh/leetview/blob/main/problems/number-of-distinct-islands/README.md)                                                               | 58.9%      | Medium     |           |
+|   | 340  | [Longest Substring with At Most K Distinct Characters](https://github.com/navi-singh/leetview/blob/main/problems/longest-substring-with-at-most-k-distinct-characters/README.md)           | 46.6%      | Medium     |           |
+|   | 581  | [Shortest Unsorted Continuous Subarray](https://github.com/navi-singh/leetview/blob/main/problems/shortest-unsorted-continuous-subarray/README.md)                                         | 33.5%      | Medium     |           |
+|   | 286  | [Walls and Gates](https://github.com/navi-singh/leetview/blob/main/problems/walls-and-gates/README.md)                                                                                     | 57.6%      | Medium     |           |
+|   | 794  | [Valid Tic-Tac-Toe State](https://github.com/navi-singh/leetview/blob/main/problems/valid-tic-tac-toe-state/README.md)                                                                     | 34.8%      | Medium     |           |
+|   | 1699 | [Number of Calls Between Two Persons](https://github.com/navi-singh/leetview/blob/main/problems/number-of-calls-between-two-persons/README.md)                                             | 86.3%      | Medium     |           |
+|   | 647  | [Palindromic Substrings](https://github.com/navi-singh/leetview/blob/main/problems/palindromic-substrings/README.md)                                                                       | 63.5%      | Medium     |           |
+|   | 732  | [My Calendar III](https://github.com/navi-singh/leetview/blob/main/problems/my-calendar-iii/README.md)                                                                                     | 65.1%      | Hard       |           |
+|   | 298  | [Binary Tree Longest Consecutive Sequence](https://github.com/navi-singh/leetview/blob/main/problems/binary-tree-longest-consecutive-sequence/README.md)                                   | 49.5%      | Medium     |           |
+|   | 387  | [First Unique Character in a String](https://github.com/navi-singh/leetview/blob/main/problems/first-unique-character-in-a-string/README.md)                                               | 55.4%      | Easy       |           |
+|   | 1361 | [Validate Binary Tree Nodes](https://github.com/navi-singh/leetview/blob/main/problems/validate-binary-tree-nodes/README.md)                                                               | 42.1%      | Medium     |           |
+|   | 113  | [Path Sum II](https://github.com/navi-singh/leetview/blob/main/problems/path-sum-ii/README.md)                                                                                             | 52.1%      | Medium     |           |
+|   | 1614 | [Maximum Nesting Depth of the Parentheses](https://github.com/navi-singh/leetview/blob/main/problems/maximum-nesting-depth-of-the-parentheses/README.md)                                   | 82.8%      | Easy       |           |
+|   | 815  | [Bus Routes](https://github.com/navi-singh/leetview/blob/main/problems/bus-routes/README.md)                                                                                               | 44.4%      | Hard       |           |
+|   | 1027 | [Longest Arithmetic Subsequence](https://github.com/navi-singh/leetview/blob/main/problems/longest-arithmetic-subsequence/README.md)                                                       | 48.8%      | Medium     |           |
+|   | 239  | [Sliding Window Maximum](https://github.com/navi-singh/leetview/blob/main/problems/sliding-window-maximum/README.md)                                                                       | 45.7%      | Hard       |           |
+|   | 1305 | [All Elements in Two Binary Search Trees](https://github.com/navi-singh/leetview/blob/main/problems/all-elements-in-two-binary-search-trees/README.md)                                     | 78.4%      | Medium     |           |
+|   | 489  | [Robot Room Cleaner](https://github.com/navi-singh/leetview/blob/main/problems/robot-room-cleaner/README.md)                                                                               | 74.4%      | Hard       |           |
+|   | 739  | [Daily Temperatures](https://github.com/navi-singh/leetview/blob/main/problems/daily-temperatures/README.md)                                                                               | 65.9%      | Medium     |           |
+|   | 1541 | [Minimum Insertions to Balance a Parentheses String](https://github.com/navi-singh/leetview/blob/main/problems/minimum-insertions-to-balance-a-parentheses-string/README.md)               | 46.7%      | Medium     |           |
+|   | 296  | [Best Meeting Point](https://github.com/navi-singh/leetview/blob/main/problems/best-meeting-point/README.md)                                                                               | 59.0%      | Hard       |           |
+|   | 1884 | [Egg Drop With 2 Eggs and N Floors](https://github.com/navi-singh/leetview/blob/main/problems/egg-drop-with-2-eggs-and-n-floors/README.md)                                                 | 69.8%      | Medium     |           |
+|   | 1554 | [Strings Differ by One Character](https://github.com/navi-singh/leetview/blob/main/problems/strings-differ-by-one-character/README.md)                                                     | 64.4%      | Medium     |           |
+|   | 556  | [Next Greater Element III](https://github.com/navi-singh/leetview/blob/main/problems/next-greater-element-iii/README.md)                                                                   | 33.4%      | Medium     |           |
+|   | 1269 | [Number of Ways to Stay in the Same Place After Some Steps](https://github.com/navi-singh/leetview/blob/main/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/README.md) | 43.4%      | Hard       |           |
+|   | 463  | [Island Perimeter](https://github.com/navi-singh/leetview/blob/main/problems/island-perimeter/README.md)                                                                                   | 68.2%      | Easy       |           |
+|   | 116  | [Populating Next Right Pointers in Each Node](https://github.com/navi-singh/leetview/blob/main/problems/populating-next-right-pointers-in-each-node/README.md)                             | 52.6%      | Medium     |           |
+|   | 844  | [Backspace String Compare](https://github.com/navi-singh/leetview/blob/main/problems/backspace-string-compare/README.md)                                                                   | 47.4%      | Easy       |           |
+|   | 1213 | [Intersection of Three Sorted Arrays](https://github.com/navi-singh/leetview/blob/main/problems/intersection-of-three-sorted-arrays/README.md)                                             | 79.8%      | Easy       |           |
+|   | 241  | [Different Ways to Add Parentheses](https://github.com/navi-singh/leetview/blob/main/problems/different-ways-to-add-parentheses/README.md)                                                 | 59.5%      | Medium     |           |
+|   | 759  | [Employee Free Time](https://github.com/navi-singh/leetview/blob/main/problems/employee-free-time/README.md)                                                                               | 70.0%      | Hard       |           |
+|   | 22   | [Generate Parentheses](https://github.com/navi-singh/leetview/blob/main/problems/generate-parentheses/README.md)                                                                           | 68.1%      | Medium     |           |
+|   | 661  | [Image Smoother](https://github.com/navi-singh/leetview/blob/main/problems/image-smoother/README.md)                                                                                       | 53.1%      | Easy       |           |
+|   | 1110 | [Delete Nodes And Return Forest](https://github.com/navi-singh/leetview/blob/main/problems/delete-nodes-and-return-forest/README.md)                                                       | 68.6%      | Medium     |           |
+|   | 1074 | [Number of Submatrices That Sum to Target](https://github.com/navi-singh/leetview/blob/main/problems/number-of-submatrices-that-sum-to-target/README.md)                                   | 65.8%      | Hard       |           |
+|   | 4    | [Median of Two Sorted Arrays](https://github.com/navi-singh/leetview/blob/main/problems/median-of-two-sorted-arrays/README.md)                                                             | 32.8%      | Hard       |           |
+|   | 200  | [Number of Islands](https://github.com/navi-singh/leetview/blob/main/problems/number-of-islands/README.md)                                                                                 | 51.7%      | Medium     |           |
+|   | 545  | [Boundary of Binary Tree](https://github.com/navi-singh/leetview/blob/main/problems/boundary-of-binary-tree/README.md)                                                                     | 41.8%      | Medium     |           |
+|   | 1547 | [Minimum Cost to Cut a Stick](https://github.com/navi-singh/leetview/blob/main/problems/minimum-cost-to-cut-a-stick/README.md)                                                             | 54.2%      | Hard       |           |
+|   | 1102 | [Path With Maximum Minimum Value](https://github.com/navi-singh/leetview/blob/main/problems/path-with-maximum-minimum-value/README.md)                                                     | 51.5%      | Medium     |           |
+|   | 278  | [First Bad Version](https://github.com/navi-singh/leetview/blob/main/problems/first-bad-version/README.md)                                                                                 | 39.6%      | Easy       |           |
+|   | 494  | [Target Sum](https://github.com/navi-singh/leetview/blob/main/problems/target-sum/README.md)                                                                                               | 45.2%      | Medium     |           |
+|   | 224  | [Basic Calculator](https://github.com/navi-singh/leetview/blob/main/problems/basic-calculator/README.md)                                                                                   | 39.4%      | Hard       |           |
+|   | 117  | [Populating Next Right Pointers in Each Node II](https://github.com/navi-singh/leetview/blob/main/problems/populating-next-right-pointers-in-each-node-ii/README.md)                       | 44.2%      | Medium     |           |
+|   | 10   | [Regular Expression Matching](https://github.com/navi-singh/leetview/blob/main/problems/regular-expression-matching/README.md)                                                             | 27.9%      | Hard       |           |
+|   | 1034 | [Coloring A Border](https://github.com/navi-singh/leetview/blob/main/problems/coloring-a-border/README.md)                                                                                 | 46.8%      | Medium     |           |
+|   | 529  | [Minesweeper](https://github.com/navi-singh/leetview/blob/main/problems/minesweeper/README.md)                                                                                             | 63.2%      | Medium     |           |
+|   | 1233 | [Remove Sub-Folders from the Filesystem](https://github.com/navi-singh/leetview/blob/main/problems/remove-sub-folders-from-the-filesystem/README.md)                                       | 64.2%      | Medium     |           |
+|   | 716  | [Max Stack](https://github.com/navi-singh/leetview/blob/main/problems/max-stack/README.md)                                                                                                 | 44.1%      | Easy       |           |
+|   | 676  | [Implement Magic Dictionary](https://github.com/navi-singh/leetview/blob/main/problems/implement-magic-dictionary/README.md)                                                               | 56.1%      | Medium     |           |
+|   | 825  | [Friends Of Appropriate Ages](https://github.com/navi-singh/leetview/blob/main/problems/friends-of-appropriate-ages/README.md)                                                             | 44.9%      | Medium     |           |
+|   | 419  | [Battleships in a Board](https://github.com/navi-singh/leetview/blob/main/problems/battleships-in-a-board/README.md)                                                                       | 72.3%      | Medium     |           |
+|   | 62   | [Unique Paths](https://github.com/navi-singh/leetview/blob/main/problems/unique-paths/README.md)                                                                                           | 57.9%      | Medium     |           |
+|   | 210  | [Course Schedule II](https://github.com/navi-singh/leetview/blob/main/problems/course-schedule-ii/README.md)                                                                               | 44.6%      | Medium     |           |
+|   | 416  | [Partition Equal Subset Sum](https://github.com/navi-singh/leetview/blob/main/problems/partition-equal-subset-sum/README.md)                                                               | 45.6%      | Medium     |           |
+|   | 400  | [Nth Digit](https://github.com/navi-singh/leetview/blob/main/problems/nth-digit/README.md)                                                                                                 | 32.9%      | Medium     |           |
+|   | 325  | [Maximum Size Subarray Sum Equals k](https://github.com/navi-singh/leetview/blob/main/problems/maximum-size-subarray-sum-equals-k/README.md)                                               | 48.4%      | Medium     |           |
+|   | 283  | [Move Zeroes](https://github.com/navi-singh/leetview/blob/main/problems/move-zeroes/README.md)                                                                                             | 59.4%      | Easy       |           |
+|   | 388  | [Longest Absolute File Path](https://github.com/navi-singh/leetview/blob/main/problems/longest-absolute-file-path/README.md)                                                               | 44.5%      | Medium     |           |
+|   | 303  | [Range Sum Query - Immutable](https://github.com/navi-singh/leetview/blob/main/problems/range-sum-query-immutable/README.md)                                                               | 52.7%      | Easy       |           |
+|   | 1644 | [Lowest Common Ancestor of a Binary Tree II](https://github.com/navi-singh/leetview/blob/main/problems/lowest-common-ancestor-of-a-binary-tree-ii/README.md)                               | 57.5%      | Medium     |           |
+|   | 1326 | [Minimum Number of Taps to Open to Water a Garden](https://github.com/navi-singh/leetview/blob/main/problems/minimum-number-of-taps-to-open-to-water-a-garden/README.md)                   | 47.9%      | Hard       |           |
+|   | 958  | [Check Completeness of a Binary Tree](https://github.com/navi-singh/leetview/blob/main/problems/check-completeness-of-a-binary-tree/README.md)                                             | 52.8%      | Medium     |           |
+|   | 1460 | [Make Two Arrays Equal by Reversing Sub-arrays](https://github.com/navi-singh/leetview/blob/main/problems/make-two-arrays-equal-by-reversing-sub-arrays/README.md)                         | 72.5%      | Easy       |           |
+|   | 160  | [Intersection of Two Linked Lists](https://github.com/navi-singh/leetview/blob/main/problems/intersection-of-two-linked-lists/README.md)                                                   | 47.2%      | Easy       |           |
+|   | 641  | [Design Circular Deque](https://github.com/navi-singh/leetview/blob/main/problems/design-circular-deque/README.md)                                                                         | 56.8%      | Medium     |           |
+|   | 1168 | [Optimize Water Distribution in a Village](https://github.com/navi-singh/leetview/blob/main/problems/optimize-water-distribution-in-a-village/README.md)                                   | 62.6%      | Hard       |           |
+|   | 295  | [Find Median from Data Stream](https://github.com/navi-singh/leetview/blob/main/problems/find-median-from-data-stream/README.md)                                                           | 49.4%      | Hard       |           |
+|   | 939  | [Minimum Area Rectangle](https://github.com/navi-singh/leetview/blob/main/problems/minimum-area-rectangle/README.md)                                                                       | 52.9%      | Medium     |           |
+|   | 41   | [First Missing Positive](https://github.com/navi-singh/leetview/blob/main/problems/first-missing-positive/README.md)                                                                       | 35.1%      | Hard       |           |
+|   | 1322 | [Ads Performance](https://github.com/navi-singh/leetview/blob/main/problems/ads-performance/README.md)                                                                                     | 58.8%      | Easy       |           |
+|   | 153  | [Find Minimum in Rotated Sorted Array](https://github.com/navi-singh/leetview/blob/main/problems/find-minimum-in-rotated-sorted-array/README.md)                                           | 47.3%      | Medium     |           |
+|   | 525  | [Contiguous Array](https://github.com/navi-singh/leetview/blob/main/problems/contiguous-array/README.md)                                                                                   | 44.4%      | Medium     |           |
+|   | 15   | [3Sum](https://github.com/navi-singh/leetview/blob/main/problems/3sum/README.md)                                                                                                           | 29.5%      | Medium     |           |
+|   | 68   | [Text Justification](https://github.com/navi-singh/leetview/blob/main/problems/text-justification/README.md)                                                                               | 32.5%      | Hard       |           |
+|   | 311  | [Sparse Matrix Multiplication](https://github.com/navi-singh/leetview/blob/main/problems/sparse-matrix-multiplication/README.md)                                                           | 64.9%      | Medium     |           |
+|   | 788  | [Rotated Digits](https://github.com/navi-singh/leetview/blob/main/problems/rotated-digits/README.md)                                                                                       | 57.4%      | Medium     |           |
+|   | 437  | [Path Sum III](https://github.com/navi-singh/leetview/blob/main/problems/path-sum-iii/README.md)                                                                                           | 49.0%      | Medium     |           |
+|   | 1373 | [Maximum Sum BST in Binary Tree](https://github.com/navi-singh/leetview/blob/main/problems/maximum-sum-bst-in-binary-tree/README.md)                                                       | 37.8%      | Hard       |           |
+|   | 102  | [Binary Tree Level Order Traversal](https://github.com/navi-singh/leetview/blob/main/problems/binary-tree-level-order-traversal/README.md)                                                 | 59.0%      | Medium     |           |
+|   | 678  | [Valid Parenthesis String](https://github.com/navi-singh/leetview/blob/main/problems/valid-parenthesis-string/README.md)                                                                   | 32.4%      | Medium     |           |
+|   | 14   | [Longest Common Prefix](https://github.com/navi-singh/leetview/blob/main/problems/longest-common-prefix/README.md)                                                                         | 37.9%      | Easy       |           |
+|   | 367  | [Valid Perfect Square](https://github.com/navi-singh/leetview/blob/main/problems/valid-perfect-square/README.md)                                                                           | 42.6%      | Easy       |           |
+|   | 989  | [Add to Array-Form of Integer](https://github.com/navi-singh/leetview/blob/main/problems/add-to-array-form-of-integer/README.md)                                                           | 45.1%      | Easy       |           |
+|   | 1511 | [Customer Order Frequency](https://github.com/navi-singh/leetview/blob/main/problems/customer-order-frequency/README.md)                                                                   | 74.2%      | Easy       |           |
+|   | 328  | [Odd Even Linked List](https://github.com/navi-singh/leetview/blob/main/problems/odd-even-linked-list/README.md)                                                                           | 58.2%      | Medium     |           |
+|   | 51   | [N-Queens](https://github.com/navi-singh/leetview/blob/main/problems/n-queens/README.md)                                                                                                   | 54.3%      | Hard       |           |
+|   | 44   | [Wildcard Matching](https://github.com/navi-singh/leetview/blob/main/problems/wildcard-matching/README.md)                                                                                 | 26.1%      | Hard       |           |
+|   | 271  | [Encode and Decode Strings](https://github.com/navi-singh/leetview/blob/main/problems/encode-and-decode-strings/README.md)                                                                 | 35.2%      | Medium     |           |
+|   | 332  | [Reconstruct Itinerary](https://github.com/navi-singh/leetview/blob/main/problems/reconstruct-itinerary/README.md)                                                                         | 39.3%      | Medium     |           |
+|   | 310  | [Minimum Height Trees](https://github.com/navi-singh/leetview/blob/main/problems/minimum-height-trees/README.md)                                                                           | 35.9%      | Medium     |           |
+|   | 112  | [Path Sum](https://github.com/navi-singh/leetview/blob/main/problems/path-sum/README.md)                                                                                                   | 43.9%      | Easy       |           |
+|   | 20   | [Valid Parentheses](https://github.com/navi-singh/leetview/blob/main/problems/valid-parentheses/README.md)                                                                                 | 40.4%      | Easy       |           |
+|   | 207  | [Course Schedule](https://github.com/navi-singh/leetview/blob/main/problems/course-schedule/README.md)                                                                                     | 44.6%      | Medium     |           |
+|   | 622  | [Design Circular Queue](https://github.com/navi-singh/leetview/blob/main/problems/design-circular-queue/README.md)                                                                         | 48.1%      | Medium     |           |
+|   | 532  | [K-diff Pairs in an Array](https://github.com/navi-singh/leetview/blob/main/problems/k-diff-pairs-in-an-array/README.md)                                                                   | 36.8%      | Medium     |           |
+|   | 919  | [Complete Binary Tree Inserter](https://github.com/navi-singh/leetview/blob/main/problems/complete-binary-tree-inserter/README.md)                                                         | 61.7%      | Medium     |           |
+|   | 1    | [Two Sum](https://github.com/navi-singh/leetview/blob/main/problems/two-sum/README.md)                                                                                                     | 47.7%      | Easy       |           |
+|   | 98   | [Validate Binary Search Tree](https://github.com/navi-singh/leetview/blob/main/problems/validate-binary-search-tree/README.md)                                                             | 29.6%      | Medium     |           |
+|   | 3    | [Longest Substring Without Repeating Characters](https://github.com/navi-singh/leetview/blob/main/problems/longest-substring-without-repeating-characters/README.md)                       | 32.3%      | Medium     |           |
+|   | 772  | [Basic Calculator III](https://github.com/navi-singh/leetview/blob/main/problems/basic-calculator-iii/README.md)                                                                           | 46.0%      | Hard       |           |
+|   | 674  | [Longest Continuous Increasing Subsequence](https://github.com/navi-singh/leetview/blob/main/problems/longest-continuous-increasing-subsequence/README.md)                                 | 47.3%      | Easy       |           |
+|   | 496  | [Next Greater Element I](https://github.com/navi-singh/leetview/blob/main/problems/next-greater-element-i/README.md)                                                                       | 67.5%      | Easy       |           |
+|   | 1026 | [Maximum Difference Between Node and Ancestor](https://github.com/navi-singh/leetview/blob/main/problems/maximum-difference-between-node-and-ancestor/README.md)                           | 70.6%      | Medium     |           |
+|   | 121  | [Best Time to Buy and Sell Stock](https://github.com/navi-singh/leetview/blob/main/problems/best-time-to-buy-and-sell-stock/README.md)                                                     | 52.8%      | Easy       |           |
+|   | 257  | [Binary Tree Paths](https://github.com/navi-singh/leetview/blob/main/problems/binary-tree-paths/README.md)                                                                                 | 56.3%      | Easy       |           |
+|   | 316  | [Remove Duplicate Letters](https://github.com/navi-singh/leetview/blob/main/problems/remove-duplicate-letters/README.md)                                                                   | 40.4%      | Medium     |           |
+|   | 884  | [Uncommon Words from Two Sentences](https://github.com/navi-singh/leetview/blob/main/problems/uncommon-words-from-two-sentences/README.md)                                                 | 64.9%      | Easy       |           |
+|   | 480  | [Sliding Window Median](https://github.com/navi-singh/leetview/blob/main/problems/sliding-window-median/README.md)                                                                         | 40.1%      | Hard       |           |
+|   | 26   | [Remove Duplicates from Sorted Array](https://github.com/navi-singh/leetview/blob/main/problems/remove-duplicates-from-sorted-array/README.md)                                             | 47.7%      | Easy       |           |
+|   | 895  | [Maximum Frequency Stack](https://github.com/navi-singh/leetview/blob/main/problems/maximum-frequency-stack/README.md)                                                                     | 64.1%      | Hard       |           |
+|   | 109  | [Convert Sorted List to Binary Search Tree](https://github.com/navi-singh/leetview/blob/main/problems/convert-sorted-list-to-binary-search-tree/README.md)                                 | 53.7%      | Medium     |           |
+|   | 417  | [Pacific Atlantic Water Flow](https://github.com/navi-singh/leetview/blob/main/problems/pacific-atlantic-water-flow/README.md)                                                             | 46.2%      | Medium     |           |
+|   | 875  | [Koko Eating Bananas](https://github.com/navi-singh/leetview/blob/main/problems/koko-eating-bananas/README.md)                                                                             | 54.0%      | Medium     |           |
+|   | 49   | [Group Anagrams](https://github.com/navi-singh/leetview/blob/main/problems/group-anagrams/README.md)                                                                                       | 62.1%      | Medium     |           |
+|   | 1329 | [Sort the Matrix Diagonally](https://github.com/navi-singh/leetview/blob/main/problems/sort-the-matrix-diagonally/README.md)                                                               | 81.5%      | Medium     |           |
+|   | 246  | [Strobogrammatic Number](https://github.com/navi-singh/leetview/blob/main/problems/strobogrammatic-number/README.md)                                                                       | 47.1%      | Easy       |           |
+|   | 540  | [Single Element in a Sorted Array](https://github.com/navi-singh/leetview/blob/main/problems/single-element-in-a-sorted-array/README.md)                                                   | 58.0%      | Medium     |           |
+|   | 128  | [Longest Consecutive Sequence](https://github.com/navi-singh/leetview/blob/main/problems/longest-consecutive-sequence/README.md)                                                           | 47.9%      | Medium     |           |
+|   | 946  | [Validate Stack Sequences](https://github.com/navi-singh/leetview/blob/main/problems/validate-stack-sequences/README.md)                                                                   | 64.8%      | Medium     |           |
+|   | 1094 | [Car Pooling](https://github.com/navi-singh/leetview/blob/main/problems/car-pooling/README.md)                                                                                             | 59.5%      | Medium     |           |
+|   | 538  | [Convert BST to Greater Tree](https://github.com/navi-singh/leetview/blob/main/problems/convert-bst-to-greater-tree/README.md)                                                             | 61.5%      | Medium     |           |
+|   | 490  | [The Maze](https://github.com/navi-singh/leetview/blob/main/problems/the-maze/README.md)                                                                                                   | 53.9%      | Medium     |           |
+|   | 33   | [Search in Rotated Sorted Array](https://github.com/navi-singh/leetview/blob/main/problems/search-in-rotated-sorted-array/README.md)                                                       | 36.9%      | Medium     |           |
+|   | 1099 | [Two Sum Less Than K](https://github.com/navi-singh/leetview/blob/main/problems/two-sum-less-than-k/README.md)                                                                             | 60.6%      | Easy       |           |
+|   | 468  | [Validate IP Address](https://github.com/navi-singh/leetview/blob/main/problems/validate-ip-address/README.md)                                                                             | 25.7%      | Medium     |           |
+|   | 2    | [Add Two Numbers](https://github.com/navi-singh/leetview/blob/main/problems/add-two-numbers/README.md)                                                                                     | 37.0%      | Medium     |           |
+|   | 371  | [Sum of Two Integers](https://github.com/navi-singh/leetview/blob/main/problems/sum-of-two-integers/README.md)                                                                             | 50.7%      | Medium     |           |
+|   | 151  | [Reverse Words in a String](https://github.com/navi-singh/leetview/blob/main/problems/reverse-words-in-a-string/README.md)                                                                 | 25.9%      | Medium     |           |
+|   | 161  | [One Edit Distance](https://github.com/navi-singh/leetview/blob/main/problems/one-edit-distance/README.md)                                                                                 | 33.6%      | Medium     |           |
+|   | 25   | [Reverse Nodes in k-Group](https://github.com/navi-singh/leetview/blob/main/problems/reverse-nodes-in-k-group/README.md)                                                                   | 48.4%      | Hard       |           |
+|   | 1038 | [Binary Search Tree to Greater Sum Tree](https://github.com/navi-singh/leetview/blob/main/problems/binary-search-tree-to-greater-sum-tree/README.md)                                       | 83.8%      | Medium     |           |
+|   | 752  | [Open the Lock](https://github.com/navi-singh/leetview/blob/main/problems/open-the-lock/README.md)                                                                                         | 54.9%      | Medium     |           |
+|   | 1160 | [Find Words That Can Be Formed by Characters](https://github.com/navi-singh/leetview/blob/main/problems/find-words-that-can-be-formed-by-characters/README.md)                             | 67.8%      | Easy       |           |
+|   | 218  | [The Skyline Problem](https://github.com/navi-singh/leetview/blob/main/problems/the-skyline-problem/README.md)                                                                             | 37.7%      | Hard       |           |
+|   | 1985 | [Find the Kth Largest Integer in the Array](https://github.com/navi-singh/leetview/blob/main/problems/find-the-kth-largest-integer-in-the-array/README.md)                                 | 43.4%      | Medium     |           |
+|   | 424  | [Longest Repeating Character Replacement](https://github.com/navi-singh/leetview/blob/main/problems/longest-repeating-character-replacement/README.md)                                     | 49.7%      | Medium     |           |
+|   | 1636 | [Sort Array by Increasing Frequency](https://github.com/navi-singh/leetview/blob/main/problems/sort-array-by-increasing-frequency/README.md)                                               | 67.8%      | Easy       |           |
+|   | 17   | [Letter Combinations of a Phone Number](https://github.com/navi-singh/leetview/blob/main/problems/letter-combinations-of-a-phone-number/README.md)                                         | 51.7%      | Medium     |           |
+|   | 814  | [Binary Tree Pruning](https://github.com/navi-singh/leetview/blob/main/problems/binary-tree-pruning/README.md)                                                                             | 71.2%      | Medium     |           |
+|   | 449  | [Serialize and Deserialize BST](https://github.com/navi-singh/leetview/blob/main/problems/serialize-and-deserialize-bst/README.md)                                                         | 55.3%      | Medium     |           |
+|   | 79   | [Word Search](https://github.com/navi-singh/leetview/blob/main/problems/word-search/README.md)                                                                                             | 38.8%      | Medium     |           |
+|   | 209  | [Minimum Size Subarray Sum](https://github.com/navi-singh/leetview/blob/main/problems/minimum-size-subarray-sum/README.md)                                                                 | 41.3%      | Medium     |           |
+|   | 692  | [Top K Frequent Words](https://github.com/navi-singh/leetview/blob/main/problems/top-k-frequent-words/README.md)                                                                           | 53.8%      | Medium     |           |
+|   | 81   | [Search in Rotated Sorted Array II](https://github.com/navi-singh/leetview/blob/main/problems/search-in-rotated-sorted-array-ii/README.md)                                                 | 34.1%      | Medium     |           |
+|   | 1748 | [Sum of Unique Elements](https://github.com/navi-singh/leetview/blob/main/problems/sum-of-unique-elements/README.md)                                                                       | 75.0%      | Easy       |           |
+|   | 729  | [My Calendar I](https://github.com/navi-singh/leetview/blob/main/problems/my-calendar-i/README.md)                                                                                         | 54.6%      | Medium     |           |
+|   | 897  | [Increasing Order Search Tree](https://github.com/navi-singh/leetview/blob/main/problems/increasing-order-search-tree/README.md)                                                           | 75.5%      | Easy       |           |
+|   | 518  | [Coin Change 2](https://github.com/navi-singh/leetview/blob/main/problems/coin-change-2/README.md)                                                                                         | 54.8%      | Medium     |           |
+|   | 460  | [LFU Cache](https://github.com/navi-singh/leetview/blob/main/problems/lfu-cache/README.md)                                                                                                 | 38.2%      | Hard       |           |
+|   | 268  | [Missing Number](https://github.com/navi-singh/leetview/blob/main/problems/missing-number/README.md)                                                                                       | 57.4%      | Easy       |           |
+|   | 152  | [Maximum Product Subarray](https://github.com/navi-singh/leetview/blob/main/problems/maximum-product-subarray/README.md)                                                                   | 33.6%      | Medium     |           |
+|   | 48   | [Rotate Image](https://github.com/navi-singh/leetview/blob/main/problems/rotate-image/README.md)                                                                                           | 63.7%      | Medium     |           |
+|   | 73   | [Set Matrix Zeroes](https://github.com/navi-singh/leetview/blob/main/problems/set-matrix-zeroes/README.md)                                                                                 | 46.6%      | Medium     |           |
+|   | 852  | [Peak Index in a Mountain Array](https://github.com/navi-singh/leetview/blob/main/problems/peak-index-in-a-mountain-array/README.md)                                                       | 71.4%      | Easy       |           |
+|   | 103  | [Binary Tree Zigzag Level Order Traversal](https://github.com/navi-singh/leetview/blob/main/problems/binary-tree-zigzag-level-order-traversal/README.md)                                   | 51.9%      | Medium     |           |
+|   | 1353 | [Maximum Number of Events That Can Be Attended](https://github.com/navi-singh/leetview/blob/main/problems/maximum-number-of-events-that-can-be-attended/README.md)                         | 31.7%      | Medium     |           |
+|   | 277  | [Find the Celebrity](https://github.com/navi-singh/leetview/blob/main/problems/find-the-celebrity/README.md)                                                                               | 45.3%      | Medium     |           |
+|   | 155  | [Min Stack](https://github.com/navi-singh/leetview/blob/main/problems/min-stack/README.md)                                                                                                 | 48.2%      | Easy       |           |
+|   | 84   | [Largest Rectangle in Histogram](https://github.com/navi-singh/leetview/blob/main/problems/largest-rectangle-in-histogram/README.md)                                                       | 38.9%      | Hard       |           |
+|   | 399  | [Evaluate Division](https://github.com/navi-singh/leetview/blob/main/problems/evaluate-division/README.md)                                                                                 | 55.8%      | Medium     |           |
+|   | 32   | [Longest Valid Parentheses](https://github.com/navi-singh/leetview/blob/main/problems/longest-valid-parentheses/README.md)                                                                 | 30.6%      | Hard       |           |
+|   | 93   | [Restore IP Addresses](https://github.com/navi-singh/leetview/blob/main/problems/restore-ip-addresses/README.md)                                                                           | 39.7%      | Medium     |           |
+|   | 219  | [Contains Duplicate II](https://github.com/navi-singh/leetview/blob/main/problems/contains-duplicate-ii/README.md)                                                                         | 40.0%      | Easy       |           |
+|   | 394  | [Decode String](https://github.com/navi-singh/leetview/blob/main/problems/decode-string/README.md)                                                                                         | 54.5%      | Medium     |           |
+|   | 203  | [Remove Linked List Elements](https://github.com/navi-singh/leetview/blob/main/problems/remove-linked-list-elements/README.md)                                                             | 41.0%      | Easy       |           |
+|   | 240  | [Search a 2D Matrix II](https://github.com/navi-singh/leetview/blob/main/problems/search-a-2d-matrix-ii/README.md)                                                                         | 46.7%      | Medium     |           |
+|   | 189  | [Rotate Array](https://github.com/navi-singh/leetview/blob/main/problems/rotate-array/README.md)                                                                                           | 37.1%      | Medium     |           |
+|   | 714  | [Best Time to Buy and Sell Stock with Transaction Fee](https://github.com/navi-singh/leetview/blob/main/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/README.md)           | 59.7%      | Medium     |           |
+|   | 154  | [Find Minimum in Rotated Sorted Array II](https://github.com/navi-singh/leetview/blob/main/problems/find-minimum-in-rotated-sorted-array-ii/README.md)                                     | 42.4%      | Hard       |           |
+|   | 287  | [Find the Duplicate Number](https://github.com/navi-singh/leetview/blob/main/problems/find-the-duplicate-number/README.md)                                                                 | 58.2%      | Medium     |           |
+|   | 445  | [Add Two Numbers II](https://github.com/navi-singh/leetview/blob/main/problems/add-two-numbers-ii/README.md)                                                                               | 57.6%      | Medium     |           |
+|   | 110  | [Balanced Binary Tree](https://github.com/navi-singh/leetview/blob/main/problems/balanced-binary-tree/README.md)                                                                           | 45.7%      | Easy       |           |
+|   | 230  | [Kth Smallest Element in a BST](https://github.com/navi-singh/leetview/blob/main/problems/kth-smallest-element-in-a-bst/README.md)                                                         | 64.9%      | Medium     |           |
+|   | 334  | [Increasing Triplet Subsequence](https://github.com/navi-singh/leetview/blob/main/problems/increasing-triplet-subsequence/README.md)                                                       | 41.0%      | Medium     |           |
+|   | 451  | [Sort Characters By Frequency](https://github.com/navi-singh/leetview/blob/main/problems/sort-characters-by-frequency/README.md)                                                           | 65.9%      | Medium     |           |
+|   | 359  | [Logger Rate Limiter](https://github.com/navi-singh/leetview/blob/main/problems/logger-rate-limiter/README.md)                                                                             | 73.8%      | Easy       |           |
+|   | 11   | [Container With Most Water](https://github.com/navi-singh/leetview/blob/main/problems/container-with-most-water/README.md)                                                                 | 53.2%      | Medium     |           |
+|   | 46   | [Permutations](https://github.com/navi-singh/leetview/blob/main/problems/permutations/README.md)                                                                                           | 69.6%      | Medium     |           |
+|   | 191  | [Number of 1 Bits](https://github.com/navi-singh/leetview/blob/main/problems/number-of-1-bits/README.md)                                                                                   | 56.7%      | Easy       |           |
+|   | 131  | [Palindrome Partitioning](https://github.com/navi-singh/leetview/blob/main/problems/palindrome-partitioning/README.md)                                                                     | 55.5%      | Medium     |           |
+|   | 108  | [Convert Sorted Array to Binary Search Tree](https://github.com/navi-singh/leetview/blob/main/problems/convert-sorted-array-to-binary-search-tree/README.md)                               | 63.9%      | Easy       |           |
+|   | 91   | [Decode Ways](https://github.com/navi-singh/leetview/blob/main/problems/decode-ways/README.md)                                                                                             | 28.7%      | Medium     |           |
+|   | 323  | [Number of Connected Components in an Undirected Graph](https://github.com/navi-singh/leetview/blob/main/problems/number-of-connected-components-in-an-undirected-graph/README.md)         | 59.6%      | Medium     |           |
+|   | 787  | [Cheapest Flights Within K Stops](https://github.com/navi-singh/leetview/blob/main/problems/cheapest-flights-within-k-stops/README.md)                                                     | 36.9%      | Medium     |           |
+|   | 101  | [Symmetric Tree](https://github.com/navi-singh/leetview/blob/main/problems/symmetric-tree/README.md)                                                                                       | 50.0%      | Easy       |           |
+|   | 66   | [Plus One](https://github.com/navi-singh/leetview/blob/main/problems/plus-one/README.md)                                                                                                   | 42.0%      | Easy       |           |
+|   | 617  | [Merge Two Binary Trees](https://github.com/navi-singh/leetview/blob/main/problems/merge-two-binary-trees/README.md)                                                                       | 76.7%      | Easy       |           |
+|   | 148  | [Sort List](https://github.com/navi-singh/leetview/blob/main/problems/sort-list/README.md)                                                                                                 | 48.8%      | Medium     |           |
+|   | 763  | [Partition Labels](https://github.com/navi-singh/leetview/blob/main/problems/partition-labels/README.md)                                                                                   | 78.4%      | Medium     |           |
+|   | 435  | [Non-overlapping Intervals](https://github.com/navi-singh/leetview/blob/main/problems/non-overlapping-intervals/README.md)                                                                 | 46.1%      | Medium     |           |
+|   | 24   | [Swap Nodes in Pairs](https://github.com/navi-singh/leetview/blob/main/problems/swap-nodes-in-pairs/README.md)                                                                             | 55.7%      | Medium     |           |
+|   | 735  | [Asteroid Collision](https://github.com/navi-singh/leetview/blob/main/problems/asteroid-collision/README.md)                                                                               | 44.0%      | Medium     |           |
+|   | 92   | [Reverse Linked List II](https://github.com/navi-singh/leetview/blob/main/problems/reverse-linked-list-ii/README.md)                                                                       | 42.4%      | Medium     |           |
+|   | 300  | [Longest Increasing Subsequence](https://github.com/navi-singh/leetview/blob/main/problems/longest-increasing-subsequence/README.md)                                                       | 47.1%      | Medium     |           |
+|   | 13   | [Roman to Integer](https://github.com/navi-singh/leetview/blob/main/problems/roman-to-integer/README.md)                                                                                   | 57.7%      | Easy       |           |
+|   | 38   | [Count and Say](https://github.com/navi-singh/leetview/blob/main/problems/count-and-say/README.md)                                                                                         | 47.4%      | Medium     |           |
+|   | 90   | [Subsets II](https://github.com/navi-singh/leetview/blob/main/problems/subsets-ii/README.md)                                                                                               | 51.3%      | Medium     |           |
+|   | 36   | [Valid Sudoku](https://github.com/navi-singh/leetview/blob/main/problems/valid-sudoku/README.md)                                                                                           | 53.1%      | Medium     |           |
+|   | 905  | [Sort Array By Parity](https://github.com/navi-singh/leetview/blob/main/problems/sort-array-by-parity/README.md)                                                                           | 74.9%      | Easy       |           |
+|   | 57   | [Insert Interval](https://github.com/navi-singh/leetview/blob/main/problems/insert-interval/README.md)                                                                                     | 36.5%      | Medium     |           |
+|   | 63   | [Unique Paths II](https://github.com/navi-singh/leetview/blob/main/problems/unique-paths-ii/README.md)                                                                                     | 36.5%      | Medium     |           |
+|   | 181  | [Employees Earning More Than Their Managers](https://github.com/navi-singh/leetview/blob/main/problems/employees-earning-more-than-their-managers/README.md)                               | 63.9%      | Easy       |           |
+|   | 190  | [Reverse Bits](https://github.com/navi-singh/leetview/blob/main/problems/reverse-bits/README.md)                                                                                           | 45.3%      | Easy       |           |
+|   | 226  | [Invert Binary Tree](https://github.com/navi-singh/leetview/blob/main/problems/invert-binary-tree/README.md)                                                                               | 69.3%      | Easy       |           |
+|   | 40   | [Combination Sum II](https://github.com/navi-singh/leetview/blob/main/problems/combination-sum-ii/README.md)                                                                               | 51.5%      | Medium     |           |
+|   | 438  | [Find All Anagrams in a String](https://github.com/navi-singh/leetview/blob/main/problems/find-all-anagrams-in-a-string/README.md)                                                         | 46.4%      | Medium     |           |
+|   | 572  | [Subtree of Another Tree](https://github.com/navi-singh/leetview/blob/main/problems/subtree-of-another-tree/README.md)                                                                     | 44.8%      | Easy       |           |
+|   | 5    | [Longest Palindromic Substring](https://github.com/navi-singh/leetview/blob/main/problems/longest-palindromic-substring/README.md)                                                         | 31.3%      | Medium     |           |
+|   | 448  | [Find All Numbers Disappeared in an Array](https://github.com/navi-singh/leetview/blob/main/problems/find-all-numbers-disappeared-in-an-array/README.md)                                   | 57.3%      | Easy       |           |
+|   | 6    | [ZigZag Conversion](https://github.com/navi-singh/leetview/blob/main/problems/zigzag-conversion/README.md)                                                                                 | 39.8%      | Medium     |           |
+|   | 53   | [Maximum Subarray](https://github.com/navi-singh/leetview/blob/main/problems/maximum-subarray/README.md)                                                                                   | 48.8%      | Easy       |           |
+|   | 349  | [Intersection of Two Arrays](https://github.com/navi-singh/leetview/blob/main/problems/intersection-of-two-arrays/README.md)                                                               | 67.2%      | Easy       |           |
+|   | 994  | [Rotting Oranges](https://github.com/navi-singh/leetview/blob/main/problems/rotting-oranges/README.md)                                                                                     | 50.4%      | Medium     |           |
+|   | 442  | [Find All Duplicates in an Array](https://github.com/navi-singh/leetview/blob/main/problems/find-all-duplicates-in-an-array/README.md)                                                     | 71.2%      | Medium     |           |
+|   | 21   | [Merge Two Sorted Lists](https://github.com/navi-singh/leetview/blob/main/problems/merge-two-sorted-lists/README.md)                                                                       | 58.0%      | Easy       |           |
+|   | 235  | [Lowest Common Ancestor of a Binary Search Tree](https://github.com/navi-singh/leetview/blob/main/problems/lowest-common-ancestor-of-a-binary-search-tree/README.md)                       | 54.7%      | Easy       |           |
+|   | 136  | [Single Number](https://github.com/navi-singh/leetview/blob/main/problems/single-number/README.md)                                                                                         | 67.7%      | Easy       |           |
+|   | 7    | [Reverse Integer](https://github.com/navi-singh/leetview/blob/main/problems/reverse-integer/README.md)                                                                                     | 26.1%      | Medium     |           |
+|   | 567  | [Permutation in String](https://github.com/navi-singh/leetview/blob/main/problems/permutation-in-string/README.md)                                                                         | 44.5%      | Medium     |           |
+|   | 698  | [Partition to K Equal Sum Subsets](https://github.com/navi-singh/leetview/blob/main/problems/partition-to-k-equal-sum-subsets/README.md)                                                   | 45.7%      | Medium     |           |
+|   | 509  | [Fibonacci Number](https://github.com/navi-singh/leetview/blob/main/problems/fibonacci-number/README.md)                                                                                   | 67.8%      | Easy       |           |
+|   | 1275 | [Find Winner on a Tic Tac Toe Game](https://github.com/navi-singh/leetview/blob/main/problems/find-winner-on-a-tic-tac-toe-game/README.md)                                                 | 55.7%      | Easy       |           |
+|   | 1328 | [Break a Palindrome](https://github.com/navi-singh/leetview/blob/main/problems/break-a-palindrome/README.md)                                                                               | 52.1%      | Medium     |           |
+|   | 75   | [Sort Colors](https://github.com/navi-singh/leetview/blob/main/problems/sort-colors/README.md)                                                                                             | 52.1%      | Medium     |           |
+|   | 169  | [Majority Element](https://github.com/navi-singh/leetview/blob/main/problems/majority-element/README.md)                                                                                   | 61.3%      | Easy       |           |
+|   | 74   | [Search a 2D Matrix](https://github.com/navi-singh/leetview/blob/main/problems/search-a-2d-matrix/README.md)                                                                               | 40.4%      | Medium     |           |
+|   | 35   | [Search Insert Position](https://github.com/navi-singh/leetview/blob/main/problems/search-insert-position/README.md)                                                                       | 42.6%      | Easy       |           |
+|   | 54   | [Spiral Matrix](https://github.com/navi-singh/leetview/blob/main/problems/spiral-matrix/README.md)                                                                                         | 39.1%      | Medium     |           |
+|   | 104  | [Maximum Depth of Binary Tree](https://github.com/navi-singh/leetview/blob/main/problems/maximum-depth-of-binary-tree/README.md)                                                           | 69.9%      | Easy       |           |
+|   | 55   | [Jump Game](https://github.com/navi-singh/leetview/blob/main/problems/jump-game/README.md)                                                                                                 | 36.6%      | Medium     |           |
+|   | 9    | [Palindrome Number](https://github.com/navi-singh/leetview/blob/main/problems/palindrome-number/README.md)                                                                                 | 51.5%      | Easy       |           |
+|   | 350  | [Intersection of Two Arrays II](https://github.com/navi-singh/leetview/blob/main/problems/intersection-of-two-arrays-ii/README.md)                                                         | 53.7%      | Easy       |           |
+|   | 206  | [Reverse Linked List](https://github.com/navi-singh/leetview/blob/main/problems/reverse-linked-list/README.md)                                                                             | 68.0%      | Easy       |           |
+|   | 70   | [Climbing Stairs](https://github.com/navi-singh/leetview/blob/main/problems/climbing-stairs/README.md)                                                                                     | 49.9%      | Easy       |           |

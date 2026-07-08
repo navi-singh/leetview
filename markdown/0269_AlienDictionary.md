@@ -1,33 +1,31 @@
- There is a new alien language which uses the latin alphabet. However, the order among letters are
- unknown to you. You receive a list of non-empty words from the dictionary, where words are sorted
- lexicographically by the rules of this new language. Derive the order of letters in this
- language.
+# 0269\_AlienDictionary
 
-> Example 1: Given the following words in dictionary  
-[ "wrt", "wrf", "er", "ett", "rftt" ]
+There is a new alien language which uses the latin alphabet. However, the order among letters are unknown to you. You receive a list of non-empty words from the dictionary, where words are sorted lexicographically by the rules of this new language. Derive the order of letters in this language.
 
- The correct order is: "wertf".
+> Example 1: Given the following words in dictionary\
+> \[ "wrt", "wrf", "er", "ett", "rftt" ]
 
- <p>Example 2: Given the following words in dictionary,
+The correct order is: "wertf".
 
- <p>[ "z", "x" ]
+Example 2: Given the following words in dictionary,
 
- <p>The correct order is: "zx".
+\[ "z", "x" ]
 
- <p>Example 3: Given the following words in dictionary,
+The correct order is: "zx".
 
- <p>[ "z", "x", "z" ]
+Example 3: Given the following words in dictionary,
 
- <p>The order is invalid, so return "".
+\[ "z", "x", "z" ]
 
- <p>Note:
+The order is invalid, so return "".
 
- <p>You may assume all letters are in lowercase. You may assume that if a is a prefix of b, then a
- must appear before b in the given dictionary. If the order is invalid, return an empty string.
- There may be multiple valid order of letters, return any one of them is fine.
- 
-***Time: O(26+∣words∣−1)  
-Space: O(26+∣words∣−1)***
+Note:
+
+You may assume all letters are in lowercase. You may assume that if a is a prefix of b, then a must appear before b in the given dictionary. If the order is invalid, return an empty string. There may be multiple valid order of letters, return any one of them is fine.
+
+_**Time: O(26+∣words∣−1)**_\
+&#xNAN;_**Space: O(26+∣words∣−1)**_
+
 ```java
 class Solution {
   public String alienOrder(String[] words) {

@@ -1,7 +1,9 @@
 # 257. Binary Tree Paths
+
 Given a binary tree, return all root-to-leaf paths.
 
-For example, given the following binary tree:  
+For example, given the following binary tree:
+
 ```
    1
  /   \  
@@ -9,12 +11,13 @@ For example, given the following binary tree:
  \  
   5  
 ```
+
 All root-to-leaf paths are:
 
-> ["1->2->5", "1->3"]
+> \["1->2->5", "1->3"]
 
-***Time: O(n)  
-Space: O(h)***
+_**Time: O(n)**_\
+&#xNAN;_**Space: O(h)**_
 
 ```java
 import java.util.List;

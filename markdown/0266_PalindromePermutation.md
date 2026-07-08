@@ -4,12 +4,13 @@ Given a string, determine if a permutation of the string could form a palindrome
 
 For example
 
->"code" -> False,  
- "aab" -> True,  
- "carerac" -> True.
+> "code" -> False,\
+> "aab" -> True,\
+> "carerac" -> True.
 
-***Time: O(n)  
-Space: O(n)***
+_**Time: O(n)**_\
+&#xNAN;_**Space: O(n)**_
+
 ```java
 public class LC266_PalindromePermutation {
   // boolean canPermutePalindrome(String s) {
