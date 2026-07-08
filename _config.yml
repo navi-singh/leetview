@@ -1,0 +1,16 @@
+theme: jekyll-theme-cayman
+
+title: LeetView - LeetCode Solutions & Study Guide
+description: A comprehensive collection of LeetCode problem solutions with explanations
+
+markdown: kramdown
+
+# Navigation
+navigation:
+  - title: Home
+    url: /leetview/
+  - title: Problems
+    url: /leetview/problems/
+
+# Enable search
+search_enabled: true
