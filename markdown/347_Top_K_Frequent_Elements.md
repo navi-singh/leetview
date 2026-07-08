@@ -1,24 +1,27 @@
-# 347\_Top\_K\_Frequent\_Elements
-
-347. Top K Frequent Elements Medium
+347. Top K Frequent Elements
+Medium
 
 Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
 
+ 
+
 Example 1:
 
-Input: nums = \[1,1,1,2,2,3], k = 2 Output: \[1,2]
+Input: nums = [1,1,1,2,2,3], k = 2
+Output: [1,2]
 
 Example 2:
 
-Input: nums = \[1], k = 1 Output: \[1]
+Input: nums = [1], k = 1
+Output: [1]
+
+ 
 
 Constraints:
 
-```
-1 <= nums.length <= 105
-k is in the range [1, the number of unique elements in the array].
-It is guaranteed that the answer is unique.
-```
+    1 <= nums.length <= 105
+    k is in the range [1, the number of unique elements in the array].
+    It is guaranteed that the answer is unique.
 
 Approach 1: Heap
 
@@ -26,14 +29,12 @@ Let's start from the simple heap approach with O(Nlog⁡k)\mathcal{O}(N \log k)O
 
 Algorithm
 
-```
-The first step is to build a hash map element -> its frequency. In Java, we use the data structure HashMap. Python provides dictionary subclass Counter to initialize the hash map we need directly from the input array.
-This step takes O(N)\mathcal{O}(N)O(N) time where N is a number of elements in the list.
+    The first step is to build a hash map element -> its frequency. In Java, we use the data structure HashMap. Python provides dictionary subclass Counter to initialize the hash map we need directly from the input array.
+    This step takes O(N)\mathcal{O}(N)O(N) time where N is a number of elements in the list.
 
-The second step is to build a heap of size k using N elements. To add the first k elements takes a linear time O(k)\mathcal{O}(k)O(k) in the average case, and O(log⁡1+log⁡2+...+log⁡k)=O(logk!)=O(klog⁡k)\mathcal{O}(\log 1 + \log 2 + ... + \log k) = \mathcal{O}(log k!) = \mathcal{O}(k \log k)O(log1+log2+...+logk)=O(logk!)=O(klogk) in the worst case. It's equivalent to heapify implementation in Python. After the first k elements we start to push and pop at each step, N - k steps in total. The time complexity of heap push/pop is O(log⁡k)\mathcal{O}(\log k)O(logk) and we do it N - k times that means O((N−k)log⁡k)\mathcal{O}((N - k)\log k)O((N−k)logk) time complexity. Adding both parts up, we get O(Nlog⁡k)\mathcal{O}(N \log k)O(Nlogk) time complexity for the second step.
+    The second step is to build a heap of size k using N elements. To add the first k elements takes a linear time O(k)\mathcal{O}(k)O(k) in the average case, and O(log⁡1+log⁡2+...+log⁡k)=O(logk!)=O(klog⁡k)\mathcal{O}(\log 1 + \log 2 + ... + \log k) = \mathcal{O}(log k!) = \mathcal{O}(k \log k)O(log1+log2+...+logk)=O(logk!)=O(klogk) in the worst case. It's equivalent to heapify implementation in Python. After the first k elements we start to push and pop at each step, N - k steps in total. The time complexity of heap push/pop is O(log⁡k)\mathcal{O}(\log k)O(logk) and we do it N - k times that means O((N−k)log⁡k)\mathcal{O}((N - k)\log k)O((N−k)logk) time complexity. Adding both parts up, we get O(Nlog⁡k)\mathcal{O}(N \log k)O(Nlogk) time complexity for the second step.
 
-The third and the last step is to convert the heap into an output array. That could be done in O(klog⁡k)\mathcal{O}(k \log k)O(klogk) time.
-```
+    The third and the last step is to convert the heap into an output array. That could be done in O(klog⁡k)\mathcal{O}(k \log k)O(klogk) time.
 
 In Python, library heapq provides a method nlargest, which combines the last two steps under the hood and has the same O(Nlog⁡k)\mathcal{O}(N \log k)O(Nlogk) time complexity.
 
@@ -42,41 +43,45 @@ diff
 Implementation
 
 
+#### Java
 
-\`\`\`java class Solution { public int\[] topKFrequent(int\[] nums, int k) { // O(1) time if (k == nums.length) { return nums; }
 
-```
-    // 1. build hash map : character and how often it appears
-    // O(N) time
-    Map<Integer, Integer> count = new HashMap();
-    for (int n: nums) {
-      count.put(n, count.getOrDefault(n, 0) + 1);
+```java
+class Solution {
+    public int[] topKFrequent(int[] nums, int k) {
+        // O(1) time
+        if (k == nums.length) {
+            return nums;
+        }
+        
+        // 1. build hash map : character and how often it appears
+        // O(N) time
+        Map<Integer, Integer> count = new HashMap();
+        for (int n: nums) {
+          count.put(n, count.getOrDefault(n, 0) + 1);
+        }
+
+        // init heap 'the less frequent element first'
+        Queue<Integer> heap = new PriorityQueue<>(
+            (n1, n2) -> count.get(n1) - count.get(n2));
+
+        // 2. keep k top frequent elements in the heap
+        // O(N log k) < O(N log N) time
+        for (int n: count.keySet()) {
+          heap.add(n);
+          if (heap.size() > k) heap.poll();    
+        }
+
+        // 3. build an output array
+        // O(k log k) time
+        int[] top = new int[k];
+        for(int i = k - 1; i >= 0; --i) {
+            top[i] = heap.poll();
+        }
+        return top;
     }
-
-    // init heap 'the less frequent element first'
-    Queue<Integer> heap = new PriorityQueue<>(
-        (n1, n2) -> count.get(n1) - count.get(n2));
-
-    // 2. keep k top frequent elements in the heap
-    // O(N log k) < O(N log N) time
-    for (int n: count.keySet()) {
-      heap.add(n);
-      if (heap.size() > k) heap.poll();    
-    }
-
-    // 3. build an output array
-    // O(k log k) time
-    int[] top = new int[k];
-    for(int i = k - 1; i >= 0; --i) {
-        top[i] = heap.poll();
-    }
-    return top;
 }
 ```
-
-}
-
-````
 Complexity Analysis
 
     Time complexity : O(Nlog⁡k)\mathcal{O}(N \log k)O(Nlogk) if k<Nk < Nk<N and O(N)\mathcal{O}(N)O(N) in the particular case of N=kN = kN=k. That ensures time complexity to be better than O(Nlog⁡N)\mathcal{O}(N \log N)O(NlogN).
@@ -221,16 +226,13 @@ class Solution {
         return Arrays.copyOfRange(unique, n - k, n);
     }
 }
-````
-
+```
 Here is a total algorithm implementation.
 
 Complexity Analysis
 
-```
-Time complexity: O(N)\mathcal{O}(N)O(N) in the average case, O(N2)\mathcal{O}(N^2)O(N2) in the worst case. Please refer to this card for the good detailed explanation of Master Theorem. Master Theorem helps to get an average complexity by writing the algorithm cost as T(N)=aT(N/b)+f(N)T(N) = a T(N / b) + f(N)T(N)=aT(N/b)+f(N). Here we have an example of Master Theorem case III: T(N)=T(N2)+NT(N) = T \left(\frac{N}{2}\right) + NT(N)=T(2N​)+N, that results in O(N)\mathcal{O}(N)O(N) time complexity. That's the case of random pivots.
+    Time complexity: O(N)\mathcal{O}(N)O(N) in the average case, O(N2)\mathcal{O}(N^2)O(N2) in the worst case. Please refer to this card for the good detailed explanation of Master Theorem. Master Theorem helps to get an average complexity by writing the algorithm cost as T(N)=aT(N/b)+f(N)T(N) = a T(N / b) + f(N)T(N)=aT(N/b)+f(N). Here we have an example of Master Theorem case III: T(N)=T(N2)+NT(N) = T \left(\frac{N}{2}\right) + NT(N)=T(2N​)+N, that results in O(N)\mathcal{O}(N)O(N) time complexity. That's the case of random pivots.
 
-In the worst-case of constantly bad chosen pivots, the problem is not divided by half at each step, it becomes just one element less, that leads to O(N2)\mathcal{O}(N^2)O(N2) time complexity. It happens, for example, if at each step you choose the pivot not randomly, but take the rightmost element. For the random pivot choice the probability of having such a worst-case is negligibly small.
+    In the worst-case of constantly bad chosen pivots, the problem is not divided by half at each step, it becomes just one element less, that leads to O(N2)\mathcal{O}(N^2)O(N2) time complexity. It happens, for example, if at each step you choose the pivot not randomly, but take the rightmost element. For the random pivot choice the probability of having such a worst-case is negligibly small.
 
-Space complexity: up to O(N)\mathcal{O}(N)O(N) to store hash map and array of unique elements. 
-```
+    Space complexity: up to O(N)\mathcal{O}(N)O(N) to store hash map and array of unique elements. 

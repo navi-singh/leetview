@@ -87,8 +87,8 @@ That is why, in addition to having the index in the original string/expression w
 
 Now, let us look at the implementation for this algorithm.
 
-{% tabs %}
-{% tab title="Java" %}
+#### Java
+
 ```java
 class Solution {
 
@@ -168,9 +168,9 @@ class Solution {
   }
 }
 ```
-{% endtab %}
 
-{% tab title="Python" %}
+#### Python
+
 ```java
 class Solution(object):
 
@@ -251,8 +251,7 @@ class Solution(object):
         self.remaining(s, 0, 0, 0, [], 0)
         return list(self.valid_expressions)
 ```
-{% endtab %}
-{% endtabs %}
+
 
 **Complexity analysis**
 
@@ -310,8 +309,8 @@ The overall algorithm remains exactly the same as before. The changes that we wi
 
 Now let us look at the implementation for this modified version of algorithm..
 
-{% tabs %}
-{% tab title="Java" %}
+#### Java
+
 ```java
 class Solution {
 
@@ -399,9 +398,9 @@ class Solution {
   }
 }
 ```
-{% endtab %}
 
-{% tab title="Python" %}
+#### Python
+
 ```java
 class Solution:
     def removeInvalidParentheses(self, s):
@@ -479,8 +478,7 @@ class Solution:
         recurse(s, 0, 0, 0, left, right, [])     
         return list(result.keys())
 ```
-{% endtab %}
-{% endtabs %}
+
 
 **Complexity analysis**
 

@@ -43,8 +43,8 @@ Something that is fast to convert to string for output, for example list in Pyth
 
 **Implementation**
 
-{% tabs %}
-{% tab title="Java" %}
+#### Java
+
 ```java
 class Solution {
   public String removeDuplicates(String S) {
@@ -62,9 +62,9 @@ class Solution {
   }
 }
 ```
-{% endtab %}
 
-{% tab title="Python" %}
+#### Python
+
 ```python
 class Solution:
     def removeDuplicates(self, S: str) -> str:
@@ -76,8 +76,7 @@ class Solution:
                 output.append(ch)
         return ''.join(output)
 ```
-{% endtab %}
-{% endtabs %}
+
 
 **Complexity Analysis**
 

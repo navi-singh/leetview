@@ -159,8 +159,8 @@ The idea on how to handle this problem springs from the discussion above. We sim
 
 Now we can look at the actual implementation of this algorithm.
 
-{% tabs %}
-{% tab title="Java" %}
+#### Java
+
 ```java
 class Solution {
 
@@ -242,9 +242,9 @@ class Solution {
   }
 }
 ```
-{% endtab %}
 
-{% tab title="Python" %}
+#### Python
+
 ```python
 class Solution:
     def addOperators(self, num: 'str', target: 'int') -> 'List[str]':
@@ -293,8 +293,7 @@ class Solution:
         recurse(0, 0, 0, 0, [])    
         return answers
 ```
-{% endtab %}
-{% endtabs %}
+
 
 \*\*\*\*
 

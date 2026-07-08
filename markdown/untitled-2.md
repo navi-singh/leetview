@@ -60,8 +60,8 @@ We also need to consider the boundaries. While we loop from the beginning to the
     * If we find the first different letter and the two words are in the wrong order, then we can safely return false.
 * If we reach this point, it means that we have examined all pairs of adjacent words and that they are all sorted. Therefore we can return true.
 
-{% tabs %}
-{% tab title="Java" %}
+#### Java
+
 ```java
 class Solution {
     public boolean isAlienSorted(String[] words, String order) {
@@ -93,9 +93,9 @@ class Solution {
     }
 }
 ```
-{% endtab %}
 
-{% tab title="Python" %}
+#### Python
+
 ```python
 class Solution:
     def isAlienSorted(self, words: List[str], order: str) -> bool:
@@ -118,8 +118,7 @@ class Solution:
 
         return True
 ```
-{% endtab %}
-{% endtabs %}
+
 
 **Complexity analysis**
 
