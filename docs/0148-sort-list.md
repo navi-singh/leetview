@@ -6,6 +6,15 @@ description: MEDIUM
 
 Given the `head` of a linked list, return the list after sorting it in **ascending order**.
 
+## In Plain Terms
+
+Sort the linked list in **ascending order** and return the new head. Because this is a linked list, the usual efficient approach is to split it, sort halves, and merge nodes back together.
+
+```text
+input:  4 -> 2 -> 1 -> 3
+output: 1 -> 2 -> 3 -> 4
+```
+
 **Example 1:**
 
 ```text

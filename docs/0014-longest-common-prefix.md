@@ -8,6 +8,10 @@ Write a function to find the longest common prefix string amongst an array of st
 
 If there is no common prefix, return an empty string `""`.
 
+## In Plain Terms
+
+Find the longest starting string that **every** word in `strs` shares. If the first characters already differ, the common prefix is the empty string `""`.
+
 **Example 1:**
 
 ```text

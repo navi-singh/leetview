@@ -2,6 +2,20 @@
 
 Given a binary tree, return all root-to-leaf paths.
 
+## In Plain Terms
+
+List every path that starts at the root and ends at a leaf. Each answer is the node values along one path joined with `->`.
+
+```text
+   1
+ /   \
+2     3
+ \
+  5
+
+paths: 1->2->5, 1->3
+```
+
 For example, given the following binary tree:
 
 ```

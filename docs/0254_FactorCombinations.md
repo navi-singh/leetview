@@ -8,7 +8,12 @@ Write a function that takes an integer n and return all possible combinations of
 Note:
 
 You may assume that n is always positive.
-Factors should be greater than 1 and less than n.  
+Factors should be greater than 1 and less than n.
+
+## In Plain Terms
+
+Return every unique way to write `n` as a product of factors greater than `1` and less than `n`. The same factors in a different order should not be counted as a new combination.
+
 Example 1:  
 Input: 1  
 Output: []

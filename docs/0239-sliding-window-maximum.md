@@ -8,6 +8,16 @@ You are given an array of integers `nums`, there is a sliding window of size `k`
 
 Return the max sliding window.
 
+## In Plain Terms
+
+Move a window of size `k` across `nums` and record the maximum value inside the window at each position. The output has one maximum for every valid window.
+
+```text
+[1  3 -1] -3  5  3  6  7  -> max 3
+ 1 [3 -1 -3]  5  3  6  7  -> max 3
+ 1  3 -1 -3  5 [3  6  7] -> max 7
+```
+
 **Example 1:**
 
 ```text

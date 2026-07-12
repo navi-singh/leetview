@@ -10,6 +10,16 @@ Notice
 
 All costs are positive integers.
 
+## In Plain Terms
+
+Choose one of `k` colors for each house so neighboring houses have different colors and the total cost is as small as possible. Track the cheapest and second-cheapest previous color choices so the next house can avoid matching its neighbor.
+
+```text
+costs = [[14,2,11],[11,14,5],[14,3,10]]
+choose colors: 1 -> 2 -> 1
+cost:          2 + 5 + 3 = 10
+```
+
 Example 1
 
 > Input: costs = \[\[14,2,11],\[11,14,5],\[14,3,10]]\

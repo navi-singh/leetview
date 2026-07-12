@@ -8,6 +8,17 @@ You may imagine that `nums[-1] = nums[n] = -∞`. In other words, an element is 
 
 You must write an algorithm that runs in `O(log n)` time.
 
+## In Plain Terms
+
+Find any index whose value is **strictly greater than both neighbors**. The virtual values outside the array are `-∞`, so an edge element can be a peak too.
+
+```text
+nums:  [1, 2, 3, 1]
+index:  0  1  2  3
+              ^
+            peak
+```
+
 **Example 1:** 
 
 ```

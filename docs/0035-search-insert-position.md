@@ -8,6 +8,16 @@ Given a sorted array of distinct integers and a target value, return the index i
 
 You must write an algorithm with `O(log n)` runtime complexity.
 
+## In Plain Terms
+
+Find the index of `target` in the sorted array, or the position where it should be inserted to keep the array sorted. The required runtime is logarithmic.
+
+```text
+nums:  [1, 3, 5, 6]
+index:  0  1  2  3
+              ^ target 5 -> return 2
+```
+
 **Example 1:**
 
 ```text

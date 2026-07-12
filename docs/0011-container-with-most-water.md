@@ -12,6 +12,28 @@ Return the maximum amount of water a container can store.
 
 **Notice** that you may not slant the container.
 
+## In Plain Terms
+
+Each number is the height of a vertical wall standing at that index. Pick **two walls** so that the water trapped between them is as large as possible. The water is a rectangle: its **width** is the distance between the two walls, and its **height** is the *shorter* of the two walls (water spills over the lower one). Maximize `width × min(height)`.
+
+```text
+height = [1,8,6,2,5,4,8,3,7]
+
+8 |  █           █
+7 |  █           █     █
+6 |  █  █        █     █
+5 |  █  █     █  █     █
+4 |  █  █     █  █  █  █
+3 |  █  █     █  █  █  █  █
+2 |  █  █  █  █  █  █  █  █
+1 |█ █  █  █  █  █  █  █  █
+  +------------------------
+   0 1  2  3  4  5  6  7  8
+        ↑                 ↑
+      left=1 (h=8)     right=8 (h=7)
+   width = 8-1 = 7,  height = min(8,7) = 7  →  area = 49
+```
+
 **Example 1:**
 
 ```text

@@ -10,6 +10,18 @@ According to [Wikipedia](http://en.wikipedia.org/wiki/Binary_tree#Types_of_binar
 
 Design an algorithm that runs in less than `O(n)` time complexity.
 
+## In Plain Terms
+
+Count the nodes in a complete binary tree, where all levels are full except possibly the last and the last level fills from left to right. The challenge is to use that shape to do better than visiting every node.
+
+```text
+      1
+    /   \
+   2     3
+  / \   /
+ 4   5 6
+```
+
 **Example 1:**
 
 ```text

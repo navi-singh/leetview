@@ -8,6 +8,16 @@ Given an array of strings `wordsDict` and two strings that already exist in the 
 
 **Note** that `word1` and `word2` may be the same. It is guaranteed that they represent **two individual words** in the list.
 
+## In Plain Terms
+
+Find the shortest distance between occurrences of `word1` and `word2` in the list. If the two query words are the same, you still need two different occurrences.
+
+```text
+index: 0          1       2        3        4
+word:  practice   makes   perfect  coding   makes
+                makes <----1----> coding
+```
+
 **Example 1:**
 
 ```text

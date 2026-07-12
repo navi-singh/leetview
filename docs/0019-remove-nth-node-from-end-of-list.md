@@ -6,6 +6,16 @@ description: MEDIUM
 
 Given the `head` of a linked list, remove the `n`th node from the end of the list and return its head.
 
+## In Plain Terms
+
+Delete the node that is `n` positions from the **end** of the linked list, then return the possibly-new head. In Example 1, the 2nd node from the end is `4`, so it is removed.
+
+```text
+1 -> 2 -> 3 -> 4 -> 5
+              ^ remove
+1 -> 2 -> 3 -> 5
+```
+
 **Example 1:**
 
 ```text

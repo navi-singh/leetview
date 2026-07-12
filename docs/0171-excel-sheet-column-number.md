@@ -19,6 +19,10 @@ AB -> 28
 ...
 ```
 
+## In Plain Terms
+
+Convert an Excel column title like `A`, `AB`, or `ZY` back into its numeric column number. Treat the letters as base-26 digits where `A = 1` and `Z = 26`.
+
 **Example 1:**
 
 ```text

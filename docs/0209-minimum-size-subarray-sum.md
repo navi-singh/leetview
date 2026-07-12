@@ -6,6 +6,15 @@ description: MEDIUM
 
 Given an array of positive integers `nums` and a positive integer `target`, return the minimal length of a subarray whose sum is greater than or equal to `target`. If there is no such subarray, return `0` instead.
 
+## In Plain Terms
+
+Find the shortest contiguous slice of `nums` whose sum is at least `target`. Since all numbers are positive, a sliding window can grow until it reaches the target and then shrink to minimize its length.
+
+```text
+nums:   2  3  1  2 [4  3]
+target: 7          sum = 7, length = 2
+```
+
 **Example 1:**
 
 ```text

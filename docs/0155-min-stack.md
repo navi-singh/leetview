@@ -16,6 +16,17 @@ Implement the `MinStack` class:
 
 You must implement a solution with `O(1)` time complexity for each function.
 
+## In Plain Terms
+
+Design a stack that behaves normally but can also return the current **minimum value** in `O(1)` time. Each push or pop must keep enough information so `getMin()` does not need to scan the stack.
+
+```text
+push -2, 0, -3
+ top -> [-3 | min=-3]
+        [ 0 | min=-2]
+        [-2 | min=-2]
+```
+
 **Example 1:**
 
 ```text

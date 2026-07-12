@@ -17,6 +17,10 @@ To decode an encoded message, all the digits must be grouped then mapped back in
 
 Given a string `s` containing only digits, return the number of ways to decode it. If there are no valid decodings, return `0`.
 
+## In Plain Terms
+
+Count how many ways the digit string `s` can be split into valid letter codes from `1` to `26`. A split is invalid if it creates a number outside that range or a leading-zero code like `06`.
+
 **Example 1:**
 
 ```text

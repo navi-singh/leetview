@@ -12,6 +12,18 @@ A valid BST is defined as follows:
 - The right subtree of a node contains only nodes with keys **greater than** the node's key.
 - Both the left and right subtrees must also be binary search trees.
 
+## In Plain Terms
+
+Check whether the whole tree satisfies the **binary search tree** rule: every node must be greater than all values in its left subtree and less than all values in its right subtree. This rule must hold at every depth, not just between direct parent and child nodes.
+
+```text
+    2
+   / \
+  1   3
+
+all left values < node < all right values
+```
+
 **Example 1:**
 
 ```text

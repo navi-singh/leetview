@@ -8,6 +8,10 @@ Given a string `s`, partition `s` such that every substring of the partition is 
 
 Return the **minimum** cuts needed for a palindrome partitioning of `s`.
 
+## In Plain Terms
+
+Find the fewest cuts needed to split `s` into pieces where every piece is a palindrome. For example, a split into two palindrome pieces uses one cut.
+
 **Example 1:**
 
 ```text

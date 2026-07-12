@@ -24,6 +24,10 @@ Roman numerals are usually written largest to smallest from left to right. Howev
 
 Given an integer, convert it to a roman numeral.
 
+## In Plain Terms
+
+Convert `num` into its Roman numeral spelling using the standard symbols and subtractive forms like `IV`, `IX`, `XL`, and `CM`. Build the numeral from larger values to smaller ones.
+
 **Example 1:**
 
 ```text

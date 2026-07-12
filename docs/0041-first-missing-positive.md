@@ -8,6 +8,10 @@ Given an unsorted integer array `nums`, return the smallest missing positive int
 
 You must implement an algorithm that runs in `O(n)` time and uses `O(1)` auxiliary space.
 
+## In Plain Terms
+
+Find the smallest positive integer (`1`, `2`, `3`, ...) that does **not** appear in `nums`. The hard part is doing it in linear time while using only constant extra space.
+
 **Example 1:**
 
 ```text

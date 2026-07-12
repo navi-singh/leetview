@@ -8,6 +8,10 @@ Given a string `s` consisting of words and spaces, return the length of the **la
 
 A **word** is a maximal substring consisting of non-space characters only.
 
+## In Plain Terms
+
+Find the final word in `s` after ignoring any trailing spaces, then return that word's length. A word is just a maximal run of non-space characters.
+
 **Example 1:**
 
 ```text

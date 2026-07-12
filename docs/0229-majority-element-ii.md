@@ -6,6 +6,10 @@ description: MEDIUM
 
 Given an integer array of size `n`, find all elements that appear more than `⌊ n/3 ⌋` times.
 
+## In Plain Terms
+
+Return every value that appears more than `n / 3` times in the array. There can be at most two such values, but there may also be none.
+
 **Example 1:**
 
 ```text

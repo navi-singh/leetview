@@ -26,6 +26,10 @@ For example, `["2", "0089", "-0.1", "+3.14", "4.", "-.9", "2e10", "-90E3", "3e+7
 
 Given a string `s`, return `true` if `s` is a **valid number**.
 
+## In Plain Terms
+
+Decide whether `s` follows the allowed syntax for a number: an integer or decimal, optionally followed by an exponent part. Signs are only valid at the beginning or immediately after `e`/`E`, and each required numeric part must contain digits.
+
 **Example 1:**
 
 ```text

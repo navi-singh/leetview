@@ -12,6 +12,10 @@ If multiple answers are possible, return **any of them**.
 
 It is **guaranteed** that the length of the answer string is less than `10^4` for all the given inputs.
 
+## In Plain Terms
+
+Convert `numerator / denominator` into its decimal string form. If the decimal repeats forever, wrap the repeating digits in parentheses, such as `0.(012)`.
+
 **Example 1:**
 
 ```text

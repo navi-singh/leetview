@@ -2,6 +2,18 @@
 
 Given the `root` of a binary tree, imagine yourself standing on the **right side** of it, return the values of the nodes you can see ordered from top to bottom.
 
+## In Plain Terms
+
+Look at the binary tree level by level and return the **rightmost node** visible at each depth. If two nodes are on the same level, only the one farthest to the right appears in the answer.
+
+```text
+    1        visible: 1
+   / \
+  2   3      visible: 3
+   \   \
+    5   4    visible: 4
+```
+
 **Example 1:**
 
 Input: root = \[1,2,3,null,5,null,4]

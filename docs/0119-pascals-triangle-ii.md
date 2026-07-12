@@ -8,6 +8,18 @@ Given an integer `rowIndex`, return the `rowIndex`th (0-indexed) row of Pascal's
 
 In Pascal's triangle, each number is the sum of the two numbers directly above it.
 
+## In Plain Terms
+
+Return only the requested 0-indexed row of **Pascal's triangle**. Each interior number comes from adding the two numbers above it in the previous row.
+
+```text
+rowIndex = 3
+    1
+   1 1
+  1 2 1
+ 1 3 3 1  <- return this row
+```
+
 **Example 1:**
 
 ```text

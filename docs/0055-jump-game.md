@@ -8,6 +8,16 @@ You are given an integer array `nums`. You are initially positioned at the array
 
 Return `true` if you can reach the last index, or `false` otherwise.
 
+## In Plain Terms
+
+Each number is the maximum jump length from that index; decide whether **some sequence of jumps** can reach the last index. You only need to know the farthest reachable position so far, not every possible path.
+
+```text
+nums  = [2, 3, 1, 1, 4]
+index =  0  1  2  3  4
+         +-->1-------->4   reachable
+```
+
 **Example 1:**
 
 ```text

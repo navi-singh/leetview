@@ -2,6 +2,16 @@
 
 Implement an iterator to flatten a 2d vector.
 
+## In Plain Terms
+
+Turn a list of rows into an iterator that returns the numbers one by one as if all rows were laid end to end. `next()` should produce the next available value, and `hasNext()` should know whether any values remain, even when some rows are empty.
+
+```text
+[ [1, 2], [3], [4, 5, 6] ]
+      flatten order
+1 -> 2 -> 3 -> 4 -> 5 -> 6
+```
+
 For example, Given 2d vector =
 
 > [

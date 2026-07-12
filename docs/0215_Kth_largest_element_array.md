@@ -7,6 +7,10 @@ Note that it is the `k^th` largest element in the sorted order, not the `k^th` d
 
 Can you solve it without sorting?
 
+## In Plain Terms
+
+Return the value that would appear in position `k` if the array were sorted from largest to smallest. Duplicates count as separate elements, so this is not asking for the `k`th distinct value.
+
 **Example 1:** 
 
 ```

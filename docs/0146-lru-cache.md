@@ -14,6 +14,17 @@ Implement the `LRUCache` class:
 
 The functions `get` and `put` must each run in `O(1)` average time complexity.
 
+## In Plain Terms
+
+Build a cache that can `get` and `put` keys in **constant time**, while automatically removing the **least recently used** key when capacity is exceeded. Any successful `get` or `put` makes that key the most recently used.
+
+```text
+capacity = 2
+put(1,1), put(2,2):  LRU [1] <-> [2] MRU
+get(1):              LRU [2] <-> [1] MRU
+put(3,3): evict 2 -> LRU [1] <-> [3] MRU
+```
+
 **Example 1:**
 
 ```text

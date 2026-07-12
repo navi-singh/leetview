@@ -12,6 +12,10 @@ You have the following three operations permitted on a word:
 - Delete a character
 - Replace a character
 
+## In Plain Terms
+
+Find the fewest single-character edits needed to turn `word1` into `word2`. Each edit may insert, delete, or replace one character, and matching characters can be kept for free.
+
 **Example 1:**
 
 ```text

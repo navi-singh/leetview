@@ -10,6 +10,20 @@ The **vertical order traversal** of a binary tree is a list of top-to-bottom ord
 
 Return the **vertical order traversal** of the binary tree.
 
+## In Plain Terms
+
+Group the tree nodes by their vertical **column**, from leftmost column to rightmost. Within a column, list nodes from top to bottom, and if two nodes share the exact same row and column, sort those node values.
+
+```text
+        3 (col 0)
+       / \
+  9 (-1)  20 (1)
+          /  \
+      15 (0)  7 (2)
+
+columns -> -1:[9], 0:[3,15], 1:[20], 2:[7]
+```
+
 **Example 1:** ![](https://assets.leetcode.com/uploads/2021/01/29/vtree1.jpg)
 
 ````

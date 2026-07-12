@@ -6,6 +6,16 @@ description: MEDIUM
 
 Given the `head` of a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list. Return the linked list sorted as well.
 
+## In Plain Terms
+
+Given a sorted linked list, remove **every value that appears more than once**, leaving only values that were unique in the original list. Duplicate runs are deleted entirely, not reduced to one node.
+
+```text
+1 -> 2 -> 3 -> 3 -> 4 -> 4 -> 5
+          X    X    X    X
+=> 1 -> 2 -> 5
+```
+
 **Example 1:**
 
 ```text

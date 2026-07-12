@@ -4,6 +4,22 @@ Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in
 
 According to the <a href="https://en.wikipedia.org/wiki/Lowest_common_ancestor" target="_blank">definition of LCA on Wikipedia</a>: “The lowest common ancestor is defined between two nodes `p` and `q` as the lowest node in `T` that has both `p` and `q` as descendants (where we allow <b>a node to be a descendant of itself</b>).”
 
+## In Plain Terms
+
+Find the lowest node in the binary tree that has both `p` and `q` below it, allowing either target node to be its own ancestor. Unlike the BST version, you cannot rely on value ordering.
+
+```text
+        3
+      /   \
+     5     1
+    / \   / \
+   6   2 0   8
+      / \
+     7   4
+
+p = 5, q = 1 -> LCA = 3
+```
+
 **Example 1:** 
 <img alt="" src="https://assets.leetcode.com/uploads/2018/12/14/binarytree.png" style="width: 200px; height: 190px;">
 

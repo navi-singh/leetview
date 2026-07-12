@@ -8,6 +8,10 @@ Given an integer array `nums` of **unique** elements, return all possible subset
 
 The solution set **must not** contain duplicate subsets. Return the solution in **any order**.
 
+## In Plain Terms
+
+Return the full **power set** of `nums`: every possible subset, from the empty subset to the set containing all numbers. Since `nums` has unique values, no duplicate subsets are possible.
+
 **Example 1:**
 
 ```text

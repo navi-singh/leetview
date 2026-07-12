@@ -10,6 +10,10 @@ The product of any prefix or suffix of `nums` is **guaranteed** to fit in a 32-b
 
 You must write an algorithm that runs in `O(n)` time and **without using the division operation**.
 
+## In Plain Terms
+
+For each index, return the product of every number except the one at that index. You must do it in linear time without using division, so each answer combines products from the left and right sides.
+
 **Example 1:**
 
 ```text

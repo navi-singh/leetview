@@ -15,6 +15,10 @@ The algorithm for `myAtoi(string s)` is as follows:
 5. If the integer is out of the 32-bit signed integer range `[-2^31, 2^31 - 1]`, then clamp the integer so that it remains in the range. Specifically, integers less than `-2^31` should be clamped to `-2^31`, and integers greater than `2^31 - 1` should be clamped to `2^31 - 1`.
 6. Return the integer as the final result.
 
+## In Plain Terms
+
+Parse `s` the way `atoi` does: skip leading spaces, read one optional sign, then read consecutive digits until something else appears. Convert that prefix to a 32-bit signed integer, clamping to the allowed range if it overflows.
+
 **Example 1:**
 
 ```text

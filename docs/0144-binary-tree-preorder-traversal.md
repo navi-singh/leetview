@@ -6,6 +6,19 @@ description: EASY
 
 Given the `root` of a binary tree, return the preorder traversal of its nodes' values.
 
+## In Plain Terms
+
+Return the tree's values in **preorder**: visit the current node first, then its left subtree, then its right subtree. Empty trees return an empty list.
+
+```text
+  1
+   \
+    2
+   /
+  3
+preorder: 1, 2, 3
+```
+
 **Example 1:**
 
 ```text

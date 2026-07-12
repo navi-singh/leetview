@@ -8,6 +8,18 @@ You are given a perfect binary tree where all leaves are on the same level, and 
 
 Initially, all next pointers are set to `NULL`.
 
+## In Plain Terms
+
+For each node in a perfect binary tree, set its `next` pointer to the node immediately to its right on the same level. The rightmost node of each level should point to `NULL`.
+
+```text
+        1 -> NULL
+      /   \
+     2 -> 3 -> NULL
+    / \   / \
+   4->5->6->7 -> NULL
+```
+
 **Example 1:**
 
 ```text

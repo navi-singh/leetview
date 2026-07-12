@@ -10,6 +10,17 @@ There is a cycle in a linked list if there is some node in the list that can be 
 
 **Do not modify** the linked list.
 
+## In Plain Terms
+
+Find the **node where the loop starts** in a linked list, or return `null` if there is no loop. You must identify the entry node without changing any links.
+
+```text
+3 -> 2 -> 0 -> -4
+     ^         |
+     |_________|
+cycle starts at index 1 (value 2)
+```
+
 **Example 1:**
 
 ```text

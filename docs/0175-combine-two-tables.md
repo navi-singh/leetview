@@ -33,6 +33,10 @@ Write an SQL query to report the first name, last name, city, and state of each 
 
 Return the result table in **any order**.
 
+## In Plain Terms
+
+Write a query that lists every person's `firstName`, `lastName`, `city`, and `state`. People without an address must still appear, with `null` for the address fields.
+
 **Example 1:**
 
 ```text

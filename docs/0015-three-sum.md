@@ -8,6 +8,16 @@ Given an integer array `nums`, return all the triplets `[nums[i], nums[j], nums[
 
 Notice that the solution set must not contain duplicate triplets.
 
+## In Plain Terms
+
+Find every unique group of **three different elements** in `nums` whose values add to `0`. Return triplets by value, without duplicate triplets even if the input contains repeated numbers.
+
+```text
+sorted nums: [-4, -1, -1, 0, 1, 2]
+                 ^      ^     ^
+              -1 + 0 + 1 = 0
+```
+
 **Example 1:**
 
 ```text

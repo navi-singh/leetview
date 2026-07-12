@@ -10,6 +10,17 @@ You have a car with an unlimited gas tank and it costs `cost[i]` of gas to trave
 
 Given two integer arrays `gas` and `cost`, return the starting gas station's index if you can travel around the circuit once in the clockwise direction, otherwise return `-1`. If there exists a solution, it is **guaranteed** to be **unique**.
 
+## In Plain Terms
+
+Find the station index where you can start with an empty tank, collect gas at each station, pay the travel cost to the next station, and complete one full circle. If no start works, return `-1`.
+
+```text
+index: 0 -> 1 -> 2 -> 3 -> 4 -> 0
+gas:   1    2    3    4    5
+cost:  3    4    5    1    2
+start at 3 completes the circle
+```
+
 **Example 1:**
 
 ```text

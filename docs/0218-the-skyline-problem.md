@@ -16,6 +16,19 @@ You may assume all buildings are perfect rectangles grounded on an absolutely fl
 
 The skyline should be represented as a list of "key points" sorted by their x-coordinate in the form `[[x1,y1],[x2,y2],...]`. Each key point is the left endpoint of some horizontal segment in the skyline except the last point in the list, which always has a y-coordinate `0` and is used to mark the skyline's termination where the rightmost building ends.
 
+## In Plain Terms
+
+Given overlapping rectangular buildings, return the **outline** seen from far away as key points where the skyline height changes. The final point drops back to height `0` at the end of the rightmost building.
+
+```text
+height
+ 15 |   _____
+ 12 |   |   |___
+ 10 |___|       |      ___
+  8 |           |      | |___
+  0 +--2-3---7--12---15-20-24--> x
+```
+
 **Example 1:**
 
 ```text

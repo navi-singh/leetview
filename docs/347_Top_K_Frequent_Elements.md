@@ -3,7 +3,9 @@ Medium
 
 Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
 
- 
+## In Plain Terms
+
+Count how often each number appears, then return the `k` numbers with the highest frequencies. The answer is guaranteed to be unique, and the returned order does not matter.
 
 Example 1:
 

@@ -10,6 +10,10 @@ The same number may be chosen from `candidates` an unlimited number of times. Tw
 
 It is guaranteed that the number of unique combinations that sum up to `target` is less than 150 combinations for the given input.
 
+## In Plain Terms
+
+Find all unique combinations of candidate numbers that add up to `target`. You may reuse the same candidate any number of times, so `[2,2,3]` is valid for target `7`.
+
 **Example 1:**
 
 ```text

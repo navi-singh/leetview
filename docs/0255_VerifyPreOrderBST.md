@@ -10,7 +10,21 @@
  
  <p>keep track of prev val in order to compare whether there is a new right branch keep track of
  lower bound value of parent node for branching to the right
- 
+
+## In Plain Terms
+
+Check whether the given list could be the **preorder traversal** of some binary search tree with unique values. As preorder moves from a node's left side into its right side, later values must stay above the correct lower bound.
+
+```text
+Preorder: 15, 10, 8, 12, 20, 16, 25
+
+        15
+       /  \
+     10    20
+    / \   / \
+   8  12 16 25
+```
+
 ![Actual tree](https://www.techiedelight.com/wp-content/uploads/BST-1.png)  
 Preorder traversal: { 15, 10, 8, 12, 20, 16, 25 }.  
 ```java

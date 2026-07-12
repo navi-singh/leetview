@@ -6,6 +6,16 @@ description: EASY
 
 Given the `head` of a singly linked list, return `true` if it is a palindrome or `false` otherwise.
 
+## In Plain Terms
+
+Check whether the linked list reads the same forward and backward. The node values, not the node objects, determine whether it is a palindrome.
+
+```text
+1 -> 2 -> 2 -> 1
+|              |
++---- same ----+
+```
+
 **Example 1:**
 
 ```text

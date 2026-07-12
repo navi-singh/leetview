@@ -8,6 +8,16 @@ Given an integer array `nums`, find a subarray that has the largest product, and
 
 The test cases are generated so that the answer will fit in a **32-bit** integer.
 
+## In Plain Terms
+
+Find the contiguous subarray whose elements have the **largest product**, and return that product. Negative numbers are the gotcha because multiplying by a negative can turn the smallest product into the largest one.
+
+```text
+nums:  [ 2, 3, -2, 4 ]
+best:    └──┘
+product: 2 * 3 = 6
+```
+
 **Example 1:**
 
 ```text

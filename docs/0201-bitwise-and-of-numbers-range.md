@@ -6,6 +6,10 @@ description: MEDIUM
 
 Given two integers `left` and `right` that represent the range `[left, right]`, return the bitwise AND of all numbers in this range, inclusive.
 
+## In Plain Terms
+
+Compute the bitwise `AND` of every integer from `left` through `right`. Any bit that changes somewhere in the range becomes `0`, so only the shared high-order prefix bits can survive.
+
 **Example 1:**
 
 ```text

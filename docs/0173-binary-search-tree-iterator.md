@@ -14,6 +14,19 @@ Notice that by initializing the pointer to a non-existent smallest number, the f
 
 You may assume that `next()` calls will always be valid. That is, there will be at least a next number in the in-order traversal when `next()` is called.
 
+## In Plain Terms
+
+Create an iterator that returns BST values in **in-order**, which means sorted ascending order for a BST. `next()` should advance to the next smallest value, and `hasNext()` should tell whether any values remain.
+
+```text
+      7
+     / \
+    3   15
+       /  \
+      9   20
+next values: 3, 7, 9, 15, 20
+```
+
 **Example 1:**
 
 ```text

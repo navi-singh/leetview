@@ -17,6 +17,18 @@ class Node {
 
 **Test case format:** For simplicity, each node's value is the same as the node's index (1-indexed). The graph is represented in the test case using an adjacency list. An adjacency list is a collection of unordered lists used to represent a finite graph. Each list describes the set of neighbors of a node in the graph.
 
+## In Plain Terms
+
+Create a deep copy of the connected graph starting from the given node. Every cloned node should have the same value and neighbor relationships, but none of the cloned nodes should be the original objects.
+
+```text
+1 -- 2
+|    |
+4 -- 3
+
+clone all nodes and edges with new node objects
+```
+
 **Example 1:**
 
 ```text

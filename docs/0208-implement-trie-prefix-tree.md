@@ -13,6 +13,18 @@ Implement the `Trie` class:
 - `boolean search(String word)` Returns `true` if the string `word` is in the trie (i.e., was inserted before), and `false` otherwise.
 - `boolean startsWith(String prefix)` Returns `true` if there is a previously inserted string that has the prefix `prefix`, and `false` otherwise.
 
+## In Plain Terms
+
+Build a prefix tree that can store words, check whether a full word was inserted, and check whether any inserted word starts with a prefix. A prefix like `app` can exist before it is stored as its own complete word.
+
+```text
+(root)
+  |
+  a - p - p - l - e*
+          ^
+       prefix "app" exists; word after insert("app")
+```
+
 **Example 1:**
 
 ```text

@@ -8,6 +8,10 @@ Given an integer array `nums` that may contain duplicates, return all possible s
 
 The solution set must not contain duplicate subsets. Return the solution in any order.
 
+## In Plain Terms
+
+Generate every possible **subset** of `nums`, but treat duplicate values carefully so the final answer does not repeat the same subset. The order of the subsets does not matter.
+
 **Example 1:**
 
 ```text

@@ -4,6 +4,10 @@ An ugly number is a positive integer whose prime factors are limited to 2, 3, an
 
 Given an integer n, return the nth ugly number.
 
+## In Plain Terms
+
+Return the `n`th number whose only prime factors are `2`, `3`, and `5`. The sequence starts at `1` and grows by repeatedly taking the next smallest candidate made by multiplying earlier ugly numbers by `2`, `3`, or `5`.
+
 Example 1:
 
 > Input: n = 10\

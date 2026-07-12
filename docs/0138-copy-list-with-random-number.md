@@ -15,6 +15,17 @@ The linked list is represented in the input/output as a list of `n` nodes. Each 
 
 Your code will **only**  be given the `head` of the original linked list.
 
+## In Plain Terms
+
+Create a **deep copy** of the linked list: every copied node must be brand new, but its `next` and `random` pointers must mirror the original list's structure. No pointer in the copied list may point back to an original node.
+
+```text
+next:   7 -> 13 -> 11 -> 10 -> 1
+random: |    |     |     |     |
+        v    v     v     v     v
+       null  7     1     11    7
+```
+
 **Example 1:** 
 <img alt="" src="https://assets.leetcode.com/uploads/2019/12/18/e1.png" style="width: 700px; height: 142px;">
 

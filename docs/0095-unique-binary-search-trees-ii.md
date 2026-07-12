@@ -6,6 +6,19 @@ description: MEDIUM
 
 Given an integer `n`, return all structurally unique BSTs (binary search trees), which has exactly `n` nodes of unique values from `1` to `n`. Return the answer in any order.
 
+## In Plain Terms
+
+Build and return every structurally different **binary search tree** that can be made using the values `1` through `n` exactly once. Trees with the same values but different shapes count as different answers.
+
+```text
+n = 3 can form 5 shapes:
+1      1        2      3      3
+ \      \      / \    /      /
+  2      3    1   3  1      2
+   \    /             \    /
+    3  2               2  1
+```
+
 **Example 1:**
 
 ```text

@@ -6,6 +6,10 @@ description: HARD
 
 Given a string `num` that contains only digits and an integer `target`, return _all possibilities to add the binary operators_ `'+'`, `'-'`, _or_ `'*'` _between the digits of_ `num` _so that the resultant expression evaluates to the_ `target` _value_.
 
+## In Plain Terms
+
+Insert `+`, `-`, or `*` between the digits of `num` in every possible way, allowing multi-digit operands, and return the expressions that evaluate to `target`. Be careful that operands with leading zeroes are not valid except for the single digit `0`, and multiplication has higher precedence.
+
 **Example 1:**
 
 ```text

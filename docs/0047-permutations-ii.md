@@ -6,6 +6,10 @@ description: MEDIUM
 
 Given a collection of numbers, `nums`, that **might contain duplicates**, return all possible unique permutations **in any order**.
 
+## In Plain Terms
+
+Return every unique **ordering** of `nums`, even when some values are repeated. Duplicate input values can create the same arrangement through different swaps, so those repeated permutations must be skipped.
+
 **Example 1:**
 
 ```text

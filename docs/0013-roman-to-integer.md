@@ -20,6 +20,10 @@ Roman numerals are usually written largest to smallest from left to right. Howev
 
 Given a roman numeral, convert it to an integer.
 
+## In Plain Terms
+
+Convert the Roman numeral string `s` into its integer value. Usually symbols add from left to right, but a smaller symbol before a larger one means subtraction, such as `IV` for 4.
+
 **Example 1:**
 
 ```text

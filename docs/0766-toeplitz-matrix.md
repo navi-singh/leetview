@@ -4,6 +4,17 @@ Given an `m x n` `matrix`, return`true`if the matrix is Toeplitz. Otherwise, ret
 
 A matrix is **Toeplitz**  if every diagonal from top-left to bottom-right has the same elements.
 
+## In Plain Terms
+
+Check whether every top-left to bottom-right diagonal in the matrix contains the same value. Each cell must match the cell one row down and one column right when that neighbor exists.
+
+```text
+1 2 3 4
+5 1 2 3
+9 5 1 2
+  \ \ \   matching diagonals
+```
+
 **Example 1:** 
 <img alt="" src="https://assets.leetcode.com/uploads/2020/11/04/ex1.jpg" style="width: 322px; height: 242px;">
 

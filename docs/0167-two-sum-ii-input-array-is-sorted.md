@@ -12,6 +12,16 @@ The tests are generated such that there is **exactly one solution**. You **may n
 
 Your solution must use only constant extra space.
 
+## In Plain Terms
+
+Find the two **1-indexed positions** in the sorted array whose values add to `target`. Because the array is sorted, you can move pointers inward instead of using extra memory.
+
+```text
+numbers = [2, 7, 11, 15], target = 9
+           L  R
+           2 + 7 = 9 -> return [1, 2]
+```
+
 **Example 1:**
 
 ```text

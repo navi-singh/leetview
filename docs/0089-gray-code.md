@@ -14,6 +14,10 @@ An **n-bit gray code sequence** is a sequence of `2^n` integers where:
 
 Given an integer `n`, return any valid **n-bit gray code sequence**.
 
+## In Plain Terms
+
+Return any list of all `2^n` numbers where each neighboring pair differs by **one binary bit**, including the last and first numbers. The sequence must start at `0`, but there can be more than one valid answer.
+
 **Example 1:**
 
 ```text

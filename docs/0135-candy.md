@@ -13,6 +13,15 @@ You are giving candies to these children subjected to the following requirements
 
 Return the minimum number of candies you need to have to distribute the candies to the children.
 
+## In Plain Terms
+
+Give candies to children so everyone gets at least one, and any child with a higher rating than an immediate neighbor gets more candies than that neighbor. Return the minimum total candies needed.
+
+```text
+ratings:  1 > 0 < 2
+candies:  2 > 1 < 2
+```
+
 **Example 1:**
 
 ```text

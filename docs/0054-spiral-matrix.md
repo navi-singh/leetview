@@ -6,6 +6,18 @@ description: MEDIUM
 
 Given an `m x n` `matrix`, return all elements of the `matrix` in spiral order.
 
+## In Plain Terms
+
+Read every value in the matrix by walking around the outside edge, then moving inward layer by layer. The direction order is right, down, left, up, repeated until all cells are visited.
+
+```text
+1 -> 2 -> 3
+          |
+4 -> 5    6
+^         |
+7 <- 8 <- 9
+```
+
 **Example 1:**
 
 ```text

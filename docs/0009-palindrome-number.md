@@ -8,6 +8,10 @@ Given an integer `x`, return `true` if `x` is a palindrome, and `false` otherwis
 
 **Follow up:** Could you solve it without converting the integer to a string?
 
+## In Plain Terms
+
+Decide whether the digits of `x` read the **same left-to-right and right-to-left**. Negative numbers are not palindromes because of the leading minus sign.
+
 **Example 1:**
 
 ```text

@@ -8,6 +8,20 @@ Given an integer array `nums` where the elements are sorted in ascending order, 
 
 A height-balanced binary tree is a binary tree in which the depth of the two subtrees of every node never differs by more than one.
 
+## In Plain Terms
+
+Turn the sorted array into a **height-balanced BST**, so smaller values are on the left, larger values are on the right, and no subtree becomes much deeper than its sibling. Picking middle values as roots keeps the tree balanced.
+
+```text
+nums: [-10, -3, 0, 5, 9]
+
+        0
+      /   \
+    -3     9
+    /     /
+  -10    5
+```
+
 **Example 1:**
 
 ```text

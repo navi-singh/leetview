@@ -10,6 +10,18 @@ The path sum of a path is the sum of the node's values in the path.
 
 Given the root of a binary tree, return the maximum path sum of any non-empty path.
 
+## In Plain Terms
+
+Find the largest sum of values along any non-empty path in the tree. The path can start and end anywhere, but it must follow parent-child connections and cannot reuse a node.
+
+```text
+    1
+   / \
+  2   3
+
+best path: 2 -> 1 -> 3 = 6
+```
+
 **Example 1:**
 
 ```text

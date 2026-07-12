@@ -8,6 +8,16 @@ A phrase is a palindrome if, after converting all uppercase letters into lowerca
 
 Given a string `s`, return `true` if it is a palindrome, or `false` otherwise.
 
+## In Plain Terms
+
+Ignore capitalization and non-alphanumeric characters, then check whether the cleaned string reads the same forward and backward. Compare matching characters from the outside toward the center.
+
+```text
+cleaned: a m a n a p l a n a c a n a l p a n a m a
+         ^                                       ^
+         same characters move inward
+```
+
 **Example 1:**
 
 ```text

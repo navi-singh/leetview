@@ -12,6 +12,16 @@ Return `k` after placing the final result in the first `k` slots of `nums`.
 
 Do not allocate extra space for another array. You must do this by **modifying the input array in-place** with O(1) extra memory.
 
+## In Plain Terms
+
+Modify the sorted array so each value appears **at most twice** in the kept prefix, then return the prefix length `k`. Anything after the first `k` slots does not matter.
+
+```text
+[1, 1, 1, 2, 2, 3]
+ keep keep skip keep keep keep
+=> [1, 1, 2, 2, 3, _], k = 5
+```
+
 **Example 1:**
 
 ```text

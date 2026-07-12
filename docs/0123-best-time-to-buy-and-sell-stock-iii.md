@@ -10,6 +10,16 @@ Find the maximum profit you can achieve. You may complete at most two transactio
 
 Note: You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).
 
+## In Plain Terms
+
+Maximize profit with at most **two** buy/sell transactions. You must finish the first sale before starting another buy.
+
+```text
+prices: 3  3  5  0  0  3  1  4
+                  B----S  B--S
+gain:             3   +   3 = 6
+```
+
 **Example 1:**
 
 ```text

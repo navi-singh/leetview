@@ -14,6 +14,15 @@ Given an array of integers `nums`, find the next permutation of `nums`.
 
 The replacement must be **<a href="http://en.wikipedia.org/wiki/In-place_algorithm" target="_blank">in place</a>**  and use only constant extra memory.
 
+## In Plain Terms
+
+Rearrange `nums` into the next lexicographically larger ordering of the same values. If it is already the largest possible ordering, rearrange it into the smallest ascending order instead.
+
+```text
+[1, 2, 3] -> [1, 3, 2]
+ next larger ordering
+```
+
 **Example 1:** 
 
 ```

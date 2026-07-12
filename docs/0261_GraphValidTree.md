@@ -2,6 +2,10 @@
 Given n nodes labeled from 0 to n - 1 and a list of undirected edges (each edge is a pair of
 nodes), check if these edges form a valid tree.
 
+## In Plain Terms
+
+Determine whether the undirected edges connect all `n` nodes into exactly one tree. That means the graph must be fully connected and must not contain any cycle.
+
 <p>Analysis
 
 <p>This problem can be converted to finding the cycle from a graph. It can be solved by using DFS

@@ -6,6 +6,10 @@ description: EASY
 
 You are climbing a staircase. It takes `n` steps to reach the top. Each time you can either climb `1` or `2` steps. In how many distinct ways can you climb to the top?
 
+## In Plain Terms
+
+Count how many distinct ways you can reach step `n` when each move climbs either `1` or `2` steps. The number of ways to reach a step comes from the ways to reach the previous one and the one before that.
+
 **Example 1:**
 
 ```text

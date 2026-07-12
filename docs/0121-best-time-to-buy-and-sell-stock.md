@@ -10,6 +10,16 @@ You want to maximize your profit by choosing a single day to buy one stock and c
 
 Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return `0`.
 
+## In Plain Terms
+
+Choose one day to **buy** and a later day to **sell** to maximize profit. If every later price is lower, return `0` because no profitable trade exists.
+
+```text
+prices: 7  1  5  3  6  4
+           B           S
+profit: 6 - 1 = 5
+```
+
 **Example 1:**
 
 ```text

@@ -8,6 +8,17 @@ Given an `m x n` 2D binary grid `grid` which represents a map of `'1'`s (land) a
 
 An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
 
+## In Plain Terms
+
+Count how many separate **land groups** exist in the grid. Land cells connect only up, down, left, and right; diagonal touching does not merge islands.
+
+```text
+1 1 1 1 0
+1 1 0 1 0   all connected land = 1 island
+1 1 0 0 0
+0 0 0 0 0
+```
+
 **Example 1:**
 
 ```text

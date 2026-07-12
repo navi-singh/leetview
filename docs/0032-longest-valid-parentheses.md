@@ -6,6 +6,15 @@ description: HARD
 
 Given a string containing just the characters `'('` and `')'`, return the length of the longest valid (well-formed) parentheses substring.
 
+## In Plain Terms
+
+Find the length of the longest continuous substring of parentheses that is **well-formed**. You return only the length, not the substring.
+
+```text
+s = ( ( )
+      [ ]     longest valid part is "()", length 2
+```
+
 **Example 1:**
 
 ```text

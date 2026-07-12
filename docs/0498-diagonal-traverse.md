@@ -2,6 +2,20 @@
 
 Given an `m x n` matrix `mat`, return an array of all the elements of the array in a diagonal order.
 
+## In Plain Terms
+
+Return all matrix values by walking diagonals, alternating up-right and down-left directions. The traversal must visit every cell exactly once in that zigzag diagonal order.
+
+```text
+1 -> 2    3
+     ^   /
+4    5  6
+|   /
+v  /
+7    8 -> 9
+output starts: 1, 2, 4, 7, 5, 3, ...
+```
+
 **Example 1:** 
 <img alt="" src="https://assets.leetcode.com/uploads/2021/04/10/diag1-grid.jpg" style="width: 334px; height: 334px;">
 

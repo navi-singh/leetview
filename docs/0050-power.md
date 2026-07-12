@@ -2,6 +2,10 @@
 
 Implement <a href="http://www.cplusplus.com/reference/valarray/pow/" target="_blank">pow(x, n)</a>, which calculates `x` raised to the power `n` (i.e., `x^n`).
 
+## In Plain Terms
+
+Compute `x` raised to the integer power `n`. Positive exponents multiply by `x`, negative exponents mean take the reciprocal, and large `n` should be handled efficiently rather than multiplying one step at a time.
+
 **Example 1:** 
 
 ```

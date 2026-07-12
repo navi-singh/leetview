@@ -8,6 +8,18 @@ Given a `m x n` `grid` filled with non-negative numbers, find a path from the to
 
 **Note:** You can only move either down or right at any point in time.
 
+## In Plain Terms
+
+Move from the top-left to the bottom-right of the grid using only right or down moves, choosing the path with the **smallest total sum**. Each path's cost includes every cell value it visits.
+
+```text
+1 -> 3 -> 1
+          |
+1    5    1
+          |
+4    2    1   sum = 7
+```
+
 **Example 1:**
 
 ```text

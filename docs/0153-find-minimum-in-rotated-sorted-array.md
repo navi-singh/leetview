@@ -10,6 +10,16 @@ Given the sorted rotated array `nums` of **unique** elements, return the minimum
 
 You must write an algorithm that runs in `O(log n)` time.
 
+## In Plain Terms
+
+A sorted array was rotated, so the smallest value is the **pivot point** where the order wraps around. Find that minimum in `O(log n)` time, using the fact that all values are unique.
+
+```text
+nums: [3, 4, 5, 1, 2]
+              ^
+            minimum
+```
+
 **Example 1:**
 
 ```text

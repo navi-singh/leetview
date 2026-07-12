@@ -6,6 +6,16 @@ description: MEDIUM
 
 Given the `head` of a linked list, rotate the list to the right by `k` places.
 
+## In Plain Terms
+
+Move the linked list's last `k` nodes to the front, preserving their order. Since rotating by the list length changes nothing, only `k % length` positions matter.
+
+```text
+1 -> 2 -> 3 -> 4 -> 5, k = 2
+          last 2 nodes move to front
+4 -> 5 -> 1 -> 2 -> 3
+```
+
 **Example 1:**
 
 ```text

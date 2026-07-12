@@ -6,6 +6,18 @@ description: EASY
 
 Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).
 
+## In Plain Terms
+
+Check whether the tree is a mirror image of itself around the center. The left and right subtrees must match in opposite directions with equal values.
+
+```text
+        1
+      /   \
+     2     2
+    / \   / \
+   3   4 4   3
+```
+
 **Example 1:**
 
 ```text

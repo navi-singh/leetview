@@ -1,6 +1,16 @@
 # Description
 Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei), find the minimum number of conference rooms required.
 
+## In Plain Terms
+
+Find the fewest rooms needed so every meeting can happen even when intervals overlap. Overlapping meetings need separate rooms, while a room can be reused once its current meeting has ended.
+
+```text
+room1: [0,30]  |------------------------------|
+room2: [5,10]       |-----|  [15,20] |-----|
+Need 2 rooms because [0,30] overlaps both shorter meetings.
+```
+
 Example
 
 Example1

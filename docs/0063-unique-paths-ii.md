@@ -10,6 +10,17 @@ An obstacle and space are marked as `1` or `0` respectively in `obstacleGrid`. A
 
 Return the number of possible unique paths that the robot can take to reach the bottom-right corner.
 
+## In Plain Terms
+
+Count the robot paths from top-left to bottom-right when `1` cells are **obstacles** that cannot be used. The robot may only move right or down, so blocked cells contribute zero paths.
+
+```text
+0 0 0
+0 X 0
+0 0 0
+S to E, avoiding X, has 2 paths
+```
+
 **Example 1:**
 
 ```text

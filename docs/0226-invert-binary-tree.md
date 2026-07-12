@@ -6,6 +6,18 @@ description: EASY
 
 Given the `root` of a binary tree, invert the tree, and return its root.
 
+## In Plain Terms
+
+Swap every node's left and right children so the whole binary tree becomes its mirror image. Return the root of that inverted tree.
+
+```text
+    4              4
+   / \            / \
+  2   7    ->    7   2
+ / \ / \        / \ / \
+1  3 6  9      9  6 3  1
+```
+
 **Example 1:**
 
 ```text

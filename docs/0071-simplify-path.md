@@ -17,6 +17,10 @@ The **canonical path** should have the following format:
 
 Return the simplified canonical path.
 
+## In Plain Terms
+
+Convert an absolute Unix path into its shortest canonical form. Ignore `.` segments, collapse repeated slashes, use `..` to move up one directory when possible, and remove any trailing slash except for the root path.
+
 **Example 1:**
 
 ```text

@@ -12,6 +12,15 @@ Given an array `nums` of `n` integers, return an array of all the **unique** qua
 
 You may return the answer in **any order**.
 
+## In Plain Terms
+
+Find every unique group of **four distinct elements** whose values add up to `target`. Return each quadruplet once, even when duplicate values in `nums` could produce the same quadruplet.
+
+```text
+sorted nums: [-2, -1, 0, 0, 1, 2], target = 0
+              -2 + -1 + 1 + 2 = 0
+```
+
 **Example 1:**
 
 ```text

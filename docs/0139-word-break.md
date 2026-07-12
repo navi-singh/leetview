@@ -8,6 +8,10 @@ Given a string `s` and a dictionary of strings `wordDict`, return `true` if `s` 
 
 Note that the same word in the dictionary may be reused multiple times in the segmentation.
 
+## In Plain Terms
+
+Decide whether the whole string `s` can be split into **dictionary words** without leftover characters. Words from `wordDict` may be reused, and you only need to return `true` or `false`, not the actual split.
+
 **Example 1:**
 
 ```text

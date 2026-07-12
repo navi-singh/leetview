@@ -11,6 +11,10 @@ Given an input string `s` and a pattern `p`, implement regular expression matchi
 
 The matching should cover the **entire** input string (not partial).
 
+## In Plain Terms
+
+Check whether pattern `p` matches **all** of string `s`, not just a piece of it. In the pattern, `.` can stand for any one character, and `*` means repeat the previous pattern element zero or more times.
+
 **Example 1:**
 
 ```text

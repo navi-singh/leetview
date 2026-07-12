@@ -8,6 +8,20 @@ Given the root of a binary tree, return its maximum depth.
 
 A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 
+## In Plain Terms
+
+Find how many nodes are on the longest path from the root down to any leaf. An empty tree has depth `0`; otherwise the root counts as depth `1`.
+
+```text
+        3
+      /   \
+     9    20
+          / \
+         15  7
+
+longest root-to-leaf path has 3 nodes
+```
+
 **Example 1:**
 
 ```text

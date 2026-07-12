@@ -6,6 +6,16 @@ description: EASY
 
 Given an integer array `nums` and an integer `k`, return `true` if there are two distinct indices `i` and `j` in the array such that `nums[i] == nums[j]` and `abs(i - j) <= k`.
 
+## In Plain Terms
+
+Find whether the same value appears at two different indices that are at most `k` positions apart. In other words, duplicates only count if they fit inside a window of length `k + 1`.
+
+```text
+nums:   [1, 2, 3, 1], k = 3
+index:   0  1  2  3
+         ^--------^ same value, distance 3
+```
+
 **Example 1:**
 
 ```text

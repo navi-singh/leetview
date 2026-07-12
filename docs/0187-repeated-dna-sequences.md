@@ -12,6 +12,16 @@ When studying **DNA**, it is useful to identify repeated sequences within the DN
 
 Given a string `s` that represents a **DNA sequence**, return all the **10-letter-long** sequences (substrings) that occur more than once in a DNA molecule. You may return the answer in **any order**.
 
+## In Plain Terms
+
+Find every **10-character DNA substring** that appears more than once in `s`. Return each repeated sequence once, even if it occurs many times.
+
+```text
+AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT
+[AAAAACCCCC]
+          [AAAAACCCCC]  repeated
+```
+
 **Example 1:**
 
 ```text

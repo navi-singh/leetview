@@ -8,6 +8,15 @@ There are a total of `numCourses` courses you have to take, labeled from `0` to 
 
 Return the ordering of courses you should take to finish all courses. If there are many valid answers, return any of them. If it is impossible to finish all courses, return an empty array.
 
+## In Plain Terms
+
+Return one valid order to take all courses while respecting prerequisites. If the prerequisite graph has a cycle, no ordering can satisfy it, so return an empty array.
+
+```text
+0 -> 1
+Take course 0 first, then course 1: [0, 1]
+```
+
 **Example 1:**
 
 ```text

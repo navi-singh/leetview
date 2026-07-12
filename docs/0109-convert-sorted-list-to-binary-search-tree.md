@@ -6,6 +6,20 @@ description: MEDIUM
 
 Given the head of a singly linked list where elements are sorted in ascending order, convert it to a height-balanced binary search tree.
 
+## In Plain Terms
+
+Convert the sorted linked list into a **height-balanced BST** using the same values in sorted order. The tree should stay balanced while preserving the BST left-smaller, right-larger rule.
+
+```text
+-10 -> -3 -> 0 -> 5 -> 9
+
+        0
+      /   \
+    -3     9
+    /     /
+  -10    5
+```
+
 **Example 1:**
 
 ```text

@@ -8,6 +8,15 @@ Given two strings `s` and `t` of lengths `m` and `n` respectively, return the **
 
 The testcases will be generated such that the answer is **unique**.
 
+## In Plain Terms
+
+Find the shortest contiguous substring of `s` that contains every character from `t`, including duplicates. Expand a window until it contains everything, then shrink it from the left while it remains valid.
+
+```text
+s = ADOBECODEBANC, t = ABC
+          [ BANC ]  shortest valid window
+```
+
 **Example 1:**
 
 ```text

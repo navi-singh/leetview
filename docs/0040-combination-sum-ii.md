@@ -10,6 +10,10 @@ Each number in `candidates` may only be used once in the combination.
 
 Note: The solution set must not contain duplicate combinations.
 
+## In Plain Terms
+
+Find all unique combinations of numbers from `candidates` that add up to `target`. Each input number can be used at most once, and duplicate combinations should appear only once.
+
 **Example 1:**
 
 ```text

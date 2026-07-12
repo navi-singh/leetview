@@ -8,6 +8,10 @@ Given an array `nums` of size `n`, return the majority element.
 
 The majority element is the element that appears more than `⌊n / 2⌋` times. You may assume that the majority element always exists in the array.
 
+## In Plain Terms
+
+Return the value that appears **more than half** of the time in `nums`. The problem guarantees such a value exists, so you only need to identify it efficiently.
+
 **Example 1:**
 
 ```text

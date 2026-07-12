@@ -10,6 +10,16 @@ Given the sorted rotated array `nums` that may contain **duplicates**, return th
 
 You must decrease the overall time complexity as much as possible.
 
+## In Plain Terms
+
+Find the minimum value in a rotated sorted array that may contain **duplicates**. Duplicates can hide which half is sorted, so some cases may require shrinking the search range one step at a time.
+
+```text
+nums: [1, 3, 5]
+       ^
+     minimum
+```
+
 **Example 1:**
 
 ```text

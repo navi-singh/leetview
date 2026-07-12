@@ -8,6 +8,10 @@ Given an integer `n`, return `true` if it is a power of two. Otherwise, return `
 
 An integer `n` is a power of two if there exists an integer `x` such that `n == 2^x`.
 
+## In Plain Terms
+
+Return whether `n` is exactly `1, 2, 4, 8, ...` with no extra factors. Non-positive numbers are not powers of two.
+
 **Example 1:**
 
 ```text

@@ -20,6 +20,17 @@ Write the code that will take a string and make this conversion given a number o
 string convert(string s, int numRows);
 ```
 
+## In Plain Terms
+
+Write the characters of `s` by moving down the rows and then diagonally back up, repeating that zigzag path. The answer is what you get by reading the rows from top to bottom.
+
+```text
+P   A   H   N
+A P L S I I G
+Y   I   R
+=> PAHNAPLSIIGYIR
+```
+
 **Example 1:**
 
 ```text

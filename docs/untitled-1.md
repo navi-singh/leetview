@@ -8,6 +8,10 @@ Given a string `s` that contains parentheses and letters, remove the minimum num
 
 Return _all the possible results_. You may return the answer in **any order**.
 
+## In Plain Terms
+
+Remove the fewest parentheses needed to make the string valid, but return **all distinct** valid strings that can result from that minimum number of removals. Letters stay in place; only parentheses are candidates for removal.
+
 **Example 1:**
 
 ```text

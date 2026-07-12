@@ -8,6 +8,18 @@ Given a binary tree (not necessarily perfect), populate each next pointer to poi
 
 Initially, all next pointers are set to `NULL`.
 
+## In Plain Terms
+
+For each node in any binary tree, set its `next` pointer to the nearest node on its right at the same level. If there is no such node, set `next` to `NULL`.
+
+```text
+        1 -> NULL
+      /   \
+     2 -> 3 -> NULL
+    / \     \
+   4->5---->7 -> NULL
+```
+
 **Example 1:**
 
 ```text

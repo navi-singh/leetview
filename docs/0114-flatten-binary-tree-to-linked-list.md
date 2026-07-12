@@ -9,6 +9,18 @@ Given the root of a binary tree, flatten the tree into a "linked list":
 - The "linked list" should use the same `TreeNode` class where the `right` child pointer points to the next node in the list and the `left` child pointer is always `null`.
 - The "linked list" should be in the same order as a pre-order traversal of the binary tree.
 
+## In Plain Terms
+
+Rewrite the tree in-place so it becomes a single right-child chain following **preorder** traversal. Every node's left child should become `null`.
+
+```text
+    1                 1
+   / \                 \
+  2   5      ->         2
+ / \   \                 \
+3   4   6                 3 -> 4 -> 5 -> 6
+```
+
 **Example 1:**
 
 ```text

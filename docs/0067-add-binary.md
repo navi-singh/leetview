@@ -6,6 +6,10 @@ description: EASY
 
 Given two binary strings `a` and `b`, return their sum as a binary string.
 
+## In Plain Terms
+
+Add the two binary strings `a` and `b` and return the sum as another binary string. Work from right to left, carrying `1` whenever a column adds up to `2` or `3`.
+
 **Example 1:**
 
 ```text

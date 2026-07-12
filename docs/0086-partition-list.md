@@ -8,6 +8,17 @@ Given the `head` of a linked list and a value `x`, partition it such that all no
 
 You should preserve the original relative order of the nodes in each of the two partitions.
 
+## In Plain Terms
+
+Rearrange the linked list so nodes with values less than `x` come before nodes with values at least `x`. Keep the original relative order within both groups.
+
+```text
+1 -> 4 -> 3 -> 2 -> 5 -> 2, x = 3
+small: 1 -> 2 -> 2
+rest:  4 -> 3 -> 5
+=> 1 -> 2 -> 2 -> 4 -> 3 -> 5
+```
+
 **Example 1:**
 
 ```text

@@ -8,6 +8,10 @@ Given a signed 32-bit integer `x`, return `x` with its digits reversed. If rever
 
 **Assume the environment does not allow you to store 64-bit integers (signed or unsigned).**
 
+## In Plain Terms
+
+Reverse the decimal digits of `x` while keeping its sign. If the reversed value would not fit in a signed 32-bit integer, return `0` instead.
+
 **Example 1:**
 
 ```text

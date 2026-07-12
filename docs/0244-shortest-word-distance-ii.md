@@ -11,6 +11,17 @@ Implement the `WordDistance` class:
 - `WordDistance(String[] wordsDict)` initializes the object with the strings array `wordsDict`.
 - `int shortest(String word1, String word2)` returns the shortest distance between `word1` and `word2` in the array `wordsDict`.
 
+## In Plain Terms
+
+Preprocess `wordsDict` so repeated `shortest(word1, word2)` queries can return the closest distance between occurrences of the two words. The words are different, but each may appear many times.
+
+```text
+practice: [0]
+coding:   [3]
+makes:    [1, 4]
+shortest(makes, coding) = |4 - 3| = 1
+```
+
 **Example 1:**
 
 ```text

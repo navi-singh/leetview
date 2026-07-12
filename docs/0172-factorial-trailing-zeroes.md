@@ -8,6 +8,10 @@ Given an integer `n`, return the number of trailing zeroes in `n!`.
 
 Note that `n! = n * (n - 1) * (n - 2) * ... * 3 * 2 * 1`.
 
+## In Plain Terms
+
+Count how many zeroes appear at the end of `n!` without actually computing the factorial. Each trailing zero comes from a factor pair `2 * 5`, and factors of 5 are the limiting part.
+
 **Example 1:**
 
 ```text

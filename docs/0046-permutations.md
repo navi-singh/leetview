@@ -6,6 +6,10 @@ description: MEDIUM
 
 Given an array `nums` of distinct integers, return all the possible permutations. You can return the answer in **any order**.
 
+## In Plain Terms
+
+Return every possible **ordering** of the distinct numbers in `nums`. Since all values are unique, each arrangement appears exactly once and the output order does not matter.
+
 **Example 1:**
 
 ```text

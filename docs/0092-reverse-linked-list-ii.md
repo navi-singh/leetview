@@ -6,6 +6,16 @@ description: MEDIUM
 
 Given the `head` of a singly linked list and two integers `left` and `right` where `left <= right`, reverse the nodes of the list from position `left` to position `right`, and return the reversed list.
 
+## In Plain Terms
+
+Reverse only the part of the linked list from position `left` through position `right`, leaving everything before and after that segment in the same order. Return the head of the updated list.
+
+```text
+before: 1 -> 2 -> 3 -> 4 -> 5
+              [ reverse ]
+after:  1 -> 4 -> 3 -> 2 -> 5
+```
+
 **Example 1:**
 
 ```text

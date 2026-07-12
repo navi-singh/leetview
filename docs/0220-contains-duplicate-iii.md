@@ -14,6 +14,16 @@ Find a pair of indices `(i, j)` such that:
 
 Return `true` if such pair exists or `false` otherwise.
 
+## In Plain Terms
+
+Look for two different positions that are close enough in both **index distance** and **value distance**. Both limits must be satisfied for the answer to be `true`.
+
+```text
+nums:   [1, 2, 3, 1]
+index:   0  1  2  3
+         ^--------^ indexDiff = 3, valueDiff = 0
+```
+
 **Example 1:**
 
 ```text

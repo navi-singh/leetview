@@ -10,6 +10,10 @@ Two strings `s` and `t` are isomorphic if the characters in `s` can be replaced 
 
 All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.
 
+## In Plain Terms
+
+Decide whether each character in `s` can be consistently renamed to form `t`. The mapping must be one-to-one: the same source character always maps to the same target character, and two different source characters cannot map to the same target.
+
 **Example 1:**
 
 ```text

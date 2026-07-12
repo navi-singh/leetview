@@ -6,6 +6,15 @@ description: EASY
 
 Given the `head` of a singly linked list, reverse the list, and return the reversed list.
 
+## In Plain Terms
+
+Reverse the direction of every pointer in the singly linked list and return the new head. The old tail becomes the first node of the returned list.
+
+```text
+1 -> 2 -> 3 -> 4 -> 5
+5 -> 4 -> 3 -> 2 -> 1
+```
+
 **Example 1:**
 
 ```text

@@ -2,6 +2,18 @@
 
 There is a new alien language which uses the latin alphabet. However, the order among letters are unknown to you. You receive a list of non-empty words from the dictionary, where words are sorted lexicographically by the rules of this new language. Derive the order of letters in this language.
 
+## In Plain Terms
+
+Infer a valid letter order from words that are already sorted according to an alien alphabet. Compare neighboring words to discover ordering rules, then topologically sort those rules; return an empty string if they contradict each other.
+
+```text
+wrt vs wrf  -> t before f
+wrf vs er   -> w before e
+er  vs ett  -> r before t
+ett vs rftt -> e before r
+one order: w -> e -> r -> t -> f
+```
+
 > Example 1: Given the following words in dictionary\
 > \[ "wrt", "wrf", "er", "ett", "rftt" ]
 

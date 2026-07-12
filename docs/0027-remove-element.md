@@ -8,6 +8,16 @@ Given an integer array `nums` and an integer `val`, remove all occurrences of `v
 
 Do not allocate extra space for another array. You must do this by modifying the input array in-place with O(1) extra memory.
 
+## In Plain Terms
+
+Remove every occurrence of `val` from `nums` in-place by moving kept values into the first `k` slots. Return `k`; values beyond those first `k` positions do not matter.
+
+```text
+nums = [3, 2, 2, 3], val = 3
+keep:     2  2
+=> [2, 2, _, _], k = 2
+```
+
 **Example 1:**
 
 ```text

@@ -6,6 +6,15 @@ description: EASY
 
 Given the `head` of a linked list and an integer `val`, remove all the nodes of the linked list that have `Node.val == val`, and return the new head.
 
+## In Plain Terms
+
+Walk through the linked list and remove every node whose value equals `val`, then return the possibly new head. Nodes with other values must stay in their original order.
+
+```text
+1 -> 2 -> 6 -> 3 -> 4 -> 5 -> 6   remove 6
+1 -> 2 ------> 3 -> 4 -> 5
+```
+
 **Example 1:**
 
 ```text

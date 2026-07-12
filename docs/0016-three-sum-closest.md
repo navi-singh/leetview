@@ -10,6 +10,15 @@ Return the sum of the three integers.
 
 You may assume that each input would have exactly one solution.
 
+## In Plain Terms
+
+Pick three numbers from `nums` so their sum is as close as possible to `target`, then return that sum. The answer is the sum itself, not the three numbers.
+
+```text
+nums: [-1, 2, 1, -4], target = 1
+       -1 + 2 + 1 = 2   closest sum
+```
+
 **Example 1:**
 
 ```text

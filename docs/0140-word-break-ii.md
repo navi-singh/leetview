@@ -8,6 +8,10 @@ Given a string `s` and a dictionary of strings `wordDict`, add spaces in `s` to 
 
 Note that the same word in the dictionary may be reused multiple times in the segmentation.
 
+## In Plain Terms
+
+Return **every possible sentence** formed by inserting spaces into `s` so each piece is in `wordDict`. Unlike Word Break I, this asks for all valid segmentations, not just whether one exists.
+
 **Example 1:**
 
 ```text

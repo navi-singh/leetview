@@ -4,6 +4,22 @@ Given a binary tree, count the number of uni-value subtrees.
 
 A Uni-value subtree means all nodes of the subtree have the same value.
 
+## In Plain Terms
+
+Count every subtree whose nodes all have the **same value**. A single node always qualifies, and a larger subtree qualifies only if both children qualify and match the current node's value.
+
+```text
+Example root = {5,1,5,5,5,#,5}
+
+      5
+     / \
+    1   5
+   / \   \
+  5   5   5
+
+Univalue subtrees: three leaf 5s + the right 5->5 subtree = 4
+```
+
 Example
 Example1
 

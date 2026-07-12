@@ -6,6 +6,10 @@ description: MEDIUM
 
 Given a string `s`, return the longest palindromic substring in `s`.
 
+## In Plain Terms
+
+Find the longest continuous part of `s` that reads the **same forward and backward**. If more than one longest palindrome exists, returning any one of them is fine.
+
 **Example 1:**
 
 ```text

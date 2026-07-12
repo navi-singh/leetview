@@ -8,6 +8,16 @@ You are given a string `s` and an array of strings `words` of the same length. R
 
 You can return the answer in any order.
 
+## In Plain Terms
+
+Find every starting index where a substring is made by placing all words in `words` back-to-back exactly once, in any order. Since all words have the same length, each valid window has total length `len(words) * len(words[0])`.
+
+```text
+s = bar foo the foo bar man
+    [bar foo]             start 0
+            [foo bar]     start 9
+```
+
 **Example 1:**
 
 ```text

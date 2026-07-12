@@ -8,6 +8,20 @@ Given a binary tree, determine if it is height-balanced.
 
 A height-balanced binary tree is a binary tree in which the depth of the two subtrees of every node never differs by more than one.
 
+## In Plain Terms
+
+Determine whether every node's left and right subtrees have heights that differ by at most `1`. The balance requirement must be true for the entire tree, not only the root.
+
+```text
+        3
+      /   \
+     9    20
+          / \
+         15  7
+
+balanced: subtree heights never differ by more than 1
+```
+
 **Example 1:**
 
 ```text

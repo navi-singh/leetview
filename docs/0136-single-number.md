@@ -8,6 +8,10 @@ Given a **non-empty** array of integers `nums`, every element appears **twice** 
 
 You must implement a solution with a linear runtime complexity and use only constant extra space.
 
+## In Plain Terms
+
+Find the **one value** in `nums` that does not have a duplicate. Every other value appears exactly twice, so the task is to isolate the unpaired number while using only constant extra space.
+
 **Example 1:**
 
 ```text

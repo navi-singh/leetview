@@ -10,6 +10,16 @@ There is a cycle in a linked list if there is some node in the list that can be 
 
 Return `true` if there is a cycle in the linked list. Otherwise, return `false`.
 
+## In Plain Terms
+
+Determine whether following `next` pointers from `head` ever loops back to a node you've already visited. The `pos` value explains the test case's cycle, but your function only receives the linked-list head.
+
+```text
+3 -> 2 -> 0 -> -4
+     ^         |
+     |_________|
+```
+
 **Example 1:**
 
 ```text

@@ -6,6 +6,10 @@ A strobogrammatic number is a number that looks the same when rotated 180 degree
 
 Write a function to count the total strobogrammatic numbers that exist in the range of low <= num <= high.
 
+## In Plain Terms
+
+Count how many upside-down-readable numbers fall between the string bounds `low` and `high`, inclusive. The tricky part is generating only valid strobogrammatic candidates of the right lengths and then comparing them against the range limits.
+
 Example:
 
 Given low = "50", high = "100", return 3. Because 69, 88, and 96 are three strobogrammatic numbers.

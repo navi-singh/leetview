@@ -18,6 +18,16 @@ Implement the `MyStack` class:
 - You must use **only** standard operations of a queue, which means that only `push to back`, `peek/pop from front`, `size` and `is empty` operations are valid.
 - Depending on your language, the queue may not be supported natively. You may simulate a queue using a list or deque (double-ended queue) as long as you use only a queue's standard operations.
 
+## In Plain Terms
+
+Implement stack behavior, where the **last pushed** item is the first one popped, but only using queue operations. After pushing `1` then `2`, `top()` and `pop()` must both see `2` first.
+
+```text
+push(1), push(2)
+stack top -> [2, 1]
+queue ops must simulate this LIFO order
+```
+
 **Example 1:**
 
 ```text

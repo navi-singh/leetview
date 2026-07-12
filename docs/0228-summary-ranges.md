@@ -15,6 +15,15 @@ Each range `[a,b]` in the list should be output as:
 - `"a->b"` if `a != b`
 - `"a"` if `a == b`
 
+## In Plain Terms
+
+Compress the sorted unique numbers into the smallest list of consecutive ranges. Single numbers stay as just `"a"`, while runs of length greater than one become `"a->b"`.
+
+```text
+0 1 2   4 5   7
++-0->2  +-4->5 +-7
+```
+
 **Example 1:**
 
 ```text

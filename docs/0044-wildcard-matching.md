@@ -11,6 +11,10 @@ Given an input string `s` and a pattern `p`, implement wildcard pattern matching
 
 The matching should cover the **entire** input string (not partial).
 
+## In Plain Terms
+
+Check whether pattern `p` matches the **entire** string `s`. In the pattern, `?` matches exactly one character, while `*` can match any sequence, including an empty one.
+
 **Example 1:**
 
 ```text

@@ -6,6 +6,10 @@ description: EASY
 
 Given an integer array `nums`, return `true` if any value appears at least twice in the array, and return `false` if every element is distinct.
 
+## In Plain Terms
+
+Check whether any number appears more than once in `nums`. Return `true` as soon as a repeated value exists; otherwise return `false`.
+
 **Example 1:**
 
 ```text

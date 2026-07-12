@@ -6,6 +6,16 @@ description: MEDIUM
 
 Given an integer array `nums`, find the subarray with the largest sum, and return its sum.
 
+## In Plain Terms
+
+Find the contiguous **slice** of `nums` whose values add up to the largest possible sum, and return that sum. A bad negative prefix should be dropped because it only makes any future slice worse.
+
+```text
+nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+                    [ 4, -1, 2, 1 ] = 6
+                      best subarray
+```
+
 **Example 1:**
 
 ```text

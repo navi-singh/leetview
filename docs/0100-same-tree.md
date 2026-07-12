@@ -8,6 +8,16 @@ Given the roots of two binary trees `p` and `q`, write a function to check if th
 
 Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
 
+## In Plain Terms
+
+Compare two binary trees and return `true` only if they have the exact same **shape** and the same value at every matching node. Any missing node or different value makes them different.
+
+```text
+p:    1        q:    1
+     / \            / \
+    2   3          2   3
+```
+
 **Example 1:**
 
 ```text

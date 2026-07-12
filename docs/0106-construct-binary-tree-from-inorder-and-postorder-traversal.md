@@ -6,6 +6,21 @@ description: MEDIUM
 
 Given two integer arrays `inorder` and `postorder` where `inorder` is the inorder traversal of a binary tree and `postorder` is the postorder traversal of the same tree, construct and return the binary tree.
 
+## In Plain Terms
+
+Rebuild the original binary tree from its `inorder` and `postorder` traversals. `postorder` gives each subtree's root at the end, while `inorder` splits the values into left and right subtrees.
+
+```text
+inorder:   [9,3,15,20,7]
+postorder: [9,15,7,20,3]
+
+        3
+      /   \
+     9    20
+          / \
+         15  7
+```
+
 **Example 1:**
 
 ```text

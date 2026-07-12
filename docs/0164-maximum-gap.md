@@ -8,6 +8,15 @@ Given an integer array `nums`, return the maximum difference between two success
 
 You must write an algorithm that runs in linear time and uses linear extra space.
 
+## In Plain Terms
+
+After sorting the numbers, find the largest difference between two neighboring values. You must do it in linear time, so the intended idea avoids comparison sorting.
+
+```text
+sorted nums: 1 --2-- 3 --3-- 6 --3-- 9
+maximum gap = 3
+```
+
 **Example 1:**
 
 ```text

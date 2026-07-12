@@ -11,6 +11,10 @@ We can keep shifting the string in both directions to form an **endless** **shif
 
 You are given an array of strings `strings`, group together all `strings[i]` that belong to the same shifting sequence. You may return the answer in **any order** .
 
+## In Plain Terms
+
+Group strings that are the same up to shifting every character by the same alphabet offset, wrapping around from `z` to `a`. For example, `abc`, `bcd`, and `xyz` belong together because their letter-to-letter gaps match.
+
 **Example 1:**
 
 Input: strings = \["abc","bcd","acef","xyz","az","ba","a","z"]

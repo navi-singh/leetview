@@ -10,6 +10,15 @@ Reorder it to: `L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …`
 
 You may not modify the values in the list's nodes. Only nodes themselves may be changed.
 
+## In Plain Terms
+
+Rearrange the existing linked-list nodes by alternating from the **front** and **back**: first node, last node, second node, second-to-last node, and so on. You may relink nodes, but you cannot change their stored values.
+
+```text
+original: 1 -> 2 -> 3 -> 4
+reorder:  1 -> 4 -> 2 -> 3
+```
+
 **Example 1:**
 
 ```text

@@ -13,6 +13,10 @@ Run-length encoding (RLE) is a string compression method that works by replacing
 
 Given a positive integer `n`, return the `n`th element of the count-and-say sequence.
 
+## In Plain Terms
+
+Build the sequence where each term describes the runs of identical digits in the previous term. Return the `n`th string in that sequence, with `n = 1` starting at `"1"`.
+
 **Example 1:**
 
 ```text

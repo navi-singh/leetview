@@ -6,6 +6,19 @@ description: HARD
 
 Given an array of `points` where `points[i] = [xi, yi]` represents a point on the **X-Y** plane, return the maximum number of points that lie on the same straight line.
 
+## In Plain Terms
+
+Given points on a coordinate plane, find the largest number of points that lie on **one straight line**. For each possible line, count how many input points are collinear with it.
+
+```text
+(3,3)        *
+          /
+(2,2)   *
+      /
+(1,1)*
+max points on one line = 3
+```
+
 **Example 1:**
 
 ```text

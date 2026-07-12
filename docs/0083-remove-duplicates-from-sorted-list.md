@@ -6,6 +6,16 @@ description: EASY
 
 Given the `head` of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.
 
+## In Plain Terms
+
+Given a sorted linked list, collapse each run of duplicate values down to a single node. Because duplicates are adjacent, one pass comparing neighboring nodes is enough.
+
+```text
+1 -> 1 -> 2
+     X
+=> 1 -> 2
+```
+
 **Example 1:**
 
 ```text

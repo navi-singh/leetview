@@ -6,6 +6,10 @@ description: MEDIUM
 
 Given a string `s`, partition `s` such that every substring of the partition is a **palindrome**. Return all possible palindrome partitioning of `s`.
 
+## In Plain Terms
+
+Split `s` in every possible way such that every piece is a palindrome. Return all valid partitions, not just one.
+
 **Example 1:**
 
 ```text

@@ -8,6 +8,22 @@ Given a binary search tree (BST), find the lowest common ancestor (LCA) node of 
 
 According to the [definition of LCA on Wikipedia](https://en.wikipedia.org/wiki/Lowest_common_ancestor): "The lowest common ancestor is defined between two nodes `p` and `q` as the lowest node in `T` that has both `p` and `q` as descendants (where we allow **a node to be a descendant of itself**)."
 
+## In Plain Terms
+
+Find the lowest node in the BST that has both `p` and `q` in its subtree, allowing a node to count as its own descendant. In a BST, values smaller than a node go left and larger values go right, which helps decide where the split happens.
+
+```text
+        6
+      /   \
+     2     8
+    / \   / \
+   0   4 7   9
+      / \
+     3   5
+
+p = 2, q = 8 -> LCA = 6
+```
+
 **Example 1:**
 
 ```text

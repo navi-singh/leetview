@@ -8,6 +8,22 @@ Given the root of a binary tree and an integer `targetSum`, return all root-to-l
 
 A root-to-leaf path is a path starting from the root and ending at any leaf node. A leaf is a node with no children.
 
+## In Plain Terms
+
+Find every root-to-leaf path whose node values sum to `targetSum`, and return each matching path as a list of values. Paths that stop before a leaf do not count.
+
+```text
+        5
+       / \
+      4   8
+     /   / \
+    11  13  4
+   /  \    / \
+  7    2  5   1
+
+matches: 5->4->11->2 and 5->8->4->5
+```
+
 **Example 1:**
 
 ```text

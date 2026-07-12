@@ -2,6 +2,16 @@
 
 Given an array of n integers nums and a target, find the number of index triplets i, j, k with 0 <= i < j < k < n that satisfy the condition nums\[i] + nums\[j] + nums\[k] < target.
 
+## In Plain Terms
+
+Count how many index triplets have a sum strictly less than `target`. After sorting, fix one number and use two pointers to count many valid pairs at once.
+
+```text
+nums sorted = [-2, 0, 1, 3], target = 2
+               i  L     R
+-2 + 0 + 3 = 1 < 2, so (-2,0,1) and (-2,0,3) both count.
+```
+
 > For example, given nums = \[-2, 0, 1, 3], and target = 2.
 
 Return 2. Because there are two triplets which sums are less than 2:

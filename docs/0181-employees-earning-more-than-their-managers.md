@@ -24,6 +24,10 @@ Write an SQL query to find the employees who earn more than their managers.
 
 Return the result table in **any order**.
 
+## In Plain Terms
+
+Write a query that returns the names of employees whose `salary` is greater than their manager's salary. Since managers are also rows in `Employee`, compare each employee row with its manager row.
+
 **Example 1:**
 
 ```text

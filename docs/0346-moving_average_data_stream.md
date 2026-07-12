@@ -7,6 +7,17 @@ Implement the`MovingAverage` class:
 - `MovingAverage(int size)` Initializesthe object with the size of the window `size`.
 - `double next(int val)` Returns the moving average of the last `size` values of the stream.
 
+## In Plain Terms
+
+Keep the average of only the most recent `size` values in a stream. Each call to `next(val)` adds a new value, drops the oldest one if the window is too large, and returns the current window average.
+
+```text
+size = 3
+next values: 1, 10, 3, 5
+window after 5: [10, 3, 5]
+average = (10 + 3 + 5) / 3 = 6.0
+```
+
 **Example 1:** 
 
 ```

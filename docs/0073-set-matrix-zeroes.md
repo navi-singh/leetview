@@ -8,6 +8,16 @@ Given an `m x n` integer matrix `matrix`, if an element is `0`, set its entire r
 
 You must do it **in place**.
 
+## In Plain Terms
+
+If any cell in `matrix` is `0`, turn that cell's entire row and column into `0`s, all in place. The challenge is remembering which rows and columns must be cleared without accidentally letting newly written zeroes trigger extra clearing.
+
+```text
+1 1 1        1 0 1
+1 0 1   ->   0 0 0
+1 1 1        1 0 1
+```
+
 **Example 1:**
 
 ```text

@@ -6,6 +6,18 @@ description: MEDIUM
 
 Given the root of a binary tree, return the zigzag level order traversal of its nodes' values (i.e., from left to right, then right to left for the next level, and so on).
 
+## In Plain Terms
+
+Return the tree's values one level at a time, but alternate direction on each level. Read the first level left-to-right, the next right-to-left, then keep switching.
+
+```text
+        3          -> [3]
+      /   \
+     9    20       <- [20, 9]
+          / \
+         15  7     -> [15, 7]
+```
+
 **Example 1:**
 
 ```text

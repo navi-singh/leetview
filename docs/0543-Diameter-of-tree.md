@@ -6,6 +6,19 @@ The **diameter**  of a binary tree is the **length**  of the longest path betwee
 
 The **length**  of a path between two nodes is represented by the number of edges between them.
 
+## In Plain Terms
+
+Find the length of the longest path between any two nodes in the binary tree. The path may pass through the root, but it does not have to.
+
+```text
+    1
+   / \
+  2   3
+ / \
+4   5
+longest path: 4-2-1-3 (3 edges)
+```
+
 **Example 1:** 
 <img alt="" src="https://assets.leetcode.com/uploads/2021/03/06/diamtree.jpg" style="width: 292px; height: 302px;">
 

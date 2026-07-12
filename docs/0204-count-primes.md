@@ -6,6 +6,10 @@ description: MEDIUM
 
 Given an integer `n`, return the number of prime numbers that are strictly less than `n`.
 
+## In Plain Terms
+
+Count how many prime numbers are **strictly smaller** than `n`. The number `n` itself is not included, even if it is prime.
+
 **Example 1:**
 
 ```text

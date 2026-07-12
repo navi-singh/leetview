@@ -10,6 +10,16 @@ You may assume that each input would have **exactly one solution**, and you may 
 
 You can return the answer in any order.
 
+## In Plain Terms
+
+Scan the array and find the **two positions** whose values add up to `target`, then return those two positions (the indices, not the values). You're guaranteed exactly one such pair exists, and you can't reuse the same element twice.
+
+```text
+nums  =  [ 2 , 7 , 11 , 15 ]     target = 9
+index =    0   1    2    3
+           └───┴─ 2 + 7 = 9  →  return [0, 1]
+```
+
 **Example 1:**
 
 ```text

@@ -10,6 +10,10 @@ Find the maximum profit you can achieve. You may complete at most `k` transactio
 
 **Note:** You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).
 
+## In Plain Terms
+
+Given stock prices by day, choose at most `k` complete buy/sell transactions to maximize profit. You cannot hold multiple stocks at once, so each buy must happen after the previous sell.
+
 **Example 1:**
 
 ```text

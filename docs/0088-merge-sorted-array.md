@@ -10,6 +10,16 @@ Merge `nums1` and `nums2` into a single array sorted in non-decreasing order.
 
 The final sorted array should not be returned by the function, but instead be stored inside the array `nums1`. To accommodate this, `nums1` has a length of `m + n`, where the first `m` elements denote the elements that should be merged, and the last `n` elements are set to `0` and should be ignored. `nums2` has a length of `n`.
 
+## In Plain Terms
+
+Merge the sorted contents of `nums1` and `nums2` into `nums1` itself. The zero-filled tail of `nums1` is just spare space, so fill from the back to avoid overwriting unmerged values.
+
+```text
+nums1 = [1,2,3,0,0,0], nums2 = [2,5,6]
+              ^     ^                 ^
+fill from right -> [1,2,2,3,5,6]
+```
+
 **Example 1:**
 
 ```text

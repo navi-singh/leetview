@@ -10,6 +10,16 @@ Given the array `nums` after the possible rotation and an integer `target`, retu
 
 You must decrease the overall operation steps as much as possible.
 
+## In Plain Terms
+
+Search for `target` in a sorted array that was rotated, with duplicates allowed. Duplicates can hide which side is sorted, so sometimes the safest move is to shrink the search boundary by one.
+
+```text
+nums = [2, 5, 6, 0, 0, 1, 2]
+              ^
+          target 0 found
+```
+
 **Example 1:**
 
 ```text

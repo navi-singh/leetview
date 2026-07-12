@@ -19,6 +19,10 @@ A mapping of digits to letters (just like on the telephone buttons) is given bel
 9 -> wxyz
 ```
 
+## In Plain Terms
+
+Treat each digit as a phone keypad button and list every possible string formed by choosing one letter from each digit. For `"23"`, choose one letter from `abc` and then one from `def`.
+
 **Example 1:**
 
 ```text

@@ -4,6 +4,10 @@ An ugly number is a positive integer whose prime factors are limited to 2, 3, an
 
 Given an integer n, return true if n is an ugly number.
 
+## In Plain Terms
+
+Return whether `n` has no prime factors other than `2`, `3`, and `5`. Repeatedly divide out those allowed factors; if the remaining value is `1`, the number is ugly.
+
 Example 1:
 
 > Input: n = 6\

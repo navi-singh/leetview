@@ -2,6 +2,10 @@
 
 Given a string, determine if a permutation of the string could form a palindrome.
 
+## In Plain Terms
+
+Decide whether the letters of the string can be rearranged into a palindrome. A palindrome can have at most one character with an odd count; all other characters must pair up.
+
 For example
 
 > "code" -> False,\

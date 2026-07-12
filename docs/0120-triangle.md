@@ -8,6 +8,19 @@ Given a `triangle` array, return the minimum path sum from top to bottom.
 
 For each step, you may move to an adjacent number of the row below. More formally, if you are on index `i` on the current row, you may move to either index `i` or index `i + 1` on the next row.
 
+## In Plain Terms
+
+Starting at the top of the triangle, move down one row at a time to an adjacent value and find the minimum possible sum. From position `i`, the next step can go to position `i` or `i + 1` in the row below.
+
+```text
+   2
+  3 4
+ 6 5 7
+4 1 8 3
+
+best path: 2 -> 3 -> 5 -> 1 = 11
+```
+
 **Example 1:**
 
 ```text

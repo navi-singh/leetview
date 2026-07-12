@@ -6,6 +6,19 @@ description: MEDIUM
 
 Given an integer `n`, return the number of structurally unique BSTs (binary search trees) which has exactly `n` nodes of unique values from `1` to `n`.
 
+## In Plain Terms
+
+Count how many structurally different **binary search trees** can be made with values `1` through `n`. You only return the count, not the actual trees.
+
+```text
+n = 3 -> 5 possible BST shapes:
+1      1        2      3      3
+ \      \      / \    /      /
+  2      3    1   3  1      2
+   \    /             \    /
+    3  2               2  1
+```
+
 **Example 1:**
 
 ```text

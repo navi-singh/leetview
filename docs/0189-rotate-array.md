@@ -6,6 +6,16 @@ description: MEDIUM
 
 Given an integer array `nums`, rotate the array to the right by `k` steps, where `k` is non-negative.
 
+## In Plain Terms
+
+Move every element in `nums` to the right by `k` positions, wrapping elements from the end back to the front. The array should be modified in place.
+
+```text
+[1,2,3,4,5,6,7], k = 3
+          last 3: 5,6,7
+rotate -> [5,6,7,1,2,3,4]
+```
+
 **Example 1:**
 
 ```text

@@ -6,6 +6,16 @@ description: EASY
 
 Given an array of strings `wordsDict` and two different strings that already exist in the array `word1` and `word2`, return the shortest distance between these two words in the list.
 
+## In Plain Terms
+
+Find the minimum difference between an index containing `word1` and an index containing `word2`. The two words are different and both already appear in `wordsDict`.
+
+```text
+index: 0          1       2        3        4
+word:  practice   makes   perfect  coding   makes
+       ^---------------------------^ distance = 3
+```
+
 **Example 1:**
 
 ```text

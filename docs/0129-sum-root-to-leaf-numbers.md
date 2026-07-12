@@ -12,6 +12,19 @@ Return the total sum of all root-to-leaf numbers. Test cases are generated so th
 
 A **leaf** node is a node with no children.
 
+## In Plain Terms
+
+Treat each root-to-leaf path as digits of one number, then add all those numbers together. A path only forms a number when it reaches a leaf.
+
+```text
+    1
+   / \
+  2   3
+
+paths: 1->2 = 12, 1->3 = 13
+sum: 12 + 13 = 25
+```
+
 **Example 1:**
 
 ```text

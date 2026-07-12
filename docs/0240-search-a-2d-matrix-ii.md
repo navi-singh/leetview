@@ -9,6 +9,18 @@ Write an efficient algorithm that searches for a value `target` in an `m x n` in
 - Integers in each row are sorted in ascending order from left to right.
 - Integers in each column are sorted in ascending order from top to bottom.
 
+## In Plain Terms
+
+Search for `target` in a matrix where every row and every column is sorted ascending. Use that ordering to discard a row or column at a time instead of checking every cell.
+
+```text
+ 1  4  7 11 15
+ 2 [5] 8 12 19   target = 5
+ 3  6  9 16 22
+10 13 14 17 24
+18 21 23 26 30
+```
+
 **Example 1:**
 
 ```text

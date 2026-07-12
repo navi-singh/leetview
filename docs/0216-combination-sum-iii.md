@@ -11,6 +11,10 @@ Find all valid combinations of `k` numbers that sum up to `n` such that the foll
 
 Return a list of all possible valid combinations. The list must not contain the same combination twice, and the combinations may be returned in any order.
 
+## In Plain Terms
+
+Find every combination of exactly `k` distinct numbers from `1` through `9` whose sum is `n`. Each number can be used once, and the same combination should not appear more than once.
+
 **Example 1:**
 
 ```text

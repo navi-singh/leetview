@@ -19,6 +19,10 @@ AB -> 28
 ...
 ```
 
+## In Plain Terms
+
+Convert a positive column number into the letters Excel uses for columns. This is like base-26, except there is no zero digit: `A` starts at 1 and `Z` is 26.
+
 **Example 1:**
 
 ```text

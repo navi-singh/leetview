@@ -10,6 +10,16 @@ Each element `nums[i]` represents the maximum length of a forward jump from inde
 
 Return the minimum number of jumps to reach `nums[n - 1]`. The test cases are generated such that you can always reach `nums[n - 1]`.
 
+## In Plain Terms
+
+Each number tells you how far you can jump from that index; find the **fewest jumps** needed to reach the last index. The trick is to think in ranges: one jump can reach a whole range of positions, and the next jump starts when you leave that range.
+
+```text
+nums  = [2, 3, 1, 1, 4]
+index =  0  1  2  3  4
+         +-->1-------->4   two jumps total
+```
+
 **Example 1:**
 
 ```text

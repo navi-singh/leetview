@@ -20,6 +20,17 @@ The test cases are generated such that there are no cycles anywhere in the entir
 
 **Note** that the linked lists must **retain their original structure** after the function returns.
 
+## In Plain Terms
+
+Return the exact node object where two singly linked lists begin sharing the same tail, or `null` if they never share nodes. Matching values are not enough; the lists must point to the same node in memory.
+
+```text
+A: 4 -> 1 \
+          8 -> 4 -> 5
+B: 5 -> 6 -> 1 /
+intersection value = 8
+```
+
 **Example 1:**
 
 ```text

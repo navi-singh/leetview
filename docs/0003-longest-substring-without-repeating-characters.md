@@ -6,6 +6,15 @@ description: MEDIUM
 
 Given a string `s`, find the length of the longest substring without repeating characters.
 
+## In Plain Terms
+
+Find the longest continuous slice of `s` where every character appears **at most once**. You only return the length, not the substring itself.
+
+```text
+s = a b c a b c b b
+    [ a b c ]          length 3, no repeats
+```
+
 **Example 1:**
 
 ```text

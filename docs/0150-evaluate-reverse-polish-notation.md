@@ -16,6 +16,15 @@ Evaluate the expression. Return an integer that represents the value of the expr
 - The input represents a valid arithmetic expression in a reverse polish notation.
 - The answer and all the intermediate calculations can be represented in a **32-bit** integer.
 
+## In Plain Terms
+
+Evaluate a postfix arithmetic expression where numbers come first and each operator applies to the two most recent values. Use integer division that truncates toward zero.
+
+```text
+tokens: 2  1  +  3  *
+stack: [2] -> [2,1] -> [3] -> [3,3] -> [9]
+```
+
 **Example 1:**
 
 ```text

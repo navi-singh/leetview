@@ -8,6 +8,10 @@ Given a non-negative integer `x`, return the square root of `x` rounded down to 
 
 You must not use any built-in exponent function or operator, such as `pow(x, 0.5)` or `x ** 0.5`.
 
+## In Plain Terms
+
+Return the integer part of the square root of `x`, rounded down. You cannot use a built-in power or square-root operation, so search for the largest integer whose square is not greater than `x`.
+
 **Example 1:**
 
 ```text

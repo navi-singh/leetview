@@ -8,6 +8,16 @@ You are a professional robber planning to rob houses along a street. Each house 
 
 Given an integer array `nums` representing the amount of money of each house, return the maximum amount of money you can rob tonight **without alerting the police**.
 
+## In Plain Terms
+
+Choose which houses to rob to get the most money, but never rob two adjacent houses. At each house, the choice is to take it and skip its neighbor, or skip it and keep the best total so far.
+
+```text
+houses:  [1] [2] [3] [1]
+rob:      ^       ^
+total: 1 + 3 = 4
+```
+
 **Example 1:**
 
 ```text

@@ -8,6 +8,17 @@ You are given two non-empty linked lists representing two non-negative integers.
 
 You may assume the two numbers do not contain any leading zero, except the number `0` itself.
 
+## In Plain Terms
+
+Treat each linked list as a number written **backwards**, add the digits one node at a time, and carry when the sum reaches 10. Return a new linked list that stores the resulting number in the same reversed order.
+
+```text
+l1: 2 -> 4 -> 3   (342)
+l2: 5 -> 6 -> 4   (465)
+    -----------
+out:7 -> 0 -> 8   (807)
+```
+
 **Example 1:**
 
 ```text

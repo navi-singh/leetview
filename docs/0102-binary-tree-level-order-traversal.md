@@ -6,6 +6,18 @@ description: MEDIUM
 
 Given the root of a binary tree, return the level order traversal of its nodes' values (i.e., from left to right, level by level).
 
+## In Plain Terms
+
+Return the tree's values **level by level**, starting at the root and reading each level from left to right. Each level should be its own list in the result.
+
+```text
+        3          -> [3]
+      /   \
+     9    20       -> [9, 20]
+          / \
+         15  7     -> [15, 7]
+```
+
 **Example 1:**
 
 ```text

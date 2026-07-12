@@ -10,6 +10,16 @@ On each day, you may decide to buy and/or sell the stock. You can only hold at m
 
 Find and return the maximum profit you can achieve.
 
+## In Plain Terms
+
+Make as many buy/sell transactions as you want to maximize profit, but you can hold only one share at a time. Every profitable upward move can contribute to the total.
+
+```text
+prices: 7  1  5  3  6  4
+           B->S  B->S
+gain:       4  +  3  = 7
+```
+
 **Example 1:**
 
 ```text

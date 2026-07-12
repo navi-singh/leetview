@@ -8,6 +8,10 @@ Given two integers `n` and `k`, return all possible combinations of `k` numbers 
 
 You may return the answer in **any order**.
 
+## In Plain Terms
+
+Return every way to choose exactly `k` numbers from `1` through `n`. Order inside a choice does not matter, so `[1,2]` and `[2,1]` are the same combination and should appear only once.
+
 **Example 1:**
 
 ```text

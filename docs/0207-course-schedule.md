@@ -8,6 +8,15 @@ There are a total of `numCourses` courses you have to take, labeled from `0` to 
 
 Return `true` if you can finish all courses. Otherwise, return `false`.
 
+## In Plain Terms
+
+Treat courses as nodes and prerequisites as directed edges. Return `true` only if there is no cycle blocking the order in which courses must be taken.
+
+```text
+0 -> 1
+Take 0 before 1, so all courses can be finished.
+```
+
 **Example 1:**
 
 ```text

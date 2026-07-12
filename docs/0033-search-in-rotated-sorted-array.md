@@ -10,6 +10,16 @@ Given the array `nums` after the possible rotation and an integer `target`, retu
 
 You must write an algorithm with `O(log n)` runtime complexity.
 
+## In Plain Terms
+
+Search for `target` in a sorted array that may have been rotated around a pivot. Return its index if present, otherwise `-1`, while keeping the search logarithmic.
+
+```text
+nums:  [4, 5, 6, 7, 0, 1, 2]
+index:  0  1  2  3  4  5  6
+                  target 0 at index 4
+```
+
 **Example 1:**
 
 ```text

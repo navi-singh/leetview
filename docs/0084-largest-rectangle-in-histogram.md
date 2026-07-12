@@ -6,6 +6,18 @@ description: HARD
 
 Given an array of integers `heights` representing the histogram's bar height where the width of each bar is `1`, return the area of the largest rectangle in the histogram.
 
+## In Plain Terms
+
+Each number is a histogram bar height with width `1`; find the largest rectangle that can fit under the bars. A rectangle's height is limited by the shortest bar it spans.
+
+```text
+heights = [2,1,5,6,2,3]
+          |   # #
+          |   # #     best: height 5, width 2
+          | # # # #   area = 10
+          | # # # # #
+```
+
 **Example 1:**
 
 ```text

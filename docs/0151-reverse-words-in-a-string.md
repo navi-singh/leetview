@@ -12,6 +12,10 @@ Return a string of the words in reverse order concatenated by a single space.
 
 **Note** that `s` may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.
 
+## In Plain Terms
+
+Reverse the **order of words** in `s`, not the characters inside each word. The result must trim leading/trailing spaces and collapse multiple spaces between words to a single space.
+
 **Example 1:**
 
 ```text

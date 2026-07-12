@@ -6,6 +6,15 @@ We repeatedly make **duplicate removals** on `s` until we no longer can.
 
 Return _the final string after all such duplicate removals have been made_. It can be proven that the answer is **unique**.
 
+## In Plain Terms
+
+Repeatedly delete adjacent pairs of equal letters until no such pair remains. The final result is unique even if there are multiple possible removal orders.
+
+```text
+abbaca -> aaca   (remove bb)
+aaca   -> ca     (remove aa)
+```
+
 **Example 1:**
 
 ```text

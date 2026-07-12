@@ -6,6 +6,19 @@ description: MEDIUM
 
 Given a positive integer `n`, generate an `n x n` matrix filled with elements from `1` to `n^2` in spiral order.
 
+## In Plain Terms
+
+Create an `n x n` matrix and fill it with `1` through `n^2` while walking in a clockwise spiral. Start at the top-left corner, fill the outer layer first, then continue inward.
+
+```text
+n = 3
+1 -> 2 -> 3
+          |
+8 -> 9    4
+^         |
+7 <- 6 <- 5
+```
+
 **Example 1:**
 
 ```text

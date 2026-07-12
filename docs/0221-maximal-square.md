@@ -6,6 +6,17 @@ description: MEDIUM
 
 Given an `m x n` binary matrix `matrix` filled with `'0'`s and `'1'`s, find the largest square containing only `'1'`s and return its area.
 
+## In Plain Terms
+
+Find the largest square made entirely of `'1'` cells in the binary matrix, then return that square's area. The answer is side length squared, not the side length itself.
+
+```text
+1 0 1 0 0
+1 0[1 1]1
+1 1[1 1]1   largest all-1 square has side 2
+1 0 0 1 0
+```
+
 **Example 1:**
 
 ```text

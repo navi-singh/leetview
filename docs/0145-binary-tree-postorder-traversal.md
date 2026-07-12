@@ -6,6 +6,19 @@ description: EASY
 
 Given the `root` of a binary tree, return the postorder traversal of its nodes' values.
 
+## In Plain Terms
+
+Return the tree's values in **postorder**: visit the left subtree, then the right subtree, and only then the current node. Empty trees return an empty list.
+
+```text
+  1
+   \
+    2
+   /
+  3
+postorder: 3, 2, 1
+```
+
 **Example 1:**
 
 ```text

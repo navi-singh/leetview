@@ -8,6 +8,10 @@ Given an array of strings `strs`, group the **anagrams** together. You can retur
 
 An **Anagram** is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
 
+## In Plain Terms
+
+Group words that are made from the **same letters with the same counts**. Words like `eat`, `tea`, and `ate` belong together because rearranging their characters can produce each other.
+
 **Example 1:**
 
 ```text

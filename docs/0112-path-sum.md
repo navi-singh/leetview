@@ -8,6 +8,22 @@ Given the root of a binary tree and an integer `targetSum`, return `true` if the
 
 A leaf is a node with no children.
 
+## In Plain Terms
+
+Check whether there is at least one path from the root to a leaf whose values add up to `targetSum`. The path must end at a leaf, not just any intermediate node.
+
+```text
+        5
+       / \
+      4   8
+     /   / \
+    11  13  4
+   /  \      \
+  7    2      1
+
+5 -> 4 -> 11 -> 2 = 22
+```
+
 **Example 1:**
 
 ```text

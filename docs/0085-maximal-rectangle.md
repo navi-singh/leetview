@@ -6,6 +6,18 @@ description: HARD
 
 Given a `rows x cols` binary matrix filled with `'0'`s and `'1'`s, find the largest rectangle containing only `'1'`s and return its area.
 
+## In Plain Terms
+
+Find the largest axis-aligned rectangle made entirely of `'1'` cells in the binary matrix. Think of each row as the bottom of a histogram of consecutive `1`s above it, then find the best rectangle.
+
+```text
+1 0 1 0 0
+1 0 [1 1 1]
+1 1 [1 1 1]
+1 0 0 1 0
+best area = 6
+```
+
 **Example 1:**
 
 ```text

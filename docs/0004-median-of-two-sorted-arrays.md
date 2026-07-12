@@ -8,6 +8,10 @@ Given two sorted arrays `nums1` and `nums2` of size `m` and `n` respectively, re
 
 The overall run time complexity should be `O(log(m + n))`.
 
+## In Plain Terms
+
+Imagine combining the two already-sorted arrays, then return the **middle value** of that combined sorted order. The challenge is to find that median without fully merging everything, in `O(log(m + n))` time.
+
 **Example 1:**
 
 ```text

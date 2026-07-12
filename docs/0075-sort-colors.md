@@ -10,6 +10,16 @@ We will use the integers `0`, `1`, and `2` to represent the color red, white, an
 
 You must solve this problem without using the library's sort function.
 
+## In Plain Terms
+
+Reorder `nums` in place so all `0`s come first, then `1`s, then `2`s. The goal is a one-pass partition, not using a library sort.
+
+```text
+[2, 1, 2, 0, 0, 1]
+ L              R
+        scan ->       => [0, 0, 1, 1, 2, 2]
+```
+
 **Example 1:**
 
 ```text

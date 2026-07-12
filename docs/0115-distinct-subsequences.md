@@ -8,6 +8,10 @@ Given two strings `s` and `t`, return the number of distinct subsequences of `s`
 
 The test cases are generated so that the answer fits on a 32-bit signed integer.
 
+## In Plain Terms
+
+Count how many different ways you can delete characters from `s` so the remaining characters equal `t`. The kept characters must stay in their original order.
+
 **Example 1:**
 
 ```text

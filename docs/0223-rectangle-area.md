@@ -10,6 +10,21 @@ The first rectangle is defined by its **bottom-left** corner `(ax1, ay1)` and it
 
 The second rectangle is defined by its **bottom-left** corner `(bx1, by1)` and its **top-right** corner `(bx2, by2)`.
 
+## In Plain Terms
+
+Compute the total area covered by two axis-aligned rectangles. Add both rectangle areas, then subtract the overlapping area once if they overlap.
+
+```text
+A: (-3,0) to (3,4)
+B: ( 0,-1) to (9,2)
+
+      +-----A-----+
+      |     ###   |
+      |     ###---+-----B-----+
+      +-----###---+           |
+            +-----------------+
+```
+
 **Example 1:**
 
 ```text

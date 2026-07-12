@@ -6,6 +6,21 @@ description: MEDIUM
 
 Given two integer arrays `preorder` and `inorder` where `preorder` is the preorder traversal of a binary tree and `inorder` is the inorder traversal of the same tree, construct and return the binary tree.
 
+## In Plain Terms
+
+Rebuild the original binary tree from two traversal lists of the same tree. `preorder` tells you each subtree's root first, while `inorder` tells you which values belong on the left and right.
+
+```text
+preorder: [3,9,20,15,7]
+inorder:  [9,3,15,20,7]
+
+        3
+      /   \
+     9    20
+          / \
+         15  7
+```
+
 **Example 1:**
 
 ```text

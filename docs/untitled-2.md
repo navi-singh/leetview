@@ -8,6 +8,10 @@ In an alien language, surprisingly, they also use English lowercase letters, but
 
 Given a sequence of `words` written in the alien language, and the `order` of the alphabet, return `true` if and only if the given `words` are sorted lexicographically in this alien language.
 
+## In Plain Terms
+
+Use the custom alphabet `order` to decide whether the list of `words` is sorted lexicographically. Compare adjacent words using that alien letter ranking, including the prefix case where a longer word cannot come before its own prefix.
+
 **Example 1:**
 
 ```text

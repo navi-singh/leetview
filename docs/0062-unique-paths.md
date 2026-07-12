@@ -10,6 +10,18 @@ Given the two integers `m` and `n`, return the number of possible unique paths t
 
 The test cases are generated so that the answer will be less than or equal to `2 * 10^9`.
 
+## In Plain Terms
+
+Count how many ways a robot can move from the top-left to the bottom-right of an `m x n` grid using only **right** and **down** moves. Different sequences of those moves count as different paths.
+
+```text
+m = 3, n = 7
+S . . . . . .
+. . . . . . .
+. . . . . . E
+moves: only right or down
+```
+
 **Example 1:**
 
 ```text

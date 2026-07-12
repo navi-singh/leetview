@@ -17,6 +17,10 @@ By listing and labeling all of the permutations in order, we get the following s
 
 Given `n` and `k`, return the `k`th permutation sequence.
 
+## In Plain Terms
+
+List all permutations of `1..n` in lexicographic order and return the **`k`th one**. The efficient idea is to use factorial-sized blocks to choose each digit directly instead of generating every permutation.
+
 **Example 1:**
 
 ```text

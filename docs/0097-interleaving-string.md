@@ -13,6 +13,10 @@ An **interleaving** of two strings `s` and `t` is a configuration where `s` and 
 - `|n - m| <= 1`
 - The interleaving is `s1 + t1 + s2 + t2 + s3 + t3 + ...` or `t1 + s1 + t2 + s2 + t3 + s3 + ...`
 
+## In Plain Terms
+
+Decide whether `s3` can be formed by weaving together all characters of `s1` and `s2` while keeping the original order within each string. You may alternate between chunks from the two strings, but you cannot reorder characters inside either one.
+
 **Example 1:**
 
 ```text

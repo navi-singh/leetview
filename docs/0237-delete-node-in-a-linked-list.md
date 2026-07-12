@@ -17,6 +17,15 @@ Delete the given node. Note that by deleting the node, we do not mean removing i
 - All the values before `node` should be in the same order.
 - All the values after `node` should be in the same order.
 
+## In Plain Terms
+
+Delete the given node even though you are not given the list head. Since the node is guaranteed not to be the tail, copy the next node's value into it and bypass the next node.
+
+```text
+4 -> [5] -> 1 -> 9
+4 ->  1  ------> 9
+```
+
 **Example 1:**
 
 ```text

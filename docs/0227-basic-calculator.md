@@ -8,6 +8,10 @@ You may assume that the given expression is always valid. All intermediate resul
 
 **Note:**  You are not allowed to use any built-in function which evaluates strings as mathematical expressions, such as `eval()`.
 
+## In Plain Terms
+
+Evaluate a valid arithmetic string containing non-negative integers and operators like `+`, `-`, `*`, and `/`. Multiplication and division must be applied before addition and subtraction, and integer division truncates toward zero.
+
 **Example 1:** 
 
 ```

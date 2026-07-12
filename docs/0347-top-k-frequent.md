@@ -2,6 +2,10 @@
 
 Given an integer array `nums` and an integer `k`, return the `k` most frequent elements. You may return the answer in **any order** .
 
+## In Plain Terms
+
+Return the `k` values that appear most often in `nums`. The answer order does not matter, and the problem guarantees there is a unique set of top-frequency values.
+
 **Example 1:** 
 
 ```

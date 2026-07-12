@@ -2,6 +2,10 @@ A strobogrammatic number is a number that looks the same when rotated 180 degree
 
 Find all strobogrammatic numbers that are of length = n.
 
+## In Plain Terms
+
+Generate every length-`n` number that looks unchanged when turned upside down. Build the number from the outside inward using valid rotated digit pairs, while avoiding leading zeroes for multi-digit answers.
+
 For example, Given n = 2, return ["11","69","88","96"].
 
 ```java

@@ -4,6 +4,10 @@ Given a string s, partition s such that every substring of the partition is a pa
 
 Return the minimum cuts needed for a palindrome partitioning of s.
 
+## In Plain Terms
+
+Split the string into palindrome pieces using as few cuts as possible. For each position, track which substrings are palindromes and the minimum cuts needed up to that point.
+
 Example 1:
 
 > Input: s = "aab"\

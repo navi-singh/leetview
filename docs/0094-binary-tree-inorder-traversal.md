@@ -6,6 +6,20 @@ description: EASY
 
 Given the `root` of a binary tree, return the inorder traversal of its nodes' values.
 
+## In Plain Terms
+
+Visit every node of the binary tree in **inorder**: left subtree, current node, then right subtree. Return the values in that visiting order.
+
+```text
+    1
+     \
+      2
+     /
+    3
+
+inorder: 1 -> 3 -> 2
+```
+
 **Example 1:**
 
 ```text

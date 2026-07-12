@@ -8,6 +8,15 @@ Given an integer array `nums` sorted in non-decreasing order, remove the duplica
 
 Do not allocate extra space for another array. You must do this by modifying the input array in-place with O(1) extra memory.
 
+## In Plain Terms
+
+Because `nums` is sorted, duplicates sit next to each other; compact the array so each value appears once in the first `k` positions. Return `k`, and anything after index `k - 1` does not matter.
+
+```text
+[1, 1, 2]  =>  [1, 2, _]
+ k = 2
+```
+
 **Example 1:**
 
 ```text

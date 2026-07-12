@@ -6,6 +6,10 @@ description: EASY
 
 Given two strings `haystack` and `needle`, return the index of the first occurrence of `needle` in `haystack`, or `-1` if `needle` is not part of `haystack`.
 
+## In Plain Terms
+
+Find where `needle` first appears as a continuous substring inside `haystack`. Return that starting index, or `-1` if it never appears.
+
 **Example 1:**
 
 ```text

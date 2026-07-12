@@ -8,6 +8,10 @@ Given an integer array `nums` where every element appears **three times** except
 
 You must implement a solution with a linear runtime complexity and use only constant extra space.
 
+## In Plain Terms
+
+Find the **one value** in `nums` that appears once while every other value appears exactly three times. The main trick is that counting all values directly would use extra space, so the intended solution tracks counts per bit modulo 3.
+
 **Example 1:**
 
 ```text

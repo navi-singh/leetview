@@ -6,6 +6,15 @@ description: MEDIUM
 
 Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed).
 
+## In Plain Terms
+
+Swap each pair of neighboring linked-list nodes by changing the links, not by changing node values. If one node is left over at the end, leave it where it is.
+
+```text
+1 -> 2 -> 3 -> 4
+=> 2 -> 1 -> 4 -> 3
+```
+
 **Example 1:**
 
 ```text

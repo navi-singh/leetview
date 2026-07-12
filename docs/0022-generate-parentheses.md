@@ -6,6 +6,10 @@ description: MEDIUM
 
 Given `n` pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
 
+## In Plain Terms
+
+Generate every string that uses exactly `n` opening and `n` closing parentheses while staying **well-formed**. A valid string never closes more parentheses than it has opened at any point.
+
 **Example 1:**
 
 ```text

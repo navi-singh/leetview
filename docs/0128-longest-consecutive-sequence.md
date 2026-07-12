@@ -8,6 +8,15 @@ Given an unsorted array of integers `nums`, return the length of the longest con
 
 You must write an algorithm that runs in `O(n)` time.
 
+## In Plain Terms
+
+Find the length of the longest run of numbers that appear consecutively, regardless of their order in `nums`. The algorithm must be linear time, so sorting is not the intended approach.
+
+```text
+nums contains: 100, 4, 200, 1, 3, 2
+consecutive:  1 -- 2 -- 3 -- 4   length = 4
+```
+
 **Example 1:**
 
 ```text

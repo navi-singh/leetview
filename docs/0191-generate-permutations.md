@@ -8,6 +8,10 @@ Given a string `s`, return all permutations of its characters. Each character in
 
 This file corresponds to `LC_0191_generatePermutations.java`, a backtracking exercise stored in the 0191 slot. It is a separate algorithm from LeetCode problem 191 (Number of 1 Bits).
 
+## In Plain Terms
+
+Generate every possible ordering of the distinct characters in `s`. Each character must be used exactly once in each permutation.
+
 **Example 1:**
 
 ```text

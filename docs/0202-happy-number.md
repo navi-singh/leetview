@@ -14,6 +14,10 @@ A **happy number** is a number defined by the following process:
 
 Return `true` if `n` is a happy number, and `false` if not.
 
+## In Plain Terms
+
+Repeatedly replace `n` with the **sum of the squares of its digits**. Return `true` if the process reaches `1`; if it falls into a repeating cycle instead, return `false`.
+
 **Example 1:**
 
 ```text

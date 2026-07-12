@@ -10,6 +10,17 @@ The knight starts in the **top-left room** and moves only **rightward** or **dow
 
 Given a 2D array `dungeon`, return the minimum initial health such that the knight can rescue the princess.
 
+## In Plain Terms
+
+Find the smallest starting health that lets the knight move from the top-left to the bottom-right while never dropping below 1 health. Each grid cell either adds health or removes it, and the knight may only move right or down.
+
+```text
+-2  -3   3
+-5 -10   1
+10  30  -5
+path: R -> R -> D -> D, minimum start = 7
+```
+
 **Example 1:**
 
 ```text

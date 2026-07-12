@@ -10,6 +10,10 @@ The integer division should truncate toward zero, which means losing its fractio
 
 **Note:** Assume we are dealing with an environment that could only store integers within the 32-bit signed integer range: `[−2^31, 2^31 − 1]`. For this problem, if the quotient is strictly greater than `2^31 − 1`, then return `2^31 − 1`, and if the quotient is strictly less than `-2^31`, then return `-2^31`.
 
+## In Plain Terms
+
+Compute the integer quotient of `dividend / divisor` without using multiplication, division, or modulo. Drop any fractional part toward zero, and clamp the one overflow case to the 32-bit signed integer limit.
+
 **Example 1:**
 
 ```text

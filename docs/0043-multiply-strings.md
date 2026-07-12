@@ -8,6 +8,10 @@ Given two non-negative integers `num1` and `num2` represented as strings, return
 
 **Note:** You must not use any built-in BigInteger library or convert the inputs to integer directly.
 
+## In Plain Terms
+
+Multiply two non-negative integers that are given as strings and return the product as a string. You must perform the arithmetic yourself instead of converting the full strings to built-in integer types.
+
 **Example 1:**
 
 ```text

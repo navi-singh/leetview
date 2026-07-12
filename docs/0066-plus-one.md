@@ -8,6 +8,10 @@ You are given a **large integer** represented as an integer array `digits`, wher
 
 Increment the large integer by one and return the resulting array of digits.
 
+## In Plain Terms
+
+Treat `digits` as one large non-negative integer and return the digits after adding `1`. Carry moves leftward just like normal addition, and all-`9` inputs need one extra leading digit.
+
 **Example 1:**
 
 ```text

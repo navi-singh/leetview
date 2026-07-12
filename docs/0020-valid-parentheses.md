@@ -12,6 +12,15 @@ An input string is valid if:
 2. Open brackets must be closed in the correct order.
 3. Every close bracket has a corresponding open bracket of the same type.
 
+## In Plain Terms
+
+Check that every opening bracket is closed by the **same type** of bracket and in the correct nested order. A closing bracket is only valid if it matches the most recent unmatched opening bracket.
+
+```text
+s = "()"
+stack: push '(' -> pop with ')' -> empty, valid
+```
+
 **Example 1:**
 
 ```text

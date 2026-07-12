@@ -8,6 +8,10 @@ You are given a string `s`. You can convert `s` to a palindrome by adding charac
 
 Return the shortest palindrome you can find by performing this transformation.
 
+## In Plain Terms
+
+Add characters only to the **front** of `s` so the whole string becomes a palindrome. You want the shortest possible result, which means keeping the longest palindromic prefix already present and mirroring the remaining suffix in front.
+
 **Example 1:**
 
 ```text

@@ -6,6 +6,16 @@ If `target` is not found in the array, return `[-1, -1]`.
 
 You mustwrite an algorithm with`O(log n)` runtime complexity.
 
+## In Plain Terms
+
+In a sorted array, find the first and last positions where `target` appears. If the target is missing, return `[-1, -1]`.
+
+```text
+nums:  [5, 7, 7, 8, 8, 10]
+index:  0  1  2  3  4   5
+                  ^--^ target range [3, 4]
+```
+
 **Example 1:** 
 
 ```

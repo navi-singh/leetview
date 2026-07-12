@@ -6,6 +6,10 @@ Permute the characters of `s` so that they match the order that `order` was sort
 
 Return any permutation of `s` that satisfies this property.
 
+## In Plain Terms
+
+Reorder the characters of `s` so characters that appear in `order` follow that custom order. Characters not listed in `order` can appear anywhere in the result.
+
 **Example 1:**
 
 Input: order = "cba", s = "abcd"
