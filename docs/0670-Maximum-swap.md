@@ -4,6 +4,10 @@ You are given an integer `num`. You can swap two digits at most once to get the 
 
 Return _the maximum valued number you can get_.
 
+## In Plain Terms
+
+Make at most one swap between two digits of `num` to create the largest possible number. Choose the best later larger digit to move as far left as possible.
+
 **Example 1:**
 
 ```text
